@@ -19,6 +19,7 @@ import net.thep2wking.oedldoedlcore.OedldoedlCore;
 import net.thep2wking.oedldoedlcore.config.CoreConfig;
 import net.thep2wking.oedldoedlcore.util.ModLogger;
 import net.thep2wking.oedldoedlcore.util.ModReferences;
+import net.thep2wking.oedldoedlexplosives.init.ModEntities;
 import net.thep2wking.oedldoedlexplosives.util.proxy.CommonProxy;
 
 @Mod(modid = OedldoedlExplosives.MODID, name = OedldoedlExplosives.NAME, version = OedldoedlExplosives.VERSION, dependencies = OedldoedlExplosives.DEPENDENCIES)
@@ -55,6 +56,7 @@ public class OedldoedlExplosives {
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         ModLogger.preInitLogger(MODID);
+        ModEntities.registerEntities();
         PROXY.preInit(event);
     }
 

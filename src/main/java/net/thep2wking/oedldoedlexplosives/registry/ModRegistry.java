@@ -11,23 +11,30 @@ import net.thep2wking.oedldoedlcore.util.ModRegistryHelper;
 import net.thep2wking.oedldoedlexplosives.OedldoedlExplosives;
 import net.thep2wking.oedldoedlexplosives.init.ModBlocks;
 import net.thep2wking.oedldoedlexplosives.init.ModItems;
+import net.thep2wking.oedldoedlexplosives.init.ModSounds;
 
 @Mod.EventBusSubscriber
 public class ModRegistry {
 	@SubscribeEvent
 	public static void onBlockRegister(RegistryEvent.Register<Block> event) {
 		ModLogger.registeredBlocksLogger(OedldoedlExplosives.MODID);
-		ModRegistryHelper.registerBlock(event, ModBlocks.TEST_TNT);
+		ModRegistryHelper.registerBlock(event, ModBlocks.NUKE);
+		ModRegistryHelper.registerBlock(event, ModBlocks.TROLL_TNT);
+		ModRegistryHelper.registerBlock(event, ModBlocks.CHUNK_TNT);
 	}
 
 	@SubscribeEvent
 	public static void onItemRegister(RegistryEvent.Register<Item> event) {
 		ModLogger.registeredItemsLogger(OedldoedlExplosives.MODID);
-		ModRegistryHelper.registerItemBlock(event, ModItems.TEST_TNT);
+		ModRegistryHelper.registerItemBlock(event, ModItems.NUKE);
+		ModRegistryHelper.registerItemBlock(event, ModItems.TROLL_TNT);
+		ModRegistryHelper.registerItemBlock(event, ModItems.CHUNK_TNT);
 	}
 
 	@SubscribeEvent
 	public static void onSoundEventRegister(RegistryEvent.Register<SoundEvent> event) {
 		ModLogger.registeredSoundEventsLogger(OedldoedlExplosives.MODID);
+
+		ModRegistryHelper.registerSoundEvent(event, ModSounds.NUKE_ALARM);
 	}
 }

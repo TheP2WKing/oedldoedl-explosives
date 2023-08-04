@@ -4,16 +4,13 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockTNT;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.MapColor;
-import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyBool;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityList;
 import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.entity.item.EntityTNTPrimed;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.projectile.EntityArrow;
 import net.minecraft.init.Blocks;
@@ -75,14 +72,14 @@ public class ModBlockTNTBase extends BlockTNT {
         return lightLevel;
     }
 
-    public ModEntityTNTBase create(World world, double x, double y, double z, EntityLivingBase ignitor) {
-		return new ModEntityTNTBase(world, x, y, z, ignitor);
-	}
+    public ModEntityTNTBase createTNTEntity(World world, double x, double y, double z, EntityLivingBase ignitor) {
+        return new ModEntityTNTBase(world, x, y, z, ignitor);
+    }
 
     @Override
     public void onBlockDestroyedByExplosion(World worldIn, BlockPos pos, Explosion explosionIn) {
         if (!worldIn.isRemote) {
-            EntityTNTPrimed entitytntprimed = new EntityTNTPrimed(worldIn, (double) ((float) pos.getX() + 0.5F),
+            ModEntityTNTBase entitytntprimed = createTNTEntity(worldIn, (double) ((float) pos.getX() + 0.5F),
                     (double) pos.getY(), (double) ((float) pos.getZ() + 0.5F), explosionIn.getExplosivePlacedBy());
             entitytntprimed.setFuse(
                     (short) (worldIn.rand.nextInt(entitytntprimed.getFuse() / 4) + entitytntprimed.getFuse() / 8));
@@ -94,8 +91,9 @@ public class ModBlockTNTBase extends BlockTNT {
     public void explode(World worldIn, BlockPos pos, IBlockState state, EntityLivingBase igniter) {
         if (!worldIn.isRemote) {
             if (((Boolean) state.getValue(EXPLODE)).booleanValue()) {
-                worldIn.spawnEntity(create(worldIn, (double) ((float) pos.getX() + 0.5F),
-                (double) pos.getY(), (double) ((float) pos.getZ() + 0.5F), igniter));
+                ModEntityTNTBase entitytntprimed = createTNTEntity(worldIn, (double) ((float) pos.getX() + 0.5F),
+                        (double) pos.getY(), (double) ((float) pos.getZ() + 0.5F), igniter);
+                worldIn.spawnEntity(entitytntprimed);
                 worldIn.playSound((EntityPlayer) null, pos.getX(), pos.getY(), pos.getZ(),
                         SoundEvents.ENTITY_TNT_PRIMED, SoundCategory.BLOCKS, 1.0F, 1.0F);
             }

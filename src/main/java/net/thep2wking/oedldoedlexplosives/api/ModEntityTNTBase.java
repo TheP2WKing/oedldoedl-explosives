@@ -1,6 +1,5 @@
 package net.thep2wking.oedldoedlexplosives.api;
 
-import javax.annotation.Nullable;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.MoverType;
 import net.minecraft.entity.item.EntityTNTPrimed;
@@ -11,39 +10,81 @@ import net.minecraft.network.datasync.EntityDataManager;
 import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.world.World;
 
+/**
+ * @author TheP2WKing
+ */
 public class ModEntityTNTBase extends EntityTNTPrimed {
-	private static final DataParameter<Integer> FUSE = EntityDataManager.<Integer>createKey(ModEntityTNTBase.class,
+	public static final DataParameter<Integer> FUSE = EntityDataManager.<Integer>createKey(ModEntityTNTBase.class,
 			DataSerializers.VARINT);
-	@Nullable
-	private EntityLivingBase tntPlacedBy;
-	/** How long the fuse is */
-	private int fuse;
+	public int fuse = 80;
+	public EntityLivingBase ignitor;
+	public float explosionStrength = 4.0f;
+	public boolean spawnFire = false;
+	public boolean blockDamage = true;
 
-	public ModEntityTNTBase(World worldIn) {
-		super(worldIn);
-		this.fuse = 80;
-		this.preventEntitySpawning = true;
-		this.isImmuneToFire = true;
-		this.setSize(0.98F, 0.98F);
-	}
-
-	public ModEntityTNTBase(World worldIn, double x, double y, double z, EntityLivingBase igniter) {
-		this(worldIn);
+	/**
+	 * @author TheP2WKing
+	 * @param world             {@link World}
+	 * @param x                 double
+	 * @param y                 double
+	 * @param z                 double
+	 * @param igniter           {@link EntityLivingBase}
+	 * @param fuse              int
+	 * @param explosionStrength float
+	 * @param spawnFire         boolean
+	 * @param blockDamage       boolean
+	 */
+	public ModEntityTNTBase(World world, double x, double y, double z, EntityLivingBase igniter, int fuse,
+			float explosionStrength, boolean spawnFire, boolean blockDamage) {
+		super(world);
+		this.fuse = fuse;
+		this.explosionStrength = explosionStrength;
+		this.spawnFire = spawnFire;
+		this.blockDamage = blockDamage;
 		this.setPosition(x, y, z);
 		float f = (float) (Math.random() * (Math.PI * 2D));
 		this.motionX = (double) (-((float) Math.sin((double) f)) * 0.02F);
 		this.motionY = 0.20000000298023224D;
 		this.motionZ = (double) (-((float) Math.cos((double) f)) * 0.02F);
-		this.setFuse(80);
+		this.setFuse(this.fuse);
 		this.prevPosX = x;
 		this.prevPosY = y;
 		this.prevPosZ = z;
-		this.tntPlacedBy = igniter;
+		this.ignitor = igniter;
+	}
+
+	/**
+	 * @author TheP2WKing
+	 * @param world   {@link World}
+	 * @param x       double
+	 * @param y       double
+	 * @param z       double
+	 * @param igniter {@link EntityLivingBase}
+	 */
+	public ModEntityTNTBase(World world, double x, double y, double z, EntityLivingBase igniter) {
+		super(world);
+		this.setPosition(x, y, z);
+		float f = (float) (Math.random() * (Math.PI * 2D));
+		this.motionX = (double) (-((float) Math.sin((double) f)) * 0.02F);
+		this.motionY = 0.20000000298023224D;
+		this.motionZ = (double) (-((float) Math.cos((double) f)) * 0.02F);
+		this.setFuse(this.fuse);
+		this.prevPosX = x;
+		this.prevPosY = y;
+		this.prevPosZ = z;
+		this.ignitor = igniter;
+	}
+
+	public ModEntityTNTBase(World world) {
+		super(world);
+		this.preventEntitySpawning = true;
+		this.isImmuneToFire = true;
+		this.setSize(0.98F, 0.98F);
 	}
 
 	@Override
 	public void entityInit() {
-		this.dataManager.register(FUSE, Integer.valueOf(80));
+		this.dataManager.register(FUSE, Integer.valueOf(this.fuse));
 	}
 
 	@Override
@@ -87,8 +128,8 @@ public class ModEntityTNTBase extends EntityTNTPrimed {
 	}
 
 	public void explode() {
-		float f = 10.0F;
-		this.world.createExplosion(this, this.posX, this.posY + (double) (this.height / 16.0F), this.posZ, f, true);
+		this.world.newExplosion(this, this.posX, this.posY + (double) (this.height / 16.0F), this.posZ,
+				this.explosionStrength, this.spawnFire, this.blockDamage);
 	}
 
 	@Override
@@ -103,7 +144,7 @@ public class ModEntityTNTBase extends EntityTNTPrimed {
 
 	@Override
 	public EntityLivingBase getTntPlacedBy() {
-		return this.tntPlacedBy;
+		return this.ignitor;
 	}
 
 	@Override
@@ -132,5 +173,17 @@ public class ModEntityTNTBase extends EntityTNTPrimed {
 	@Override
 	public int getFuse() {
 		return this.fuse;
+	}
+
+	public float getExplosionStrength() {
+		return this.explosionStrength;
+	}
+
+	public boolean doesSpawnFire() {
+		return this.spawnFire;
+	}
+
+	public boolean doesBlockDamage() {
+		return this.blockDamage;
 	}
 }

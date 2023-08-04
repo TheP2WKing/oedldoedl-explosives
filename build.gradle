@@ -48,6 +48,7 @@ dependencies {
     // top
     deobfCompile("curse.maven:the-one-probe-245211:2667280")
     deobfCompile("curse.maven:top-addons-247111:2887479")
+    deobfCompile("curse.maven:top-extras-628618:3813089")
 
     // ftb
     deobfCompile("curse.maven:ftb-library-legacy-forge-237167:2985811")

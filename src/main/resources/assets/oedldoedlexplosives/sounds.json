@@ -1,0 +1,11 @@
+{
+    "nuke_alarm":
+    {
+        "category": "blocks",
+        "subtitle": "sound.oedldoedlexplosives.nuke_alarm",
+        "sounds":
+        [
+            "oedldoedlexplosives:nuke_alarm"
+        ]
+    }
+}

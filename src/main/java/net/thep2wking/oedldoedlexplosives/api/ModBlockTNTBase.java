@@ -1,9 +1,9 @@
 package net.thep2wking.oedldoedlexplosives.api;
 
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockTNT;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.MapColor;
+import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyBool;
 import net.minecraft.block.state.BlockStateContainer;
@@ -28,7 +28,7 @@ import net.minecraft.world.World;
 /**
  * @author TheP2WKing
  */
-public class ModBlockTNTBase extends BlockTNT {
+public class ModBlockTNTBase extends Block {
     public final String modid;
     public final String name;
     public final CreativeTabs tab;
@@ -48,7 +48,7 @@ public class ModBlockTNTBase extends BlockTNT {
      */
     public ModBlockTNTBase(String modid, String name, CreativeTabs tab, SoundType sound, MapColor mapColor,
             int lightLevel) {
-        super();
+        super(Material.TNT);
         this.modid = modid;
         this.name = name;
         this.tab = tab;
@@ -87,7 +87,6 @@ public class ModBlockTNTBase extends BlockTNT {
         }
     }
 
-    @Override
     public void explode(World worldIn, BlockPos pos, IBlockState state, EntityLivingBase igniter) {
         if (!worldIn.isRemote) {
             if (((Boolean) state.getValue(EXPLODE)).booleanValue()) {

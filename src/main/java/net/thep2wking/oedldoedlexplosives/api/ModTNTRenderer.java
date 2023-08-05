@@ -9,16 +9,21 @@ import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.entity.Render;
 import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraft.client.renderer.texture.TextureMap;
+import net.minecraft.entity.Entity;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.MathHelper;
+import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
+/**
+ * @author TheP2WKing
+ */
 @SideOnly(Side.CLIENT)
-public class ModEntityTNTRender extends Render<ModEntityTNTBase> {
+public class ModTNTRenderer extends Render<ModEntityTNTBase> {
 	public final Block block;
 
-	public ModEntityTNTRender(RenderManager renderManagerIn, Block block) {
+	public ModTNTRenderer(RenderManager renderManagerIn, Block block) {
 		super(renderManagerIn);
 		this.shadowSize = 0.5F;
 		this.block = block;
@@ -73,5 +78,16 @@ public class ModEntityTNTRender extends Render<ModEntityTNTBase> {
 	@Nullable
 	public ResourceLocation getEntityTexture(ModEntityTNTBase entity) {
 		return TextureMap.LOCATION_BLOCKS_TEXTURE;
+	}
+
+	/**
+	 * @author TheP2WKing
+	 * @param tntEntityClass {@link Class}
+	 * @param tntBlock  {@link Block}
+	 */
+	@SuppressWarnings("deprecation")
+	public static void register(Class<? extends Entity> tntEntityClass, Block tntBlock) {
+		RenderingRegistry.registerEntityRenderingHandler(tntEntityClass,
+				new ModTNTRenderer(Minecraft.getMinecraft().getRenderManager(), tntBlock));
 	}
 }

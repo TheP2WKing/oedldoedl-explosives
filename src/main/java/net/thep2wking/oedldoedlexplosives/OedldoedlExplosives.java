@@ -63,9 +63,9 @@ public class OedldoedlExplosives {
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
         ModLogger.initLogger(MODID);
-        PROXY.render();
         // ModRecipes.registerOreDict();
         // ModRecipes.registerRecipes();
+        PROXY.render();
         PROXY.init(event);
     }
 

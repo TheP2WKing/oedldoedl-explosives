@@ -1,0 +1,17 @@
+{
+    "variants": 
+    {
+        "normal": 
+        { 
+            "model": "oedldoedlexplosives:c4"
+        },
+        "explode=false": 
+        { 
+            "model": "oedldoedlexplosives:c4"
+        },
+        "explode=true": 
+        { 
+            "model": "oedldoedlexplosives:c4"
+        }
+    }
+}

@@ -4,7 +4,43 @@ itemGroup.oedldoedlexplosives.name=§dOedldoedl Explosives
 # icons
 item.oedldoedlcore.explosions_icon.annotation3=Version: §e1.12.2-3.0.0
 
-# blocks 
+# blocks
+tile.oedldoedlexplosives.c4.name=C4
+entity.oedldoedlexplosives.c4.name=Block of C4
+tile.oedldoedlexplosives.c4.tip1=C418.
+
+tile.oedldoedlexplosives.tnt_x5.name=TNT x5
+entity.oedldoedlexplosives.tnt_x5.name=Block of TNT x5
+tile.oedldoedlexplosives.tnt_x5.tip1=Five times the fun.
+
+tile.oedldoedlexplosives.tnt_x20.name=TNT x20
+entity.oedldoedlexplosives.tnt_x20.name=Block of TNT x20
+tile.oedldoedlexplosives.tnt_x20.tip1=Four times more fun than before.
+
+tile.oedldoedlexplosives.drill_tnt.name=Drill TNT
+entity.oedldoedlexplosives.drill_tnt.name=Block of Drill TNT
+tile.oedldoedlexplosives.drill_tnt.tip1=Call me a shovel because im digging it...
+
+tile.oedldoedlexplosives.flat_tnt.name=Flat TNT
+entity.oedldoedlexplosives.flat_tnt.name=Block of Flat TNT
+tile.oedldoedlexplosives.flat_tnt.tip1=Flat as...?
+
+tile.oedldoedlexplosives.nuke_tnt.name=Nuke TNT
+entity.oedldoedlexplosives.nuke_tnt.name=Block of Nuke TNT
+tile.oedldoedlexplosives.nuke_tnt.tip1=We need MORE Nukes!
+
+tile.oedldoedlexplosives.day_tnt.name=Day TNT
+entity.oedldoedlexplosives.day_tnt.name=Block of Day TNT
+tile.oedldoedlexplosives.day_tnt.tip1=/time set day
+
+tile.oedldoedlexplosives.night_tnt.name=Night TNT
+entity.oedldoedlexplosives.night_tnt.name=Block of Night TNT
+tile.oedldoedlexplosives.night_tnt.tip1=/time set night
+
+tile.oedldoedlexplosives.sir_derpington_tnt.name=Sir Derpington TNT
+entity.oedldoedlexplosives.sir_derpington_tnt.name=Block of Sir Derpington TNT
+tile.oedldoedlexplosives.sir_derpington_tnt.tip1=Pigstep!
+
 tile.oedldoedlexplosives.nc_nuke.name=Nuke
 entity.oedldoedlexplosives.nc_nuke.name=Nuke - RUN!
 tile.oedldoedlexplosives.nc_nuke.tip1=I recommend putting on some earmuffs.

@@ -75,6 +75,10 @@ public class ModEntityTNTBase extends EntityTNTPrimed {
 		this.ignitor = igniter;
 	}
 
+	/**
+	 * @author TheP2WKing
+	 * @param world {@link World}
+	 */
 	public ModEntityTNTBase(World world) {
 		super(world);
 		this.preventEntitySpawning = true;

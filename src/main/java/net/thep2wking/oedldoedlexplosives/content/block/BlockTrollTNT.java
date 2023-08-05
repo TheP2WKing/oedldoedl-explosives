@@ -25,7 +25,7 @@ public class BlockTrollTNT extends ModBlockTNTBase {
 
 	@Override
 	public boolean removedByPlayer(IBlockState state, World world, BlockPos pos, EntityPlayer player, boolean willHarvest) {
-		final boolean retval = super.removedByPlayer(state, world, pos, player, willHarvest);
+		final boolean removed = super.removedByPlayer(state, world, pos, player, willHarvest);
 		if (!player.isCreative()) {
 			world.setBlockState(pos, ModBlocks.TROLL_TNT.getDefaultState());
 			world.setBlockState(pos.up(), ModBlocks.TROLL_TNT.getDefaultState());
@@ -35,6 +35,6 @@ public class BlockTrollTNT extends ModBlockTNTBase {
 			world.setBlockState(pos.south(), ModBlocks.TROLL_TNT.getDefaultState());
 			world.setBlockState(pos.east(), ModBlocks.TROLL_TNT.getDefaultState());
 		}
-		return retval;
+		return removed;
 	}
 }

@@ -7,7 +7,7 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.thep2wking.oedldoedlexplosives.api.ModEntityTNTRender;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityChunkTNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityNuke;
+import net.thep2wking.oedldoedlexplosives.content.entity.EntityNCNuke;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityTrollTNT;
 import net.thep2wking.oedldoedlexplosives.init.ModBlocks;
 
@@ -27,7 +27,7 @@ public class ClientProxy extends CommonProxy {
 	@Override
 	@SuppressWarnings("deprecation")
 	public void render() {
-		RenderingRegistry.registerEntityRenderingHandler(EntityNuke.class,
+		RenderingRegistry.registerEntityRenderingHandler(EntityNCNuke.class,
 				new ModEntityTNTRender(Minecraft.getMinecraft().getRenderManager(), ModBlocks.NUKE));
 
 		RenderingRegistry.registerEntityRenderingHandler(EntityTrollTNT.class,

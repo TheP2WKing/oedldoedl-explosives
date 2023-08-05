@@ -14,17 +14,17 @@ import net.minecraft.world.Explosion;
 import net.minecraft.world.World;
 import net.thep2wking.oedldoedlexplosives.api.ModBlockTNTBase;
 import net.thep2wking.oedldoedlexplosives.api.ModEntityTNTBase;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityNuke;
+import net.thep2wking.oedldoedlexplosives.content.entity.EntityNCNuke;
 import net.thep2wking.oedldoedlexplosives.init.ModSounds;
 
-public class BlockNuke extends ModBlockTNTBase {
-	public BlockNuke(String modid, String name, CreativeTabs tab, SoundType sound, MapColor mapColor, int lightLevel) {
+public class BlockNCNuke extends ModBlockTNTBase {
+	public BlockNCNuke(String modid, String name, CreativeTabs tab, SoundType sound, MapColor mapColor, int lightLevel) {
 		super(modid, name, tab, sound, mapColor, lightLevel);
 	}
 
 	@Override
 	public ModEntityTNTBase createTNTEntity(World world, double x, double y, double z, EntityLivingBase ignitor) {
-		return new EntityNuke(world, x, y, z, ignitor, 600, 50.0f, true, true);
+		return new EntityNCNuke(world, x, y, z, ignitor, 600, 50.0f, true, true);
 	}
 
 	@Override

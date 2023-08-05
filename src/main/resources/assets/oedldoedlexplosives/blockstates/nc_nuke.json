@@ -3,15 +3,15 @@
     {
         "normal": 
         { 
-            "model": "oedldoedlexplosives:nuke"
+            "model": "oedldoedlexplosives:nc_nuke"
         },
         "explode=false": 
         { 
-            "model": "oedldoedlexplosives:nuke"
+            "model": "oedldoedlexplosives:nc_nuke"
         },
         "explode=true": 
         { 
-            "model": "oedldoedlexplosives:nuke"
+            "model": "oedldoedlexplosives:nc_nuke"
         }
     }
 }

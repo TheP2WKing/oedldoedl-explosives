@@ -3,3 +3,16 @@ itemGroup.oedldoedlexplosives.name=§dOedldoedl Explosives
 
 # icons
 item.oedldoedlcore.explosions_icon.annotation3=Version: §e1.12.2-3.0.0
+
+# blocks 
+tile.oedldoedlexplosives.nc_nuke.name=Nuke
+entity.oedldoedlexplosives.nc_nuke.name=Nuke - RUN!
+tile.oedldoedlexplosives.nc_nuke.tip1=I recommend putting on some earmuffs.
+
+tile.oedldoedlexplosives.troll_tnt.name=Troll TNT
+entity.oedldoedlexplosives.troll_tnt.name=Block of Troll TNT
+tile.oedldoedlexplosives.troll_tnt.tip1=Do NOT break!
+
+tile.oedldoedlexplosives.chunk_tnt.name=Chunk TNT
+entity.oedldoedlexplosives.chunk_tnt.name=Block of Chunk TNT
+tile.oedldoedlexplosives.chunk_tnt.tip1=Who thought that was a good idea?

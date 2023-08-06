@@ -1,0 +1,17 @@
+{
+    "variants": 
+    {
+        "normal": 
+        { 
+            "model": "oedldoedlexplosives:island_tnt"
+        },
+        "explode=false": 
+        { 
+            "model": "oedldoedlexplosives:island_tnt"
+        },
+        "explode=true": 
+        { 
+            "model": "oedldoedlexplosives:island_tnt"
+        }
+    }
+}

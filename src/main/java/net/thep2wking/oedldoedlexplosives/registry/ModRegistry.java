@@ -27,13 +27,26 @@ public class ModRegistry {
 
 		ModRegistryHelper.registerBlock(event, ModBlocks.NUKE_TNT);
 
+		ModRegistryHelper.registerBlock(event, ModBlocks.DETONATOR_CHAIN_TNT);
 		ModRegistryHelper.registerBlock(event, ModBlocks.DAY_TNT);
 		ModRegistryHelper.registerBlock(event, ModBlocks.NIGHT_TNT);
 		ModRegistryHelper.registerBlock(event, ModBlocks.SIR_DERPINGTON_TNT);
+		ModRegistryHelper.registerBlock(event, ModBlocks.TNT_RAIN);
+
+		ModRegistryHelper.registerBlock(event, ModBlocks.NAPALM_TNT);
+		ModRegistryHelper.registerBlock(event, ModBlocks.ISLAND_TNT);
 
 		ModRegistryHelper.registerBlock(event, ModBlocks.NUKE);
 		ModRegistryHelper.registerBlock(event, ModBlocks.TROLL_TNT);
 		ModRegistryHelper.registerBlock(event, ModBlocks.CHUNK_TNT);
+
+		ModRegistryHelper.registerBlock(event, ModBlocks.MEGA_NUKE_TNT);
+		ModRegistryHelper.registerBlock(event, ModBlocks.ANTIMATTER_BOMB);
+
+		ModRegistryHelper.registerBlock(event, ModBlocks.BUTTER_TNT);
+		ModRegistryHelper.registerBlock(event, ModBlocks.LAVA_TNT);
+		ModRegistryHelper.registerBlock(event, ModBlocks.EGG_TNT);
+		ModRegistryHelper.registerBlock(event, ModBlocks.ARROW_TNT);
 	}
 
 	@SubscribeEvent
@@ -48,13 +61,26 @@ public class ModRegistry {
 
 		ModRegistryHelper.registerItemBlock(event, ModItems.NUKE_TNT);
 
+		ModRegistryHelper.registerItemBlock(event, ModItems.DETONATOR_CHAIN_TNT);
 		ModRegistryHelper.registerItemBlock(event, ModItems.DAY_TNT);
 		ModRegistryHelper.registerItemBlock(event, ModItems.NIGHT_TNT);
 		ModRegistryHelper.registerItemBlock(event, ModItems.SIR_DERPINGTON_TNT);
+		ModRegistryHelper.registerItemBlock(event, ModItems.TNT_RAIN);
+
+		ModRegistryHelper.registerItemBlock(event, ModItems.NAPALM_TNT);
+		ModRegistryHelper.registerItemBlock(event, ModItems.ISLAND_TNT);
 
 		ModRegistryHelper.registerItemBlock(event, ModItems.NUKE);
 		ModRegistryHelper.registerItemBlock(event, ModItems.TROLL_TNT);
 		ModRegistryHelper.registerItemBlock(event, ModItems.CHUNK_TNT);
+
+		ModRegistryHelper.registerItemBlock(event, ModItems.MEGA_NUKE_TNT);
+		ModRegistryHelper.registerItemBlock(event, ModItems.ANTIMATTER_BOMB);
+
+		ModRegistryHelper.registerItemBlock(event, ModItems.BUTTER_TNT);
+		ModRegistryHelper.registerItemBlock(event, ModItems.LAVA_TNT);
+		ModRegistryHelper.registerItemBlock(event, ModItems.EGG_TNT);
+		ModRegistryHelper.registerItemBlock(event, ModItems.ARROW_TNT);
 	}
 
 	@SubscribeEvent
@@ -62,5 +88,8 @@ public class ModRegistry {
 		ModLogger.registeredSoundEventsLogger(OedldoedlExplosives.MODID);
 
 		ModRegistryHelper.registerSoundEvent(event, ModSounds.NUKE_ALARM);
+		ModRegistryHelper.registerSoundEvent(event, ModSounds.TACTICAL_NUKE);
+		ModRegistryHelper.registerSoundEvent(event, ModSounds.BOMB);
+		ModRegistryHelper.registerSoundEvent(event, ModSounds.ATOMIC);
 	}
 }

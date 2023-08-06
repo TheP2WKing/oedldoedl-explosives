@@ -2,10 +2,7 @@ package net.thep2wking.oedldoedlexplosives.content.entity;
 
 import net.minecraft.block.Block;
 import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
-import net.minecraft.init.SoundEvents;
-import net.minecraft.util.SoundCategory;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.Chunk;
@@ -32,9 +29,8 @@ public class EntityChunkTNT extends ModEntityTNTBase {
 
 	@Override
 	public void explode() {
-		this.world.playSound((EntityPlayer) null, this.posX, this.posY, this.posZ, SoundEvents.ENTITY_GENERIC_EXPLODE,
-				SoundCategory.BLOCKS, 4.0F,
-				(1.0F + (this.world.rand.nextFloat() - this.world.rand.nextFloat()) * 0.2F) * 0.7F);
+		this.world.newExplosion(this, this.posX, this.posY + (double) (this.height / 16.0F), this.posZ, 0, false,
+				false);
 
 		Chunk chunk = this.world.getChunkFromBlockCoords(this.getPosition());
 		int chunkX = chunk.x;

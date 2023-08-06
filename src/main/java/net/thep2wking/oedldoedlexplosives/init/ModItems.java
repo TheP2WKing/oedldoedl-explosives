@@ -14,11 +14,24 @@ public class ModItems {
 
 	public static final Item NUKE_TNT = new ModItemBlockBase(ModBlocks.NUKE_TNT, ModRarities.RED, false, 1, 0);
 
+	public static final Item DETONATOR_CHAIN_TNT = new ModItemBlockBase(ModBlocks.DETONATOR_CHAIN_TNT, ModRarities.WHITE, false, 1, 0);
 	public static final Item DAY_TNT = new ModItemBlockBase(ModBlocks.DAY_TNT, ModRarities.WHITE, false, 1, 0);
 	public static final Item NIGHT_TNT = new ModItemBlockBase(ModBlocks.NIGHT_TNT, ModRarities.WHITE, false, 1, 0);
 	public static final Item SIR_DERPINGTON_TNT = new ModItemBlockBase(ModBlocks.SIR_DERPINGTON_TNT, ModRarities.WHITE, false, 1, 0);
+	public static final Item TNT_RAIN = new ModItemBlockBase(ModBlocks.TNT_RAIN, ModRarities.YELLOW, false, 1, 0);
+
+	public static final Item NAPALM_TNT = new ModItemBlockBase(ModBlocks.NAPALM_TNT, ModRarities.WHITE, false, 1, 0);
+	public static final Item ISLAND_TNT = new ModItemBlockBase(ModBlocks.ISLAND_TNT, ModRarities.YELLOW, false, 1, 0);
 
 	public static final Item NUKE = new ModItemBlockBase(ModBlocks.NUKE, ModRarities.RED, false, 1, 0);
 	public static final Item TROLL_TNT = new ModItemBlockBase(ModBlocks.TROLL_TNT, ModRarities.YELLOW, false, 1, 0);
 	public static final Item CHUNK_TNT = new ModItemBlockBase(ModBlocks.CHUNK_TNT, ModRarities.RED, false, 1, 0);
+
+	public static final Item ANTIMATTER_BOMB = new ModItemBlockBase(ModBlocks.ANTIMATTER_BOMB, ModRarities.RED, false, 1, 0);
+	public static final Item MEGA_NUKE_TNT = new ModItemBlockBase(ModBlocks.MEGA_NUKE_TNT, ModRarities.RED, false, 1, 0);
+
+	public static final Item BUTTER_TNT = new ModItemBlockBase(ModBlocks.BUTTER_TNT, ModRarities.GOLD, false, 1, 0);
+	public static final Item LAVA_TNT = new ModItemBlockBase(ModBlocks.LAVA_TNT, ModRarities.YELLOW, false, 1, 0);
+	public static final Item EGG_TNT = new ModItemBlockBase(ModBlocks.EGG_TNT, ModRarities.WHITE, false, 1, 0);
+	public static final Item ARROW_TNT = new ModItemBlockBase(ModBlocks.ARROW_TNT, ModRarities.WHITE, false, 1, 0);
 }

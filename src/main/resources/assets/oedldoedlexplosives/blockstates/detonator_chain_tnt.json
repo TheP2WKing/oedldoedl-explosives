@@ -1,0 +1,17 @@
+{
+    "variants": 
+    {
+        "normal": 
+        { 
+            "model": "oedldoedlexplosives:detonator_chain_tnt"
+        },
+        "explode=false": 
+        { 
+            "model": "oedldoedlexplosives:detonator_chain_tnt"
+        },
+        "explode=true": 
+        { 
+            "model": "oedldoedlexplosives:detonator_chain_tnt"
+        }
+    }
+}

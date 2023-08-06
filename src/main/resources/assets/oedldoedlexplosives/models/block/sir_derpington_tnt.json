@@ -3,7 +3,7 @@
     "textures": 
     {
         "top": "minecraft:blocks/tnt_top",
-        "bottom": "minecraft:blocks/tnt_side",
+        "bottom": "minecraft:blocks/tnt_bottom",
         "side": "oedldoedlexplosives:blocks/sir_derpington_tnt_side"
     }
 }

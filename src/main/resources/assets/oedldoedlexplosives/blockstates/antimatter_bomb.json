@@ -1,0 +1,17 @@
+{
+    "variants": 
+    {
+        "normal": 
+        { 
+            "model": "oedldoedlexplosives:antimatter_bomb"
+        },
+        "explode=false": 
+        { 
+            "model": "oedldoedlexplosives:antimatter_bomb"
+        },
+        "explode=true": 
+        { 
+            "model": "oedldoedlexplosives:antimatter_bomb"
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "variants": 
+    {
+        "normal": 
+        { 
+            "model": "oedldoedlexplosives:napalm_tnt"
+        },
+        "explode=false": 
+        { 
+            "model": "oedldoedlexplosives:napalm_tnt"
+        },
+        "explode=true": 
+        { 
+            "model": "oedldoedlexplosives:napalm_tnt"
+        }
+    }
+}

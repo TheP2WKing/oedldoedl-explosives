@@ -7,7 +7,7 @@ item.oedldoedlcore.explosions_icon.annotation3=Version: §e1.12.2-3.0.0
 # blocks
 tile.oedldoedlexplosives.c4.name=C4
 entity.oedldoedlexplosives.c4.name=Block of C4
-tile.oedldoedlexplosives.c4.tip1=C418.
+tile.oedldoedlexplosives.c4.tip1=Not to be confused with C418.
 
 tile.oedldoedlexplosives.tnt_x5.name=TNT x5
 entity.oedldoedlexplosives.tnt_x5.name=Block of TNT x5
@@ -33,13 +33,29 @@ tile.oedldoedlexplosives.day_tnt.name=Day TNT
 entity.oedldoedlexplosives.day_tnt.name=Block of Day TNT
 tile.oedldoedlexplosives.day_tnt.tip1=/time set day
 
+tile.oedldoedlexplosives.detonator_chain_tnt.name=Detonator Chain TNT
+entity.oedldoedlexplosives.detonator_chain_tnt.name=Block of Detonator Chain TNT
+tile.oedldoedlexplosives.detonator_chain_tnt.tip1=Like chain smoking, but more explosive.
+
 tile.oedldoedlexplosives.night_tnt.name=Night TNT
 entity.oedldoedlexplosives.night_tnt.name=Block of Night TNT
 tile.oedldoedlexplosives.night_tnt.tip1=/time set night
 
 tile.oedldoedlexplosives.sir_derpington_tnt.name=Sir Derpington TNT
 entity.oedldoedlexplosives.sir_derpington_tnt.name=Block of Sir Derpington TNT
-tile.oedldoedlexplosives.sir_derpington_tnt.tip1=Pigstep!
+tile.oedldoedlexplosives.sir_derpington_tnt.tip1=Technoblade never dies!
+
+tile.oedldoedlexplosives.tnt_rain.name=TNT Rain
+entity.oedldoedlexplosives.tnt_rain.name=Block of TNT Rain
+tile.oedldoedlexplosives.tnt_rain.tip1=It's raining man, Halejuja is raining man.
+
+tile.oedldoedlexplosives.napalm_tnt.name=Napalm TNT
+entity.oedldoedlexplosives.napalm_tnt.name=Block of Napalm TNT
+tile.oedldoedlexplosives.napalm_tnt.tip1=Welcome to Dubai, 47.
+
+tile.oedldoedlexplosives.island_tnt.name=Island TNT
+entity.oedldoedlexplosives.island_tnt.name=Block of Island TNT
+tile.oedldoedlexplosives.island_tnt.tip1=Up (2009).
 
 tile.oedldoedlexplosives.nc_nuke.name=Nuke
 entity.oedldoedlexplosives.nc_nuke.name=Nuke - RUN!
@@ -52,3 +68,27 @@ tile.oedldoedlexplosives.troll_tnt.tip1=Do NOT break!
 tile.oedldoedlexplosives.chunk_tnt.name=Chunk TNT
 entity.oedldoedlexplosives.chunk_tnt.name=Block of Chunk TNT
 tile.oedldoedlexplosives.chunk_tnt.tip1=Who thought that was a good idea?
+
+tile.oedldoedlexplosives.mega_nuke_tnt.name=Mega Nuke TNT
+entity.oedldoedlexplosives.mega_nuke_tnt.name=Block of Mega Nuke TNT
+tile.oedldoedlexplosives.mega_nuke_tnt.tip1=OmegaNUKE!
+
+tile.oedldoedlexplosives.antimatter_bomb.name=Antimatter Bomb
+entity.oedldoedlexplosives.antimatter_bomb.name=Block of Antimatter Bomb
+tile.oedldoedlexplosives.antimatter_bomb.tip1=Sounds like a vacuum cleaner.
+
+tile.oedldoedlexplosives.butter_tnt.name=Butter TNT
+entity.oedldoedlexplosives.butter_tnt.name=Block of Butter TNT
+tile.oedldoedlexplosives.butter_tnt.tip1=Block of Butter?
+
+tile.oedldoedlexplosives.lava_tnt.name=Lava TNT
+entity.oedldoedlexplosives.lava_tnt.name=Block of Lava TNT
+tile.oedldoedlexplosives.lava_tnt.tip1=Mr. Lavalava!
+
+tile.oedldoedlexplosives.egg_tnt.name=Egg TNT
+entity.oedldoedlexplosives.egg_tnt.name=Block of Egg TNT
+tile.oedldoedlexplosives.egg_tnt.tip1=(Hot) Chicks in your area!
+
+tile.oedldoedlexplosives.arrow_tnt.name=Arrow TNT
+entity.oedldoedlexplosives.arrow_tnt.name=Block of Arrow TNT
+tile.oedldoedlexplosives.arrow_tnt.tip1=Trial and arrow.

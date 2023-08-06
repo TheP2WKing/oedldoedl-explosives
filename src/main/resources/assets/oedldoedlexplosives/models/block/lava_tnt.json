@@ -1,0 +1,9 @@
+{
+    "parent": "minecraft:block/cube_bottom_top",
+    "textures": 
+    {
+        "top": "oedldoedlexplosives:blocks/lava_tnt_top",
+        "bottom": "oedldoedlexplosives:blocks/lava_tnt_bottom",
+        "side": "oedldoedlexplosives:blocks/lava_tnt_side"
+    }
+}

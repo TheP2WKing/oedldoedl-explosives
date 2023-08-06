@@ -1,0 +1,17 @@
+{
+    "variants": 
+    {
+        "normal": 
+        { 
+            "model": "oedldoedlexplosives:tnt_rain"
+        },
+        "explode=false": 
+        { 
+            "model": "oedldoedlexplosives:tnt_rain"
+        },
+        "explode=true": 
+        { 
+            "model": "oedldoedlexplosives:tnt_rain"
+        }
+    }
+}

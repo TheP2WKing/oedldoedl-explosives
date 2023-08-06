@@ -7,5 +7,32 @@
         [
             "oedldoedlexplosives:nuke_alarm"
         ]
+    },
+    "tactical_nuke":
+    {
+        "category": "blocks",
+        "subtitle": "sound.oedldoedlexplosives.tactical_nuke",
+        "sounds":
+        [
+            "oedldoedlexplosives:tactical_nuke"
+        ]
+    },
+    "bomb":
+    {
+        "category": "blocks",
+        "subtitle": "sound.oedldoedlexplosives.bomb",
+        "sounds":
+        [
+            "oedldoedlexplosives:bomb"
+        ]
+    },
+    "atomic":
+    {
+        "category": "blocks",
+        "subtitle": "sound.oedldoedlexplosives.atomic",
+        "sounds":
+        [
+            "oedldoedlexplosives:atomic"
+        ]
     }
 }

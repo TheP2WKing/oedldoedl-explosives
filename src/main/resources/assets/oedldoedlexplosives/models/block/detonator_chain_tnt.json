@@ -1,0 +1,9 @@
+{
+    "parent": "minecraft:block/cube_bottom_top",
+    "textures": 
+    {
+        "top": "oedldoedlexplosives:blocks/detonator_chain_tnt",
+        "bottom": "oedldoedlexplosives:blocks/detonator_chain_tnt",
+        "side": "oedldoedlexplosives:blocks/detonator_chain_tnt"
+    }
+}

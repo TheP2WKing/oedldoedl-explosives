@@ -16,6 +16,6 @@ public class BlockTNTx5 extends ModBlockTNTBase {
 
 	@Override
 	public ModEntityTNTBase createTNTEntity(World world, double x, double y, double z, EntityLivingBase ignitor) {
-		return new EntityTNTx5(world, x, y, z, ignitor, 120, 20.0f, false, true);
+		return new EntityTNTx5(world, x, y, z, ignitor, 80, 20.0f, false, true);
 	}
 }

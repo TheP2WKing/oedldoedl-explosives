@@ -3,26 +3,35 @@ package net.thep2wking.oedldoedlexplosives.util;
 import net.thep2wking.oedldoedlexplosives.api.ModTNTRenderer;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityAntimatterBomb;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityArrowTNT;
+import net.thep2wking.oedldoedlexplosives.content.entity.EntityBundledTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityButterTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityC4;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityChunkTNT;
+import net.thep2wking.oedldoedlexplosives.content.entity.EntityCrashTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityDayTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityDetonatorChainTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityDrillTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityEggTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityFlatTNT;
+import net.thep2wking.oedldoedlexplosives.content.entity.EntityHTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityIslandTNT;
+import net.thep2wking.oedldoedlexplosives.content.entity.EntityLOLXDTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityLavaTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityMegaNukeTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityNCNuke;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityNapalmTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityNightTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityNukeTNT;
+import net.thep2wking.oedldoedlexplosives.content.entity.EntityRainbowTNT;
+import net.thep2wking.oedldoedlexplosives.content.entity.EntityRandomBlocksTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntitySirDerpingtonTNT;
+import net.thep2wking.oedldoedlexplosives.content.entity.EntitySnowTNT;
+import net.thep2wking.oedldoedlexplosives.content.entity.EntitySupersonicTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityTNTRain;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityTNTx20;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityTNTx5;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityTrollTNT;
+import net.thep2wking.oedldoedlexplosives.content.entity.EntityWoolTNT;
 import net.thep2wking.oedldoedlexplosives.init.ModBlocks;
 
 public class ModRendering {
@@ -35,6 +44,7 @@ public class ModRendering {
 		ModTNTRenderer.register(EntityFlatTNT.class, ModBlocks.FLAT_TNT);
 
 		ModTNTRenderer.register(EntityNukeTNT.class, ModBlocks.NUKE_TNT);
+		ModTNTRenderer.register(EntityHTNT.class, ModBlocks.H_TNT);
 
 		ModTNTRenderer.register(EntityDetonatorChainTNT.class, ModBlocks.DETONATOR_CHAIN_TNT);
 		ModTNTRenderer.register(EntityDayTNT.class, ModBlocks.DAY_TNT);
@@ -44,6 +54,12 @@ public class ModRendering {
 
 		ModTNTRenderer.register(EntityNapalmTNT.class, ModBlocks.NAPALM_TNT);
 		ModTNTRenderer.register(EntityIslandTNT.class, ModBlocks.ISLAND_TNT);
+		ModTNTRenderer.register(EntityWoolTNT.class, ModBlocks.WOOL_TNT);
+
+		ModTNTRenderer.register(EntitySnowTNT.class, ModBlocks.SNOW_TNT);
+		ModTNTRenderer.register(EntityBundledTNT.class, ModBlocks.BUNDLED_TNT);
+		ModTNTRenderer.register(EntitySupersonicTNT.class, ModBlocks.SUPERSONIC_TNT);
+		ModTNTRenderer.register(EntityRainbowTNT.class, ModBlocks.RAINBOW_TNT);
 
 		ModTNTRenderer.register(EntityNCNuke.class, ModBlocks.NUKE);
 		ModTNTRenderer.register(EntityTrollTNT.class, ModBlocks.TROLL_TNT);
@@ -54,7 +70,12 @@ public class ModRendering {
 
 		ModTNTRenderer.register(EntityButterTNT.class, ModBlocks.BUTTER_TNT);
 		ModTNTRenderer.register(EntityLavaTNT.class, ModBlocks.LAVA_TNT);
+
 		ModTNTRenderer.register(EntityEggTNT.class, ModBlocks.EGG_TNT);
 		ModTNTRenderer.register(EntityArrowTNT.class, ModBlocks.ARROW_TNT);
+
+		ModTNTRenderer.register(EntityRandomBlocksTNT.class, ModBlocks.RANDOM_BLOCKS_TNT);
+		ModTNTRenderer.register(EntityCrashTNT.class, ModBlocks.CRASH_TNT);
+		ModTNTRenderer.register(EntityLOLXDTNT.class, ModBlocks.LOLXD_TNT);
 	}
 }

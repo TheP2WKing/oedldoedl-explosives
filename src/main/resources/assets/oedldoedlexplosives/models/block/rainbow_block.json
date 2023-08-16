@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_all",
+    "textures": 
+    {
+        "all": "oedldoedlexplosives:blocks/rainbow_block"
+    }
+}

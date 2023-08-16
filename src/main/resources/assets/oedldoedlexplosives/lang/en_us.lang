@@ -5,6 +5,9 @@ itemGroup.oedldoedlexplosives.name=§dOedldoedl Explosives
 item.oedldoedlcore.explosions_icon.annotation3=Version: §e1.12.2-3.0.0
 
 # blocks
+tile.oedldoedlexplosives.rainbow_block.name=Rainbow Block
+tile.oedldoedlexplosives.rainbow_block.tip1=Over the rainbow.
+
 tile.oedldoedlexplosives.c4.name=C4
 entity.oedldoedlexplosives.c4.name=Block of C4
 tile.oedldoedlexplosives.c4.tip1=Not to be confused with C418.
@@ -92,3 +95,39 @@ tile.oedldoedlexplosives.egg_tnt.tip1=(Hot) Chicks in your area!
 tile.oedldoedlexplosives.arrow_tnt.name=Arrow TNT
 entity.oedldoedlexplosives.arrow_tnt.name=Block of Arrow TNT
 tile.oedldoedlexplosives.arrow_tnt.tip1=Trial and arrow.
+
+tile.oedldoedlexplosives.random_blocks_tnt.name=Random Blocks TNT
+entity.oedldoedlexplosives.random_blocks_tnt.name=Block of Random Blocks TNT
+tile.oedldoedlexplosives.random_blocks_tnt.tip1=Not quite RNG.
+
+tile.oedldoedlexplosives.crash_tnt.name=Crash TNT
+entity.oedldoedlexplosives.crash_tnt.name=Block of Crash TNT
+tile.oedldoedlexplosives.crash_tnt.tip1=Build Failed...
+
+tile.oedldoedlexplosives.lolxd_tnt.name=LOLXD TNT
+entity.oedldoedlexplosives.lolxd_tnt.name=Block of LOLXD TNT
+tile.oedldoedlexplosives.lolxd_tnt.tip1=LOL XD OMEGALUL POGCHAMP!
+
+tile.oedldoedlexplosives.wool_tnt.name=Wool TNT
+entity.oedldoedlexplosives.wool_tnt.name=Block of Wool TNT
+tile.oedldoedlexplosives.wool_tnt.tip1=Woolworth!
+
+tile.oedldoedlexplosives.snow_tnt.name=Snow TNT
+entity.oedldoedlexplosives.snow_tnt.name=Block of Snow TNT
+tile.oedldoedlexplosives.snow_tnt.tip1=Do you want to build a snowman?
+
+tile.oedldoedlexplosives.bundled_tnt.name=Bundled TNT
+entity.oedldoedlexplosives.bundled_tnt.name=Block of Bundled TNT
+tile.oedldoedlexplosives.bundled_tnt.tip1=Bundle up guys...
+
+tile.oedldoedlexplosives.supersonic_tnt.name=Supersonic TNT
+entity.oedldoedlexplosives.supersonic_tnt.name=Block of Supersonic TNT
+tile.oedldoedlexplosives.supersonic_tnt.tip1=Sonic the TNT?
+
+tile.oedldoedlexplosives.rainbow_tnt.name=Rainbow TNT
+entity.oedldoedlexplosives.rainbow_tnt.name=Block of Rainbow TNT
+tile.oedldoedlexplosives.rainbow_tnt.tip1=What do you expect?
+
+tile.oedldoedlexplosives.h_tnt.name=H-TNT
+entity.oedldoedlexplosives.h_tnt.name=Block of H-TNT
+tile.oedldoedlexplosives.h_tnt.tip1=Ghostbuster, Thruster, Worldbuster!

@@ -18,6 +18,8 @@ public class ModRegistry {
 	@SubscribeEvent
 	public static void onBlockRegister(RegistryEvent.Register<Block> event) {
 		ModLogger.registeredBlocksLogger(OedldoedlExplosives.MODID);
+		ModRegistryHelper.registerBlock(event, ModBlocks.RAINBOW);
+
 		ModRegistryHelper.registerBlock(event, ModBlocks.C4);
 		ModRegistryHelper.registerBlock(event, ModBlocks.TNT_X5);
 		ModRegistryHelper.registerBlock(event, ModBlocks.TNT_X20);
@@ -26,6 +28,7 @@ public class ModRegistry {
 		ModRegistryHelper.registerBlock(event, ModBlocks.FLAT_TNT);
 
 		ModRegistryHelper.registerBlock(event, ModBlocks.NUKE_TNT);
+		ModRegistryHelper.registerBlock(event, ModBlocks.H_TNT);
 
 		ModRegistryHelper.registerBlock(event, ModBlocks.DETONATOR_CHAIN_TNT);
 		ModRegistryHelper.registerBlock(event, ModBlocks.DAY_TNT);
@@ -35,6 +38,12 @@ public class ModRegistry {
 
 		ModRegistryHelper.registerBlock(event, ModBlocks.NAPALM_TNT);
 		ModRegistryHelper.registerBlock(event, ModBlocks.ISLAND_TNT);
+		ModRegistryHelper.registerBlock(event, ModBlocks.WOOL_TNT);
+
+		ModRegistryHelper.registerBlock(event, ModBlocks.SNOW_TNT);
+		ModRegistryHelper.registerBlock(event, ModBlocks.BUNDLED_TNT);
+		ModRegistryHelper.registerBlock(event, ModBlocks.SUPERSONIC_TNT);
+		ModRegistryHelper.registerBlock(event, ModBlocks.RAINBOW_TNT);
 
 		ModRegistryHelper.registerBlock(event, ModBlocks.NUKE);
 		ModRegistryHelper.registerBlock(event, ModBlocks.TROLL_TNT);
@@ -47,11 +56,17 @@ public class ModRegistry {
 		ModRegistryHelper.registerBlock(event, ModBlocks.LAVA_TNT);
 		ModRegistryHelper.registerBlock(event, ModBlocks.EGG_TNT);
 		ModRegistryHelper.registerBlock(event, ModBlocks.ARROW_TNT);
+
+		ModRegistryHelper.registerBlock(event, ModBlocks.RANDOM_BLOCKS_TNT);
+		ModRegistryHelper.registerBlock(event, ModBlocks.CRASH_TNT);
+		ModRegistryHelper.registerBlock(event, ModBlocks.LOLXD_TNT);
 	}
 
 	@SubscribeEvent
 	public static void onItemRegister(RegistryEvent.Register<Item> event) {
 		ModLogger.registeredItemsLogger(OedldoedlExplosives.MODID);
+		ModRegistryHelper.registerItemBlock(event, ModItems.RAINBOW);
+
 		ModRegistryHelper.registerItemBlock(event, ModItems.C4);
 		ModRegistryHelper.registerItemBlock(event, ModItems.TNT_X5);
 		ModRegistryHelper.registerItemBlock(event, ModItems.TNT_X20);
@@ -60,7 +75,8 @@ public class ModRegistry {
 		ModRegistryHelper.registerItemBlock(event, ModItems.FLAT_TNT);
 
 		ModRegistryHelper.registerItemBlock(event, ModItems.NUKE_TNT);
-
+		ModRegistryHelper.registerItemBlock(event, ModItems.H_TNT);
+		
 		ModRegistryHelper.registerItemBlock(event, ModItems.DETONATOR_CHAIN_TNT);
 		ModRegistryHelper.registerItemBlock(event, ModItems.DAY_TNT);
 		ModRegistryHelper.registerItemBlock(event, ModItems.NIGHT_TNT);
@@ -69,6 +85,12 @@ public class ModRegistry {
 
 		ModRegistryHelper.registerItemBlock(event, ModItems.NAPALM_TNT);
 		ModRegistryHelper.registerItemBlock(event, ModItems.ISLAND_TNT);
+		ModRegistryHelper.registerItemBlock(event, ModItems.WOOL_TNT);
+
+		ModRegistryHelper.registerItemBlock(event, ModItems.SNOW_TNT);
+		ModRegistryHelper.registerItemBlock(event, ModItems.BUNDLED_TNT);
+		ModRegistryHelper.registerItemBlock(event, ModItems.SUPERSONIC_TNT);
+		ModRegistryHelper.registerItemBlock(event, ModItems.RAINBOW_TNT);
 
 		ModRegistryHelper.registerItemBlock(event, ModItems.NUKE);
 		ModRegistryHelper.registerItemBlock(event, ModItems.TROLL_TNT);
@@ -81,6 +103,10 @@ public class ModRegistry {
 		ModRegistryHelper.registerItemBlock(event, ModItems.LAVA_TNT);
 		ModRegistryHelper.registerItemBlock(event, ModItems.EGG_TNT);
 		ModRegistryHelper.registerItemBlock(event, ModItems.ARROW_TNT);
+
+		ModRegistryHelper.registerItemBlock(event, ModItems.RANDOM_BLOCKS_TNT);
+		ModRegistryHelper.registerItemBlock(event, ModItems.CRASH_TNT);
+		ModRegistryHelper.registerItemBlock(event, ModItems.LOLXD_TNT);
 	}
 
 	@SubscribeEvent

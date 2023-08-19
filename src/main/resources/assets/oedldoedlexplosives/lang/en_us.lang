@@ -131,3 +131,23 @@ tile.oedldoedlexplosives.rainbow_tnt.tip1=What do you expect?
 tile.oedldoedlexplosives.h_tnt.name=H-TNT
 entity.oedldoedlexplosives.h_tnt.name=Block of H-TNT
 tile.oedldoedlexplosives.h_tnt.tip1=Ghostbuster, Thruster, Worldbuster!
+
+tile.oedldoedlexplosives.fake_tnt.name=Fake TNT
+entity.oedldoedlexplosives.fake_tnt.name=Block of Fake TNT
+tile.oedldoedlexplosives.fake_tnt.tip1=Fake Taxi?
+
+tile.oedldoedlexplosives.meteor_tnt.name=Meteor TNT
+entity.oedldoedlexplosives.meteor_tnt.name=Block of Meteor TNT
+tile.oedldoedlexplosives.meteor_tnt.tip1=Meteorite.
+
+tile.oedldoedlexplosives.sphere_tnt.name=Sphere TNT
+entity.oedldoedlexplosives.sphere_tnt.name=Block of Sphere TNT
+tile.oedldoedlexplosives.sphere_tnt.tip1=You spin my head right ROUND...
+
+tile.oedldoedlexplosives.derpy_tnt.name=Derpy TNT
+entity.oedldoedlexplosives.derpy_tnt.name=Block of Derpy TNT
+tile.oedldoedlexplosives.derpy_tnt.tip1=Simply why?
+
+tile.oedldoedlexplosives.incenditary_tnt.name=Incenditary TNT
+entity.oedldoedlexplosives.incenditary_tnt.name=Block of Incenditary TNT
+tile.oedldoedlexplosives.incenditary_tnt.tip1=Hot (Chicks) in your area!

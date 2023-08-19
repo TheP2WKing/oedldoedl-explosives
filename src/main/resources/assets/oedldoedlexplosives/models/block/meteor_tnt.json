@@ -1,0 +1,9 @@
+{
+    "parent": "minecraft:block/cube_bottom_top",
+    "textures": 
+    {
+        "top": "oedldoedlexplosives:blocks/meteor_tnt_top",
+        "bottom": "oedldoedlexplosives:blocks/meteor_tnt_bottom",
+        "side": "oedldoedlexplosives:blocks/meteor_tnt_side"
+    }
+}

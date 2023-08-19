@@ -7,6 +7,8 @@ import net.thep2wking.oedldoedlcore.util.ModRarities;
 public class ModItems {
 	public static final Item RAINBOW = new ModItemBlockBase(ModBlocks.RAINBOW, ModRarities.WHITE, false, 1, 0);
 
+	public static final Item FAKE_TNT = new ModItemBlockBase(ModBlocks.FAKE_TNT, ModRarities.WHITE, false, 1, 0);
+
 	public static final Item C4 = new ModItemBlockBase(ModBlocks.C4, ModRarities.WHITE, false, 1, 0);
 	public static final Item TNT_X5 = new ModItemBlockBase(ModBlocks.TNT_X5, ModRarities.WHITE, false, 1, 0);
 	public static final Item TNT_X20 = new ModItemBlockBase(ModBlocks.TNT_X20, ModRarities.WHITE, false, 1, 0);
@@ -16,6 +18,11 @@ public class ModItems {
 
 	public static final Item NUKE_TNT = new ModItemBlockBase(ModBlocks.NUKE_TNT, ModRarities.RED, false, 1, 0);
 	public static final Item H_TNT = new ModItemBlockBase(ModBlocks.H_TNT, ModRarities.DARK_RED, false, 1, 0);
+
+	public static final Item METEOR_TNT = new ModItemBlockBase(ModBlocks.METEOR_TNT, ModRarities.RED, false, 1, 0);
+	public static final Item SPHERE_TNT = new ModItemBlockBase(ModBlocks.SPHERE_TNT, ModRarities.YELLOW, false, 1, 0);
+	public static final Item DERPY_TNT = new ModItemBlockBase(ModBlocks.DERPY_TNT, ModRarities.WHITE, false, 1, 0);
+	public static final Item INCENDITARY_TNT = new ModItemBlockBase(ModBlocks.INCENDITARY_TNT, ModRarities.WHITE, false, 1, 0);
 
 	public static final Item DETONATOR_CHAIN_TNT = new ModItemBlockBase(ModBlocks.DETONATOR_CHAIN_TNT, ModRarities.WHITE, false, 1, 0);
 	public static final Item DAY_TNT = new ModItemBlockBase(ModBlocks.DAY_TNT, ModRarities.WHITE, false, 1, 0);

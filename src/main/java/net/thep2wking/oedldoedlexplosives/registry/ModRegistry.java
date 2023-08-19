@@ -20,6 +20,8 @@ public class ModRegistry {
 		ModLogger.registeredBlocksLogger(OedldoedlExplosives.MODID);
 		ModRegistryHelper.registerBlock(event, ModBlocks.RAINBOW);
 
+		ModRegistryHelper.registerBlock(event, ModBlocks.FAKE_TNT);
+
 		ModRegistryHelper.registerBlock(event, ModBlocks.C4);
 		ModRegistryHelper.registerBlock(event, ModBlocks.TNT_X5);
 		ModRegistryHelper.registerBlock(event, ModBlocks.TNT_X20);
@@ -29,6 +31,11 @@ public class ModRegistry {
 
 		ModRegistryHelper.registerBlock(event, ModBlocks.NUKE_TNT);
 		ModRegistryHelper.registerBlock(event, ModBlocks.H_TNT);
+
+		ModRegistryHelper.registerBlock(event, ModBlocks.METEOR_TNT);
+		ModRegistryHelper.registerBlock(event, ModBlocks.SPHERE_TNT);
+		ModRegistryHelper.registerBlock(event, ModBlocks.DERPY_TNT);
+		ModRegistryHelper.registerBlock(event, ModBlocks.INCENDITARY_TNT);
 
 		ModRegistryHelper.registerBlock(event, ModBlocks.DETONATOR_CHAIN_TNT);
 		ModRegistryHelper.registerBlock(event, ModBlocks.DAY_TNT);
@@ -67,6 +74,8 @@ public class ModRegistry {
 		ModLogger.registeredItemsLogger(OedldoedlExplosives.MODID);
 		ModRegistryHelper.registerItemBlock(event, ModItems.RAINBOW);
 
+		ModRegistryHelper.registerItemBlock(event, ModItems.FAKE_TNT);
+
 		ModRegistryHelper.registerItemBlock(event, ModItems.C4);
 		ModRegistryHelper.registerItemBlock(event, ModItems.TNT_X5);
 		ModRegistryHelper.registerItemBlock(event, ModItems.TNT_X20);
@@ -77,6 +86,11 @@ public class ModRegistry {
 		ModRegistryHelper.registerItemBlock(event, ModItems.NUKE_TNT);
 		ModRegistryHelper.registerItemBlock(event, ModItems.H_TNT);
 		
+		ModRegistryHelper.registerItemBlock(event, ModItems.METEOR_TNT);
+		ModRegistryHelper.registerItemBlock(event, ModItems.SPHERE_TNT);
+		ModRegistryHelper.registerItemBlock(event, ModItems.DERPY_TNT);
+		ModRegistryHelper.registerItemBlock(event, ModItems.INCENDITARY_TNT);
+
 		ModRegistryHelper.registerItemBlock(event, ModItems.DETONATOR_CHAIN_TNT);
 		ModRegistryHelper.registerItemBlock(event, ModItems.DAY_TNT);
 		ModRegistryHelper.registerItemBlock(event, ModItems.NIGHT_TNT);

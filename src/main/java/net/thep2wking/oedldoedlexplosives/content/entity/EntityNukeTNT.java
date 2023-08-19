@@ -29,6 +29,6 @@ public class EntityNukeTNT extends ModEntityTNTBase {
 				}
 			}
 		}
-		this.world.newExplosion(this, this.posX, this.posY, this.posZ, 200.0f, true, blockDamage);	
+		this.world.newExplosion(this, this.posX, this.posY, this.posZ, 100.0f, true, blockDamage);	
 	}
 }

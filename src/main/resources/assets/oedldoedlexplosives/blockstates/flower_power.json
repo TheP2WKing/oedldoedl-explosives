@@ -1,0 +1,17 @@
+{
+    "variants": 
+    {
+        "normal": 
+        { 
+            "model": "oedldoedlexplosives:flower_power"
+        },
+        "explode=false": 
+        { 
+            "model": "oedldoedlexplosives:flower_power"
+        },
+        "explode=true": 
+        { 
+            "model": "oedldoedlexplosives:flower_power"
+        }
+    }
+}

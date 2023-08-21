@@ -54,4 +54,8 @@ public class ModItems {
 	public static final Item RANDOM_BLOCKS_TNT = new ModItemBlockBase(ModBlocks.RANDOM_BLOCKS_TNT, ModRarities.YELLOW, false, 1, 0);
 	public static final Item CRASH_TNT = new ModItemBlockBase(ModBlocks.CRASH_TNT, ModRarities.RED, false, 1, 0);
 	public static final Item LOLXD_TNT = new ModItemBlockBase(ModBlocks.LOLXD_TNT, ModRarities.WHITE, false, 1, 0);
+
+	public static final Item FLOWER_POWER = new ModItemBlockBase(ModBlocks.FLOWER_POWER, ModRarities.WHITE, false, 1, 0);
+	public static final Item CUBIC_TNT = new ModItemBlockBase(ModBlocks.CUBIC_TNT, ModRarities.WHITE, false, 1, 0);
+	public static final Item OVER_9000_TNT = new ModItemBlockBase(ModBlocks.OVER_9000_TNT, ModRarities.DARK_RED, false, 1, 0);
 }

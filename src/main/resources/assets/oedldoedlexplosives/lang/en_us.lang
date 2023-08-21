@@ -151,3 +151,15 @@ tile.oedldoedlexplosives.derpy_tnt.tip1=Simply why?
 tile.oedldoedlexplosives.incenditary_tnt.name=Incenditary TNT
 entity.oedldoedlexplosives.incenditary_tnt.name=Block of Incenditary TNT
 tile.oedldoedlexplosives.incenditary_tnt.tip1=Hot (Chicks) in your area!
+
+tile.oedldoedlexplosives.flower_power.name=Flower Power
+entity.oedldoedlexplosives.flower_power.name=Block of Flower Power
+tile.oedldoedlexplosives.flower_power.tip1=Flower Power Rangers.
+
+tile.oedldoedlexplosives.cubic_tnt.name=Cubic TNT
+entity.oedldoedlexplosives.cubic_tnt.name=Block of Cubic TNT
+tile.oedldoedlexplosives.cubic_tnt.tip1=Removes everything without even asking.
+
+tile.oedldoedlexplosives.over_9000_tnt.name=Over 9000 TNT
+entity.oedldoedlexplosives.over_9000_tnt.name=Block of Over 9000 TNT
+tile.oedldoedlexplosives.over_9000_tnt.tip1=And this... is... to go... even further beyond!

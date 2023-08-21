@@ -1,0 +1,9 @@
+{
+    "parent": "minecraft:block/cube_bottom_top",
+    "textures": 
+    {
+        "top": "oedldoedlexplosives:blocks/flower_power_top",
+        "bottom": "oedldoedlexplosives:blocks/flower_power_bottom",
+        "side": "oedldoedlexplosives:blocks/flower_power_side"
+    }
+}

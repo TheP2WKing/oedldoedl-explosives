@@ -67,6 +67,10 @@ public class ModRegistry {
 		ModRegistryHelper.registerBlock(event, ModBlocks.RANDOM_BLOCKS_TNT);
 		ModRegistryHelper.registerBlock(event, ModBlocks.CRASH_TNT);
 		ModRegistryHelper.registerBlock(event, ModBlocks.LOLXD_TNT);
+
+		ModRegistryHelper.registerBlock(event, ModBlocks.FLOWER_POWER);
+		ModRegistryHelper.registerBlock(event, ModBlocks.CUBIC_TNT);
+		ModRegistryHelper.registerBlock(event, ModBlocks.OVER_9000_TNT);
 	}
 
 	@SubscribeEvent
@@ -121,6 +125,10 @@ public class ModRegistry {
 		ModRegistryHelper.registerItemBlock(event, ModItems.RANDOM_BLOCKS_TNT);
 		ModRegistryHelper.registerItemBlock(event, ModItems.CRASH_TNT);
 		ModRegistryHelper.registerItemBlock(event, ModItems.LOLXD_TNT);
+
+		ModRegistryHelper.registerItemBlock(event, ModItems.FLOWER_POWER);
+		ModRegistryHelper.registerItemBlock(event, ModItems.CUBIC_TNT);
+		ModRegistryHelper.registerItemBlock(event, ModItems.OVER_9000_TNT);
 	}
 
 	@SubscribeEvent

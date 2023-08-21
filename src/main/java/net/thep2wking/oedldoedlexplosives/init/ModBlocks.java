@@ -13,6 +13,7 @@ import net.thep2wking.oedldoedlexplosives.content.block.BlockButterTNT;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockC4;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockChunkTNT;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockCrashTNT;
+import net.thep2wking.oedldoedlexplosives.content.block.BlockCubicTNT;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockDayTNT;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockDerpyTNT;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockDetonatorChainTNT;
@@ -20,6 +21,7 @@ import net.thep2wking.oedldoedlexplosives.content.block.BlockDrillTNT;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockEggTNT;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockFakeTNT;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockFlatTNT;
+import net.thep2wking.oedldoedlexplosives.content.block.BlockFlowerPower;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockHTNT;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockIncenditaryTNT;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockIslandTNT;
@@ -31,6 +33,7 @@ import net.thep2wking.oedldoedlexplosives.content.block.BlockNCNuke;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockNapalmTNT;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockNightTNT;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockNukeTNT;
+import net.thep2wking.oedldoedlexplosives.content.block.BlockOver9000TNT;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockRainbowTNT;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockRandomBlocksTNT;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockSirDerpingtonTNT;
@@ -132,4 +135,11 @@ public class ModBlocks {
 			OedldoedlExplosives.TAB, SoundType.PLANT, MapColor.TNT, 0);
 	public static final Block LOLXD_TNT = new BlockLOLXDTNT(OedldoedlExplosives.MODID, "lolxd_tnt",
 			OedldoedlExplosives.TAB, SoundType.PLANT, MapColor.TNT, 0);
+
+	public static final Block FLOWER_POWER = new BlockFlowerPower(OedldoedlExplosives.MODID, "flower_power",
+			OedldoedlExplosives.TAB, SoundType.PLANT, MapColor.PINK, 0);
+	public static final Block CUBIC_TNT = new BlockCubicTNT(OedldoedlExplosives.MODID, "cubic_tnt",
+			OedldoedlExplosives.TAB, SoundType.PLANT, MapColor.TNT, 0);
+	public static final Block OVER_9000_TNT = new BlockOver9000TNT(OedldoedlExplosives.MODID, "over_9000_tnt",
+			OedldoedlExplosives.TAB, SoundType.PLANT, MapColor.PURPLE, 0);
 }

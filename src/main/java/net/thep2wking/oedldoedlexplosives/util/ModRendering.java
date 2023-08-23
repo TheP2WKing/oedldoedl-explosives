@@ -7,6 +7,8 @@ import net.thep2wking.oedldoedlexplosives.content.entity.EntityBundledTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityButterTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityC4;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityChunkTNT;
+import net.thep2wking.oedldoedlexplosives.content.entity.EntityCombatTNT;
+import net.thep2wking.oedldoedlexplosives.content.entity.EntityConfigureableTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityCrashTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityCubicTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityDayTNT;
@@ -24,6 +26,7 @@ import net.thep2wking.oedldoedlexplosives.content.entity.EntityLOLXDTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityLavaTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityMegaNukeTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityMeteorTNT;
+import net.thep2wking.oedldoedlexplosives.content.entity.EntityMiniNukeTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityNCNuke;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityNapalmTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityNightTNT;
@@ -36,6 +39,7 @@ import net.thep2wking.oedldoedlexplosives.content.entity.EntitySnowTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntitySphereTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntitySupersonicTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityTNTRain;
+import net.thep2wking.oedldoedlexplosives.content.entity.EntityTNTTree;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityTNTx20;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityTNTx5;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityTrollTNT;
@@ -45,6 +49,7 @@ import net.thep2wking.oedldoedlexplosives.init.ModBlocks;
 public class ModRendering {
 	public static void registerRenderer() {
 		ModTNTRenderer.register(EntityFakeTNT.class, ModBlocks.FAKE_TNT);
+		ModTNTRenderer.register(EntityCombatTNT.class, ModBlocks.COMBAT_TNT);
 
 		ModTNTRenderer.register(EntityC4.class, ModBlocks.C4);
 		ModTNTRenderer.register(EntityTNTx5.class, ModBlocks.TNT_X5);
@@ -80,6 +85,7 @@ public class ModRendering {
 		ModTNTRenderer.register(EntityTrollTNT.class, ModBlocks.TROLL_TNT);
 		ModTNTRenderer.register(EntityChunkTNT.class, ModBlocks.CHUNK_TNT);
 
+		ModTNTRenderer.register(EntityMiniNukeTNT.class, ModBlocks.MINI_NUKE_TNT);
 		ModTNTRenderer.register(EntityMegaNukeTNT.class, ModBlocks.MEGA_NUKE_TNT);
 		ModTNTRenderer.register(EntityAntimatterBomb.class, ModBlocks.ANTIMATTER_BOMB);
 
@@ -92,6 +98,9 @@ public class ModRendering {
 		ModTNTRenderer.register(EntityRandomBlocksTNT.class, ModBlocks.RANDOM_BLOCKS_TNT);
 		ModTNTRenderer.register(EntityCrashTNT.class, ModBlocks.CRASH_TNT);
 		ModTNTRenderer.register(EntityLOLXDTNT.class, ModBlocks.LOLXD_TNT);
+
+		ModTNTRenderer.register(EntityTNTTree.class, ModBlocks.TNT_TREE);
+		ModTNTRenderer.register(EntityConfigureableTNT.class, ModBlocks.CONFIGUREABLE_TNT);
 
 		ModTNTRenderer.register(EntityFlowerPower.class, ModBlocks.FLOWER_POWER);
 		ModTNTRenderer.register(EntityCubicTNT.class, ModBlocks.CUBIC_TNT);

@@ -1,0 +1,105 @@
+{
+    "variants": 
+    {
+        "normal": 
+        { 
+            "model": "oedldoedlexplosives:configureable_tnt"
+        },
+        "explode=false,size=0": 
+        { 
+            "model": "oedldoedlexplosives:configureable_tnt"
+        },
+        "explode=true,size=0": 
+        { 
+            "model": "oedldoedlexplosives:configureable_tnt"
+        },
+        "explode=false,size=1": 
+        { 
+            "model": "oedldoedlexplosives:configureable_tnt"
+        },
+        "explode=true,size=1": 
+        { 
+            "model": "oedldoedlexplosives:configureable_tnt"
+        },
+        "explode=false,size=2": 
+        { 
+            "model": "oedldoedlexplosives:configureable_tnt"
+        },
+        "explode=true,size=2": 
+        { 
+            "model": "oedldoedlexplosives:configureable_tnt"
+        },
+        "explode=false,size=3": 
+        { 
+            "model": "oedldoedlexplosives:configureable_tnt"
+        },
+        "explode=true,size=3": 
+        { 
+            "model": "oedldoedlexplosives:configureable_tnt"
+        },
+        "explode=false,size=4": 
+        { 
+            "model": "oedldoedlexplosives:configureable_tnt"
+        },
+        "explode=true,size=4": 
+        { 
+            "model": "oedldoedlexplosives:configureable_tnt"
+        },
+        "explode=false,size=5": 
+        { 
+            "model": "oedldoedlexplosives:configureable_tnt"
+        },
+        "explode=true,size=5": 
+        { 
+            "model": "oedldoedlexplosives:configureable_tnt"
+        },
+        "explode=false,size=6": 
+        { 
+            "model": "oedldoedlexplosives:configureable_tnt"
+        },
+        "explode=true,size=6": 
+        { 
+            "model": "oedldoedlexplosives:configureable_tnt"
+        },
+        "explode=false,size=7": 
+        { 
+            "model": "oedldoedlexplosives:configureable_tnt"
+        },
+        "explode=true,size=7": 
+        { 
+            "model": "oedldoedlexplosives:configureable_tnt"
+        },
+        "explode=false,size=8": 
+        { 
+            "model": "oedldoedlexplosives:configureable_tnt"
+        },
+        "explode=true,size=8": 
+        { 
+            "model": "oedldoedlexplosives:configureable_tnt"
+        },
+        "explode=false,size=9": 
+        { 
+            "model": "oedldoedlexplosives:configureable_tnt"
+        },
+        "explode=true,size=9": 
+        { 
+            "model": "oedldoedlexplosives:configureable_tnt"
+        },
+        "explode=false,size=10": 
+        { 
+            "model": "oedldoedlexplosives:configureable_tnt"
+        },
+        "explode=true,size=10": 
+        { 
+            "model": "oedldoedlexplosives:configureable_tnt"
+        },
+        "explode=false,size=11": 
+        { 
+            "model": "oedldoedlexplosives:configureable_tnt"
+        },
+        "explode=true,size=11": 
+        { 
+            "model": "oedldoedlexplosives:configureable_tnt"
+        }
+    }
+}

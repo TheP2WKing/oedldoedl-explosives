@@ -163,3 +163,32 @@ tile.oedldoedlexplosives.cubic_tnt.tip1=Removes everything without even asking.
 tile.oedldoedlexplosives.over_9000_tnt.name=Over 9000 TNT
 entity.oedldoedlexplosives.over_9000_tnt.name=Block of Over 9000 TNT
 tile.oedldoedlexplosives.over_9000_tnt.tip1=And this... is... to go... even further beyond!
+
+tile.oedldoedlexplosives.tnt_tree.name=TNT Tree
+entity.oedldoedlexplosives.tnt_tree.name=Block of TNT Tree
+tile.oedldoedlexplosives.tnt_tree.tip1=Also known as TreeNT.
+
+tile.oedldoedlexplosives.configureable_tnt.name=Configureable TNT
+entity.oedldoedlexplosives.configureable_tnt.name=Block of Configureable TNT
+tile.oedldoedlexplosives.configureable_tnt.tip1=Use a TNT Wrench to modify explosion.
+
+tile.oedldoedlexplosives.combat_tnt.name=Combat TNT
+entity.oedldoedlexplosives.combat_tnt.name=Block of Combat TNT
+tile.oedldoedlexplosives.combat_tnt.tip1=(Mortal) Combat.
+
+tile.oedldoedlexplosives.mini_nuke_tnt.name=Mini Nuke TNT
+entity.oedldoedlexplosives.mini_nuke_tnt.name=Block of Mini Nuke TNT
+tile.oedldoedlexplosives.mini_nuke_tnt.tip1=Small nuke, giant hole.
+
+item.oedldoedlexplosives.tnt_wrench.name=TNT Wrench
+item.oedldoedlexplosives.tnt_wrench.tip1=Change Configureable TNT explosion size and
+item.oedldoedlexplosives.tnt_wrench.tip2=disarm all kind of tnt blocks (if supported).
+
+item.oedldoedlexplosives.plastic.name=Plastic
+item.oedldoedlexplosives.plastic.tip1=Logic?
+
+item.oedldoedlexplosives.chip.name=Chip
+item.oedldoedlexplosives.chip.tip1=Not to be confused with AMD Ryzen!
+
+item.oedldoedlexplosives.divided_by_zero.name=Divided by Zero
+item.oedldoedlexplosives.divided_by_zero.tip1=Do not try this at home!

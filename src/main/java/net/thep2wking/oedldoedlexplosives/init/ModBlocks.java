@@ -12,6 +12,8 @@ import net.thep2wking.oedldoedlexplosives.content.block.BlockBundledTNT;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockButterTNT;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockC4;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockChunkTNT;
+import net.thep2wking.oedldoedlexplosives.content.block.BlockCombatTNT;
+import net.thep2wking.oedldoedlexplosives.content.block.BlockConfigureableTNT;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockCrashTNT;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockCubicTNT;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockDayTNT;
@@ -29,6 +31,7 @@ import net.thep2wking.oedldoedlexplosives.content.block.BlockLOLXDTNT;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockLavaTNT;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockMegaNukeTNT;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockMeteorTNT;
+import net.thep2wking.oedldoedlexplosives.content.block.BlockMiniNukeTNT;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockNCNuke;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockNapalmTNT;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockNightTNT;
@@ -41,6 +44,7 @@ import net.thep2wking.oedldoedlexplosives.content.block.BlockSnowTNT;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockSphereTNT;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockSupersonicTNT;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockTNTRain;
+import net.thep2wking.oedldoedlexplosives.content.block.BlockTNTTree;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockTNTx20;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockTNTx5;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockTrollTNT;
@@ -53,6 +57,8 @@ public class ModBlocks {
 			ModToolTypes.NO_TOOL, 0.8f, 0.8f, 0);
 
 	public static final Block FAKE_TNT = new BlockFakeTNT(OedldoedlExplosives.MODID, "fake_tnt",
+			OedldoedlExplosives.TAB, SoundType.PLANT, MapColor.TNT, 0);
+	public static final Block COMBAT_TNT = new BlockCombatTNT(OedldoedlExplosives.MODID, "combat_tnt",
 			OedldoedlExplosives.TAB, SoundType.PLANT, MapColor.TNT, 0);
 
 	public static final Block C4 = new BlockC4(OedldoedlExplosives.MODID, "c4", OedldoedlExplosives.TAB,
@@ -115,13 +121,15 @@ public class ModBlocks {
 	public static final Block CHUNK_TNT = new BlockChunkTNT(OedldoedlExplosives.MODID, "chunk_tnt",
 			OedldoedlExplosives.TAB, SoundType.PLANT, MapColor.RED, 0);
 
+	public static final Block MINI_NUKE_TNT = new BlockMiniNukeTNT(OedldoedlExplosives.MODID, "mini_nuke_tnt",
+			OedldoedlExplosives.TAB, SoundType.PLANT, MapColor.TNT, 0);
 	public static final Block MEGA_NUKE_TNT = new BlockMegaNukeTNT(OedldoedlExplosives.MODID, "mega_nuke_tnt",
 			OedldoedlExplosives.TAB, SoundType.PLANT, MapColor.TNT, 0);
 	public static final Block ANTIMATTER_BOMB = new BlockAnitmatterBomb(OedldoedlExplosives.MODID, "antimatter_bomb",
 			OedldoedlExplosives.TAB, SoundType.PLANT, MapColor.TNT, 0);
 
 	public static final Block BUTTER_TNT = new BlockButterTNT(OedldoedlExplosives.MODID, "butter_tnt",
-			OedldoedlExplosives.TAB, SoundType.METAL, MapColor.GOLD, 0);
+			OedldoedlExplosives.TAB, SoundType.PLANT, MapColor.GOLD, 0);
 	public static final Block LAVA_TNT = new BlockLavaTNT(OedldoedlExplosives.MODID, "lava_tnt",
 			OedldoedlExplosives.TAB, SoundType.PLANT, MapColor.ORANGE_STAINED_HARDENED_CLAY, 0);
 	public static final Block EGG_TNT = new BlockEggTNT(OedldoedlExplosives.MODID, "egg_tnt", OedldoedlExplosives.TAB,
@@ -135,6 +143,11 @@ public class ModBlocks {
 			OedldoedlExplosives.TAB, SoundType.PLANT, MapColor.TNT, 0);
 	public static final Block LOLXD_TNT = new BlockLOLXDTNT(OedldoedlExplosives.MODID, "lolxd_tnt",
 			OedldoedlExplosives.TAB, SoundType.PLANT, MapColor.TNT, 0);
+
+	public static final Block TNT_TREE = new BlockTNTTree(OedldoedlExplosives.MODID, "tnt_tree",
+			OedldoedlExplosives.TAB, SoundType.PLANT, MapColor.TNT, 0);
+	public static final Block CONFIGUREABLE_TNT = new BlockConfigureableTNT(OedldoedlExplosives.MODID,
+			"configureable_tnt", OedldoedlExplosives.TAB, SoundType.PLANT, MapColor.TNT, 0);
 
 	public static final Block FLOWER_POWER = new BlockFlowerPower(OedldoedlExplosives.MODID, "flower_power",
 			OedldoedlExplosives.TAB, SoundType.PLANT, MapColor.PINK, 0);

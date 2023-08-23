@@ -21,6 +21,7 @@ public class ModRegistry {
 		ModRegistryHelper.registerBlock(event, ModBlocks.RAINBOW);
 
 		ModRegistryHelper.registerBlock(event, ModBlocks.FAKE_TNT);
+		ModRegistryHelper.registerBlock(event, ModBlocks.COMBAT_TNT);
 
 		ModRegistryHelper.registerBlock(event, ModBlocks.C4);
 		ModRegistryHelper.registerBlock(event, ModBlocks.TNT_X5);
@@ -56,6 +57,7 @@ public class ModRegistry {
 		ModRegistryHelper.registerBlock(event, ModBlocks.TROLL_TNT);
 		ModRegistryHelper.registerBlock(event, ModBlocks.CHUNK_TNT);
 
+		ModRegistryHelper.registerBlock(event, ModBlocks.MINI_NUKE_TNT);
 		ModRegistryHelper.registerBlock(event, ModBlocks.MEGA_NUKE_TNT);
 		ModRegistryHelper.registerBlock(event, ModBlocks.ANTIMATTER_BOMB);
 
@@ -68,6 +70,9 @@ public class ModRegistry {
 		ModRegistryHelper.registerBlock(event, ModBlocks.CRASH_TNT);
 		ModRegistryHelper.registerBlock(event, ModBlocks.LOLXD_TNT);
 
+		ModRegistryHelper.registerBlock(event, ModBlocks.TNT_TREE);
+		ModRegistryHelper.registerBlock(event, ModBlocks.CONFIGUREABLE_TNT);
+
 		ModRegistryHelper.registerBlock(event, ModBlocks.FLOWER_POWER);
 		ModRegistryHelper.registerBlock(event, ModBlocks.CUBIC_TNT);
 		ModRegistryHelper.registerBlock(event, ModBlocks.OVER_9000_TNT);
@@ -79,6 +84,7 @@ public class ModRegistry {
 		ModRegistryHelper.registerItemBlock(event, ModItems.RAINBOW);
 
 		ModRegistryHelper.registerItemBlock(event, ModItems.FAKE_TNT);
+		ModRegistryHelper.registerItemBlock(event, ModItems.COMBAT_TNT);
 
 		ModRegistryHelper.registerItemBlock(event, ModItems.C4);
 		ModRegistryHelper.registerItemBlock(event, ModItems.TNT_X5);
@@ -114,6 +120,7 @@ public class ModRegistry {
 		ModRegistryHelper.registerItemBlock(event, ModItems.TROLL_TNT);
 		ModRegistryHelper.registerItemBlock(event, ModItems.CHUNK_TNT);
 
+		ModRegistryHelper.registerItemBlock(event, ModItems.MINI_NUKE_TNT);
 		ModRegistryHelper.registerItemBlock(event, ModItems.MEGA_NUKE_TNT);
 		ModRegistryHelper.registerItemBlock(event, ModItems.ANTIMATTER_BOMB);
 
@@ -126,9 +133,17 @@ public class ModRegistry {
 		ModRegistryHelper.registerItemBlock(event, ModItems.CRASH_TNT);
 		ModRegistryHelper.registerItemBlock(event, ModItems.LOLXD_TNT);
 
+		ModRegistryHelper.registerItemBlock(event, ModItems.TNT_TREE);
+		ModRegistryHelper.registerItemBlock(event, ModItems.CONFIGUREABLE_TNT);
+
 		ModRegistryHelper.registerItemBlock(event, ModItems.FLOWER_POWER);
 		ModRegistryHelper.registerItemBlock(event, ModItems.CUBIC_TNT);
 		ModRegistryHelper.registerItemBlock(event, ModItems.OVER_9000_TNT);
+
+		ModRegistryHelper.registerItem(event, ModItems.TNT_WRENCH);
+		ModRegistryHelper.registerItem(event, ModItems.PLASTIC);
+		ModRegistryHelper.registerItem(event, ModItems.CHIP);
+		ModRegistryHelper.registerItem(event, ModItems.DIVIDED_BY_ZERO);
 	}
 
 	@SubscribeEvent

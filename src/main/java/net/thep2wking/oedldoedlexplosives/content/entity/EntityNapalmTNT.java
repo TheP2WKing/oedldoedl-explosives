@@ -17,12 +17,19 @@ public class EntityNapalmTNT extends ModEntityTNTBase {
 
 	@Override
 	public void explode() {
-		this.world.newExplosion(this, this.posX, this.posY + (double) (this.height / 16.0F), this.posZ, 0, false, false);
-		for (int r = (int)4, x4 = -r; x4 < r; ++x4) {
+		this.world.newExplosion(this, this.posX, this.posY + (double) (this.height / 16.0F), this.posZ, 0, false,
+				false);
+		for (int r = 16, x4 = -r; x4 < r; ++x4) {
 			for (int y4 = r; y4 > -r; --y4) {
 				for (int z4 = -r; z4 < r; ++z4) {
-					if (this.world.getBlockState(new BlockPos((int)this.posX + x4, (int)this.posY + y4 - 1, (int)this.posZ + z4)) != Blocks.AIR && this.world.getBlockState(new BlockPos((int)this.posX + x4, (int)this.posY + y4 - 1, (int)this.posZ + z4)) != Blocks.LAVA) {
-						this.world.setBlockState(new BlockPos((int)this.posX + x4, (int)this.posY + y4, (int)this.posZ + z4), Blocks.LAVA.getDefaultState());
+					if (this.world
+							.getBlockState(new BlockPos((int) this.posX + x4, (int) this.posY + y4 - 1,
+									(int) this.posZ + z4)) != Blocks.AIR.getDefaultState()
+							&& this.world.getBlockState(new BlockPos((int) this.posX + x4, (int) this.posY + y4 - 1,
+									(int) this.posZ + z4)) != Blocks.LAVA.getDefaultState()) {
+						this.world.setBlockState(
+								new BlockPos((int) this.posX + x4, (int) this.posY + y4, (int) this.posZ + z4),
+								Blocks.LAVA.getDefaultState());
 					}
 				}
 			}

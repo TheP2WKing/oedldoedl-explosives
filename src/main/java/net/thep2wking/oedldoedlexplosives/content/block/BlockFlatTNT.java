@@ -16,6 +16,6 @@ public class BlockFlatTNT extends ModBlockTNTBase {
 
 	@Override
 	public ModEntityTNTBase createTNTEntity(World world, double x, double y, double z, EntityLivingBase ignitor) {
-		return new EntityFlatTNT(world, x, y, z, ignitor, 80, 8.0f, false, true);
+		return new EntityFlatTNT(world, x, y, z, ignitor, 80, 5.0f, false, true);
 	}
 }

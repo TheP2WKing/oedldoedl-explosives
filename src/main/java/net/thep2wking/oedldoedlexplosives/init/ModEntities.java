@@ -45,6 +45,10 @@ import net.thep2wking.oedldoedlexplosives.content.entity.EntityTNTx20;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityTNTx5;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityTrollTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityWoolTNT;
+import net.thep2wking.oedldoedlexplosives.content.entity.throwable.EntityCombatDynamite;
+import net.thep2wking.oedldoedlexplosives.content.entity.throwable.EntityDynamite;
+import net.thep2wking.oedldoedlexplosives.content.entity.throwable.EntityDynamiteX20;
+import net.thep2wking.oedldoedlexplosives.content.entity.throwable.EntityDynamiteX5;
 
 public class ModEntities {
 	public static void registerEntities() {
@@ -104,5 +108,10 @@ public class ModEntities {
 		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "flower_power", OedldoedlExplosives.INSTANCE, 40, EntityFlowerPower.class, 160, 10, true);
 		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "cubic_tnt", OedldoedlExplosives.INSTANCE, 41, EntityCubicTNT.class, 160, 10, true);
 		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "over_9000_tnt", OedldoedlExplosives.INSTANCE, 42, EntityOver9000TNT.class, 160, 10, true);
+
+		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "dynamite", OedldoedlExplosives.INSTANCE, 100, EntityDynamite.class, 64, 10, true);
+		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "dynamite_x5", OedldoedlExplosives.INSTANCE, 101, EntityDynamiteX5.class, 64, 10, true);
+		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "dynamite_x20", OedldoedlExplosives.INSTANCE, 102, EntityDynamiteX20.class, 64, 10, true);
+		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "combat_dynamite", OedldoedlExplosives.INSTANCE, 103, EntityCombatDynamite.class, 64, 10, true);
 	}
 }

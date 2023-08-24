@@ -140,6 +140,11 @@ public class ModRegistry {
 		ModRegistryHelper.registerItemBlock(event, ModItems.CUBIC_TNT);
 		ModRegistryHelper.registerItemBlock(event, ModItems.OVER_9000_TNT);
 
+		ModRegistryHelper.registerItem(event, ModItems.DYNAMITE);
+		ModRegistryHelper.registerItem(event, ModItems.DYNAMITE_X5);
+		ModRegistryHelper.registerItem(event, ModItems.DYNAMITE_X20);
+		ModRegistryHelper.registerItem(event, ModItems.COMBAT_DYNAMITE);
+
 		ModRegistryHelper.registerItem(event, ModItems.TNT_WRENCH);
 		ModRegistryHelper.registerItem(event, ModItems.PLASTIC);
 		ModRegistryHelper.registerItem(event, ModItems.CHIP);

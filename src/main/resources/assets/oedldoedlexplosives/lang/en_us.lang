@@ -180,6 +180,18 @@ tile.oedldoedlexplosives.mini_nuke_tnt.name=Mini Nuke TNT
 entity.oedldoedlexplosives.mini_nuke_tnt.name=Block of Mini Nuke TNT
 tile.oedldoedlexplosives.mini_nuke_tnt.tip1=Small nuke, giant hole.
 
+item.oedldoedlexplosives.dynamite.name=Dynamite
+item.oedldoedlexplosives.dynamite.tip1=Throwable TNT.
+
+item.oedldoedlexplosives.dynamite_x5.name=Dynamite x5
+item.oedldoedlexplosives.dynamite_x5.tip1=Throwable TNT time 5.
+
+item.oedldoedlexplosives.dynamite_x20.name=Dynamite x20
+item.oedldoedlexplosives.dynamite_x20.tip1=Throwable TNT time 20.
+
+item.oedldoedlexplosives.combat_dynamite.name=Combat Dynamite
+item.oedldoedlexplosives.combat_dynamite.tip1=Also known as DIEnemite.
+
 item.oedldoedlexplosives.tnt_wrench.name=TNT Wrench
 item.oedldoedlexplosives.tnt_wrench.tip1=Change Configureable TNT explosion size and
 item.oedldoedlexplosives.tnt_wrench.tip2=disarm all kind of tnt blocks (if supported).

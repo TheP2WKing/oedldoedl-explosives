@@ -1,5 +1,8 @@
 package net.thep2wking.oedldoedlexplosives.util;
 
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.entity.RenderSnowball;
+import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.thep2wking.oedldoedlexplosives.api.ModTNTRenderer;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityAntimatterBomb;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityArrowTNT;
@@ -44,8 +47,14 @@ import net.thep2wking.oedldoedlexplosives.content.entity.EntityTNTx20;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityTNTx5;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityTrollTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityWoolTNT;
+import net.thep2wking.oedldoedlexplosives.content.entity.throwable.EntityCombatDynamite;
+import net.thep2wking.oedldoedlexplosives.content.entity.throwable.EntityDynamite;
+import net.thep2wking.oedldoedlexplosives.content.entity.throwable.EntityDynamiteX20;
+import net.thep2wking.oedldoedlexplosives.content.entity.throwable.EntityDynamiteX5;
 import net.thep2wking.oedldoedlexplosives.init.ModBlocks;
+import net.thep2wking.oedldoedlexplosives.init.ModItems;
 
+@SuppressWarnings("deprecation")
 public class ModRendering {
 	public static void registerRenderer() {
 		ModTNTRenderer.register(EntityFakeTNT.class, ModBlocks.FAKE_TNT);
@@ -105,5 +114,18 @@ public class ModRendering {
 		ModTNTRenderer.register(EntityFlowerPower.class, ModBlocks.FLOWER_POWER);
 		ModTNTRenderer.register(EntityCubicTNT.class, ModBlocks.CUBIC_TNT);
 		ModTNTRenderer.register(EntityOver9000TNT.class, ModBlocks.OVER_9000_TNT);
+
+		RenderingRegistry.registerEntityRenderingHandler(EntityDynamite.class,
+				new RenderSnowball<EntityDynamite>(Minecraft.getMinecraft().getRenderManager(),
+						ModItems.DYNAMITE, Minecraft.getMinecraft().getRenderItem()));
+		RenderingRegistry.registerEntityRenderingHandler(EntityDynamiteX5.class,
+				new RenderSnowball<EntityDynamiteX5>(Minecraft.getMinecraft().getRenderManager(),
+						ModItems.DYNAMITE_X5, Minecraft.getMinecraft().getRenderItem()));
+		RenderingRegistry.registerEntityRenderingHandler(EntityDynamiteX20.class,
+				new RenderSnowball<EntityDynamiteX20>(Minecraft.getMinecraft().getRenderManager(),
+						ModItems.DYNAMITE_X20, Minecraft.getMinecraft().getRenderItem()));
+		RenderingRegistry.registerEntityRenderingHandler(EntityCombatDynamite.class,
+				new RenderSnowball<EntityCombatDynamite>(Minecraft.getMinecraft().getRenderManager(),
+						ModItems.COMBAT_DYNAMITE, Minecraft.getMinecraft().getRenderItem()));
 	}
 }

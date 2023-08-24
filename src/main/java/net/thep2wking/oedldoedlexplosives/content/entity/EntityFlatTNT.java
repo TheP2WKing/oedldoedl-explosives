@@ -21,8 +21,8 @@ public class EntityFlatTNT extends ModEntityTNTBase {
 		int posZ1 = this.getPosition().getZ() - 16;
 		int posZ2 = this.getPosition().getZ() + 16;
 
-		for (int x = posX1; x < posX2; x += 8) {
-			for (int z = posZ1; z < posZ2; z += 8) {
+		for (int x = posX1; x < posX2; x += 2) {
+			for (int z = posZ1; z < posZ2; z += 2) {
 				this.world.newExplosion(this, x, this.posY + (double) (this.height / 16.0F), z, explosionStrength,
 						spawnFire, blockDamage);
 			}

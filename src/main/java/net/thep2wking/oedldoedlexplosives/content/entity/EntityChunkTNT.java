@@ -7,6 +7,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.Chunk;
 import net.thep2wking.oedldoedlexplosives.api.ModEntityTNTBase;
+import net.thep2wking.oedldoedlexplosives.config.ExplosivesConfig;
 
 public class EntityChunkTNT extends ModEntityTNTBase {
 	public EntityChunkTNT(World world, double x, double y, double z, EntityLivingBase igniter) {
@@ -43,6 +44,9 @@ public class EntityChunkTNT extends ModEntityTNTBase {
 		int chunkPosZ1 = chunkZ * 16;
 		int chunkPosZ2 = chunkZ * 16 + 16;
 
-		fillReactangle(this.world, chunkPosX1, chunkPosY1, chunkPosZ1, chunkPosX2, chunkPosY2, chunkPosZ2, Blocks.TNT);
+		if (ExplosivesConfig.PROPERTIES.NON_STANDARD_EXPLOSION_DAMAGE) {
+			fillReactangle(this.world, chunkPosX1, chunkPosY1, chunkPosZ1, chunkPosX2, chunkPosY2, chunkPosZ2,
+					Blocks.TNT);
+		}
 	}
 }

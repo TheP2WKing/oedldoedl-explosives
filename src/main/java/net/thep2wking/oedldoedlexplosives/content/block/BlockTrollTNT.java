@@ -10,6 +10,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.thep2wking.oedldoedlexplosives.api.ModBlockTNTBase;
 import net.thep2wking.oedldoedlexplosives.api.ModEntityTNTBase;
+import net.thep2wking.oedldoedlexplosives.config.ExplosivesConfig;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityTrollTNT;
 import net.thep2wking.oedldoedlexplosives.init.ModBlocks;
 
@@ -26,7 +27,7 @@ public class BlockTrollTNT extends ModBlockTNTBase {
 	@Override
 	public boolean removedByPlayer(IBlockState state, World world, BlockPos pos, EntityPlayer player, boolean willHarvest) {
 		final boolean removed = super.removedByPlayer(state, world, pos, player, willHarvest);
-		if (!player.isCreative()) {
+		if (!player.isCreative() && ExplosivesConfig.CONTENT.TROLL_TNT_MULTIPLY) {
 			world.setBlockState(pos, ModBlocks.TROLL_TNT.getDefaultState());
 			world.setBlockState(pos.up(), ModBlocks.TROLL_TNT.getDefaultState());
 			world.setBlockState(pos.down(), ModBlocks.TROLL_TNT.getDefaultState());

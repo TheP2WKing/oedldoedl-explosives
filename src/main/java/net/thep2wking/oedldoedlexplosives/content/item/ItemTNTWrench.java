@@ -16,6 +16,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.thep2wking.oedldoedlcore.api.item.ModItemBase;
 import net.thep2wking.oedldoedlexplosives.api.ModBlockTNTBase;
+import net.thep2wking.oedldoedlexplosives.config.ExplosivesConfig;
 
 public class ItemTNTWrench extends ModItemBase {
 	public ItemTNTWrench(String modid, String name, CreativeTabs tab, EnumRarity rarity, boolean hasEffect,
@@ -30,7 +31,7 @@ public class ItemTNTWrench extends ModItemBase {
 		IBlockState state = world.getBlockState(pos);
 		Block block = state.getBlock();
 		if (block instanceof ModBlockTNTBase || block instanceof BlockTNT) {
-			if (!world.isRemote && player.isSneaking()) {
+			if (!world.isRemote && player.isSneaking() && ExplosivesConfig.CONTENT.TNT_WRENCH_DISARM) {
 				world.destroyBlock(pos, false);
 				if (!player.capabilities.isCreativeMode) {
 					world.spawnEntity(new EntityItem(world, pos.getX(), pos.getY(), pos.getZ(),

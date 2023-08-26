@@ -115,6 +115,5 @@ public class ModEntities {
 		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "dynamite_x20", OedldoedlExplosives.INSTANCE, 102, EntityDynamiteX20.class, 64, 10, true);
 		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "combat_dynamite", OedldoedlExplosives.INSTANCE, 103, EntityCombatDynamite.class, 64, 10, true);
 		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "cubic_dynamite", OedldoedlExplosives.INSTANCE, 104, EntityCubicDynamite.class, 64, 10, true);
-
 	}
 }

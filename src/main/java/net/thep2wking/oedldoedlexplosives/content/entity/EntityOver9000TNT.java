@@ -6,8 +6,10 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.MoverType;
 import net.minecraft.entity.item.EntityTNTPrimed;
+import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.world.World;
 import net.thep2wking.oedldoedlexplosives.api.ModEntityTNTBase;
+import net.thep2wking.oedldoedlexplosives.config.ExplosivesConfig;
 
 public class EntityOver9000TNT extends ModEntityTNTBase {
 	public EntityOver9000TNT(World world, double x, double y, double z, EntityLivingBase igniter) {
@@ -26,7 +28,7 @@ public class EntityOver9000TNT extends ModEntityTNTBase {
 
 	@Override
 	public boolean hasNoGravity() {
-		return true;
+		return ExplosivesConfig.CONTENT.OVER_9000_TNT;
 	}
 
 	@Override
@@ -48,23 +50,38 @@ public class EntityOver9000TNT extends ModEntityTNTBase {
 			this.motionY *= -0.5D;
 		}
 
-		int tnts = 0;
-		if (this.fuse-- <= 0) {
-			if (-this.fuse % 10 == 0) {
-				final Random rnd2 = new Random();
-				final int rangeMin2 = -3;
-				final int rangeMax2 = 3;
-				final EntityTNTPrimed entitytntprimed = new EntityTNTPrimed(this.world,
-						(double) ((float) this.posX + 0.1f),
-						(double) ((float) this.posY + 0.1f), (double) ((float) this.posZ + 0.1f), this.ignitor);
-				entitytntprimed.addVelocity(rangeMin2 + (rangeMax2 - rangeMin2) * rnd2.nextDouble(),
-						rangeMin2 + (rangeMax2 - rangeMin2) * rnd2.nextDouble(),
-						rangeMin2 + (rangeMax2 - rangeMin2) * rnd2.nextDouble());
-				this.world.spawnEntity((Entity) entitytntprimed);
-				++tnts;
+		if (ExplosivesConfig.CONTENT.OVER_9000_TNT) {
+			int tnts = 0;
+			if (this.fuse-- <= 0) {
+				if (-this.fuse % 10 == 0) {
+					final Random rnd2 = new Random();
+					final int rangeMin2 = -3;
+					final int rangeMax2 = 3;
+					final EntityTNTPrimed entitytntprimed = new EntityTNTPrimed(this.world,
+							(double) ((float) this.posX + 0.1f),
+							(double) ((float) this.posY + 0.1f), (double) ((float) this.posZ + 0.1f), this.ignitor);
+					entitytntprimed.addVelocity(rangeMin2 + (rangeMax2 - rangeMin2) * rnd2.nextDouble(),
+							rangeMin2 + (rangeMax2 - rangeMin2) * rnd2.nextDouble(),
+							rangeMin2 + (rangeMax2 - rangeMin2) * rnd2.nextDouble());
+					this.world.spawnEntity((Entity) entitytntprimed);
+					++tnts;
+				}
+				if (tnts >= 9001) {
+					this.setDead();
+				}
 			}
-			if (tnts >= 9001) {
+		} else {
+			--this.fuse;
+			if (this.fuse <= 0) {
 				this.setDead();
+				if (!this.world.isRemote) {
+					this.explode();
+				}
+			} else {
+				this.handleWaterMovement();
+				this.world.spawnParticle(EnumParticleTypes.SMOKE_NORMAL, this.posX, this.posY + 0.5D, this.posZ, 0.0D,
+						0.0D,
+						0.0D);
 			}
 		}
 	}

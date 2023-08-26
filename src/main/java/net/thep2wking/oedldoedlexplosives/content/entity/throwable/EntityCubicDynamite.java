@@ -12,6 +12,7 @@ import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import net.thep2wking.oedldoedlexplosives.config.ExplosivesConfig;
 
 public class EntityCubicDynamite extends EntityThrowable {
 	public EntityCubicDynamite(World worldIn) {
@@ -45,7 +46,8 @@ public class EntityCubicDynamite extends EntityThrowable {
 	public void onImpact(RayTraceResult result) {
 		IBlockState air = Blocks.AIR.getDefaultState();
 
-		if (result.entityHit != null && !this.world.isRemote) {
+		if (result.entityHit != null && !this.world.isRemote
+				&& ExplosivesConfig.PROPERTIES.NON_STANDARD_EXPLOSION_DAMAGE) {
 			int resPosX = result.entityHit.getPosition().getX();
 			int resPosY = result.entityHit.getPosition().getY();
 			int resPosZ = result.entityHit.getPosition().getZ();
@@ -117,7 +119,7 @@ public class EntityCubicDynamite extends EntityThrowable {
 
 			result.entityHit.attackEntityFrom(DamageSource.causeThrownDamage(this, this.getThrower()), 0);
 		}
-		if (!this.world.isRemote) {
+		if (!this.world.isRemote && ExplosivesConfig.PROPERTIES.NON_STANDARD_EXPLOSION_DAMAGE) {
 			int thisPosX = this.getPosition().getX();
 			int thisPosY = this.getPosition().getY();
 			int thisPosZ = this.getPosition().getZ();

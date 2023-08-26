@@ -16,6 +16,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.thep2wking.oedldoedlexplosives.api.ModBlockTNTBase;
 import net.thep2wking.oedldoedlexplosives.api.ModEntityTNTBase;
+import net.thep2wking.oedldoedlexplosives.config.ExplosivesConfig;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityFakeTNT;
 
 public class BlockFakeTNT extends ModBlockTNTBase {
@@ -26,7 +27,8 @@ public class BlockFakeTNT extends ModBlockTNTBase {
 
 	@Override
 	public ModEntityTNTBase createTNTEntity(World world, double x, double y, double z, EntityLivingBase ignitor) {
-		return new EntityFakeTNT(world, x, y, z, ignitor, 80, 4.0f, false, true);
+		return new EntityFakeTNT(world, x, y, z, ignitor, 80, 4.0f, false,
+				ExplosivesConfig.CONTENT.FAKE_TNT_BLOCK_DAMAGE);
 	}
 
 	@Override

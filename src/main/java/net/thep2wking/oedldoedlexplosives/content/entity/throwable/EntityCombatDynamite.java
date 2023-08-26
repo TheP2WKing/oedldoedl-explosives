@@ -2,6 +2,7 @@ package net.thep2wking.oedldoedlexplosives.content.entity.throwable;
 
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.projectile.EntityThrowable;
+import net.minecraft.util.DamageSource;
 import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.util.datafix.DataFixer;
 import net.minecraft.util.math.RayTraceResult;
@@ -23,7 +24,7 @@ public class EntityCombatDynamite extends EntityThrowable {
 	}
 
 	public static void registerFixesSnowball(DataFixer fixer) {
-		EntityThrowable.registerFixesThrowable(fixer, "Entity");
+		EntityThrowable.registerFixesThrowable(fixer, "EntityCombatDynamite");
 	}
 
 	@SideOnly(Side.CLIENT)
@@ -42,6 +43,7 @@ public class EntityCombatDynamite extends EntityThrowable {
 		if (result.entityHit != null && !this.world.isRemote) {
 			world.newExplosion(null, result.entityHit.getPosition().getX(), result.entityHit.getPosition().getY(),
 					result.entityHit.getPosition().getZ(), 8.0f, false, false);
+			result.entityHit.attackEntityFrom(DamageSource.causeThrownDamage(this, this.getThrower()), 0);
 		}
 		if (!this.world.isRemote) {
 			this.world.setEntityState(this, (byte) 3);

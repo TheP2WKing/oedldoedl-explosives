@@ -48,6 +48,7 @@ import net.thep2wking.oedldoedlexplosives.content.entity.EntityTNTx5;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityTrollTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityWoolTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.throwable.EntityCombatDynamite;
+import net.thep2wking.oedldoedlexplosives.content.entity.throwable.EntityCubicDynamite;
 import net.thep2wking.oedldoedlexplosives.content.entity.throwable.EntityDynamite;
 import net.thep2wking.oedldoedlexplosives.content.entity.throwable.EntityDynamiteX20;
 import net.thep2wking.oedldoedlexplosives.content.entity.throwable.EntityDynamiteX5;
@@ -90,7 +91,7 @@ public class ModRendering {
 		ModTNTRenderer.register(EntitySupersonicTNT.class, ModBlocks.SUPERSONIC_TNT);
 		ModTNTRenderer.register(EntityRainbowTNT.class, ModBlocks.RAINBOW_TNT);
 
-		ModTNTRenderer.register(EntityNCNuke.class, ModBlocks.NUKE);
+		ModTNTRenderer.register(EntityNCNuke.class, ModBlocks.NUKE_NC);
 		ModTNTRenderer.register(EntityTrollTNT.class, ModBlocks.TROLL_TNT);
 		ModTNTRenderer.register(EntityChunkTNT.class, ModBlocks.CHUNK_TNT);
 
@@ -127,5 +128,8 @@ public class ModRendering {
 		RenderingRegistry.registerEntityRenderingHandler(EntityCombatDynamite.class,
 				new RenderSnowball<EntityCombatDynamite>(Minecraft.getMinecraft().getRenderManager(),
 						ModItems.COMBAT_DYNAMITE, Minecraft.getMinecraft().getRenderItem()));
+		RenderingRegistry.registerEntityRenderingHandler(EntityCubicDynamite.class,
+				new RenderSnowball<EntityCubicDynamite>(Minecraft.getMinecraft().getRenderManager(),
+						ModItems.CUBIC_DYNAMITE, Minecraft.getMinecraft().getRenderItem()));
 	}
 }

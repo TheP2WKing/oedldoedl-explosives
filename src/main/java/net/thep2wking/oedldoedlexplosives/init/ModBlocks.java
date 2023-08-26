@@ -114,7 +114,7 @@ public class ModBlocks {
 	public static final Block RAINBOW_TNT = new BlockRainbowTNT(OedldoedlExplosives.MODID, "rainbow_tnt",
 			OedldoedlExplosives.TAB, SoundType.PLANT, MapColor.TNT, 0);
 
-	public static final Block NUKE = new BlockNCNuke(OedldoedlExplosives.MODID, "nc_nuke", OedldoedlExplosives.TAB,
+	public static final Block NUKE_NC = new BlockNCNuke(OedldoedlExplosives.MODID, "nc_nuke", OedldoedlExplosives.TAB,
 			SoundType.PLANT, MapColor.BLACK, 0);
 	public static final Block TROLL_TNT = new BlockTrollTNT(OedldoedlExplosives.MODID, "troll_tnt",
 			OedldoedlExplosives.TAB, SoundType.PLANT, MapColor.RED, 0);

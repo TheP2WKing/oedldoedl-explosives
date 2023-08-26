@@ -53,7 +53,7 @@ public class ModRegistry {
 		ModRegistryHelper.registerBlock(event, ModBlocks.SUPERSONIC_TNT);
 		ModRegistryHelper.registerBlock(event, ModBlocks.RAINBOW_TNT);
 
-		ModRegistryHelper.registerBlock(event, ModBlocks.NUKE);
+		ModRegistryHelper.registerBlock(event, ModBlocks.NUKE_NC);
 		ModRegistryHelper.registerBlock(event, ModBlocks.TROLL_TNT);
 		ModRegistryHelper.registerBlock(event, ModBlocks.CHUNK_TNT);
 
@@ -116,7 +116,7 @@ public class ModRegistry {
 		ModRegistryHelper.registerItemBlock(event, ModItems.SUPERSONIC_TNT);
 		ModRegistryHelper.registerItemBlock(event, ModItems.RAINBOW_TNT);
 
-		ModRegistryHelper.registerItemBlock(event, ModItems.NUKE);
+		ModRegistryHelper.registerItemBlock(event, ModItems.NUKE_NC);
 		ModRegistryHelper.registerItemBlock(event, ModItems.TROLL_TNT);
 		ModRegistryHelper.registerItemBlock(event, ModItems.CHUNK_TNT);
 
@@ -144,6 +144,7 @@ public class ModRegistry {
 		ModRegistryHelper.registerItem(event, ModItems.DYNAMITE_X5);
 		ModRegistryHelper.registerItem(event, ModItems.DYNAMITE_X20);
 		ModRegistryHelper.registerItem(event, ModItems.COMBAT_DYNAMITE);
+		ModRegistryHelper.registerItem(event, ModItems.CUBIC_DYNAMITE);
 
 		ModRegistryHelper.registerItem(event, ModItems.TNT_WRENCH);
 		ModRegistryHelper.registerItem(event, ModItems.PLASTIC);

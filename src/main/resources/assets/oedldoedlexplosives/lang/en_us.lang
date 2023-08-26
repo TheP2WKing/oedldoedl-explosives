@@ -102,7 +102,7 @@ tile.oedldoedlexplosives.random_blocks_tnt.tip1=Not quite RNG.
 
 tile.oedldoedlexplosives.crash_tnt.name=Crash TNT
 entity.oedldoedlexplosives.crash_tnt.name=Block of Crash TNT
-tile.oedldoedlexplosives.crash_tnt.tip1=Build Failed...
+tile.oedldoedlexplosives.crash_tnt.tip1=Exit code 0...
 
 tile.oedldoedlexplosives.lolxd_tnt.name=LOLXD TNT
 entity.oedldoedlexplosives.lolxd_tnt.name=Block of LOLXD TNT
@@ -191,6 +191,9 @@ item.oedldoedlexplosives.dynamite_x20.tip1=Throwable TNT time 20.
 
 item.oedldoedlexplosives.combat_dynamite.name=Combat Dynamite
 item.oedldoedlexplosives.combat_dynamite.tip1=Also known as DIEnemite.
+
+item.oedldoedlexplosives.cubic_dynamite.name=Cubic Dynamite
+item.oedldoedlexplosives.cubic_dynamite.tip1=Removes cubes, well...
 
 item.oedldoedlexplosives.tnt_wrench.name=TNT Wrench
 item.oedldoedlexplosives.tnt_wrench.tip1=Change Configureable TNT explosion size and

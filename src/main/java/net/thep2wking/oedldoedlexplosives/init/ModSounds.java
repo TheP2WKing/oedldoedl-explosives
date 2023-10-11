@@ -10,4 +10,5 @@ public class ModSounds {
 	public static final SoundEvent BOMB = new ModSoundEventBase(OedldoedlExplosives.MODID, "bomb");
 	public static final SoundEvent ATOMIC = new ModSoundEventBase(OedldoedlExplosives.MODID, "atomic");
 
+	public static final SoundEvent THEP2WKING = new ModSoundEventBase(OedldoedlExplosives.MODID, "thep2wking");
 }

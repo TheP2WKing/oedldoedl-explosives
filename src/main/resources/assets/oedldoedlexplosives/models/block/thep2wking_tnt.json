@@ -1,0 +1,9 @@
+{
+    "parent": "minecraft:block/cube_bottom_top",
+    "textures": 
+    {
+        "top": "oedldoedlexplosives:blocks/thep2wking_tnt_top",
+        "bottom": "oedldoedlexplosives:blocks/thep2wking_tnt_bottom",
+        "side": "oedldoedlexplosives:blocks/thep2wking_tnt_side"
+    }
+}

@@ -6,6 +6,7 @@ import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
 import net.thep2wking.oedldoedlcore.util.ModToolTypes;
 import net.thep2wking.oedldoedlexplosives.OedldoedlExplosives;
+import net.thep2wking.oedldoedlexplosives.content.block.BlockAnimalTNT;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockAnitmatterBomb;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockArrowTNT;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockBundledTNT;
@@ -39,14 +40,17 @@ import net.thep2wking.oedldoedlexplosives.content.block.BlockNukeTNT;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockOver9000TNT;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockRainbowTNT;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockRandomBlocksTNT;
+import net.thep2wking.oedldoedlexplosives.content.block.BlockSandFirework;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockSirDerpingtonTNT;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockSnowTNT;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockSphereTNT;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockSupersonicTNT;
+import net.thep2wking.oedldoedlexplosives.content.block.BlockTNTFirework;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockTNTRain;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockTNTTree;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockTNTx20;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockTNTx5;
+import net.thep2wking.oedldoedlexplosives.content.block.BlockTheP2WKingTNT;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockTrollTNT;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockWoolTNT;
 import net.thep2wking.oedldoedlexplosives.content.block.misc.BlockRainbow;
@@ -114,12 +118,12 @@ public class ModBlocks {
 	public static final Block RAINBOW_TNT = new BlockRainbowTNT(OedldoedlExplosives.MODID, "rainbow_tnt",
 			OedldoedlExplosives.TAB, SoundType.PLANT, MapColor.TNT, 0);
 
-	public static final Block NUKE_NC = new BlockNCNuke(OedldoedlExplosives.MODID, "nc_nuke", OedldoedlExplosives.TAB,
-			SoundType.PLANT, MapColor.BLACK, 0);
 	public static final Block TROLL_TNT = new BlockTrollTNT(OedldoedlExplosives.MODID, "troll_tnt",
 			OedldoedlExplosives.TAB, SoundType.PLANT, MapColor.RED, 0);
 	public static final Block CHUNK_TNT = new BlockChunkTNT(OedldoedlExplosives.MODID, "chunk_tnt",
 			OedldoedlExplosives.TAB, SoundType.PLANT, MapColor.RED, 0);
+	public static final Block NUKE_NC = new BlockNCNuke(OedldoedlExplosives.MODID, "nc_nuke", OedldoedlExplosives.TAB,
+			SoundType.PLANT, MapColor.BLACK, 0);
 
 	public static final Block MINI_NUKE_TNT = new BlockMiniNukeTNT(OedldoedlExplosives.MODID, "mini_nuke_tnt",
 			OedldoedlExplosives.TAB, SoundType.PLANT, MapColor.TNT, 0);
@@ -153,6 +157,14 @@ public class ModBlocks {
 			OedldoedlExplosives.TAB, SoundType.PLANT, MapColor.PINK, 0);
 	public static final Block CUBIC_TNT = new BlockCubicTNT(OedldoedlExplosives.MODID, "cubic_tnt",
 			OedldoedlExplosives.TAB, SoundType.PLANT, MapColor.TNT, 0);
+	public static final Block ANIMAL_TNT = new BlockAnimalTNT(OedldoedlExplosives.MODID, "animal_tnt",
+			OedldoedlExplosives.TAB, SoundType.PLANT, MapColor.BROWN, 0);
+	public static final Block SAND_FIREWORK = new BlockSandFirework(OedldoedlExplosives.MODID, "sand_firework",
+			OedldoedlExplosives.TAB, SoundType.PLANT, MapColor.SAND, 0);
+	public static final Block TNT_FIREWORK = new BlockTNTFirework(OedldoedlExplosives.MODID, "tnt_firework",
+			OedldoedlExplosives.TAB, SoundType.PLANT, MapColor.BLACK, 0);
 	public static final Block OVER_9000_TNT = new BlockOver9000TNT(OedldoedlExplosives.MODID, "over_9000_tnt",
 			OedldoedlExplosives.TAB, SoundType.PLANT, MapColor.PURPLE, 0);
+	public static final Block THEP2WKING_TNT = new BlockTheP2WKingTNT(OedldoedlExplosives.MODID, "thep2wking_tnt",
+			OedldoedlExplosives.TAB, SoundType.PLANT, MapColor.GOLD, 0);
 }

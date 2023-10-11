@@ -21,8 +21,15 @@ public class ModRecipes {
 			ModRecipeHelper.addOreDict("tntX5", ModBlocks.TNT_X5, 0);
 			ModRecipeHelper.addOreDict("tntX20", ModBlocks.TNT_X20, 0);
 
+			ModRecipeHelper.addOreDict("dynamite", ModItems.DYNAMITE, 0);
+			ModRecipeHelper.addOreDict("dynamiteX5", ModItems.DYNAMITE_X5, 0);
+			ModRecipeHelper.addOreDict("dynamiteX20", ModItems.DYNAMITE_X20, 0);
+
 			ModRecipeHelper.addOreDict("itemPlastic", ModItems.PLASTIC, 0);
+			ModRecipeHelper.addOreDict("sheetPlastic", ModItems.PLASTIC, 0);
+			ModRecipeHelper.addOreDict("plastic", ModItems.PLASTIC, 0);
 			ModRecipeHelper.addOreDict("itemChip", ModItems.CHIP, 0);
+			ModRecipeHelper.addOreDict("chip", ModItems.CHIP, 0);
 			ModRecipeHelper.addOreDict("dividedByZero", ModItems.DIVIDED_BY_ZERO, 0);
 		}
 	}
@@ -43,7 +50,7 @@ public class ModRecipes {
 					new ItemStack(ModBlocks.COMBAT_TNT, 1, 0), " A ", "ABA", " A ", 'A',
 					new ItemStack(Items.STONE_SWORD, 1, 0), 'B', "tntX5");
 			ModRecipeHelper.addShapedRecipe(OedldoedlExplosives.MODID, "c4", new ItemStack(ModBlocks.C4, 1, 0), "ABA",
-					"BAB", "ABA", 'A', "itemPlastic", 'B', "sand");
+					"BAB", "ABA", 'A', "sheetPlastic", 'B', "sand");
 			ModRecipeHelper.addShapedRecipe(OedldoedlExplosives.MODID, "tnt_x5", new ItemStack(ModBlocks.TNT_X5, 1, 0),
 					"AA", "AA", 'A', "tnt");
 			ModRecipeHelper.addShapedRecipe(OedldoedlExplosives.MODID, "tnt_x20",
@@ -100,17 +107,17 @@ public class ModRecipes {
 					new ItemStack(ModBlocks.ISLAND_TNT, 1, 0));
 			ModRecipeHelper.addShapedRecipe(OedldoedlExplosives.MODID, "rainbow_tnt",
 					new ItemStack(ModBlocks.RAINBOW_TNT, 1, 0), "AAA", "ABA", "AAA", 'A', "blockRainbow", 'B', "tntX5");
-			ModRecipeHelper.addShapedRecipe(OedldoedlExplosives.MODID, "nuke_nc",
-					new ItemStack(ModBlocks.NUKE_NC, 1, 0), "ABA", "ACA", "ADA", 'A',
-					new ItemStack(ModBlocks.MINI_NUKE_TNT, 1, 0), 'B', "dustRedstone", 'C',
-					new ItemStack(ModBlocks.METEOR_TNT, 1, 0), 'D', "dyeBlack");
+			ModRecipeHelper.addShapedRecipe(OedldoedlExplosives.MODID, "troll_tnt",
+					new ItemStack(ModBlocks.TROLL_TNT, 1, 0), "ABA", "BCB", "ABA", 'A', "gunpowder", 'B',
+					new ItemStack(ModBlocks.DETONATOR_CHAIN_TNT, 1, 0), 'C', "tntC4");
 			ModRecipeHelper.addShapedRecipe(OedldoedlExplosives.MODID, "chunk_tnt",
 					new ItemStack(ModBlocks.CHUNK_TNT, 1, 0), "ABA", "ACA", "AAA", 'A',
 					new ItemStack(ModBlocks.METEOR_TNT, 1, 0), 'B', "powderUranium", 'C',
 					new ItemStack(ModBlocks.NUKE_TNT, 1, 0));
-			ModRecipeHelper.addShapedRecipe(OedldoedlExplosives.MODID, "troll_tnt",
-					new ItemStack(ModBlocks.TROLL_TNT, 1, 0), "ABA", "BCB", "ABA", 'A', "gunpowder", 'B',
-					new ItemStack(ModBlocks.DETONATOR_CHAIN_TNT, 1, 0), 'C', "tntC4");
+			ModRecipeHelper.addShapedRecipe(OedldoedlExplosives.MODID, "nuke_nc",
+					new ItemStack(ModBlocks.NUKE_NC, 1, 0), "ABA", "ACA", "ADA", 'A',
+					new ItemStack(ModBlocks.MINI_NUKE_TNT, 1, 0), 'B', "dustRedstone", 'C',
+					new ItemStack(ModBlocks.METEOR_TNT, 1, 0), 'D', "dyeBlack");
 			ModRecipeHelper.addShapedRecipe(OedldoedlExplosives.MODID, "mini_nuke_tnt",
 					new ItemStack(ModBlocks.MINI_NUKE_TNT, 1, 0), "ABA", "BAB", "ABA", 'A', "tntX5", 'B',
 					new ItemStack(ModBlocks.INCENDITARY_TNT, 1, 0));
@@ -149,10 +156,24 @@ public class ModRecipes {
 					new ItemStack(ModBlocks.FLOWER_POWER, 1, 0), "ABA", "BAB", "ABA", 'A', "tnt", 'B', "flower");
 			ModRecipeHelper.addShapedRecipe(OedldoedlExplosives.MODID, "cubic_tnt",
 					new ItemStack(ModBlocks.CUBIC_TNT, 1, 0), "AAA", "ABA", "AAA", 'A', "cobblestone", 'B', "tntX5");
+			ModRecipeHelper.addShapedRecipe(OedldoedlExplosives.MODID, "animal_tnt",
+					new ItemStack(ModBlocks.ANIMAL_TNT, 1, 0), "ABC", "DEF", "GHI", 'A',
+					new ItemStack(Items.ROTTEN_FLESH, 1, 0), 'B', "bone", 'C', "string", 'D', "slimeball", 'E', "tnt",
+					'F', new ItemStack(Items.BLAZE_ROD, 1, 0), 'G', new ItemStack(Items.BEEF, 1, 0), 'H',
+					new ItemStack(Items.PORKCHOP, 1, 0), 'I', new ItemStack(Items.CHICKEN, 1, 0));
+			ModRecipeHelper.addShapedRecipe(OedldoedlExplosives.MODID, "sand_firework",
+					new ItemStack(ModBlocks.SAND_FIREWORK, 1, 0), "AAA", "ABA", "ACA", 'A', "sand", 'B', "tntX5", 'C',
+					new ItemStack(Items.FIREWORK_CHARGE));
+			ModRecipeHelper.addShapedRecipe(OedldoedlExplosives.MODID, "tnt_firework",
+					new ItemStack(ModBlocks.TNT_FIREWORK, 1, 0), "AAA", "ABA", "ACA", 'A', "tntX20", 'B', "tntX5", 'C',
+					new ItemStack(Items.FIREWORK_CHARGE));
 			ModRecipeHelper.addShapedRecipe(OedldoedlExplosives.MODID, "over_9000_tnt",
 					new ItemStack(ModBlocks.OVER_9000_TNT, 1, 0), "ABA", "CDC", "ACA", 'A',
 					new ItemStack(ModBlocks.TNT_RAIN, 1, 0), 'B', "powderUranium", 'C',
 					new ItemStack(ModBlocks.BUNDLED_TNT, 1, 0), 'D', new ItemStack(ModBlocks.H_TNT, 1, 0));
+			ModRecipeHelper.addShapedRecipe(OedldoedlExplosives.MODID, "thep2wking_tnt",
+					new ItemStack(ModItems.THEP2WKING_TNT, 1, 0), "ABA", "CBC", "DBD", 'A', "woolYellow", 'B',
+					new ItemStack(ModBlocks.TROLL_TNT, 1, 0), 'C', "woolWhite", 'D', "woolBlack");
 
 			ModRecipeHelper.addShapedRecipe(OedldoedlExplosives.MODID, "dynamite",
 					new ItemStack(ModItems.DYNAMITE, 4, 0), "A", 'A', "tnt");
@@ -164,6 +185,19 @@ public class ModRecipes {
 					new ItemStack(ModItems.COMBAT_DYNAMITE, 4, 0), "A", 'A', new ItemStack(ModBlocks.COMBAT_TNT, 1, 0));
 			ModRecipeHelper.addShapedRecipe(OedldoedlExplosives.MODID, "cubic_dynamite",
 					new ItemStack(ModItems.CUBIC_DYNAMITE, 4, 0), "A", 'A', new ItemStack(ModBlocks.CUBIC_TNT, 1, 0));
+			ModRecipeHelper.addShapedRecipe(OedldoedlExplosives.MODID, "animal_dynamite",
+					new ItemStack(ModItems.ANIMAL_DYNAMITE, 4, 0), "A", 'A', new ItemStack(ModBlocks.ANIMAL_TNT, 1, 0));
+			ModRecipeHelper.addShapedRecipe(OedldoedlExplosives.MODID, "thep2wking_dynamitw",
+					new ItemStack(ModItems.THEP2WKING_DYNAMITE, 4, 0), "A", 'A',
+					new ItemStack(ModBlocks.THEP2WKING_TNT, 1, 0));
+
+			ModRecipeHelper.addShapedRecipe(OedldoedlExplosives.MODID, "eggsplosive",
+					new ItemStack(ModItems.EGGSPLOSIVE, 6, 0), "ABA", "ACA", "ACA", 'A', "egg", 'B', "nuggetIron", 'C',
+					"gunpowder");
+			ModRecipeHelper.addShapedRecipe(OedldoedlExplosives.MODID, "grenade_apple",
+					new ItemStack(ModItems.GRENADE_APPLE, 6, 0), "ABA", "ACA", "ACA", 'A', "cropApple", 'B',
+					"nuggetIron", 'C',
+					"gunpowder");
 
 			ModRecipeHelper.addShapedRecipe(OedldoedlExplosives.MODID, "tnt_wrench",
 					new ItemStack(ModItems.TNT_WRENCH, 1, 0), "  A", " B ", "B  ", 'A',

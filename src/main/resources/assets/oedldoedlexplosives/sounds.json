@@ -1,38 +1,37 @@
 {
-    "nuke_alarm":
-    {
+    "nuke_alarm": {
         "category": "blocks",
         "subtitle": "sound.oedldoedlexplosives.nuke_alarm",
-        "sounds":
-        [
+        "sounds": [
             "oedldoedlexplosives:nuke_alarm"
         ]
     },
-    "tactical_nuke":
-    {
+    "tactical_nuke": {
         "category": "blocks",
         "subtitle": "sound.oedldoedlexplosives.tactical_nuke",
-        "sounds":
-        [
+        "sounds": [
             "oedldoedlexplosives:tactical_nuke"
         ]
     },
-    "bomb":
-    {
+    "bomb": {
         "category": "blocks",
         "subtitle": "sound.oedldoedlexplosives.bomb",
-        "sounds":
-        [
+        "sounds": [
             "oedldoedlexplosives:bomb"
         ]
     },
-    "atomic":
-    {
+    "atomic": {
         "category": "blocks",
         "subtitle": "sound.oedldoedlexplosives.atomic",
-        "sounds":
-        [
+        "sounds": [
             "oedldoedlexplosives:atomic"
+        ]
+    },
+    "thep2wking": {
+        "category": "neutral",
+        "subtitle": "sound.oedldoedlexplosives.thep2wking",
+        "sounds": [
+            "oedldoedlexplosives:thep2wking"
         ]
     }
 }

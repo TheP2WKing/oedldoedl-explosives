@@ -1,9 +1,12 @@
 package net.thep2wking.oedldoedlexplosives.util;
 
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.entity.RenderSnowball;
+import net.minecraft.init.Blocks;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
+import net.thep2wking.oedldoedlcore.util.ModRenderHelper;
 import net.thep2wking.oedldoedlexplosives.api.ModTNTRenderer;
+import net.thep2wking.oedldoedlexplosives.content.entity.EntityAnimalTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityAntimatterBomb;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityArrowTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityBundledTNT;
@@ -37,25 +40,34 @@ import net.thep2wking.oedldoedlexplosives.content.entity.EntityNukeTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityOver9000TNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityRainbowTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityRandomBlocksTNT;
+import net.thep2wking.oedldoedlexplosives.content.entity.EntityTNTFireworkCustomTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntitySirDerpingtonTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntitySnowTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntitySphereTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntitySupersonicTNT;
+import net.thep2wking.oedldoedlexplosives.content.entity.EntityTNTFirework;
+import net.thep2wking.oedldoedlexplosives.content.entity.EntitySandFirework;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityTNTRain;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityTNTTree;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityTNTx20;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityTNTx5;
+import net.thep2wking.oedldoedlexplosives.content.entity.EntityTheP2WKingTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityTrollTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityWoolTNT;
+import net.thep2wking.oedldoedlexplosives.content.entity.living.EntityTheP2WKing;
+import net.thep2wking.oedldoedlexplosives.content.entity.living.RenderTheP2WKing;
+import net.thep2wking.oedldoedlexplosives.content.entity.throwable.EntityAnimalDynamite;
 import net.thep2wking.oedldoedlexplosives.content.entity.throwable.EntityCombatDynamite;
 import net.thep2wking.oedldoedlexplosives.content.entity.throwable.EntityCubicDynamite;
 import net.thep2wking.oedldoedlexplosives.content.entity.throwable.EntityDynamite;
 import net.thep2wking.oedldoedlexplosives.content.entity.throwable.EntityDynamiteX20;
 import net.thep2wking.oedldoedlexplosives.content.entity.throwable.EntityDynamiteX5;
+import net.thep2wking.oedldoedlexplosives.content.entity.throwable.EntityEggsplosive;
+import net.thep2wking.oedldoedlexplosives.content.entity.throwable.EntityGrenadeApple;
+import net.thep2wking.oedldoedlexplosives.content.entity.throwable.EntityTheP2WKingDynamite;
 import net.thep2wking.oedldoedlexplosives.init.ModBlocks;
 import net.thep2wking.oedldoedlexplosives.init.ModItems;
 
-@SuppressWarnings("deprecation")
 public class ModRendering {
 	public static void registerRenderer() {
 		ModTNTRenderer.register(EntityFakeTNT.class, ModBlocks.FAKE_TNT);
@@ -114,22 +126,29 @@ public class ModRendering {
 
 		ModTNTRenderer.register(EntityFlowerPower.class, ModBlocks.FLOWER_POWER);
 		ModTNTRenderer.register(EntityCubicTNT.class, ModBlocks.CUBIC_TNT);
-		ModTNTRenderer.register(EntityOver9000TNT.class, ModBlocks.OVER_9000_TNT);
+		ModTNTRenderer.register(EntityAnimalTNT.class, ModBlocks.ANIMAL_TNT);
+		ModTNTRenderer.register(EntitySandFirework.class, ModBlocks.SAND_FIREWORK);
+		ModTNTRenderer.register(EntityTNTFirework.class, ModBlocks.TNT_FIREWORK);
 
-		RenderingRegistry.registerEntityRenderingHandler(EntityDynamite.class,
-				new RenderSnowball<EntityDynamite>(Minecraft.getMinecraft().getRenderManager(),
-						ModItems.DYNAMITE, Minecraft.getMinecraft().getRenderItem()));
-		RenderingRegistry.registerEntityRenderingHandler(EntityDynamiteX5.class,
-				new RenderSnowball<EntityDynamiteX5>(Minecraft.getMinecraft().getRenderManager(),
-						ModItems.DYNAMITE_X5, Minecraft.getMinecraft().getRenderItem()));
-		RenderingRegistry.registerEntityRenderingHandler(EntityDynamiteX20.class,
-				new RenderSnowball<EntityDynamiteX20>(Minecraft.getMinecraft().getRenderManager(),
-						ModItems.DYNAMITE_X20, Minecraft.getMinecraft().getRenderItem()));
-		RenderingRegistry.registerEntityRenderingHandler(EntityCombatDynamite.class,
-				new RenderSnowball<EntityCombatDynamite>(Minecraft.getMinecraft().getRenderManager(),
-						ModItems.COMBAT_DYNAMITE, Minecraft.getMinecraft().getRenderItem()));
-		RenderingRegistry.registerEntityRenderingHandler(EntityCubicDynamite.class,
-				new RenderSnowball<EntityCubicDynamite>(Minecraft.getMinecraft().getRenderManager(),
-						ModItems.CUBIC_DYNAMITE, Minecraft.getMinecraft().getRenderItem()));
+		ModTNTRenderer.register(EntityTNTFireworkCustomTNT.class, Blocks.TNT);
+
+		ModTNTRenderer.register(EntityOver9000TNT.class, ModBlocks.OVER_9000_TNT);
+		ModTNTRenderer.register(EntityTheP2WKingTNT.class, ModBlocks.THEP2WKING_TNT);
+
+		ModRenderHelper.addThrowableRender(EntityDynamite.class, ModItems.DYNAMITE);
+		ModRenderHelper.addThrowableRender(EntityDynamiteX5.class, ModItems.DYNAMITE_X5);
+		ModRenderHelper.addThrowableRender(EntityDynamiteX20.class, ModItems.DYNAMITE_X20);
+		ModRenderHelper.addThrowableRender(EntityCombatDynamite.class, ModItems.COMBAT_DYNAMITE);
+		ModRenderHelper.addThrowableRender(EntityCubicDynamite.class, ModItems.CUBIC_DYNAMITE);
+		ModRenderHelper.addThrowableRender(EntityAnimalDynamite.class, ModItems.ANIMAL_DYNAMITE);
+		ModRenderHelper.addThrowableRender(EntityTheP2WKingDynamite.class, ModItems.THEP2WKING_DYNAMITE);
+
+		ModRenderHelper.addThrowableRender(EntityEggsplosive.class, ModItems.EGGSPLOSIVE);
+		ModRenderHelper.addThrowableRender(EntityGrenadeApple.class, ModItems.GRENADE_APPLE);
+	}
+
+	@SideOnly(Side.CLIENT)
+	public static void registerEntityRender() {
+		RenderingRegistry.registerEntityRenderingHandler(EntityTheP2WKing.class, RenderTheP2WKing.FACTORY);
 	}
 }

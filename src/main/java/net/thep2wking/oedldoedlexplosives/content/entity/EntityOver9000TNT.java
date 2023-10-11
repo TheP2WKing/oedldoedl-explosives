@@ -32,6 +32,11 @@ public class EntityOver9000TNT extends ModEntityTNTBase {
 	}
 
 	@Override
+	public boolean isImmuneToExplosions() {
+		return true;
+	}
+
+	@Override
 	public void onUpdate() {
 		this.prevPosX = this.posX;
 		this.prevPosY = this.posY;

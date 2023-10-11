@@ -1,0 +1,17 @@
+{
+    "variants": 
+    {
+        "normal": 
+        { 
+            "model": "oedldoedlexplosives:tnt_firework"
+        },
+        "explode=false": 
+        { 
+            "model": "oedldoedlexplosives:tnt_firework"
+        },
+        "explode=true": 
+        { 
+            "model": "oedldoedlexplosives:tnt_firework"
+        }
+    }
+}

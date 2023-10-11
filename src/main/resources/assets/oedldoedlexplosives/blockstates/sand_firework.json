@@ -1,0 +1,17 @@
+{
+    "variants": 
+    {
+        "normal": 
+        { 
+            "model": "oedldoedlexplosives:sand_firework"
+        },
+        "explode=false": 
+        { 
+            "model": "oedldoedlexplosives:sand_firework"
+        },
+        "explode=true": 
+        { 
+            "model": "oedldoedlexplosives:sand_firework"
+        }
+    }
+}

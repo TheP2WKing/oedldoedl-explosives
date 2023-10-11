@@ -1,0 +1,9 @@
+{
+    "parent": "minecraft:block/cube_bottom_top",
+    "textures": 
+    {
+        "top": "oedldoedlexplosives:blocks/sand_firework_top",
+        "bottom": "oedldoedlexplosives:blocks/sand_firework_bottom",
+        "side": "oedldoedlexplosives:blocks/sand_firework_side"
+    }
+}

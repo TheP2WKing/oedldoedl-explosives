@@ -3,6 +3,7 @@ package net.thep2wking.oedldoedlexplosives.registry;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.util.SoundEvent;
+import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -12,6 +13,7 @@ import net.thep2wking.oedldoedlexplosives.OedldoedlExplosives;
 import net.thep2wking.oedldoedlexplosives.init.ModBlocks;
 import net.thep2wking.oedldoedlexplosives.init.ModItems;
 import net.thep2wking.oedldoedlexplosives.init.ModSounds;
+import net.thep2wking.oedldoedlexplosives.util.ModRendering;
 
 @Mod.EventBusSubscriber
 public class ModRegistry {
@@ -53,10 +55,10 @@ public class ModRegistry {
 		ModRegistryHelper.registerBlock(event, ModBlocks.SUPERSONIC_TNT);
 		ModRegistryHelper.registerBlock(event, ModBlocks.RAINBOW_TNT);
 
-		ModRegistryHelper.registerBlock(event, ModBlocks.NUKE_NC);
 		ModRegistryHelper.registerBlock(event, ModBlocks.TROLL_TNT);
 		ModRegistryHelper.registerBlock(event, ModBlocks.CHUNK_TNT);
-
+		ModRegistryHelper.registerBlock(event, ModBlocks.NUKE_NC);
+		
 		ModRegistryHelper.registerBlock(event, ModBlocks.MINI_NUKE_TNT);
 		ModRegistryHelper.registerBlock(event, ModBlocks.MEGA_NUKE_TNT);
 		ModRegistryHelper.registerBlock(event, ModBlocks.ANTIMATTER_BOMB);
@@ -75,7 +77,11 @@ public class ModRegistry {
 
 		ModRegistryHelper.registerBlock(event, ModBlocks.FLOWER_POWER);
 		ModRegistryHelper.registerBlock(event, ModBlocks.CUBIC_TNT);
+		ModRegistryHelper.registerBlock(event, ModBlocks.ANIMAL_TNT);
+		ModRegistryHelper.registerBlock(event, ModBlocks.SAND_FIREWORK);
+		ModRegistryHelper.registerBlock(event, ModBlocks.TNT_FIREWORK);
 		ModRegistryHelper.registerBlock(event, ModBlocks.OVER_9000_TNT);
+		ModRegistryHelper.registerBlock(event, ModBlocks.THEP2WKING_TNT);
 	}
 
 	@SubscribeEvent
@@ -116,9 +122,9 @@ public class ModRegistry {
 		ModRegistryHelper.registerItemBlock(event, ModItems.SUPERSONIC_TNT);
 		ModRegistryHelper.registerItemBlock(event, ModItems.RAINBOW_TNT);
 
-		ModRegistryHelper.registerItemBlock(event, ModItems.NUKE_NC);
 		ModRegistryHelper.registerItemBlock(event, ModItems.TROLL_TNT);
 		ModRegistryHelper.registerItemBlock(event, ModItems.CHUNK_TNT);
+		ModRegistryHelper.registerItemBlock(event, ModItems.NUKE_NC);
 
 		ModRegistryHelper.registerItemBlock(event, ModItems.MINI_NUKE_TNT);
 		ModRegistryHelper.registerItemBlock(event, ModItems.MEGA_NUKE_TNT);
@@ -138,13 +144,22 @@ public class ModRegistry {
 
 		ModRegistryHelper.registerItemBlock(event, ModItems.FLOWER_POWER);
 		ModRegistryHelper.registerItemBlock(event, ModItems.CUBIC_TNT);
+		ModRegistryHelper.registerItemBlock(event, ModItems.ANIMAL_TNT);
+		ModRegistryHelper.registerItemBlock(event, ModItems.SAND_FIREWORK);
+		ModRegistryHelper.registerItemBlock(event, ModItems.TNT_FIREWORK);
 		ModRegistryHelper.registerItemBlock(event, ModItems.OVER_9000_TNT);
+		ModRegistryHelper.registerItemBlock(event, ModItems.THEP2WKING_TNT);
 
 		ModRegistryHelper.registerItem(event, ModItems.DYNAMITE);
 		ModRegistryHelper.registerItem(event, ModItems.DYNAMITE_X5);
 		ModRegistryHelper.registerItem(event, ModItems.DYNAMITE_X20);
 		ModRegistryHelper.registerItem(event, ModItems.COMBAT_DYNAMITE);
 		ModRegistryHelper.registerItem(event, ModItems.CUBIC_DYNAMITE);
+		ModRegistryHelper.registerItem(event, ModItems.ANIMAL_DYNAMITE);
+		ModRegistryHelper.registerItem(event, ModItems.THEP2WKING_DYNAMITE);
+
+		ModRegistryHelper.registerItem(event, ModItems.EGGSPLOSIVE);
+		ModRegistryHelper.registerItem(event, ModItems.GRENADE_APPLE);
 
 		ModRegistryHelper.registerItem(event, ModItems.TNT_WRENCH);
 		ModRegistryHelper.registerItem(event, ModItems.PLASTIC);
@@ -160,5 +175,12 @@ public class ModRegistry {
 		ModRegistryHelper.registerSoundEvent(event, ModSounds.TACTICAL_NUKE);
 		ModRegistryHelper.registerSoundEvent(event, ModSounds.BOMB);
 		ModRegistryHelper.registerSoundEvent(event, ModSounds.ATOMIC);
+
+		ModRegistryHelper.registerSoundEvent(event, ModSounds.THEP2WKING);
+	}
+
+	@SubscribeEvent
+	public static void onSoundModelRegister(ModelRegistryEvent event) {
+		ModRendering.registerEntityRender();
 	}
 }

@@ -2,7 +2,7 @@
 itemGroup.oedldoedlexplosives.name=§dOedldoedl Explosives
 
 # icons
-item.oedldoedlcore.explosions_icon.annotation3=Version: §e1.12.2-3.0.0
+item.oedldoedlcore.explosives_icon.annotation3=Version: §e1.12.2-3.0.0
 
 # blocks
 tile.oedldoedlexplosives.rainbow_block.name=Rainbow Block
@@ -180,20 +180,54 @@ tile.oedldoedlexplosives.mini_nuke_tnt.name=Mini Nuke TNT
 entity.oedldoedlexplosives.mini_nuke_tnt.name=Block of Mini Nuke TNT
 tile.oedldoedlexplosives.mini_nuke_tnt.tip1=Small nuke, giant hole.
 
+tile.oedldoedlexplosives.animal_tnt.name=Animal TNT
+entity.oedldoedlexplosives.animal_tnt.name=Block of Animal TNT
+tile.oedldoedlexplosives.animal_tnt.tip1=No mob spawner needed.
+
+tile.oedldoedlexplosives.sand_firework.name=Sand Firework
+entity.oedldoedlexplosives.sand_firework.name=Block of Sand Firework
+tile.oedldoedlexplosives.sand_firework.tip1=We wish you a merry sandmas...
+
+tile.oedldoedlexplosives.tnt_firework.name=TNT Firework
+entity.oedldoedlexplosives.tnt_firework.name=Block of TNT Firework
+tile.oedldoedlexplosives.tnt_firework.tip1=...and a happy new year!
+
+tile.oedldoedlexplosives.thep2wking_tnt.name=TheP2WKing TNT
+entity.oedldoedlexplosives.thep2wking_tnt.name=Block of TheP2WKing TNT
+tile.oedldoedlexplosives.thep2wking_tnt.tip1=Developing Chaos since 2018!
+
 item.oedldoedlexplosives.dynamite.name=Dynamite
 item.oedldoedlexplosives.dynamite.tip1=Throwable TNT.
 
 item.oedldoedlexplosives.dynamite_x5.name=Dynamite x5
-item.oedldoedlexplosives.dynamite_x5.tip1=Throwable TNT time 5.
+item.oedldoedlexplosives.dynamite_x5.tip1=Throwable TNT times 5.
 
 item.oedldoedlexplosives.dynamite_x20.name=Dynamite x20
-item.oedldoedlexplosives.dynamite_x20.tip1=Throwable TNT time 20.
+item.oedldoedlexplosives.dynamite_x20.tip1=Throwable TNT times 20.
 
 item.oedldoedlexplosives.combat_dynamite.name=Combat Dynamite
 item.oedldoedlexplosives.combat_dynamite.tip1=Also known as DIEnemite.
 
 item.oedldoedlexplosives.cubic_dynamite.name=Cubic Dynamite
 item.oedldoedlexplosives.cubic_dynamite.tip1=Removes cubes, well...
+
+item.oedldoedlexplosives.animal_dynamite.name=Animal Dynamite
+item.oedldoedlexplosives.animal_dynamite.tip1=Small herd.
+
+item.oedldoedlexplosives.thep2wking_dynamite.name=TheP2WKing Dynamite
+item.oedldoedlexplosives.thep2wking_dynamite.tip1=Developing Chaos since 2018!
+
+item.oedldoedlexplosives.eggsplosive.name=Eggsplosive
+item.oedldoedlexplosives.eggsplosive.tip1=Which came first, the chicken or the egg...
+item.oedldoedlexplosives.eggsplosive.tip2=...wrong answer, dynamite!
+
+item.oedldoedlexplosives.grenade_apple.name=Grenade Apple
+item.oedldoedlexplosives.grenade_apple.tip1=May contain traces of gunpowder.
+
+entity.oedldoedlexplosives.sand_firework_custom_tnt.name=Falling Sand
+entity.oedldoedlexplosives.tnt_firework_custom_tnt.name=Block of TNT
+
+entity.oedldoedlexplosives.thep2wking.name=TheP2WKing
 
 item.oedldoedlexplosives.tnt_wrench.name=TNT Wrench
 item.oedldoedlexplosives.tnt_wrench.tip1=Change Configureable TNT explosion size and

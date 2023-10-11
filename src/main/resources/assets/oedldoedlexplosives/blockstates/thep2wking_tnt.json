@@ -1,0 +1,17 @@
+{
+    "variants": 
+    {
+        "normal": 
+        { 
+            "model": "oedldoedlexplosives:thep2wking_tnt"
+        },
+        "explode=false": 
+        { 
+            "model": "oedldoedlexplosives:thep2wking_tnt"
+        },
+        "explode=true": 
+        { 
+            "model": "oedldoedlexplosives:thep2wking_tnt"
+        }
+    }
+}

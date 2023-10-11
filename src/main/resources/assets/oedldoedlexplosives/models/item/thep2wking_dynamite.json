@@ -1,0 +1,7 @@
+{
+	"parent": "item/handheld",
+	"textures": 
+	{
+		"layer0": "oedldoedlexplosives:items/thep2wking_dynamite"
+	}
+}

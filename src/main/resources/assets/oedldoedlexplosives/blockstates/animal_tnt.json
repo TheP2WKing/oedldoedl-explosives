@@ -1,0 +1,17 @@
+{
+    "variants": 
+    {
+        "normal": 
+        { 
+            "model": "oedldoedlexplosives:animal_tnt"
+        },
+        "explode=false": 
+        { 
+            "model": "oedldoedlexplosives:animal_tnt"
+        },
+        "explode=true": 
+        { 
+            "model": "oedldoedlexplosives:animal_tnt"
+        }
+    }
+}

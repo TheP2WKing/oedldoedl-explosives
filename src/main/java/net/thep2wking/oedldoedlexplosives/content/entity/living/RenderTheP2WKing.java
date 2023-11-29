@@ -12,9 +12,7 @@ import net.thep2wking.oedldoedlexplosives.OedldoedlExplosives;
 
 @SideOnly(Side.CLIENT)
 public class RenderTheP2WKing extends RenderLiving<EntityTheP2WKing> {
-
-	// private ResourceLocation mobTexture = new ResourceLocation("mymod:textures/entity/guard.png");
-	private ResourceLocation mobTexture = new ResourceLocation(OedldoedlExplosives.MODID, "textures/entity/thep2wking.png");
+	private ResourceLocation texture = new ResourceLocation(OedldoedlExplosives.MODID, "textures/entity/thep2wking.png");
 
 	public RenderTheP2WKing(RenderManager renderManagerIn) {
 		super(renderManagerIn, new ModelPlayer(0f, false), 0.6F);
@@ -22,7 +20,7 @@ public class RenderTheP2WKing extends RenderLiving<EntityTheP2WKing> {
 
 	@Override
 	protected ResourceLocation getEntityTexture(EntityTheP2WKing entity) {
-		return mobTexture;
+		return texture;
 	}
 
 	public static final RenderTheP2WKing.Factory FACTORY = new RenderTheP2WKing.Factory();
@@ -32,7 +30,5 @@ public class RenderTheP2WKing extends RenderLiving<EntityTheP2WKing> {
 		public Render<? super EntityTheP2WKing> createRenderFor(RenderManager manager) {
 			return new RenderTheP2WKing(manager);
 		}
-
 	}
-
 }

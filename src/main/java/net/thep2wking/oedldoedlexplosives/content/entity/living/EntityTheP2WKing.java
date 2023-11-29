@@ -43,7 +43,7 @@ public class EntityTheP2WKing extends EntityAnimal {
 	public EntityTheP2WKing(World worldIn) {
 		super(worldIn);
 		this.setSize(0.6F, 1.95F);
-		this.experienceValue = 5;
+		this.experienceValue = 100;
 	}
 
 	@Override

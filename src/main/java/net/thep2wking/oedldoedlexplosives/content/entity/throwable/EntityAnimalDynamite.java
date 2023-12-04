@@ -20,7 +20,6 @@ import net.minecraft.entity.passive.EntitySheep;
 import net.minecraft.entity.projectile.EntityThrowable;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.EnumParticleTypes;
-import net.minecraft.util.datafix.DataFixer;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
@@ -37,10 +36,6 @@ public class EntityAnimalDynamite extends EntityThrowable {
 
 	public EntityAnimalDynamite(World worldIn, double x, double y, double z) {
 		super(worldIn, x, y, z);
-	}
-
-	public static void registerFixesSnowball(DataFixer fixer) {
-		EntityThrowable.registerFixesThrowable(fixer, "EntityAnimalDynamite");
 	}
 
 	@SideOnly(Side.CLIENT)

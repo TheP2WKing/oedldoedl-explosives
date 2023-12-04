@@ -34,14 +34,16 @@ public class EntityCubicTNT extends ModEntityTNTBase {
 		int chunkPosX2 = (int) (this.posX + 3);
 		int chunkPosY1 = (int) (this.posY - 2);
 		int chunkPosY2 = (int) (this.posY + 3);
-		int chunkPosZ1 = (int) (this.posZ - 3);
-		int chunkPosZ2 = (int) (this.posZ + 4);
+		int chunkPosZ1 = (int) (this.posZ - 4);
+		int chunkPosZ2 = (int) (this.posZ + 3);
 
-		this.world.newExplosion(this, this.posX, this.posY + (double) (this.height / 16.0F), this.posZ, 0, false,
+		this.world.newExplosion(this, this.posX, this.posY + (double) (this.height /
+				16.0F), this.posZ, 0, false,
 				false);
 
 		if (ExplosivesConfig.PROPERTIES.NON_STANDARD_EXPLOSION_DAMAGE) {
-			fillReactangle(this.world, chunkPosX1, chunkPosY1, chunkPosZ1, chunkPosX2, chunkPosY2, chunkPosZ2,
+			fillReactangle(this.world, chunkPosX1, chunkPosY1, chunkPosZ1, chunkPosX2,
+					chunkPosY2, chunkPosZ2,
 					Blocks.AIR);
 		}
 	}

@@ -6,7 +6,6 @@ import net.minecraft.entity.projectile.EntityThrowable;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.EnumParticleTypes;
-import net.minecraft.util.datafix.DataFixer;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.world.World;
@@ -25,10 +24,6 @@ public class EntityCubicDynamite extends EntityThrowable {
 
 	public EntityCubicDynamite(World worldIn, double x, double y, double z) {
 		super(worldIn, x, y, z);
-	}
-
-	public static void registerFixesSnowball(DataFixer fixer) {
-		EntityThrowable.registerFixesThrowable(fixer, "EntityCubicDynamite");
 	}
 
 	@SideOnly(Side.CLIENT)

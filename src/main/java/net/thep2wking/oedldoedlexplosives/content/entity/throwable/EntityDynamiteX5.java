@@ -4,7 +4,6 @@ import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.projectile.EntityThrowable;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.EnumParticleTypes;
-import net.minecraft.util.datafix.DataFixer;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
@@ -21,10 +20,6 @@ public class EntityDynamiteX5 extends EntityThrowable {
 
 	public EntityDynamiteX5(World worldIn, double x, double y, double z) {
 		super(worldIn, x, y, z);
-	}
-
-	public static void registerFixesSnowball(DataFixer fixer) {
-		EntityThrowable.registerFixesThrowable(fixer, "EntityDynamiteX5");
 	}
 
 	@SideOnly(Side.CLIENT)

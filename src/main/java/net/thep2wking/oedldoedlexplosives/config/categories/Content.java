@@ -24,6 +24,9 @@ public class Content {
 	@Config.Name("TheP2WKing Carries Troll TNT")
 	public boolean THEP2WKING_CARRIES_TROLL_TNT = true;
 
+	@Config.Name("Spawn TheP2WKing")
+	public boolean SPAWN_THEP2WKING = true;
+
 	@Config.Name("Entity Firework Radius")
 	public int ENTITY_FIREWORK_RADIUS = 5;
 }

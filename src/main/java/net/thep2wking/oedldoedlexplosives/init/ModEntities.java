@@ -6,6 +6,7 @@ import net.thep2wking.oedldoedlcore.util.ModBiomeUtils;
 import net.thep2wking.oedldoedlcore.util.ModLogger;
 import net.thep2wking.oedldoedlcore.util.ModRegistryHelper;
 import net.thep2wking.oedldoedlexplosives.OedldoedlExplosives;
+import net.thep2wking.oedldoedlexplosives.config.ExplosivesConfig;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityAnimalTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityAntimatterBomb;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityArrowTNT;
@@ -148,6 +149,8 @@ public class ModEntities {
 	
 		ModRegistryHelper.registerEntityWithSpawnEgg(OedldoedlExplosives.MODID, "thep2wking", OedldoedlExplosives.INSTANCE, id++, EntityTheP2WKing.class, 80, 3, false, 0, 15184386);
 
-		ModRegistryHelper.registerEntitySpawn(EntityTheP2WKing.class, EnumCreatureType.CREATURE, 20, 1, 1, ModBiomeUtils.getEntitySpawningBiomes(EnumCreatureType.CREATURE, EntityPig.class));
+		if (ExplosivesConfig.CONTENT.SPAWN_THEP2WKING) {
+			ModRegistryHelper.registerEntitySpawn(EntityTheP2WKing.class, EnumCreatureType.CREATURE, 20, 1, 1, ModBiomeUtils.getEntitySpawningBiomes(EnumCreatureType.CREATURE, EntityPig.class));
+		}
 	}
 }

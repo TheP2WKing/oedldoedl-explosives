@@ -1,4 +1,4 @@
-package net.thep2wking.oedldoedlexplosives.content.entity.living;
+package net.thep2wking.oedldoedlexplosives.util.render;
 
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelPlayer;
@@ -9,6 +9,7 @@ import net.minecraft.client.renderer.entity.layers.LayerHeldItem;
 import net.minecraftforge.fml.client.registry.IRenderFactory;
 import net.thep2wking.oedldoedlcore.api.entity.ModEntityRenderBase;
 import net.thep2wking.oedldoedlexplosives.OedldoedlExplosives;
+import net.thep2wking.oedldoedlexplosives.content.entity.living.EntityTheP2WKing;
 
 public class RenderTheP2WKing extends ModEntityRenderBase<EntityTheP2WKing> {
 	public RenderTheP2WKing(String modid, String name, RenderManager renderManager, ModelBase model, float shadowSize) {

@@ -56,7 +56,6 @@ import net.thep2wking.oedldoedlexplosives.content.entity.EntityTheP2WKingTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityTrollTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityWoolTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.living.EntityTheP2WKing;
-import net.thep2wking.oedldoedlexplosives.content.entity.living.RenderTheP2WKing;
 import net.thep2wking.oedldoedlexplosives.content.entity.throwable.EntityAnimalDynamite;
 import net.thep2wking.oedldoedlexplosives.content.entity.throwable.EntityCombatDynamite;
 import net.thep2wking.oedldoedlexplosives.content.entity.throwable.EntityCubicDynamite;
@@ -68,6 +67,7 @@ import net.thep2wking.oedldoedlexplosives.content.entity.throwable.EntityGrenade
 import net.thep2wking.oedldoedlexplosives.content.entity.throwable.EntityTheP2WKingDynamite;
 import net.thep2wking.oedldoedlexplosives.init.ModBlocks;
 import net.thep2wking.oedldoedlexplosives.init.ModItems;
+import net.thep2wking.oedldoedlexplosives.util.render.RenderTheP2WKing;
 
 public class ModRenderer {
 	public static void registerRenderer() {

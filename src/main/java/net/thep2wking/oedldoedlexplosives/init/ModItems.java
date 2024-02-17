@@ -78,6 +78,7 @@ public class ModItems {
 	public static final Item ANIMAL_TNT = new ModItemBlockBase(ModBlocks.ANIMAL_TNT, ModRarities.WHITE, false, 1, 0);
 	public static final Item SAND_FIREWORK = new ModItemBlockBase(ModBlocks.SAND_FIREWORK, ModRarities.YELLOW, false, 1, 0);
 	public static final Item TNT_FIREWORK = new ModItemBlockBase(ModBlocks.TNT_FIREWORK, ModRarities.RED, false, 1, 0);
+	public static final Item ENTITY_FIREWORK = new ModItemBlockBase(ModBlocks.ENTITY_FIREWORK, ModRarities.GREEN, false, 1, 0);
 	public static final Item OVER_9000_TNT = new ModItemBlockBase(ModBlocks.OVER_9000_TNT, ModRarities.DARK_RED, false, 1, 0);
 	public static final Item THEP2WKING_TNT = new ModItemBlockBase(ModBlocks.THEP2WKING_TNT, ModRarities.GOLD, false, 1, 0);
 

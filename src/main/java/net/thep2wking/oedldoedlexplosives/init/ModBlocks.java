@@ -22,6 +22,7 @@ import net.thep2wking.oedldoedlexplosives.content.block.BlockDerpyTNT;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockDetonatorChainTNT;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockDrillTNT;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockEggTNT;
+import net.thep2wking.oedldoedlexplosives.content.block.BlockEntityFirework;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockFakeTNT;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockFlatTNT;
 import net.thep2wking.oedldoedlexplosives.content.block.BlockFlowerPower;
@@ -163,6 +164,8 @@ public class ModBlocks {
 			OedldoedlExplosives.TAB, SoundType.PLANT, MapColor.SAND, 0);
 	public static final Block TNT_FIREWORK = new BlockTNTFirework(OedldoedlExplosives.MODID, "tnt_firework",
 			OedldoedlExplosives.TAB, SoundType.PLANT, MapColor.BLACK, 0);
+	public static final Block ENTITY_FIREWORK = new BlockEntityFirework(OedldoedlExplosives.MODID, "entity_firework",
+			OedldoedlExplosives.TAB, SoundType.PLANT, MapColor.SNOW, 0);
 	public static final Block OVER_9000_TNT = new BlockOver9000TNT(OedldoedlExplosives.MODID, "over_9000_tnt",
 			OedldoedlExplosives.TAB, SoundType.PLANT, MapColor.PURPLE, 0);
 	public static final Block THEP2WKING_TNT = new BlockTheP2WKingTNT(OedldoedlExplosives.MODID, "thep2wking_tnt",

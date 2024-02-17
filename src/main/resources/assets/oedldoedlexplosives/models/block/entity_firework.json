@@ -1,0 +1,13 @@
+{
+    "parent": "minecraft:block/cube",
+    "textures": 
+    {
+        "up": "oedldoedlexplosives:blocks/entity_firework_top",
+        "down": "oedldoedlexplosives:blocks/entity_firework_bottom",
+        "north": "oedldoedlexplosives:blocks/entity_firework_side_1",
+        "east": "oedldoedlexplosives:blocks/entity_firework_side_4",
+        "south": "oedldoedlexplosives:blocks/entity_firework_side_3",
+        "west": "oedldoedlexplosives:blocks/entity_firework_side_2",
+        "particle": "oedldoedlexplosives:blocks/entity_firework_side_1"
+    }
+}

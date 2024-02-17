@@ -2,7 +2,7 @@
 itemGroup.oedldoedlexplosives.name=§dOedldoedl Explosives
 
 # icons
-item.oedldoedlcore.explosives_icon.annotation3=Version: §e1.12.2-3.0.0
+item.oedldoedlcore.explosives_icon.annotation3=Version: §e1.12.2-4.0.0
 
 # blocks
 tile.oedldoedlexplosives.rainbow_block.name=Rainbow Block
@@ -192,6 +192,10 @@ tile.oedldoedlexplosives.tnt_firework.name=TNT Firework
 entity.oedldoedlexplosives.tnt_firework.name=Block of TNT Firework
 tile.oedldoedlexplosives.tnt_firework.tip1=...and a happy new year!
 
+tile.oedldoedlexplosives.entity_firework.name=Entity Firework
+entity.oedldoedlexplosives.entity_firework.name=Block of TNT Entity
+tile.oedldoedlexplosives.entity_firework.tip1=...and a happy new year?
+
 tile.oedldoedlexplosives.thep2wking_tnt.name=TheP2WKing TNT
 entity.oedldoedlexplosives.thep2wking_tnt.name=Block of TheP2WKing TNT
 tile.oedldoedlexplosives.thep2wking_tnt.tip1=Developing Chaos since 2018!
@@ -234,10 +238,13 @@ item.oedldoedlexplosives.tnt_wrench.tip1=Change Configureable TNT explosion size
 item.oedldoedlexplosives.tnt_wrench.tip2=disarm all kind of tnt blocks (if supported).
 
 item.oedldoedlexplosives.plastic.name=Plastic
-item.oedldoedlexplosives.plastic.tip1=Logic?
+item.oedldoedlexplosives.plastic.tip1=Surgery?
 
 item.oedldoedlexplosives.chip.name=Chip
-item.oedldoedlexplosives.chip.tip1=Not to be confused with AMD Ryzen!
+item.oedldoedlexplosives.chip.tip1=Gunpowder inside! Bam, bam bam bam baaam...
 
 item.oedldoedlexplosives.divided_by_zero.name=Divided by Zero
 item.oedldoedlexplosives.divided_by_zero.tip1=Do not try this at home!
+
+# sounds
+sound.oedldoedlexplosives.thep2wking=TheP2WKing nags

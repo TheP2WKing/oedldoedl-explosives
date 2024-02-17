@@ -4,6 +4,7 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.projectile.EntityThrowable;
 import net.minecraft.init.Blocks;
+import net.minecraft.item.Item;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.util.math.BlockPos;
@@ -12,6 +13,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.thep2wking.oedldoedlexplosives.config.ExplosivesConfig;
+import net.thep2wking.oedldoedlexplosives.init.ModItems;
 
 public class EntityCubicDynamite extends EntityThrowable {
 	public EntityCubicDynamite(World worldIn) {
@@ -31,8 +33,8 @@ public class EntityCubicDynamite extends EntityThrowable {
 	public void handleStatusUpdate(byte id) {
 		if (id == 3) {
 			for (int i = 0; i < 8; ++i) {
-				this.world.spawnParticle(EnumParticleTypes.SMOKE_LARGE, this.posX, this.posY, this.posZ, 0.0D, 0.0D,
-						0.0D);
+				this.world.spawnParticle(EnumParticleTypes.ITEM_CRACK, this.posX, this.posY, this.posZ, 0.0D, 0.0D,
+						0.0D, Item.getIdFromItem(ModItems.CUBIC_DYNAMITE));
 			}
 		}
 	}

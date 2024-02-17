@@ -18,6 +18,12 @@ public class Content {
 	@Config.Name("Random Blocks TNT Max ID")
 	public int RANDOM_BLOCKS_TNT_MAX_ID = 230;
 
-	@Config.Name("Over 900 TNT")
-	public boolean OVER_9000_TNT = true;
+	@Config.Name("Over 900 TNT Keeps Spawning TNT")
+	public boolean OVER_9000_TNT_KEEPS_SPAWNING_TNT = true;
+
+	@Config.Name("TheP2WKing Carries Troll TNT")
+	public boolean THEP2WKING_CARRIES_TROLL_TNT = true;
+
+	@Config.Name("Entity Firework Radius")
+	public int ENTITY_FIREWORK_RADIUS = 5;
 }

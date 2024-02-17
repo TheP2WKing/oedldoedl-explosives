@@ -3,12 +3,14 @@ package net.thep2wking.oedldoedlexplosives.content.entity.throwable;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.passive.EntityChicken;
 import net.minecraft.entity.projectile.EntityThrowable;
+import net.minecraft.item.Item;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import net.thep2wking.oedldoedlexplosives.init.ModItems;
 
 public class EntityEggsplosive extends EntityThrowable {
 	public EntityEggsplosive(World worldIn) {
@@ -28,8 +30,8 @@ public class EntityEggsplosive extends EntityThrowable {
 	public void handleStatusUpdate(byte id) {
 		if (id == 3) {
 			for (int i = 0; i < 8; ++i) {
-				this.world.spawnParticle(EnumParticleTypes.SMOKE_LARGE, this.posX, this.posY, this.posZ, 0.0D, 0.0D,
-						0.0D);
+				this.world.spawnParticle(EnumParticleTypes.ITEM_CRACK, this.posX, this.posY, this.posZ, 0.0D, 0.0D,
+						0.0D, Item.getIdFromItem(ModItems.EGGSPLOSIVE));
 			}
 		}
 	}

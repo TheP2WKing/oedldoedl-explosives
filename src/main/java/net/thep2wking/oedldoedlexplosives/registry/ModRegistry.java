@@ -13,10 +13,16 @@ import net.thep2wking.oedldoedlexplosives.OedldoedlExplosives;
 import net.thep2wking.oedldoedlexplosives.init.ModBlocks;
 import net.thep2wking.oedldoedlexplosives.init.ModItems;
 import net.thep2wking.oedldoedlexplosives.init.ModSounds;
-import net.thep2wking.oedldoedlexplosives.util.ModRendering;
+import net.thep2wking.oedldoedlexplosives.util.ModRenderer;
 
 @Mod.EventBusSubscriber
 public class ModRegistry {
+	@SubscribeEvent
+	public static void onModelRegister(ModelRegistryEvent event) {
+		ModRegistryHelper.registerModels(event, OedldoedlExplosives.MODID);
+		ModRenderer.registerEntityRender();
+	}
+
 	@SubscribeEvent
 	public static void onBlockRegister(RegistryEvent.Register<Block> event) {
 		ModLogger.registeredBlocksLogger(OedldoedlExplosives.MODID);
@@ -80,6 +86,7 @@ public class ModRegistry {
 		ModRegistryHelper.registerBlock(event, ModBlocks.ANIMAL_TNT);
 		ModRegistryHelper.registerBlock(event, ModBlocks.SAND_FIREWORK);
 		ModRegistryHelper.registerBlock(event, ModBlocks.TNT_FIREWORK);
+		ModRegistryHelper.registerBlock(event, ModBlocks.ENTITY_FIREWORK);
 		ModRegistryHelper.registerBlock(event, ModBlocks.OVER_9000_TNT);
 		ModRegistryHelper.registerBlock(event, ModBlocks.THEP2WKING_TNT);
 	}
@@ -147,6 +154,7 @@ public class ModRegistry {
 		ModRegistryHelper.registerItemBlock(event, ModItems.ANIMAL_TNT);
 		ModRegistryHelper.registerItemBlock(event, ModItems.SAND_FIREWORK);
 		ModRegistryHelper.registerItemBlock(event, ModItems.TNT_FIREWORK);
+		ModRegistryHelper.registerItemBlock(event, ModItems.ENTITY_FIREWORK);
 		ModRegistryHelper.registerItemBlock(event, ModItems.OVER_9000_TNT);
 		ModRegistryHelper.registerItemBlock(event, ModItems.THEP2WKING_TNT);
 
@@ -177,10 +185,5 @@ public class ModRegistry {
 		ModRegistryHelper.registerSoundEvent(event, ModSounds.ATOMIC);
 
 		ModRegistryHelper.registerSoundEvent(event, ModSounds.THEP2WKING);
-	}
-
-	@SubscribeEvent
-	public static void onSoundModelRegister(ModelRegistryEvent event) {
-		ModRendering.registerEntityRender();
 	}
 }

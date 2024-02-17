@@ -3,7 +3,7 @@ package net.thep2wking.oedldoedlexplosives.util.proxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.thep2wking.oedldoedlexplosives.util.ModRendering;
+import net.thep2wking.oedldoedlexplosives.util.ModRenderer;
 
 public class ClientProxy extends CommonProxy {
 	public void preInit(FMLPreInitializationEvent event) {
@@ -20,6 +20,6 @@ public class ClientProxy extends CommonProxy {
 
 	@Override
 	public void render() {
-		ModRendering.registerRenderer();
+		ModRenderer.registerRenderer();
 	}
 }

@@ -28,7 +28,7 @@ public class EntityOver9000TNT extends ModEntityTNTBase {
 
 	@Override
 	public boolean hasNoGravity() {
-		return ExplosivesConfig.CONTENT.OVER_9000_TNT;
+		return ExplosivesConfig.CONTENT.OVER_9000_TNT_KEEPS_SPAWNING_TNT;
 	}
 
 	@Override
@@ -55,7 +55,7 @@ public class EntityOver9000TNT extends ModEntityTNTBase {
 			this.motionY *= -0.5D;
 		}
 
-		if (ExplosivesConfig.CONTENT.OVER_9000_TNT) {
+		if (ExplosivesConfig.CONTENT.OVER_9000_TNT_KEEPS_SPAWNING_TNT) {
 			int tnts = 0;
 			if (this.fuse-- <= 0) {
 				if (-this.fuse % 10 == 0) {

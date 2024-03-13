@@ -4,11 +4,11 @@
 
 ### 1.12.2 isn't dead, it just took some time
 
-Also check out the other mods that have been updated or released! This is a complete rewrite of the old 2.x version and many things have changed since then. The most significant change is that almost everything that was seen in v3.x for 1.16.5 is more or less included in the release, with lots of extras on top.
+Also check out the other mods that have been updated or released!
 
-### Warning
+### Initial Release
 
-This version is not compatible with older versions and will not work. Back up your world before the update and enjoy the wave of content.
+Welcome to a new member to the oedldoedl series. This mod is all about explosives, TNTs and dynamite. A lot of things are inspired by old tnt mods like TooMuchTNT, Explosives++ and Crazybombs. The mod is still new and may contain some bugs.
 
 ### Added
 

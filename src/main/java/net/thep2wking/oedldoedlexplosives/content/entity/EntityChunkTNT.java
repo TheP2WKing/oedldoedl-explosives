@@ -27,7 +27,7 @@ public class EntityChunkTNT extends ModEntityTNTBase {
 			}
 		}
 	}
-
+	
 	@Override
 	public void explode() {
 		this.world.newExplosion(this, this.posX, this.posY + (double) (this.height / 16.0F), this.posZ, 0, false,

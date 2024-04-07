@@ -10,7 +10,8 @@ import net.thep2wking.oedldoedlexplosives.api.ModEntityTNTBase;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityMeteorTNT;
 
 public class BlockMeteorTNT extends ModBlockTNTBase {
-	public BlockMeteorTNT(String modid, String name, CreativeTabs tab, SoundType sound, MapColor mapColor,int lightLevel) {
+	public BlockMeteorTNT(String modid, String name, CreativeTabs tab, SoundType sound, MapColor mapColor,
+			int lightLevel) {
 		super(modid, name, tab, sound, mapColor, lightLevel);
 	}
 

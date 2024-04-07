@@ -10,13 +10,13 @@ import net.thep2wking.oedldoedlexplosives.api.ModEntityTNTBase;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityIncenditaryTNT;
 
 public class BlockIncenditaryTNT extends ModBlockTNTBase {
-	public BlockIncenditaryTNT(String modid, String name, CreativeTabs tab, SoundType sound, MapColor mapColor,int lightLevel) {
+	public BlockIncenditaryTNT(String modid, String name, CreativeTabs tab, SoundType sound, MapColor mapColor,
+			int lightLevel) {
 		super(modid, name, tab, sound, mapColor, lightLevel);
 	}
 
 	@Override
 	public ModEntityTNTBase createTNTEntity(World world, double x, double y, double z, EntityLivingBase ignitor) {
-		return new EntityIncenditaryTNT
-		(world, x, y, z, ignitor);
+		return new EntityIncenditaryTNT(world, x, y, z, ignitor);
 	}
 }

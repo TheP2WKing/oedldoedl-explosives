@@ -2,7 +2,7 @@ package net.thep2wking.oedldoedlexplosives.init;
 
 import net.minecraft.entity.EnumCreatureType;
 import net.minecraft.entity.passive.EntityPig;
-import net.thep2wking.oedldoedlcore.util.ModBiomeUtils;
+import net.thep2wking.oedldoedlcore.util.ModBiomeUtil;
 import net.thep2wking.oedldoedlcore.util.ModLogger;
 import net.thep2wking.oedldoedlcore.util.ModRegistryHelper;
 import net.thep2wking.oedldoedlexplosives.OedldoedlExplosives;
@@ -27,6 +27,7 @@ import net.thep2wking.oedldoedlexplosives.content.entity.EntityEntityFirework;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityFakeTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityFlatTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityFlowerPower;
+import net.thep2wking.oedldoedlexplosives.content.entity.EntityGroveTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityHTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityIncenditaryTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityIslandTNT;
@@ -35,6 +36,7 @@ import net.thep2wking.oedldoedlexplosives.content.entity.EntityLavaTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityMegaNukeTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityMeteorTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityMiniNukeTNT;
+import net.thep2wking.oedldoedlexplosives.content.entity.EntityMultiplyTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityNCNuke;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityNapalmTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityNightTNT;
@@ -131,6 +133,10 @@ public class ModEntities {
 		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "sand_firework", OedldoedlExplosives.INSTANCE, id++, EntitySandFirework.class, 160, 10, true);
 		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "tnt_firework", OedldoedlExplosives.INSTANCE, id++, EntityTNTFirework.class, 160, 10, true);
 		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "entity_firework", OedldoedlExplosives.INSTANCE, id++, EntityEntityFirework.class, 160, 10, true);
+
+		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "multiply_tnt", OedldoedlExplosives.INSTANCE, id++, EntityMultiplyTNT.class, 160, 10, true);
+		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "grove_tnt", OedldoedlExplosives.INSTANCE, id++, EntityGroveTNT.class, 160, 10, true);
+
 		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "over_9000_tnt", OedldoedlExplosives.INSTANCE, id++, EntityOver9000TNT.class, 160, 10, true);
 		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "thep2wking_tnt", OedldoedlExplosives.INSTANCE, id++, EntityTheP2WKingTNT.class, 160, 10, true);
 
@@ -150,7 +156,7 @@ public class ModEntities {
 		ModRegistryHelper.registerEntityWithSpawnEgg(OedldoedlExplosives.MODID, "thep2wking", OedldoedlExplosives.INSTANCE, id++, EntityTheP2WKing.class, 80, 3, false, 0, 15184386);
 
 		if (ExplosivesConfig.CONTENT.SPAWN_THEP2WKING) {
-			ModRegistryHelper.registerEntitySpawn(EntityTheP2WKing.class, EnumCreatureType.CREATURE, 20, 1, 1, ModBiomeUtils.getEntitySpawningBiomes(EnumCreatureType.CREATURE, EntityPig.class));
+			ModRegistryHelper.registerEntitySpawn(EntityTheP2WKing.class, EnumCreatureType.CREATURE, 20, 1, 1, ModBiomeUtil.getEntitySpawningBiomes(EnumCreatureType.CREATURE, EntityPig.class));
 		}
 	}
 }

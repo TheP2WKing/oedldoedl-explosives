@@ -10,7 +10,8 @@ import net.thep2wking.oedldoedlexplosives.api.ModEntityTNTBase;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityLavaTNT;
 
 public class BlockLavaTNT extends ModBlockTNTBase {
-	public BlockLavaTNT(String modid, String name, CreativeTabs tab, SoundType sound, MapColor mapColor,int lightLevel) {
+	public BlockLavaTNT(String modid, String name, CreativeTabs tab, SoundType sound, MapColor mapColor,
+			int lightLevel) {
 		super(modid, name, tab, sound, mapColor, lightLevel);
 	}
 

@@ -87,6 +87,10 @@ public class ModRegistry {
 		ModRegistryHelper.registerBlock(event, ModBlocks.SAND_FIREWORK);
 		ModRegistryHelper.registerBlock(event, ModBlocks.TNT_FIREWORK);
 		ModRegistryHelper.registerBlock(event, ModBlocks.ENTITY_FIREWORK);
+
+		ModRegistryHelper.registerBlock(event, ModBlocks.MULTIPLY_TNT);
+		ModRegistryHelper.registerBlock(event, ModBlocks.GROVE_TNT);
+
 		ModRegistryHelper.registerBlock(event, ModBlocks.OVER_9000_TNT);
 		ModRegistryHelper.registerBlock(event, ModBlocks.THEP2WKING_TNT);
 	}
@@ -155,6 +159,10 @@ public class ModRegistry {
 		ModRegistryHelper.registerItemBlock(event, ModItems.SAND_FIREWORK);
 		ModRegistryHelper.registerItemBlock(event, ModItems.TNT_FIREWORK);
 		ModRegistryHelper.registerItemBlock(event, ModItems.ENTITY_FIREWORK);
+
+		ModRegistryHelper.registerItemBlock(event, ModItems.MULTIPLY_TNT);
+		ModRegistryHelper.registerItemBlock(event, ModItems.GROVE_TNT);
+
 		ModRegistryHelper.registerItemBlock(event, ModItems.OVER_9000_TNT);
 		ModRegistryHelper.registerItemBlock(event, ModItems.THEP2WKING_TNT);
 

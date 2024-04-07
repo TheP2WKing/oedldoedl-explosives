@@ -26,6 +26,7 @@ import net.thep2wking.oedldoedlexplosives.content.entity.EntityEntityFirework;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityFakeTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityFlatTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityFlowerPower;
+import net.thep2wking.oedldoedlexplosives.content.entity.EntityGroveTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityHTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityIncenditaryTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityIslandTNT;
@@ -34,6 +35,7 @@ import net.thep2wking.oedldoedlexplosives.content.entity.EntityLavaTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityMegaNukeTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityMeteorTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityMiniNukeTNT;
+import net.thep2wking.oedldoedlexplosives.content.entity.EntityMultiplyTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityNCNuke;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityNapalmTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityNightTNT;
@@ -133,6 +135,9 @@ public class ModRenderer {
 		ModTNTRenderer.register(EntityEntityFirework.class, ModBlocks.ENTITY_FIREWORK);
 
 		ModTNTRenderer.register(EntityTNTFireworkCustomTNT.class, Blocks.TNT);
+
+		ModTNTRenderer.register(EntityMultiplyTNT.class, ModBlocks.MULTIPLY_TNT);
+		ModTNTRenderer.register(EntityGroveTNT.class, ModBlocks.GROVE_TNT);
 
 		ModTNTRenderer.register(EntityOver9000TNT.class, ModBlocks.OVER_9000_TNT);
 		ModTNTRenderer.register(EntityTheP2WKingTNT.class, ModBlocks.THEP2WKING_TNT);

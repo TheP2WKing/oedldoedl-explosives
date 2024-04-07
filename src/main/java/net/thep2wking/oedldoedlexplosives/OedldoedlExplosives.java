@@ -15,10 +15,9 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.PlayerEvent.PlayerLoggedInEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import net.thep2wking.oedldoedlcore.OedldoedlCore;
-import net.thep2wking.oedldoedlcore.config.CoreConfig;
 import net.thep2wking.oedldoedlcore.init.ModItems;
 import net.thep2wking.oedldoedlcore.util.ModEntityUtil;
+import net.thep2wking.oedldoedlcore.util.ModLogInUtil;
 import net.thep2wking.oedldoedlcore.util.ModLogger;
 import net.thep2wking.oedldoedlcore.util.ModReferences;
 import net.thep2wking.oedldoedlexplosives.init.ModEntities;
@@ -31,8 +30,8 @@ public class OedldoedlExplosives {
     public static final String PREFIX = MODID + ":";
     public static final String MC_VERSION = "1.12.2";
     public static final String NAME = "Oedldoedl Explosives";
-    public static final String VERSION = MC_VERSION + "-" + "4.0.0";
-    public static final String DEPENDENCIES = "required-after:forge@[14.23.5.2847,);required-after:oedldoedlcore@[1.12.2-4.0.0,);required-after:oedldoedlresources@[1.12.2-4.0.0,);";
+    public static final String VERSION = MC_VERSION + "-" + "4.1.0";
+    public static final String DEPENDENCIES = "required-after:forge@[14.23.5.2847,);required-after:oedldoedlcore@[1.12.2-4.1.0,);required-after:oedldoedlresources@[1.12.2-4.1.0,);";
     public static final String CLIENT_PROXY_CLASS = "net.thep2wking.oedldoedlexplosives.util.proxy.ClientProxy";
     public static final String SERVER_PROXY_CLASS = "net.thep2wking.oedldoedlexplosives.util.proxy.ServerProxy";
 
@@ -94,9 +93,7 @@ public class OedldoedlExplosives {
     public static class ModJoinMessage {
         @SubscribeEvent
         public static void addJoinMessage(PlayerLoggedInEvent event) {
-            if (CoreConfig.LOGGING.JOIN_MESSAGES) {
-                event.player.sendMessage(ModReferences.defaultJoinMessage(NAME, OedldoedlCore.MODID, VERSION));
-            }
+            ModLogInUtil.addJoinMessage(event, NAME, MODID, VERSION);
         }
     }
 }

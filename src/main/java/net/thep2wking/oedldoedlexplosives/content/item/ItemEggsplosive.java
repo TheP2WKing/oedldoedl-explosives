@@ -35,6 +35,7 @@ public class ItemEggsplosive extends ModItemBase {
 			entity.shoot(playerIn, playerIn.rotationPitch, playerIn.rotationYaw, 0.0F, 1.5F, 1.0F);
 			worldIn.spawnEntity(entity);
 		}
+		playerIn.swingArm(handIn);
 		playerIn.addStat(StatList.getObjectUseStats(this));
 		return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, itemstack);
 	}

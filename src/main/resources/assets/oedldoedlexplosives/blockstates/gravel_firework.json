@@ -1,0 +1,17 @@
+{
+    "variants": 
+    {
+        "normal": 
+        { 
+            "model": "oedldoedlexplosives:gravel_firework"
+        },
+        "explode=false": 
+        { 
+            "model": "oedldoedlexplosives:gravel_firework"
+        },
+        "explode=true": 
+        { 
+            "model": "oedldoedlexplosives:gravel_firework"
+        }
+    }
+}

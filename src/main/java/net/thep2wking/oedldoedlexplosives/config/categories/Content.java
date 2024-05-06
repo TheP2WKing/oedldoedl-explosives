@@ -16,6 +16,7 @@ public class Content {
 	public boolean INTENDED_GAME_CRASHING = true;
 
 	@Config.Name("Random Blocks TNT Max ID")
+	@Config.RangeInt(min = 0, max = 10000)
 	public int RANDOM_BLOCKS_TNT_MAX_ID = 230;
 
 	@Config.Name("Over 900 TNT Keeps Spawning TNT")
@@ -28,5 +29,13 @@ public class Content {
 	public boolean SPAWN_THEP2WKING = true;
 
 	@Config.Name("Entity Firework Radius")
+	@Config.RangeInt(min = 0, max = 16)
 	public int ENTITY_FIREWORK_RADIUS = 5;
+
+	@Config.Name("TNT Disrupter Useable In Survival")
+	public boolean TNT_DISRUPTER_USEABLE_IN_SURVIVAL = false;
+
+	@Config.Name("TNT Disrupter Radius")
+	@Config.RangeInt(min = 0, max = 100)
+	public int TNT_DISRUPTER_RADIUS = 20;
 }

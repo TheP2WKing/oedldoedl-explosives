@@ -71,17 +71,7 @@ public class EntityTheP2WKing extends EntityAnimal {
 	}
 
 	@Override
-	public void fall(float distance, float damageMultiplier) {
-		super.fall(distance, 0);
-	}
-
-	@Override
 	public boolean canPickUpLoot() {
-		return true;
-	}
-
-	@Override
-	public boolean canBreatheUnderwater() {
 		return true;
 	}
 

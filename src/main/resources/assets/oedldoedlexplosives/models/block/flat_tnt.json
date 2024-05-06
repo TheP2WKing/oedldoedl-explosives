@@ -3,7 +3,7 @@
     "textures": 
     {
         "top": "oedldoedlexplosives:blocks/flat_tnt_top",
-        "bottom": "oedldoedlexplosives:blocks/flat_tnt_bottom",
+        "bottom": "minecraft:blocks/obsidian",
         "side": "oedldoedlexplosives:blocks/flat_tnt_side"
     }
 }

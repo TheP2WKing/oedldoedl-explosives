@@ -1,0 +1,9 @@
+{
+    "parent": "minecraft:block/cube_bottom_top",
+    "textures": 
+    {
+        "top": "oedldoedlexplosives:blocks/vaporize_tnt_top",
+        "bottom": "oedldoedlexplosives:blocks/vaporize_tnt_bottom",
+        "side": "oedldoedlexplosives:blocks/vaporize_tnt_side"
+    }
+}

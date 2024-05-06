@@ -1,0 +1,9 @@
+{
+    "parent": "minecraft:block/cube_bottom_top",
+    "textures": 
+    {
+        "top": "oedldoedlexplosives:blocks/easter_egg_top",
+        "bottom": "oedldoedlexplosives:blocks/easter_egg_bottom",
+        "side": "oedldoedlexplosives:blocks/easter_egg_side"
+    }
+}

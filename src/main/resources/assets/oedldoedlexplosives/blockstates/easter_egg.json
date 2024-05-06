@@ -1,0 +1,17 @@
+{
+    "variants": 
+    {
+        "normal": 
+        { 
+            "model": "oedldoedlexplosives:easter_egg"
+        },
+        "explode=false": 
+        { 
+            "model": "oedldoedlexplosives:easter_egg"
+        },
+        "explode=true": 
+        { 
+            "model": "oedldoedlexplosives:easter_egg"
+        }
+    }
+}

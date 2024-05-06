@@ -20,9 +20,13 @@ public class EntityWoolTNT extends ModEntityTNTBase {
 	@SuppressWarnings("deprecation")
 	public static boolean checkMapColor(World world, BlockPos blockPos, MapColor mapcolor) {
 		return world.getBlockState(blockPos).isFullBlock() && !world.getBlockState(blockPos).getBlock().hasTileEntity()
-				&& world.getBlockState(blockPos).getBlock().getMapColor(world.getBlockState(blockPos), world, blockPos) == mapcolor
-				&& world.getBlockState(blockPos).getBlock().getMapColor(world.getBlockState(blockPos), world, blockPos) != MapColor.AIR
-				&& world.getBlockState(blockPos).getBlock().getMapColor(world.getBlockState(blockPos), world, blockPos) != MapColor.CLOTH;
+				&& world.getBlockState(blockPos).getBlock().getHarvestLevel(world.getBlockState(blockPos)) != -1
+				&& world.getBlockState(blockPos).getBlock().getMapColor(world.getBlockState(blockPos), world,
+						blockPos) == mapcolor
+				&& world.getBlockState(blockPos).getBlock().getMapColor(world.getBlockState(blockPos), world,
+						blockPos) != MapColor.AIR
+				&& world.getBlockState(blockPos).getBlock().getMapColor(world.getBlockState(blockPos), world,
+						blockPos) != MapColor.CLOTH;
 	}
 
 	@SuppressWarnings("deprecation")
@@ -47,149 +51,101 @@ public class EntityWoolTNT extends ModEntityTNTBase {
 							setWoolBlock(world, position, 1);
 						} else if (checkMapColor(world, position, MapColor.BLACK)) {
 							setWoolBlock(world, position, 15);
-						}
-						else if (checkMapColor(world, position, MapColor.BLACK_STAINED_HARDENED_CLAY)) {
+						} else if (checkMapColor(world, position, MapColor.BLACK_STAINED_HARDENED_CLAY)) {
 							setWoolBlock(world, position, 15);
-						}
-						else if (checkMapColor(world, position, MapColor.BLUE)) {
+						} else if (checkMapColor(world, position, MapColor.BLUE)) {
 							setWoolBlock(world, position, 11);
-						}
-						else if (checkMapColor(world, position, MapColor.BLUE_STAINED_HARDENED_CLAY)) {
+						} else if (checkMapColor(world, position, MapColor.BLUE_STAINED_HARDENED_CLAY)) {
 							setWoolBlock(world, position, 11);
-						}
-						else if (checkMapColor(world, position, MapColor.BROWN)) {
+						} else if (checkMapColor(world, position, MapColor.BROWN)) {
 							setWoolBlock(world, position, 12);
-						}
-						else if (checkMapColor(world, position, MapColor.BROWN_STAINED_HARDENED_CLAY)) {
+						} else if (checkMapColor(world, position, MapColor.BROWN_STAINED_HARDENED_CLAY)) {
 							setWoolBlock(world, position, 12);
-						}
-						else if (checkMapColor(world, position, MapColor.CLAY)) {
+						} else if (checkMapColor(world, position, MapColor.CLAY)) {
 							setWoolBlock(world, position, 8);
-						}
-						else if (checkMapColor(world, position, MapColor.CYAN)) {
+						} else if (checkMapColor(world, position, MapColor.CYAN)) {
 							setWoolBlock(world, position, 9);
-						}
-						else if (checkMapColor(world, position, MapColor.CYAN_STAINED_HARDENED_CLAY)) {
+						} else if (checkMapColor(world, position, MapColor.CYAN_STAINED_HARDENED_CLAY)) {
 							setWoolBlock(world, position, 9);
-						}
-						else if (checkMapColor(world, position, MapColor.DIAMOND)) {
+						} else if (checkMapColor(world, position, MapColor.DIAMOND)) {
 							setWoolBlock(world, position, 3);
-						}
-						else if (checkMapColor(world, position, MapColor.DIRT)) {
+						} else if (checkMapColor(world, position, MapColor.DIRT)) {
 							setWoolBlock(world, position, 12);
-						}
-						else if (checkMapColor(world, position, MapColor.EMERALD)) {
+						} else if (checkMapColor(world, position, MapColor.EMERALD)) {
 							setWoolBlock(world, position, 5);
-						}
-						else if (checkMapColor(world, position, MapColor.FOLIAGE)) {
+						} else if (checkMapColor(world, position, MapColor.FOLIAGE)) {
 							setWoolBlock(world, position, 13);
-						}
-						else if (checkMapColor(world, position, MapColor.GOLD)) {
+						} else if (checkMapColor(world, position, MapColor.GOLD)) {
 							setWoolBlock(world, position, 4);
-						}
-						else if (checkMapColor(world, position, MapColor.GRASS)) {
+						} else if (checkMapColor(world, position, MapColor.GRASS)) {
 							setWoolBlock(world, position, 5);
-						}
-						else if (checkMapColor(world, position, MapColor.GRAY)) {
+						} else if (checkMapColor(world, position, MapColor.GRAY)) {
 							setWoolBlock(world, position, 7);
-						}
-						else if (checkMapColor(world, position, MapColor.GRAY_STAINED_HARDENED_CLAY)) {
+						} else if (checkMapColor(world, position, MapColor.GRAY_STAINED_HARDENED_CLAY)) {
 							setWoolBlock(world, position, 7);
-						}
-						else if (checkMapColor(world, position, MapColor.GREEN)) {
+						} else if (checkMapColor(world, position, MapColor.GREEN)) {
 							setWoolBlock(world, position, 13);
-						}
-						else if (checkMapColor(world, position, MapColor.GREEN_STAINED_HARDENED_CLAY)) {
+						} else if (checkMapColor(world, position, MapColor.GREEN_STAINED_HARDENED_CLAY)) {
 							setWoolBlock(world, position, 13);
-						}
-						else if (checkMapColor(world, position, MapColor.ICE)) {
+						} else if (checkMapColor(world, position, MapColor.ICE)) {
 							setWoolBlock(world, position, 3);
-						}
-						else if (checkMapColor(world, position, MapColor.IRON)) {
+						} else if (checkMapColor(world, position, MapColor.IRON)) {
 							setWoolBlock(world, position, 8);
-						}
-						else if (checkMapColor(world, position, MapColor.LAPIS)) {
+						} else if (checkMapColor(world, position, MapColor.LAPIS)) {
 							setWoolBlock(world, position, 11);
-						}
-						else if (checkMapColor(world, position, MapColor.LIGHT_BLUE)) {
+						} else if (checkMapColor(world, position, MapColor.LIGHT_BLUE)) {
 							setWoolBlock(world, position, 3);
-						}
-						else if (checkMapColor(world, position, MapColor.LIGHT_BLUE_STAINED_HARDENED_CLAY)) {
+						} else if (checkMapColor(world, position, MapColor.LIGHT_BLUE_STAINED_HARDENED_CLAY)) {
 							setWoolBlock(world, position, 3);
-						}
-						else if (checkMapColor(world, position, MapColor.LIME)) {
+						} else if (checkMapColor(world, position, MapColor.LIME)) {
 							setWoolBlock(world, position, 5);
-						}
-						else if (checkMapColor(world, position, MapColor.LIME_STAINED_HARDENED_CLAY)) {
+						} else if (checkMapColor(world, position, MapColor.LIME_STAINED_HARDENED_CLAY)) {
 							setWoolBlock(world, position, 5);
-						}
-						else if (checkMapColor(world, position, MapColor.MAGENTA)) {
+						} else if (checkMapColor(world, position, MapColor.MAGENTA)) {
 							setWoolBlock(world, position, 2);
-						}
-						else if (checkMapColor(world, position, MapColor.MAGENTA_STAINED_HARDENED_CLAY)) {
+						} else if (checkMapColor(world, position, MapColor.MAGENTA_STAINED_HARDENED_CLAY)) {
 							setWoolBlock(world, position, 2);
-						}
-						else if (checkMapColor(world, position, MapColor.NETHERRACK)) {
+						} else if (checkMapColor(world, position, MapColor.NETHERRACK)) {
 							setWoolBlock(world, position, 14);
-						}
-						else if (checkMapColor(world, position, MapColor.OBSIDIAN)) {
+						} else if (checkMapColor(world, position, MapColor.OBSIDIAN)) {
 							setWoolBlock(world, position, 15);
-						}
-						else if (checkMapColor(world, position, MapColor.ORANGE_STAINED_HARDENED_CLAY)) {
+						} else if (checkMapColor(world, position, MapColor.ORANGE_STAINED_HARDENED_CLAY)) {
 							setWoolBlock(world, position, 1);
-						}
-						else if (checkMapColor(world, position, MapColor.PINK)) {
+						} else if (checkMapColor(world, position, MapColor.PINK)) {
 							setWoolBlock(world, position, 6);
-						}
-						else if (checkMapColor(world, position, MapColor.PINK_STAINED_HARDENED_CLAY)) {
+						} else if (checkMapColor(world, position, MapColor.PINK_STAINED_HARDENED_CLAY)) {
 							setWoolBlock(world, position, 6);
-						}
-						else if (checkMapColor(world, position, MapColor.PURPLE)) {
+						} else if (checkMapColor(world, position, MapColor.PURPLE)) {
 							setWoolBlock(world, position, 10);
-						}
-						else if (checkMapColor(world, position, MapColor.PURPLE_STAINED_HARDENED_CLAY)) {
+						} else if (checkMapColor(world, position, MapColor.PURPLE_STAINED_HARDENED_CLAY)) {
 							setWoolBlock(world, position, 10);
-						}
-						else if (checkMapColor(world, position, MapColor.QUARTZ)) {
+						} else if (checkMapColor(world, position, MapColor.QUARTZ)) {
 							setWoolBlock(world, position, 0);
-						}
-						else if (checkMapColor(world, position, MapColor.RED)) {
+						} else if (checkMapColor(world, position, MapColor.RED)) {
 							setWoolBlock(world, position, 14);
-						}
-						else if (checkMapColor(world, position, MapColor.RED_STAINED_HARDENED_CLAY)) {
+						} else if (checkMapColor(world, position, MapColor.RED_STAINED_HARDENED_CLAY)) {
 							setWoolBlock(world, position, 14);
-						}
-						else if (checkMapColor(world, position, MapColor.SAND)) {
+						} else if (checkMapColor(world, position, MapColor.SAND)) {
 							setWoolBlock(world, position, 4);
-						}
-						else if (checkMapColor(world, position, MapColor.SILVER)) {
+						} else if (checkMapColor(world, position, MapColor.SILVER)) {
 							setWoolBlock(world, position, 8);
-						}
-						else if (checkMapColor(world, position, MapColor.SILVER_STAINED_HARDENED_CLAY)) {
+						} else if (checkMapColor(world, position, MapColor.SILVER_STAINED_HARDENED_CLAY)) {
 							setWoolBlock(world, position, 8);
-						}
-						else if (checkMapColor(world, position, MapColor.SNOW)) {
+						} else if (checkMapColor(world, position, MapColor.SNOW)) {
 							setWoolBlock(world, position, 0);
-						}
-						else if (checkMapColor(world, position, MapColor.STONE)) {
+						} else if (checkMapColor(world, position, MapColor.STONE)) {
 							setWoolBlock(world, position, 8);
-						}
-						else if (checkMapColor(world, position, MapColor.TNT)) {
+						} else if (checkMapColor(world, position, MapColor.TNT)) {
 							setWoolBlock(world, position, 14);
-						}
-						else if (checkMapColor(world, position, MapColor.WATER)) {
+						} else if (checkMapColor(world, position, MapColor.WATER)) {
 							setWoolBlock(world, position, 11);
-						}
-						else if (checkMapColor(world, position, MapColor.WHITE_STAINED_HARDENED_CLAY)) {
+						} else if (checkMapColor(world, position, MapColor.WHITE_STAINED_HARDENED_CLAY)) {
 							setWoolBlock(world, position, 0);
-						}
-						else if (checkMapColor(world, position, MapColor.WOOD)) {
+						} else if (checkMapColor(world, position, MapColor.WOOD)) {
 							setWoolBlock(world, position, 12);
-						}
-						else if (checkMapColor(world, position, MapColor.YELLOW)) {
+						} else if (checkMapColor(world, position, MapColor.YELLOW)) {
 							setWoolBlock(world, position, 4);
-						}
-						else if (checkMapColor(world, position, MapColor.YELLOW_STAINED_HARDENED_CLAY)) {
+						} else if (checkMapColor(world, position, MapColor.YELLOW_STAINED_HARDENED_CLAY)) {
 							setWoolBlock(world, position, 4);
 						}
 					}

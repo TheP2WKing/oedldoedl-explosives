@@ -1,0 +1,17 @@
+{
+    "variants": 
+    {
+        "normal": 
+        { 
+            "model": "oedldoedlexplosives:flat_tnt_ep"
+        },
+        "explode=false": 
+        { 
+            "model": "oedldoedlexplosives:flat_tnt_ep"
+        },
+        "explode=true": 
+        { 
+            "model": "oedldoedlexplosives:flat_tnt_ep"
+        }
+    }
+}

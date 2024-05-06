@@ -1,11 +1,9 @@
 package net.thep2wking.oedldoedlexplosives.api;
 
-import net.minecraft.block.Block;
+import net.minecraft.block.BlockTNT;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.MapColor;
-import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
-import net.minecraft.block.properties.PropertyBool;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
@@ -13,12 +11,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.projectile.EntityArrow;
-import net.minecraft.init.Blocks;
-import net.minecraft.init.Items;
 import net.minecraft.init.SoundEvents;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.EnumFacing;
-import net.minecraft.util.EnumHand;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.Explosion;
@@ -28,14 +21,13 @@ import net.minecraft.world.World;
 /**
  * @author TheP2WKing
  */
-public class ModBlockTNTBase extends Block {
+public class ModBlockTNTBase extends BlockTNT {
     public final String modid;
     public final String name;
     public final CreativeTabs tab;
     public final SoundType sound;
     public final MapColor mapColor;
     public final int lightLevel;
-    public static final PropertyBool EXPLODE = PropertyBool.create("explode");
 
     /**
      * @author TheP2WKing
@@ -48,7 +40,7 @@ public class ModBlockTNTBase extends Block {
      */
     public ModBlockTNTBase(String modid, String name, CreativeTabs tab, SoundType sound, MapColor mapColor,
             int lightLevel) {
-        super(Material.TNT);
+        super();
         this.modid = modid;
         this.name = name;
         this.tab = tab;
@@ -87,6 +79,7 @@ public class ModBlockTNTBase extends Block {
         }
     }
 
+    @Override
     public void explode(World worldIn, BlockPos pos, IBlockState state, EntityLivingBase igniter) {
         if (!worldIn.isRemote) {
             if (((Boolean) state.getValue(EXPLODE)).booleanValue()) {
@@ -96,47 +89,6 @@ public class ModBlockTNTBase extends Block {
                 worldIn.playSound((EntityPlayer) null, pos.getX(), pos.getY(), pos.getZ(),
                         SoundEvents.ENTITY_TNT_PRIMED, SoundCategory.BLOCKS, 1.0F, 1.0F);
             }
-        }
-    }
-
-    @Override
-    public void onBlockAdded(World worldIn, BlockPos pos, IBlockState state) {
-        super.onBlockAdded(worldIn, pos, state);
-        if (worldIn.isBlockPowered(pos)) {
-            this.onBlockDestroyedByPlayer(worldIn, pos, state.withProperty(EXPLODE, Boolean.valueOf(true)));
-            worldIn.setBlockToAir(pos);
-        }
-    }
-
-    @Override
-    public void neighborChanged(IBlockState state, World worldIn, BlockPos pos, Block blockIn, BlockPos fromPos) {
-        if (worldIn.isBlockPowered(pos)) {
-            this.onBlockDestroyedByPlayer(worldIn, pos, state.withProperty(EXPLODE, Boolean.valueOf(true)));
-            worldIn.setBlockToAir(pos);
-        }
-    }
-
-    @Override
-    public void onBlockDestroyedByPlayer(World worldIn, BlockPos pos, IBlockState state) {
-        this.explode(worldIn, pos, state, (EntityLivingBase) null);
-    }
-
-    @Override
-    public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn,
-            EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
-        ItemStack itemstack = playerIn.getHeldItem(hand);
-        if (!itemstack.isEmpty()
-                && (itemstack.getItem() == Items.FLINT_AND_STEEL || itemstack.getItem() == Items.FIRE_CHARGE)) {
-            this.explode(worldIn, pos, state.withProperty(EXPLODE, Boolean.valueOf(true)), playerIn);
-            worldIn.setBlockState(pos, Blocks.AIR.getDefaultState(), 11);
-            if (itemstack.getItem() == Items.FLINT_AND_STEEL) {
-                itemstack.damageItem(1, playerIn);
-            } else if (!playerIn.capabilities.isCreativeMode) {
-                itemstack.shrink(1);
-            }
-            return true;
-        } else {
-            return super.onBlockActivated(worldIn, pos, state, playerIn, hand, facing, hitX, hitY, hitZ);
         }
     }
 

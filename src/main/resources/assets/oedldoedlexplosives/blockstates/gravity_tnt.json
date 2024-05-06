@@ -1,0 +1,17 @@
+{
+    "variants": 
+    {
+        "normal": 
+        { 
+            "model": "oedldoedlexplosives:gravity_tnt"
+        },
+        "explode=false": 
+        { 
+            "model": "oedldoedlexplosives:gravity_tnt"
+        },
+        "explode=true": 
+        { 
+            "model": "oedldoedlexplosives:gravity_tnt"
+        }
+    }
+}

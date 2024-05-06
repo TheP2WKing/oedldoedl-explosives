@@ -24,9 +24,9 @@ tile.oedldoedlexplosives.drill_tnt.name=Drill TNT
 entity.oedldoedlexplosives.drill_tnt.name=Block of Drill TNT
 tile.oedldoedlexplosives.drill_tnt.tip1=Call me a shovel because im digging it...
 
-tile.oedldoedlexplosives.flat_tnt.name=Flat TNT
-entity.oedldoedlexplosives.flat_tnt.name=Block of Flat TNT
-tile.oedldoedlexplosives.flat_tnt.tip1=Flat as...?
+tile.oedldoedlexplosives.flat_tnt_ep.name=Flat TNT
+entity.oedldoedlexplosives.flat_tnt_ep.name=Block of Flat TNT
+tile.oedldoedlexplosives.flat_tnt_ep.tip1=Flat as...?
 
 tile.oedldoedlexplosives.nuke_tnt.name=Nuke TNT
 entity.oedldoedlexplosives.nuke_tnt.name=Block of Nuke TNT
@@ -186,10 +186,15 @@ tile.oedldoedlexplosives.sand_firework.tip1=We wish you a merry sandmas...
 
 tile.oedldoedlexplosives.tnt_firework.name=TNT Firework
 entity.oedldoedlexplosives.tnt_firework.name=Block of TNT Firework
+entity.oedldoedlexplosives.tnt_firework_impact.name=Block of TNT Firework
 tile.oedldoedlexplosives.tnt_firework.tip1=...and a happy new year!
 
+tile.oedldoedlexplosives.gravel_firework.name=Gravel Firework
+entity.oedldoedlexplosives.gravel_firework.name=Block of Gravel Firework
+tile.oedldoedlexplosives.gravel_firework.tip1=...and a gravely new year?
+
 tile.oedldoedlexplosives.entity_firework.name=Entity Firework
-entity.oedldoedlexplosives.entity_firework.name=Block of TNT Entity
+entity.oedldoedlexplosives.entity_firework.name=Block of Entity Firework
 tile.oedldoedlexplosives.entity_firework.tip1=...and a happy new year?
 
 tile.oedldoedlexplosives.multiply_tnt.name=Multiply TNT
@@ -199,6 +204,51 @@ tile.oedldoedlexplosives.multiply_tnt.tip1=Yes, it does work with Diamond Blocks
 tile.oedldoedlexplosives.grove_tnt.name=Grove TNT
 entity.oedldoedlexplosives.grove_tnt.name=Block of Grove TNT
 tile.oedldoedlexplosives.grove_tnt.tip1=#TeamTrees
+
+tile.oedldoedlexplosives.vaporize_tnt.name=Vaporize TNT
+entity.oedldoedlexplosives.vaporize_tnt.name=Block of Vaporize TNT
+tile.oedldoedlexplosives.vaporize_tnt.tip1=Dissolves dreams as well as water and lava!
+
+tile.oedldoedlexplosives.lightning_tnt.name=Lightning TNT
+entity.oedldoedlexplosives.lightning_tnt.name=Block of Lightning TNT
+tile.oedldoedlexplosives.lightning_tnt.tip1=Lightning, like a thunder, thunder, thunder...
+
+tile.oedldoedlexplosives.ender_tnt.name=Ender TNT
+entity.oedldoedlexplosives.ender_tnt.name=Block of Ender TNT
+tile.oedldoedlexplosives.ender_tnt.tip1=Instant rejection from your family :(
+
+tile.oedldoedlexplosives.gravity_tnt.name=Gravity TNT
+entity.oedldoedlexplosives.gravity_tnt.name=Block of Gravity TNT
+tile.oedldoedlexplosives.gravity_tnt.tip1=Gravity does not exist.
+
+tile.oedldoedlexplosives.easter_egg.name=Easter Egg
+entity.oedldoedlexplosives.easter_egg.name=Block of Easter Egg
+entity.oedldoedlexplosives.easter_egg_impact.name=Block of Easter Egg
+tile.oedldoedlexplosives.easter_egg.tip1=Happy Easter!
+
+tile.oedldoedlexplosives.tnt_x100.name=TNT x100
+entity.oedldoedlexplosives.tnt_x100.name=Block of TNT x100
+tile.oedldoedlexplosives.tnt_x100.tip1=100 time the charm.
+
+tile.oedldoedlexplosives.tnt_x500.name=TNT x500
+entity.oedldoedlexplosives.tnt_x500.name=Block of TNT x500
+tile.oedldoedlexplosives.tnt_x500.tip1=500 time the charm.
+
+tile.oedldoedlexplosives.tnt_x2000.name=TNT x2000
+entity.oedldoedlexplosives.tnt_x2000.name=Block of TNT x2000
+tile.oedldoedlexplosives.tnt_x2000.tip1=May result in blue screens...
+
+tile.oedldoedlexplosives.compact_tnt.name=Compact TNT
+entity.oedldoedlexplosives.compact_tnt.name=Block of Compact TNT
+tile.oedldoedlexplosives.compact_tnt.tip1=Compact TNT storage.
+
+tile.oedldoedlexplosives.flat_tnt.name=Flat TNT
+entity.oedldoedlexplosives.flat_tnt.name=Block of Flat TNT
+tile.oedldoedlexplosives.flat_tnt.tip1=Even flatter than...?
+
+tile.oedldoedlexplosives.mining_flat_tnt.name=Mining Flat TNT
+entity.oedldoedlexplosives.mining_flat_tnt.name=Block of Mining Flat TNT
+tile.oedldoedlexplosives.mining_flat_tnt.tip1=The mine is as flat as...?
 
 tile.oedldoedlexplosives.over_9000_tnt.name=Over 9000 TNT
 entity.oedldoedlexplosives.over_9000_tnt.name=Block of Over 9000 TNT
@@ -217,6 +267,21 @@ item.oedldoedlexplosives.dynamite_x5.tip1=Throwable TNT times 5.
 item.oedldoedlexplosives.dynamite_x20.name=Dynamite x20
 item.oedldoedlexplosives.dynamite_x20.tip1=Throwable TNT times 20.
 
+item.oedldoedlexplosives.dynamite_x100.name=Dynamite x100
+item.oedldoedlexplosives.dynamite_x100.tip1=Why stop at 20?.
+
+item.oedldoedlexplosives.dynamite_x500.name=Dynamite x500
+item.oedldoedlexplosives.dynamite_x500.tip1=5 times the charm of 5 time the charm...
+
+item.oedldoedlexplosives.dynamite_x2000.name=Dynamite x2000
+item.oedldoedlexplosives.dynamite_x2000.tip1=Size does indeed matter.
+
+item.oedldoedlexplosives.vaporize_dynamite.name=Vaporize Dynamite
+item.oedldoedlexplosives.vaporize_dynamite.tip1=Vaporize a puddle.
+
+item.oedldoedlexplosives.gravity_dynamite.name=Gravity Dynamite
+item.oedldoedlexplosives.gravity_dynamite.tip1=I hate gravity!
+
 item.oedldoedlexplosives.combat_dynamite.name=Combat Dynamite
 item.oedldoedlexplosives.combat_dynamite.tip1=Also known as DIEnemite.
 
@@ -229,6 +294,39 @@ item.oedldoedlexplosives.animal_dynamite.tip1=Small herd.
 item.oedldoedlexplosives.thep2wking_dynamite.name=TheP2WKing Dynamite
 item.oedldoedlexplosives.thep2wking_dynamite.tip1=Developing Chaos since 2018!
 
+item.oedldoedlexplosives.ender_dynamite.name=Ender Dynamite
+item.oedldoedlexplosives.ender_dynamite.tip1=See you later...
+
+item.oedldoedlexplosives.easter_egg_dynamite.name=Easter Egg Dynamite
+item.oedldoedlexplosives.easter_egg_dynamite.tip1=That was not in 1.7.10!
+
+item.oedldoedlexplosives.flat_dynamite.name=Flat Dynamite
+item.oedldoedlexplosives.flat_dynamite.tip1=Slowly but surely.
+
+item.oedldoedlexplosives.mining_flat_dynamite.name=Mining Flat Dynamite
+item.oedldoedlexplosives.mining_flat_dynamite.tip1=A light has dawned on me.
+
+item.oedldoedlexplosives.lightning_dynamite.name=Lighting Dynamite
+item.oedldoedlexplosives.lightning_dynamite.tip1=Karma strike back!
+
+item.oedldoedlexplosives.compact_dynamite.name=Compact Dynamite
+item.oedldoedlexplosives.compact_dynamite.tip1=Compact but deadly.
+
+item.oedldoedlexplosives.multiply_dynamite.name=Multiply Dynamite
+item.oedldoedlexplosives.multiply_dynamite.tip1=2 times the fun.
+
+item.oedldoedlexplosives.grove_dynamite.name=Grove Dynamite
+item.oedldoedlexplosives.grove_dynamite.tip1=Have you ever heard of Grove Street?
+
+item.oedldoedlexplosives.dynamite_firework.name=Dynamite Firework
+item.oedldoedlexplosives.dynamite_firework.tip1=Boom, boom, boom, boom!
+
+item.oedldoedlexplosives.sand_firework_dynamite.name=Sand Firework Dynamite
+item.oedldoedlexplosives.sand_firework_dynamite.tip1=Clap your sandy cheeks!
+
+item.oedldoedlexplosives.gravel_firework_dynamite.name=Gravel Firework Dynamite
+item.oedldoedlexplosives.gravel_firework_dynamite.tip1=Clap your flinty cheeks!
+
 item.oedldoedlexplosives.eggsplosive.name=Eggsplosive
 item.oedldoedlexplosives.eggsplosive.tip1=Which came first, the chicken or the egg...
 item.oedldoedlexplosives.eggsplosive.tip2=...wrong answer, dynamite!
@@ -236,14 +334,18 @@ item.oedldoedlexplosives.eggsplosive.tip2=...wrong answer, dynamite!
 item.oedldoedlexplosives.grenade_apple.name=Grenade Apple
 item.oedldoedlexplosives.grenade_apple.tip1=May contain traces of gunpowder.
 
-entity.oedldoedlexplosives.sand_firework_custom_tnt.name=Falling Sand
-entity.oedldoedlexplosives.tnt_firework_custom_tnt.name=Block of TNT
-
 entity.oedldoedlexplosives.thep2wking.name=TheP2WKing
 
 item.oedldoedlexplosives.tnt_wrench.name=TNT Wrench
 item.oedldoedlexplosives.tnt_wrench.tip1=Change Configureable TNT explosion size and
-item.oedldoedlexplosives.tnt_wrench.tip2=disarm all kind of tnt blocks (if supported).
+item.oedldoedlexplosives.tnt_wrench.tip2=can disarm supported blocks of TNT.
+
+item.oedldoedlexplosives.tnt_disrupter.name=TNT Disrupter
+item.oedldoedlexplosives.tnt_disrupter.tip1=Kill supported TNT entities before exploding.
+item.oedldoedlexplosives.tnt_disrupter.tip2=Does also work with supported dynamite entities.
+item.oedldoedlexplosives.tnt_disrupter.annotation1=Useable in survival:
+item.oedldoedlexplosives.tnt_disrupter.annotation2=Yes
+item.oedldoedlexplosives.tnt_disrupter.annotation3=No
 
 item.oedldoedlexplosives.plastic.name=Plastic
 item.oedldoedlexplosives.plastic.tip1=Surgery?
@@ -255,4 +357,8 @@ item.oedldoedlexplosives.divided_by_zero.name=Divided by Zero
 item.oedldoedlexplosives.divided_by_zero.tip1=Do not try this at home!
 
 # sounds
+sound.oedldoedlexplosives.nuke_alarm=When you see this, it's already too late
+sound.oedldoedlexplosives.tactical_nuke=Tactical nuke incoming
+sound.oedldoedlexplosives.bomb=Vacuum intensifies
+sound.oedldoedlexplosives.atomic=I, AM, ATOMIC
 sound.oedldoedlexplosives.thep2wking=TheP2WKing nags

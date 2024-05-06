@@ -25,7 +25,7 @@ public class EntityEntityFirework extends ModEntityTNTBase {
 		super(world);
 	}
 
-	public void spawnFireworkBlock() {
+	public void spawnFireworkEntity() {
 		if (!this.world.isRemote) {
 			Entity entity = EntityList.createEntityByIDFromName(
 					new ResourceLocation(this.getEntityData().getString("id").toString()), this.world);
@@ -41,16 +41,16 @@ public class EntityEntityFirework extends ModEntityTNTBase {
 	}
 
 	public void spawnFireworkBlockX10() {
-		spawnFireworkBlock();
-		spawnFireworkBlock();
-		spawnFireworkBlock();
-		spawnFireworkBlock();
-		spawnFireworkBlock();
-		spawnFireworkBlock();
-		spawnFireworkBlock();
-		spawnFireworkBlock();
-		spawnFireworkBlock();
-		spawnFireworkBlock();
+		spawnFireworkEntity();
+		spawnFireworkEntity();
+		spawnFireworkEntity();
+		spawnFireworkEntity();
+		spawnFireworkEntity();
+		spawnFireworkEntity();
+		spawnFireworkEntity();
+		spawnFireworkEntity();
+		spawnFireworkEntity();
+		spawnFireworkEntity();
 	}
 
 	@Override

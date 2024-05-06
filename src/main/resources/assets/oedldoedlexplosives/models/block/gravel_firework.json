@@ -1,0 +1,9 @@
+{
+    "parent": "minecraft:block/cube_bottom_top",
+    "textures": 
+    {
+        "top": "oedldoedlexplosives:blocks/gravel_firework_top",
+        "bottom": "oedldoedlexplosives:blocks/gravel_firework_bottom",
+        "side": "oedldoedlexplosives:blocks/gravel_firework_side"
+    }
+}

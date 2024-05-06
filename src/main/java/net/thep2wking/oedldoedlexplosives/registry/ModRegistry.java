@@ -32,11 +32,9 @@ public class ModRegistry {
 		ModRegistryHelper.registerBlock(event, ModBlocks.COMBAT_TNT);
 
 		ModRegistryHelper.registerBlock(event, ModBlocks.C4);
-		ModRegistryHelper.registerBlock(event, ModBlocks.TNT_X5);
-		ModRegistryHelper.registerBlock(event, ModBlocks.TNT_X20);
 
 		ModRegistryHelper.registerBlock(event, ModBlocks.DRILL_TNT);
-		ModRegistryHelper.registerBlock(event, ModBlocks.FLAT_TNT);
+		ModRegistryHelper.registerBlock(event, ModBlocks.FLAT_TNT_PP);
 
 		ModRegistryHelper.registerBlock(event, ModBlocks.NUKE_TNT);
 		ModRegistryHelper.registerBlock(event, ModBlocks.H_TNT);
@@ -84,12 +82,31 @@ public class ModRegistry {
 		ModRegistryHelper.registerBlock(event, ModBlocks.FLOWER_POWER);
 		ModRegistryHelper.registerBlock(event, ModBlocks.CUBIC_TNT);
 		ModRegistryHelper.registerBlock(event, ModBlocks.ANIMAL_TNT);
+		ModRegistryHelper.registerBlock(event, ModBlocks.GRAVEL_FIREWORK);
 		ModRegistryHelper.registerBlock(event, ModBlocks.SAND_FIREWORK);
 		ModRegistryHelper.registerBlock(event, ModBlocks.TNT_FIREWORK);
 		ModRegistryHelper.registerBlock(event, ModBlocks.ENTITY_FIREWORK);
 
 		ModRegistryHelper.registerBlock(event, ModBlocks.MULTIPLY_TNT);
 		ModRegistryHelper.registerBlock(event, ModBlocks.GROVE_TNT);
+
+		ModRegistryHelper.registerBlock(event, ModBlocks.LIGHNING_TNT);
+		ModRegistryHelper.registerBlock(event, ModBlocks.VAPORIZE_TNT);
+
+		ModRegistryHelper.registerBlock(event, ModBlocks.ENDER_TNT);
+		ModRegistryHelper.registerBlock(event, ModBlocks.GRAVITY_TNT);
+		ModRegistryHelper.registerBlock(event, ModBlocks.COMPACT_TNT);
+
+		ModRegistryHelper.registerBlock(event, ModBlocks.EASTER_EGG);
+
+		ModRegistryHelper.registerBlock(event, ModBlocks.FLAT_TNT);
+		ModRegistryHelper.registerBlock(event, ModBlocks.MINING_FLAT_TNT);
+
+		ModRegistryHelper.registerBlock(event, ModBlocks.TNT_X5);
+		ModRegistryHelper.registerBlock(event, ModBlocks.TNT_X20);
+		ModRegistryHelper.registerBlock(event, ModBlocks.TNT_X100);
+		ModRegistryHelper.registerBlock(event, ModBlocks.TNT_X500);
+		ModRegistryHelper.registerBlock(event, ModBlocks.TNT_X2000);
 
 		ModRegistryHelper.registerBlock(event, ModBlocks.OVER_9000_TNT);
 		ModRegistryHelper.registerBlock(event, ModBlocks.THEP2WKING_TNT);
@@ -104,11 +121,9 @@ public class ModRegistry {
 		ModRegistryHelper.registerItemBlock(event, ModItems.COMBAT_TNT);
 
 		ModRegistryHelper.registerItemBlock(event, ModItems.C4);
-		ModRegistryHelper.registerItemBlock(event, ModItems.TNT_X5);
-		ModRegistryHelper.registerItemBlock(event, ModItems.TNT_X20);
 
 		ModRegistryHelper.registerItemBlock(event, ModItems.DRILL_TNT);
-		ModRegistryHelper.registerItemBlock(event, ModItems.FLAT_TNT);
+		ModRegistryHelper.registerItemBlock(event, ModItems.FLAT_TNT_PP);
 
 		ModRegistryHelper.registerItemBlock(event, ModItems.NUKE_TNT);
 		ModRegistryHelper.registerItemBlock(event, ModItems.H_TNT);
@@ -156,6 +171,7 @@ public class ModRegistry {
 		ModRegistryHelper.registerItemBlock(event, ModItems.FLOWER_POWER);
 		ModRegistryHelper.registerItemBlock(event, ModItems.CUBIC_TNT);
 		ModRegistryHelper.registerItemBlock(event, ModItems.ANIMAL_TNT);
+		ModRegistryHelper.registerItemBlock(event, ModItems.GRAVEL_FIREWORK);
 		ModRegistryHelper.registerItemBlock(event, ModItems.SAND_FIREWORK);
 		ModRegistryHelper.registerItemBlock(event, ModItems.TNT_FIREWORK);
 		ModRegistryHelper.registerItemBlock(event, ModItems.ENTITY_FIREWORK);
@@ -163,21 +179,62 @@ public class ModRegistry {
 		ModRegistryHelper.registerItemBlock(event, ModItems.MULTIPLY_TNT);
 		ModRegistryHelper.registerItemBlock(event, ModItems.GROVE_TNT);
 
+		ModRegistryHelper.registerItemBlock(event, ModItems.LIGHNING_TNT);
+		ModRegistryHelper.registerItemBlock(event, ModItems.VAPORIZE_TNT);
+		ModRegistryHelper.registerItemBlock(event, ModItems.COMPACT_TNT);
+
+		ModRegistryHelper.registerItemBlock(event, ModItems.ENDER_TNT);
+		ModRegistryHelper.registerItemBlock(event, ModItems.GRAVITY_TNT);
+
+		ModRegistryHelper.registerItemBlock(event, ModItems.EASTER_EGG);
+
+		ModRegistryHelper.registerItemBlock(event, ModItems.FLAT_TNT);
+		ModRegistryHelper.registerItemBlock(event, ModItems.MINING_FLAT_TNT);
+
+		ModRegistryHelper.registerItemBlock(event, ModItems.TNT_X5);
+		ModRegistryHelper.registerItemBlock(event, ModItems.TNT_X20);
+		ModRegistryHelper.registerItemBlock(event, ModItems.TNT_X100);
+		ModRegistryHelper.registerItemBlock(event, ModItems.TNT_X500);
+		ModRegistryHelper.registerItemBlock(event, ModItems.TNT_X2000);
+
 		ModRegistryHelper.registerItemBlock(event, ModItems.OVER_9000_TNT);
 		ModRegistryHelper.registerItemBlock(event, ModItems.THEP2WKING_TNT);
 
 		ModRegistryHelper.registerItem(event, ModItems.DYNAMITE);
 		ModRegistryHelper.registerItem(event, ModItems.DYNAMITE_X5);
 		ModRegistryHelper.registerItem(event, ModItems.DYNAMITE_X20);
+		ModRegistryHelper.registerItem(event, ModItems.DYNAMITE_X100);
+		ModRegistryHelper.registerItem(event, ModItems.DYNAMITE_X500);
+		ModRegistryHelper.registerItem(event, ModItems.DYNAMITE_X2000);
+
+		ModRegistryHelper.registerItem(event, ModItems.VAPORIZE_DYNAMITE);
+		ModRegistryHelper.registerItem(event, ModItems.GRAVITY_DYNAMITE);
+		ModRegistryHelper.registerItem(event, ModItems.LIGHTNING_DYNAMITE);
+		ModRegistryHelper.registerItem(event, ModItems.COMPACT_DYNAMITE);
+
 		ModRegistryHelper.registerItem(event, ModItems.COMBAT_DYNAMITE);
 		ModRegistryHelper.registerItem(event, ModItems.CUBIC_DYNAMITE);
 		ModRegistryHelper.registerItem(event, ModItems.ANIMAL_DYNAMITE);
 		ModRegistryHelper.registerItem(event, ModItems.THEP2WKING_DYNAMITE);
 
+		ModRegistryHelper.registerItem(event, ModItems.MULTIPLY_DYNAMITE);
+		ModRegistryHelper.registerItem(event, ModItems.GROVE_DYNAMITE);
+
+		ModRegistryHelper.registerItem(event, ModItems.ENDER_DYNAMITE);
+		ModRegistryHelper.registerItem(event, ModItems.EASTER_EGG_DYNAMITE);
+
+		ModRegistryHelper.registerItem(event, ModItems.FLAT_DYNAMITE);
+		ModRegistryHelper.registerItem(event, ModItems.MINING_FLAT_DYNAMITE);
+
+		ModRegistryHelper.registerItem(event, ModItems.GRAVEL_FIREWORK_DYNAMITE);		
+		ModRegistryHelper.registerItem(event, ModItems.SAND_FIREWORK_DYNAMITE);
+		ModRegistryHelper.registerItem(event, ModItems.DYNAMITE_FIREWORK);
+
 		ModRegistryHelper.registerItem(event, ModItems.EGGSPLOSIVE);
 		ModRegistryHelper.registerItem(event, ModItems.GRENADE_APPLE);
 
 		ModRegistryHelper.registerItem(event, ModItems.TNT_WRENCH);
+		ModRegistryHelper.registerItem(event, ModItems.TNT_DISRUPTER);
 		ModRegistryHelper.registerItem(event, ModItems.PLASTIC);
 		ModRegistryHelper.registerItem(event, ModItems.CHIP);
 		ModRegistryHelper.registerItem(event, ModItems.DIVIDED_BY_ZERO);

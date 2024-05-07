@@ -58,6 +58,10 @@ import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.compact.EntityCompa
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.compact.EntityCompactTNT;
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.cubic.EntityCubicDynamite;
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.cubic.EntityCubicTNT;
+import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.digging.EntityDiggingDynamite;
+import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.digging.EntityDiggingTNT;
+import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.drilling.EntityDrillingDynamite;
+import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.drilling.EntityDrillingTNT;
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.easteregg.EntityEasterEgg;
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.easteregg.EntityEasterEggDynamite;
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.easteregg.EntityEasterEggImpact;
@@ -177,6 +181,9 @@ public class ModRenderer {
 
 		ModTNTRenderer.register(EntityFlatTNT.class, ModBlocks.FLAT_TNT);
 		ModTNTRenderer.register(EntityMiningFlatTNT.class, ModBlocks.MINING_FLAT_TNT);
+
+		ModTNTRenderer.register(EntityDrillingTNT.class, ModBlocks.DRILLING_TNT);
+		ModTNTRenderer.register(EntityDiggingTNT.class, ModBlocks.DIGGING_TNT);
 		
 		ModTNTRenderer.register(EntityTNTX5.class, ModBlocks.TNT_X5);
 		ModTNTRenderer.register(EntityTNTX20.class, ModBlocks.TNT_X20);
@@ -212,6 +219,9 @@ public class ModRenderer {
 
 		ModRenderHelper.addThrowableRender(EntityFlatDynamite.class, ModItems.FLAT_DYNAMITE);
 		ModRenderHelper.addThrowableRender(EntityMiningFlatDynamite.class, ModItems.MINING_FLAT_DYNAMITE);
+
+		ModRenderHelper.addThrowableRender(EntityDrillingDynamite.class, ModItems.DRILLING_DYNAMITE);
+		ModRenderHelper.addThrowableRender(EntityDiggingDynamite.class, ModItems.DIGGING_DYNAMITE);
 		
 		ModRenderHelper.addThrowableRender(EntityGravelFireworkDynamite.class, ModItems.GRAVEL_FIREWORK_DYNAMITE);
 		ModRenderHelper.addThrowableRender(EntitySandFireworkDynamite.class, ModItems.SAND_FIREWORK_DYNAMITE);

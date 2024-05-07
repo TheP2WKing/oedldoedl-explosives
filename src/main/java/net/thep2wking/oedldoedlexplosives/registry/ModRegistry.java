@@ -102,6 +102,9 @@ public class ModRegistry {
 		ModRegistryHelper.registerBlock(event, ModBlocks.FLAT_TNT);
 		ModRegistryHelper.registerBlock(event, ModBlocks.MINING_FLAT_TNT);
 
+		ModRegistryHelper.registerBlock(event, ModBlocks.DIGGING_TNT);
+		ModRegistryHelper.registerBlock(event, ModBlocks.DRILLING_TNT);
+
 		ModRegistryHelper.registerBlock(event, ModBlocks.TNT_X5);
 		ModRegistryHelper.registerBlock(event, ModBlocks.TNT_X20);
 		ModRegistryHelper.registerBlock(event, ModBlocks.TNT_X100);
@@ -191,6 +194,9 @@ public class ModRegistry {
 		ModRegistryHelper.registerItemBlock(event, ModItems.FLAT_TNT);
 		ModRegistryHelper.registerItemBlock(event, ModItems.MINING_FLAT_TNT);
 
+		ModRegistryHelper.registerItemBlock(event, ModItems.DIGGING_TNT);
+		ModRegistryHelper.registerItemBlock(event, ModItems.DRILLING_TNT);
+
 		ModRegistryHelper.registerItemBlock(event, ModItems.TNT_X5);
 		ModRegistryHelper.registerItemBlock(event, ModItems.TNT_X20);
 		ModRegistryHelper.registerItemBlock(event, ModItems.TNT_X100);
@@ -225,6 +231,9 @@ public class ModRegistry {
 
 		ModRegistryHelper.registerItem(event, ModItems.FLAT_DYNAMITE);
 		ModRegistryHelper.registerItem(event, ModItems.MINING_FLAT_DYNAMITE);
+
+		ModRegistryHelper.registerItem(event, ModItems.DIGGING_DYNAMITE);
+		ModRegistryHelper.registerItem(event, ModItems.DRILLING_DYNAMITE);
 
 		ModRegistryHelper.registerItem(event, ModItems.GRAVEL_FIREWORK_DYNAMITE);		
 		ModRegistryHelper.registerItem(event, ModItems.SAND_FIREWORK_DYNAMITE);

@@ -16,6 +16,8 @@ import net.thep2wking.oedldoedlexplosives.content.item.ItemTheP2WKingDynamite;
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.animal.ItemAnimalDynamite;
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.compact.ItemCompactDynamite;
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.cubic.ItemCubicDynamite;
+import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.digging.ItemDiggingDynamite;
+import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.drilling.ItemDrillingDynamite;
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.easteregg.ItemEasterEggDynamite;
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.ender.ItemEnderDynamite;
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.flat.ItemFlatDynamite;
@@ -112,6 +114,9 @@ public class ModItems {
 	public static final Item FLAT_TNT = new ModItemBlockTNTBase(ModBlocks.FLAT_TNT, ModRarities.YELLOW, false, 1, 0);
 	public static final Item MINING_FLAT_TNT = new ModItemBlockTNTBase(ModBlocks.MINING_FLAT_TNT, ModRarities.YELLOW, false, 1, 0);
 
+	public static final Item DIGGING_TNT = new ModItemBlockTNTBase(ModBlocks.DIGGING_TNT, ModRarities.WHITE, false, 1, 0);
+	public static final Item DRILLING_TNT = new ModItemBlockTNTBase(ModBlocks.DRILLING_TNT, ModRarities.YELLOW, false, 1, 0);
+
 	public static final Item TNT_X5 = new ModItemBlockTNTBase(ModBlocks.TNT_X5, ModRarities.WHITE, false, 1, 0);
 	public static final Item TNT_X20 = new ModItemBlockTNTBase(ModBlocks.TNT_X20, ModRarities.YELLOW, false, 1, 0);
 	public static final Item TNT_X100 = new ModItemBlockTNTBase(ModBlocks.TNT_X100, ModRarities.YELLOW, false, 1, 0);
@@ -146,6 +151,9 @@ public class ModItems {
 
 	public static final Item FLAT_DYNAMITE = new ItemFlatDynamite(OedldoedlExplosives.MODID, "flat_dynamite", OedldoedlExplosives.TAB, ModRarities.YELLOW, false, 1, 0);
 	public static final Item MINING_FLAT_DYNAMITE = new ItemMiningFlatDynamite(OedldoedlExplosives.MODID, "mining_flat_dynamite", OedldoedlExplosives.TAB, ModRarities.YELLOW, false, 1, 0);
+
+	public static final Item DIGGING_DYNAMITE = new ItemDiggingDynamite(OedldoedlExplosives.MODID, "digging_dynamite", OedldoedlExplosives.TAB, ModRarities.WHITE, false, 1, 0);
+	public static final Item DRILLING_DYNAMITE = new ItemDrillingDynamite(OedldoedlExplosives.MODID, "drilling_dynamite", OedldoedlExplosives.TAB, ModRarities.YELLOW, false, 1, 0);
 
 	public static final Item GRAVEL_FIREWORK_DYNAMITE = new ItemGravelFireworkDynamite(OedldoedlExplosives.MODID, "gravel_firework_dynamite", OedldoedlExplosives.TAB, ModRarities.WHITE, false, 1, 0);
 	public static final Item SAND_FIREWORK_DYNAMITE = new ItemSandFireworkDynamite(OedldoedlExplosives.MODID, "sand_firework_dynamite", OedldoedlExplosives.TAB, ModRarities.YELLOW, false, 1, 0);

@@ -1,0 +1,9 @@
+{
+    "parent": "minecraft:block/cube_bottom_top",
+    "textures": 
+    {
+        "top": "oedldoedlexplosives:blocks/digging_tnt_top",
+        "bottom": "oedldoedlexplosives:blocks/digging_tnt_bottom",
+        "side": "oedldoedlexplosives:blocks/digging_tnt_side"
+    }
+}

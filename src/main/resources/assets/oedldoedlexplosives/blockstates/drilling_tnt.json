@@ -1,0 +1,17 @@
+{
+    "variants": 
+    {
+        "normal": 
+        { 
+            "model": "oedldoedlexplosives:drilling_tnt"
+        },
+        "explode=false": 
+        { 
+            "model": "oedldoedlexplosives:drilling_tnt"
+        },
+        "explode=true": 
+        { 
+            "model": "oedldoedlexplosives:drilling_tnt"
+        }
+    }
+}

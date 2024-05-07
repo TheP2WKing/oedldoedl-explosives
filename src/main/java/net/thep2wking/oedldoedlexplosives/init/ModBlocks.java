@@ -51,6 +51,8 @@ import net.thep2wking.oedldoedlexplosives.content.block.misc.BlockRainbow;
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.animal.BlockAnimalTNT;
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.compact.BlockCompactTNT;
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.cubic.BlockCubicTNT;
+import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.digging.BlockDiggingTNT;
+import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.drilling.BlockDrillingTNT;
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.easteregg.BlockEasterEgg;
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.ender.BlockEnderTNT;
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.flat.BlockFlatTNT;
@@ -201,6 +203,11 @@ public class ModBlocks {
 	public static final Block FLAT_TNT = new BlockFlatTNT(OedldoedlExplosives.MODID, "flat_tnt",
 			OedldoedlExplosives.TAB, SoundType.PLANT, MapColor.GREEN, 0);
 	public static final Block MINING_FLAT_TNT = new BlockMiningFlatTNT(OedldoedlExplosives.MODID, "mining_flat_tnt",
+			OedldoedlExplosives.TAB, SoundType.PLANT, MapColor.ORANGE_STAINED_HARDENED_CLAY, 0);
+
+	public static final Block DIGGING_TNT = new BlockDiggingTNT(OedldoedlExplosives.MODID, "digging_tnt",
+			OedldoedlExplosives.TAB, SoundType.PLANT, MapColor.GREEN, 0);
+	public static final Block DRILLING_TNT = new BlockDrillingTNT(OedldoedlExplosives.MODID, "drilling_tnt",
 			OedldoedlExplosives.TAB, SoundType.PLANT, MapColor.ORANGE_STAINED_HARDENED_CLAY, 0);
 
 	public static final Block TNT_X5 = new BlockTNTX5(OedldoedlExplosives.MODID, "tnt_x5", OedldoedlExplosives.TAB,

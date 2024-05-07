@@ -59,6 +59,10 @@ import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.compact.EntityCompa
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.compact.EntityCompactTNT;
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.cubic.EntityCubicDynamite;
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.cubic.EntityCubicTNT;
+import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.digging.EntityDiggingDynamite;
+import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.digging.EntityDiggingTNT;
+import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.drilling.EntityDrillingDynamite;
+import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.drilling.EntityDrillingTNT;
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.easteregg.EntityEasterEgg;
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.easteregg.EntityEasterEggDynamite;
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.easteregg.EntityEasterEggImpact;
@@ -178,6 +182,9 @@ public class ModEntities {
 		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "flat_tnt", OedldoedlExplosives.INSTANCE, id++, EntityFlatTNT.class, 160, 10, true);
 		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "mining_flat_tnt", OedldoedlExplosives.INSTANCE, id++, EntityMiningFlatTNT.class, 160, 10, true);
 
+		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "digging_tnt", OedldoedlExplosives.INSTANCE, id++, EntityDiggingTNT.class, 160, 10, true);
+		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "drilling_tnt", OedldoedlExplosives.INSTANCE, id++, EntityDrillingTNT.class, 160, 10, true);
+
 		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "tnt_x5", OedldoedlExplosives.INSTANCE, id++, EntityTNTX5.class, 160, 10, true);
 		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "tnt_x20", OedldoedlExplosives.INSTANCE, id++, EntityTNTX20.class, 160, 10, true);
 		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "tnt_x100", OedldoedlExplosives.INSTANCE, id++, EntityTNTX100.class, 160, 10, true);
@@ -209,6 +216,9 @@ public class ModEntities {
 
 		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "ender_dynamite", OedldoedlExplosives.INSTANCE, id++, EntityEnderDynamite.class, 64, 10, true);
 		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "easter_egg_dynamite", OedldoedlExplosives.INSTANCE, id++, EntityEasterEggDynamite.class, 64, 10, true);
+
+		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "drilling_dynamite", OedldoedlExplosives.INSTANCE, id++, EntityDrillingDynamite.class, 64, 10, true);
+		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "digging_dynamite", OedldoedlExplosives.INSTANCE, id++, EntityDiggingDynamite.class, 64, 10, true);
 
 		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "flat_dynamite", OedldoedlExplosives.INSTANCE, id++, EntityFlatDynamite.class, 64, 10, true);
 		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "mining_flat_dynamite", OedldoedlExplosives.INSTANCE, id++, EntityMiningFlatDynamite.class, 64, 10, true);

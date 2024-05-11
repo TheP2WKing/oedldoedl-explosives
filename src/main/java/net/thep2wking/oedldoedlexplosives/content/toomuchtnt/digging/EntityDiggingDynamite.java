@@ -27,6 +27,6 @@ public class EntityDiggingDynamite extends ModEntityDynamiteBase {
 
 	@Override
 	public ModExplosionBase createDynamiteExplosion(double x, double y, double z) {
-		return new ExplosionDiggingTNT(world, thrower, x, y, z, 1.0f, false, true, false, 64);
+		return new ExplosionDiggingTNT(world, thrower, x, y, z, 35f, true, true, false, 64);
 	}
 }

@@ -206,7 +206,7 @@ public class ModBlocks {
 			OedldoedlExplosives.TAB, SoundType.PLANT, MapColor.ORANGE_STAINED_HARDENED_CLAY, 0);
 
 	public static final Block DIGGING_TNT = new BlockDiggingTNT(OedldoedlExplosives.MODID, "digging_tnt",
-			OedldoedlExplosives.TAB, SoundType.PLANT, MapColor.GREEN, 0);
+			OedldoedlExplosives.TAB, SoundType.PLANT, MapColor.TNT, 0);
 	public static final Block DRILLING_TNT = new BlockDrillingTNT(OedldoedlExplosives.MODID, "drilling_tnt",
 			OedldoedlExplosives.TAB, SoundType.PLANT, MapColor.ORANGE_STAINED_HARDENED_CLAY, 0);
 

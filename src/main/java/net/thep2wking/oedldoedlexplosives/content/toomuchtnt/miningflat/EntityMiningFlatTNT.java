@@ -21,6 +21,6 @@ public class EntityMiningFlatTNT extends ModEntityTNTBase {
 
 	@Override
 	public ModExplosionBase createTNTExplosion(double x, double y, double z) {
-		return new ExplosionMiningFlatTNT(world, ignitor, x, y, z, 30.0f, true, true, true, 128);
+		return new ExplosionMiningFlatTNT(world, ignitor, x, y, z, 36.0f, true, true, true, 128);
 	}
 }

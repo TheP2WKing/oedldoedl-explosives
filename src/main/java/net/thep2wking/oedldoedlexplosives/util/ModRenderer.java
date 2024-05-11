@@ -47,6 +47,7 @@ import net.thep2wking.oedldoedlexplosives.content.entity.EntityTNTTree;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityTheP2WKingTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityTrollTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityWoolTNT;
+import net.thep2wking.oedldoedlexplosives.content.entity.living.EntityGiantTheP2WKing;
 import net.thep2wking.oedldoedlexplosives.content.entity.living.EntityTheP2WKing;
 import net.thep2wking.oedldoedlexplosives.content.entity.throwable.EntityCombatDynamite;
 import net.thep2wking.oedldoedlexplosives.content.entity.throwable.EntityEggsplosive;
@@ -101,6 +102,7 @@ import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.x500.EntityDynamite
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.x500.EntityTNTX500;
 import net.thep2wking.oedldoedlexplosives.init.ModBlocks;
 import net.thep2wking.oedldoedlexplosives.init.ModItems;
+import net.thep2wking.oedldoedlexplosives.util.render.RenderGiantTheP2WKing;
 import net.thep2wking.oedldoedlexplosives.util.render.RenderTheP2WKing;
 
 public class ModRenderer {
@@ -234,5 +236,6 @@ public class ModRenderer {
 	@SideOnly(Side.CLIENT)
 	public static void registerEntityRender() {
 		RenderingRegistry.registerEntityRenderingHandler(EntityTheP2WKing.class, RenderTheP2WKing.FACTORY);
+		RenderingRegistry.registerEntityRenderingHandler(EntityGiantTheP2WKing.class, RenderGiantTheP2WKing.FACTORY);
 	}
 }

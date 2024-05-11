@@ -1,68 +1,53 @@
 package net.thep2wking.oedldoedlexplosives.content.entity.living;
 
-import java.util.Set;
-
 import javax.annotation.Nullable;
 
-import com.google.common.collect.Sets;
-
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityAgeable;
-import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.IEntityLivingData;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.EntityAIAttackMelee;
-import net.minecraft.entity.ai.EntityAIFollowParent;
 import net.minecraft.entity.ai.EntityAIHurtByTarget;
 import net.minecraft.entity.ai.EntityAILookIdle;
-import net.minecraft.entity.ai.EntityAIMate;
 import net.minecraft.entity.ai.EntityAIMoveTowardsTarget;
 import net.minecraft.entity.ai.EntityAINearestAttackableTarget;
 import net.minecraft.entity.ai.EntityAISwimming;
 import net.minecraft.entity.ai.EntityAIWanderAvoidWater;
 import net.minecraft.entity.ai.EntityAIWatchClosest;
+import net.minecraft.entity.monster.EntityMob;
 import net.minecraft.entity.monster.IMob;
-import net.minecraft.entity.passive.EntityAnimal;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.EntityEquipmentSlot;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.World;
 import net.thep2wking.oedldoedlexplosives.OedldoedlExplosives;
-import net.thep2wking.oedldoedlexplosives.config.ExplosivesConfig;
-import net.thep2wking.oedldoedlexplosives.init.ModBlocks;
 import net.thep2wking.oedldoedlexplosives.init.ModSounds;
 
-public class EntityTheP2WKing extends EntityAnimal {
+public class EntityGiantTheP2WKing extends EntityMob {
 	public static final ResourceLocation LOOTTABLE = new ResourceLocation(OedldoedlExplosives.MODID,
-			"entities/thep2wking");
-	private static final Set<Item> TEMPTATION_ITEMS = Sets.newHashSet(Item.getItemFromBlock(ModBlocks.TROLL_TNT));
+			"entities/giant_thep2wking");
 	private int attackTimer;
 
-	public EntityTheP2WKing(World worldIn) {
+	public EntityGiantTheP2WKing(World worldIn) {
 		super(worldIn);
-		this.setSize(0.6F, 1.95f);
-		this.experienceValue = 200;
+		this.setSize(3F, 12f);
+		this.experienceValue = 1000;
 	}
 
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@Override
 	public void initEntityAI() {
 		this.tasks.addTask(1, new EntityAISwimming(this));
 		this.tasks.addTask(2, new EntityAIAttackMelee(this, 0.5D, false));
-		this.tasks.addTask(3, new EntityAIMate(this, 1.0D));
-		this.tasks.addTask(4, new EntityAIFollowParent(this, 1.1D));
 		this.tasks.addTask(3, new EntityAIMoveTowardsTarget(this, 0.5D, 24.0F));
-		this.tasks.addTask(6, new EntityAIWanderAvoidWater(this, 0.5D));
-		this.tasks.addTask(7, new EntityAIWatchClosest(this, EntityPlayer.class, 6.0F));
-		this.tasks.addTask(8, new EntityAILookIdle(this));
-		this.targetTasks.addTask(2, new EntityAIHurtByTarget(this, false, new Class[0]));
-		this.targetTasks.addTask(3, new EntityAINearestAttackableTarget<>(this, EntityLiving.class, 4, false, true,
-				entity -> entity != null && IMob.VISIBLE_MOB_SELECTOR.apply(entity)));
+		this.tasks.addTask(4, new EntityAIWanderAvoidWater(this, 0.5D));
+		this.tasks.addTask(5, new EntityAIWatchClosest(this, EntityPlayer.class, 6.0F));
+		this.tasks.addTask(6, new EntityAILookIdle(this));
+		this.targetTasks.addTask(1, new EntityAIHurtByTarget(this, false, new Class[0]));
+        this.targetTasks.addTask(2, new EntityAINearestAttackableTarget(this, EntityPlayer.class, true));
 	}
 
 	@Override
@@ -92,7 +77,7 @@ public class EntityTheP2WKing extends EntityAnimal {
 	@Override
 	public void applyEntityAttributes() {
 		super.applyEntityAttributes();
-		this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(200.0D);
+		this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(800.0D);
 		this.getEntityAttribute(SharedMonsterAttributes.FOLLOW_RANGE).setBaseValue(30.0D);
 	}
 
@@ -104,14 +89,14 @@ public class EntityTheP2WKing extends EntityAnimal {
 
 	@Override
 	public float getEyeHeight() {
-		return 1.65F;
+		return 10F;
 	}
 
 	@Override
 	public boolean attackEntityAsMob(Entity entityIn) {
-		this.attackTimer = 10;
+		this.attackTimer = 20;
 		this.playSound(SoundEvents.ENTITY_PLAYER_ATTACK_STRONG, 1.0F, 1.0F);
-		return entityIn.attackEntityFrom(DamageSource.causeMobDamage(this), (float) (7 + this.rand.nextInt(10)));
+		return entityIn.attackEntityFrom(DamageSource.causeMobDamage(this), (float) (7 + this.rand.nextInt(20)));
 	}
 
 	@Override
@@ -130,16 +115,8 @@ public class EntityTheP2WKing extends EntityAnimal {
 	}
 
 	@Override
-	public boolean isBreedingItem(ItemStack stack) {
-		return TEMPTATION_ITEMS.contains(stack.getItem());
-	}
-
-	@Override
 	public IEntityLivingData onInitialSpawn(DifficultyInstance difficulty, IEntityLivingData livingdata) {
 		livingdata = super.onInitialSpawn(difficulty, livingdata);
-		if (ExplosivesConfig.CONTENT.THEP2WKING_CARRIES_TROLL_TNT) {
-			this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND, new ItemStack(ModBlocks.TROLL_TNT, 1, 0));
-		}
 		return livingdata;
 	}
 
@@ -151,11 +128,5 @@ public class EntityTheP2WKing extends EntityAnimal {
 		this.entityDropItem(this.getItemStackFromSlot(EntityEquipmentSlot.CHEST).copy(), 0.0F);
 		this.entityDropItem(this.getItemStackFromSlot(EntityEquipmentSlot.LEGS).copy(), 0.0F);
 		this.entityDropItem(this.getItemStackFromSlot(EntityEquipmentSlot.FEET).copy(), 0.0F);
-	}
-
-	@Override
-	@Nullable
-	public EntityAgeable createChild(EntityAgeable ageable) {
-		return new EntityTheP2WKing(this.world);
 	}
 }

@@ -27,6 +27,6 @@ public class EntityMiningFlatDynamite extends ModEntityDynamiteBase {
 
 	@Override
 	public ModExplosionBase createDynamiteExplosion(double x, double y, double z) {
-		return new ExplosionMiningFlatTNT(world, thrower, x, y, z, 10.0f, true, true, true, 128);
+		return new ExplosionMiningFlatTNT(world, thrower, x, y, z, 12.0f, true, true, true, 128);
 	}
 }

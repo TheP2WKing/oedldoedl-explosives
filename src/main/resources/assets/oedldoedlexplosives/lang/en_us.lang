@@ -258,6 +258,14 @@ tile.oedldoedlexplosives.thep2wking_tnt.name=TheP2WKing TNT
 entity.oedldoedlexplosives.thep2wking_tnt.name=Block of TheP2WKing TNT
 tile.oedldoedlexplosives.thep2wking_tnt.tip1=Developing Chaos since 2018!
 
+tile.oedldoedlexplosives.digging_tnt.name=Digging TNT
+entity.oedldoedlexplosives.digging_tnt.name=Block of Digging TNT
+tile.oedldoedlexplosives.digging_tnt.tip1=We need to dig deeper!
+
+tile.oedldoedlexplosives.drilling_tnt.name=Drilling TNT
+entity.oedldoedlexplosives.drilling_tnt.name=Block of Drilling TNT
+tile.oedldoedlexplosives.drilling_tnt.tip1=I am thrilled to drill!
+
 item.oedldoedlexplosives.dynamite.name=Dynamite
 item.oedldoedlexplosives.dynamite.tip1=Throwable TNT.
 
@@ -327,6 +335,12 @@ item.oedldoedlexplosives.sand_firework_dynamite.tip1=Clap your sandy cheeks!
 item.oedldoedlexplosives.gravel_firework_dynamite.name=Gravel Firework Dynamite
 item.oedldoedlexplosives.gravel_firework_dynamite.tip1=Clap your flinty cheeks!
 
+item.oedldoedlexplosives.digging_dynamite.name=Digging Dynamite
+item.oedldoedlexplosives.digging_dynamite.tip1=We need to stop digging!
+
+item.oedldoedlexplosives.drilling_dynamite.name=Drilling Dynamite
+item.oedldoedlexplosives.drilling_dynamite.tip1=Who needs a drill?
+
 item.oedldoedlexplosives.eggsplosive.name=Eggsplosive
 item.oedldoedlexplosives.eggsplosive.tip1=Which came first, the chicken or the egg...
 item.oedldoedlexplosives.eggsplosive.tip2=...wrong answer, dynamite!
@@ -335,6 +349,7 @@ item.oedldoedlexplosives.grenade_apple.name=Grenade Apple
 item.oedldoedlexplosives.grenade_apple.tip1=May contain traces of gunpowder.
 
 entity.oedldoedlexplosives.thep2wking.name=TheP2WKing
+entity.oedldoedlexplosives.giant_thep2wking.name=Giant TheP2WKing
 
 item.oedldoedlexplosives.tnt_wrench.name=TNT Wrench
 item.oedldoedlexplosives.tnt_wrench.tip1=Change Configureable TNT explosion size and

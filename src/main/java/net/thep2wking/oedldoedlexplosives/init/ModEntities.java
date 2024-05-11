@@ -48,6 +48,7 @@ import net.thep2wking.oedldoedlexplosives.content.entity.EntityTNTTree;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityTheP2WKingTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityTrollTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityWoolTNT;
+import net.thep2wking.oedldoedlexplosives.content.entity.living.EntityGiantTheP2WKing;
 import net.thep2wking.oedldoedlexplosives.content.entity.living.EntityTheP2WKing;
 import net.thep2wking.oedldoedlexplosives.content.entity.throwable.EntityCombatDynamite;
 import net.thep2wking.oedldoedlexplosives.content.entity.throwable.EntityEggsplosive;
@@ -231,6 +232,7 @@ public class ModEntities {
 		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "grenade_apple", OedldoedlExplosives.INSTANCE, id++, EntityGrenadeApple.class, 64, 10, true);
 	
 		ModRegistryHelper.registerEntityWithSpawnEgg(OedldoedlExplosives.MODID, "thep2wking", OedldoedlExplosives.INSTANCE, id++, EntityTheP2WKing.class, 80, 3, false, 0, 15184386);
+		ModRegistryHelper.registerEntityWithSpawnEgg(OedldoedlExplosives.MODID, "giant_thep2wking", OedldoedlExplosives.INSTANCE, id++, EntityGiantTheP2WKing.class, 80, 3, false, 0, 15184386);
 
 		if (ExplosivesConfig.CONTENT.SPAWN_THEP2WKING) {
 			ModRegistryHelper.registerEntitySpawn(EntityTheP2WKing.class, EnumCreatureType.CREATURE, 20, 1, 1, ModBiomeUtil.getEntitySpawningBiomes(EnumCreatureType.CREATURE, EntityPig.class));

@@ -235,7 +235,7 @@ public class ModEntities {
 		ModRegistryHelper.registerEntityWithSpawnEgg(OedldoedlExplosives.MODID, "giant_thep2wking", OedldoedlExplosives.INSTANCE, id++, EntityGiantTheP2WKing.class, 80, 3, false, 0, 15184386);
 
 		if (ExplosivesConfig.CONTENT.SPAWN_THEP2WKING) {
-			ModRegistryHelper.registerEntitySpawn(EntityTheP2WKing.class, EnumCreatureType.CREATURE, 20, 1, 1, ModBiomeUtil.getEntitySpawningBiomes(EnumCreatureType.CREATURE, EntityPig.class));
+			ModRegistryHelper.registerEntitySpawn(EntityTheP2WKing.class, EnumCreatureType.CREATURE, 2, 1, 1, ModBiomeUtil.getEntitySpawningBiomes(EnumCreatureType.CREATURE, EntityPig.class));
 		}
 	}
 }

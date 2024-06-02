@@ -243,7 +243,7 @@ public class ModRegistry {
 		ModRegistryHelper.registerItem(event, ModItems.GRENADE_APPLE);
 
 		ModRegistryHelper.registerItem(event, ModItems.TNT_WRENCH);
-		ModRegistryHelper.registerItem(event, ModItems.TNT_DISRUPTER);
+		ModRegistryHelper.registerItem(event, ModItems.TNT_DISRUPTOR);
 		ModRegistryHelper.registerItem(event, ModItems.PLASTIC);
 		ModRegistryHelper.registerItem(event, ModItems.CHIP);
 		ModRegistryHelper.registerItem(event, ModItems.DIVIDED_BY_ZERO);

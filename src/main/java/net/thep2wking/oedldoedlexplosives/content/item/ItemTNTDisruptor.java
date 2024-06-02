@@ -29,8 +29,8 @@ import net.thep2wking.oedldoedlcore.util.ModTooltips;
 import net.thep2wking.oedldoedlexplosives.api.ModEntityDynamiteBase;
 import net.thep2wking.oedldoedlexplosives.config.ExplosivesConfig;
 
-public class ItemTNTDisrupter extends ModItemBase {
-	public ItemTNTDisrupter(String modid, String name, CreativeTabs tab, EnumRarity rarity, boolean hasEffect,
+public class ItemTNTDisruptor extends ModItemBase {
+	public ItemTNTDisruptor(String modid, String name, CreativeTabs tab, EnumRarity rarity, boolean hasEffect,
 			int tooltipLines, int annotationLines) {
 		super(modid, name, tab, rarity, hasEffect, tooltipLines, annotationLines);
 		setMaxStackSize(1);

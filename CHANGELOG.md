@@ -6,7 +6,7 @@
 
 - added giant TheP2WKing mob
 - added over 10 new tnts with corresponding dynamite (inspired by TooMuchTNT) (e.g. 500x, easter egg, gravity groove, and true flat tnt)
-- added a tnt disrupter that removes primed tnt and throws dynamite
+- added a tnt disruptor that removes primed tnt and throws dynamite
 
 ### Changed
 

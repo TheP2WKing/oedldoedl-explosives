@@ -355,12 +355,12 @@ item.oedldoedlexplosives.tnt_wrench.name=TNT Wrench
 item.oedldoedlexplosives.tnt_wrench.tip1=Change Configureable TNT explosion size and
 item.oedldoedlexplosives.tnt_wrench.tip2=can disarm supported blocks of TNT.
 
-item.oedldoedlexplosives.tnt_disrupter.name=TNT Disrupter
-item.oedldoedlexplosives.tnt_disrupter.tip1=Kill supported TNT entities before exploding.
-item.oedldoedlexplosives.tnt_disrupter.tip2=Does also work with supported dynamite entities.
-item.oedldoedlexplosives.tnt_disrupter.annotation1=Useable in survival:
-item.oedldoedlexplosives.tnt_disrupter.annotation2=Yes
-item.oedldoedlexplosives.tnt_disrupter.annotation3=No
+item.oedldoedlexplosives.tnt_disruptor.name=TNT Disruptor
+item.oedldoedlexplosives.tnt_disruptor.tip1=Kill supported TNT entities before exploding.
+item.oedldoedlexplosives.tnt_disruptor.tip2=Does also work with supported dynamite entities.
+item.oedldoedlexplosives.tnt_disruptor.annotation1=Useable in survival:
+item.oedldoedlexplosives.tnt_disruptor.annotation2=Yes
+item.oedldoedlexplosives.tnt_disruptor.annotation3=No
 
 item.oedldoedlexplosives.plastic.name=Plastic
 item.oedldoedlexplosives.plastic.tip1=Surgery?

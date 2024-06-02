@@ -10,7 +10,7 @@ import net.thep2wking.oedldoedlexplosives.content.item.ItemCombatDynamite;
 import net.thep2wking.oedldoedlexplosives.content.item.ItemDividedByZero;
 import net.thep2wking.oedldoedlexplosives.content.item.ItemEggsplosive;
 import net.thep2wking.oedldoedlexplosives.content.item.ItemGrenadeApple;
-import net.thep2wking.oedldoedlexplosives.content.item.ItemTNTDisrupter;
+import net.thep2wking.oedldoedlexplosives.content.item.ItemTNTDisruptor;
 import net.thep2wking.oedldoedlexplosives.content.item.ItemTNTWrench;
 import net.thep2wking.oedldoedlexplosives.content.item.ItemTheP2WKingDynamite;
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.animal.ItemAnimalDynamite;
@@ -163,7 +163,7 @@ public class ModItems {
 	public static final Item GRENADE_APPLE = new ItemGrenadeApple(OedldoedlExplosives.MODID, "grenade_apple", OedldoedlExplosives.TAB, ModRarities.WHITE, false, 1, 0);
 
 	public static final Item TNT_WRENCH = new ItemTNTWrench(OedldoedlExplosives.MODID, "tnt_wrench", OedldoedlExplosives.TAB, ModRarities.WHITE, false, 2, 0);
-	public static final Item TNT_DISRUPTER = new ItemTNTDisrupter(OedldoedlExplosives.MODID, "tnt_disrupter", OedldoedlExplosives.TAB, ModRarities.RED, true, 2, 0);
+	public static final Item TNT_DISRUPTOR = new ItemTNTDisruptor(OedldoedlExplosives.MODID, "tnt_disruptor", OedldoedlExplosives.TAB, ModRarities.RED, true, 2, 0);
 	public static final Item PLASTIC = new ModItemBase(OedldoedlExplosives.MODID, "plastic", OedldoedlExplosives.TAB, ModRarities.WHITE, false, 1, 0);
 	public static final Item CHIP = new ModItemBase(OedldoedlExplosives.MODID, "chip", OedldoedlExplosives.TAB, ModRarities.YELLOW, false, 1, 0);
 	public static final Item DIVIDED_BY_ZERO = new ItemDividedByZero(OedldoedlExplosives.MODID, "divided_by_zero", OedldoedlExplosives.TAB, ModRarities.RED, false, 1, 0);

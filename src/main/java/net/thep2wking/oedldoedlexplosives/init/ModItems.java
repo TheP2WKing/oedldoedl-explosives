@@ -162,7 +162,7 @@ public class ModItems {
 	public static final Item EGGSPLOSIVE = new ItemEggsplosive(OedldoedlExplosives.MODID, "eggsplosive", OedldoedlExplosives.TAB, ModRarities.WHITE, false, 2, 0);
 	public static final Item GRENADE_APPLE = new ItemGrenadeApple(OedldoedlExplosives.MODID, "grenade_apple", OedldoedlExplosives.TAB, ModRarities.WHITE, false, 1, 0);
 
-	public static final Item TNT_WRENCH = new ItemTNTWrench(OedldoedlExplosives.MODID, "tnt_wrench", OedldoedlExplosives.TAB, ModRarities.WHITE, false, 2, 1);
+	public static final Item TNT_WRENCH = new ItemTNTWrench(OedldoedlExplosives.MODID, "tnt_wrench", OedldoedlExplosives.TAB, ModRarities.WHITE, false, 2, 0);
 	public static final Item TNT_DISRUPTER = new ItemTNTDisrupter(OedldoedlExplosives.MODID, "tnt_disrupter", OedldoedlExplosives.TAB, ModRarities.RED, true, 2, 0);
 	public static final Item PLASTIC = new ModItemBase(OedldoedlExplosives.MODID, "plastic", OedldoedlExplosives.TAB, ModRarities.WHITE, false, 1, 0);
 	public static final Item CHIP = new ModItemBase(OedldoedlExplosives.MODID, "chip", OedldoedlExplosives.TAB, ModRarities.YELLOW, false, 1, 0);

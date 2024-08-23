@@ -2,7 +2,10 @@
 itemGroup.oedldoedlexplosives.name=§dOedldoedl Explosives
 
 # icons
-item.oedldoedlcore.explosives_icon.annotation3=Version: §e1.12.2-4.1.0
+item.oedldoedlcore.explosives_icon.annotation3=Version: §e1.12.2-4.2.0
+
+# join message
+join.oedldoedlexplosives.message=Cool guys do not look at explosions!
 
 # blocks
 tile.oedldoedlexplosives.rainbow_block.name=Rainbow Block

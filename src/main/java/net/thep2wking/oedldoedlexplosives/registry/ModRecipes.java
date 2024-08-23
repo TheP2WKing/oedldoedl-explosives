@@ -294,7 +294,7 @@ public class ModRecipes {
 					"AAA", "BCB", "AAA", 'A', "ingotIron", 'B', "woolBlack", 'C', "dustRedstone");
 			ModRecipeHelper.addShapedRecipe(OedldoedlExplosives.MODID, "divided_by_zero",
 					new ItemStack(ModItems.DIVIDED_BY_ZERO, 1, 0), "ABC", "DED", "DBD", 'A', "dyeBlack", 'B',
-					"ingotIron", 'C', "dyeOrange", 'D', new ItemStack(Blocks.STONE_BUTTON, 1, 0), 'E', "dustRedstone");
+					"ingotIron", 'C', "dyeOrange", 'D', "buttonStone", 'E', "dustRedstone");
 
 			ModRecipeHelper.addShapedRecipe(OedldoedlExplosives.MODID, "tnt_disruptor",
 					new ItemStack(ModItems.TNT_DISRUPTOR, 1, 0), " AB", " AA", "C  ", 'A', "commandBlock", 'B', "tnt", 'C', "stickWood");

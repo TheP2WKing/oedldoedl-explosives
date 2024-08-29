@@ -13,50 +13,52 @@ import net.thep2wking.oedldoedlexplosives.OedldoedlExplosives;
 import net.thep2wking.oedldoedlexplosives.init.ModBlocks;
 import net.thep2wking.oedldoedlexplosives.init.ModItems;
 import net.thep2wking.oedldoedlexplosives.init.ModSounds;
-import net.thep2wking.oedldoedlexplosives.util.ModRenderer;
 
 @Mod.EventBusSubscriber
 public class ModRegistry {
 	@SubscribeEvent
 	public static void onModelRegister(ModelRegistryEvent event) {
 		ModRegistryHelper.registerModels(event, OedldoedlExplosives.MODID);
-		ModRenderer.registerEntityRender();
 	}
 
 	@SubscribeEvent
 	public static void onBlockRegister(RegistryEvent.Register<Block> event) {
 		ModLogger.registeredBlocksLogger(OedldoedlExplosives.MODID);
-		ModRegistryHelper.registerBlock(event, ModBlocks.RAINBOW);
+		ModRegistryHelper.registerBlock(event, ModBlocks.RAINBOW_BLOCK);
 
 		ModRegistryHelper.registerBlock(event, ModBlocks.FAKE_TNT);
 		ModRegistryHelper.registerBlock(event, ModBlocks.COMBAT_TNT);
 
+		ModRegistryHelper.registerBlock(event, ModBlocks.TNT_X5_EPP);
+		ModRegistryHelper.registerBlock(event, ModBlocks.TNT_X20_EPP);
 		ModRegistryHelper.registerBlock(event, ModBlocks.C4);
 
 		ModRegistryHelper.registerBlock(event, ModBlocks.DRILL_TNT);
-		ModRegistryHelper.registerBlock(event, ModBlocks.FLAT_TNT_PP);
+		ModRegistryHelper.registerBlock(event, ModBlocks.FLAT_TNT_EPP);
 
 		ModRegistryHelper.registerBlock(event, ModBlocks.NUKE_TNT);
-		ModRegistryHelper.registerBlock(event, ModBlocks.H_TNT);
-
-		ModRegistryHelper.registerBlock(event, ModBlocks.METEOR_TNT);
-		ModRegistryHelper.registerBlock(event, ModBlocks.SPHERE_TNT);
-		ModRegistryHelper.registerBlock(event, ModBlocks.DERPY_TNT);
-		ModRegistryHelper.registerBlock(event, ModBlocks.INCENDITARY_TNT);
+		ModRegistryHelper.registerBlock(event, ModBlocks.METEOR_TNT_EPP);
 
 		ModRegistryHelper.registerBlock(event, ModBlocks.DETONATOR_CHAIN_TNT);
+		
 		ModRegistryHelper.registerBlock(event, ModBlocks.DAY_TNT);
 		ModRegistryHelper.registerBlock(event, ModBlocks.NIGHT_TNT);
-		ModRegistryHelper.registerBlock(event, ModBlocks.SIR_DERPINGTON_TNT);
-		ModRegistryHelper.registerBlock(event, ModBlocks.TNT_RAIN);
 
+		ModRegistryHelper.registerBlock(event, ModBlocks.SPHERE_TNT_EPP);
+		ModRegistryHelper.registerBlock(event, ModBlocks.H_TNT);
+
+		ModRegistryHelper.registerBlock(event, ModBlocks.DERPY_TNT);
+		ModRegistryHelper.registerBlock(event, ModBlocks.INCENDITARY_TNT);
 		ModRegistryHelper.registerBlock(event, ModBlocks.NAPALM_TNT);
-		ModRegistryHelper.registerBlock(event, ModBlocks.ISLAND_TNT);
-		ModRegistryHelper.registerBlock(event, ModBlocks.WOOL_TNT);
-
 		ModRegistryHelper.registerBlock(event, ModBlocks.SNOW_TNT);
+		ModRegistryHelper.registerBlock(event, ModBlocks.SIR_DERPINGTON);
+
+		ModRegistryHelper.registerBlock(event, ModBlocks.TNT_RAIN);
 		ModRegistryHelper.registerBlock(event, ModBlocks.BUNDLED_TNT);
+
+		ModRegistryHelper.registerBlock(event, ModBlocks.ISLAND_TNT);
 		ModRegistryHelper.registerBlock(event, ModBlocks.SUPERSONIC_TNT);
+		ModRegistryHelper.registerBlock(event, ModBlocks.WOOL_TNT);
 		ModRegistryHelper.registerBlock(event, ModBlocks.RAINBOW_TNT);
 
 		ModRegistryHelper.registerBlock(event, ModBlocks.TROLL_TNT);
@@ -123,32 +125,36 @@ public class ModRegistry {
 		ModRegistryHelper.registerItemBlock(event, ModItems.FAKE_TNT);
 		ModRegistryHelper.registerItemBlock(event, ModItems.COMBAT_TNT);
 
+		ModRegistryHelper.registerItemBlock(event, ModItems.TNT_X5_EPP);
+		ModRegistryHelper.registerItemBlock(event, ModItems.TNT_X20_EPP);
 		ModRegistryHelper.registerItemBlock(event, ModItems.C4);
 
 		ModRegistryHelper.registerItemBlock(event, ModItems.DRILL_TNT);
 		ModRegistryHelper.registerItemBlock(event, ModItems.FLAT_TNT_PP);
 
 		ModRegistryHelper.registerItemBlock(event, ModItems.NUKE_TNT);
-		ModRegistryHelper.registerItemBlock(event, ModItems.H_TNT);
-		
-		ModRegistryHelper.registerItemBlock(event, ModItems.METEOR_TNT);
-		ModRegistryHelper.registerItemBlock(event, ModItems.SPHERE_TNT);
-		ModRegistryHelper.registerItemBlock(event, ModItems.DERPY_TNT);
-		ModRegistryHelper.registerItemBlock(event, ModItems.INCENDITARY_TNT);
+		ModRegistryHelper.registerItemBlock(event, ModItems.METEOR_TNT_EPP);
 
 		ModRegistryHelper.registerItemBlock(event, ModItems.DETONATOR_CHAIN_TNT);
+		
 		ModRegistryHelper.registerItemBlock(event, ModItems.DAY_TNT);
 		ModRegistryHelper.registerItemBlock(event, ModItems.NIGHT_TNT);
-		ModRegistryHelper.registerItemBlock(event, ModItems.SIR_DERPINGTON_TNT);
+
+		ModRegistryHelper.registerItemBlock(event, ModItems.SPHERE_TNT_EPP);
+		ModRegistryHelper.registerItemBlock(event, ModItems.H_TNT);
+
+		ModRegistryHelper.registerItemBlock(event, ModItems.DERPY_TNT);
+		ModRegistryHelper.registerItemBlock(event, ModItems.INCENDITARY_TNT);
+		ModRegistryHelper.registerItemBlock(event, ModItems.NAPALM_TNT);
+		ModRegistryHelper.registerItemBlock(event, ModItems.SNOW_TNT);
+		ModRegistryHelper.registerItemBlock(event, ModItems.SIR_DERPINGTON);
+
+		ModRegistryHelper.registerItemBlock(event, ModItems.BUNDLED_TNT);
 		ModRegistryHelper.registerItemBlock(event, ModItems.TNT_RAIN);
 
-		ModRegistryHelper.registerItemBlock(event, ModItems.NAPALM_TNT);
 		ModRegistryHelper.registerItemBlock(event, ModItems.ISLAND_TNT);
-		ModRegistryHelper.registerItemBlock(event, ModItems.WOOL_TNT);
-
-		ModRegistryHelper.registerItemBlock(event, ModItems.SNOW_TNT);
-		ModRegistryHelper.registerItemBlock(event, ModItems.BUNDLED_TNT);
 		ModRegistryHelper.registerItemBlock(event, ModItems.SUPERSONIC_TNT);
+		ModRegistryHelper.registerItemBlock(event, ModItems.WOOL_TNT);
 		ModRegistryHelper.registerItemBlock(event, ModItems.RAINBOW_TNT);
 
 		ModRegistryHelper.registerItemBlock(event, ModItems.TROLL_TNT);

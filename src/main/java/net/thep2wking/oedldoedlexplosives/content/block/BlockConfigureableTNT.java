@@ -29,6 +29,7 @@ public class BlockConfigureableTNT extends ModBlockTNTBase {
 			int lightLevel) {
 		super(modid, name, tab, sound, mapColor, lightLevel);
 		this.setDefaultState(blockState.getBaseState().withProperty(SIZE, Integer.valueOf(0)).withProperty(EXPLODE, Boolean.valueOf(false)));
+		//TODO CRASH
 	}
 
 	@Override

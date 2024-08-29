@@ -11,6 +11,14 @@ join.oedldoedlexplosives.message=Cool guys do not look at explosions!
 tile.oedldoedlexplosives.rainbow_block.name=Rainbow Block
 tile.oedldoedlexplosives.rainbow_block.tip1=Over the rainbow.
 
+tile.oedldoedlexplosives.tnt_x5_epp.name=TNT x5
+entity.oedldoedlexplosives.tnt_x5_epp.name=Block of TNT x5
+tile.oedldoedlexplosives.tnt_x5_epp.tip1=Explosives plus five.
+
+tile.oedldoedlexplosives.tnt_x20_epp.name=TNT x20
+entity.oedldoedlexplosives.tnt_x20_epp.name=Block of TNT x20
+tile.oedldoedlexplosives.tnt_x20_epp.tip1=Explosives plus twenty.
+
 tile.oedldoedlexplosives.c4.name=C4
 entity.oedldoedlexplosives.c4.name=Block of C4
 tile.oedldoedlexplosives.c4.tip1=Not to be confused with C418.
@@ -27,9 +35,9 @@ tile.oedldoedlexplosives.drill_tnt.name=Drill TNT
 entity.oedldoedlexplosives.drill_tnt.name=Block of Drill TNT
 tile.oedldoedlexplosives.drill_tnt.tip1=Call me a shovel because im digging it...
 
-tile.oedldoedlexplosives.flat_tnt_ep.name=Flat TNT
-entity.oedldoedlexplosives.flat_tnt_ep.name=Block of Flat TNT
-tile.oedldoedlexplosives.flat_tnt_ep.tip1=Flat as...?
+tile.oedldoedlexplosives.flat_tnt_epp.name=Flat TNT
+entity.oedldoedlexplosives.flat_tnt_epp.name=Block of Flat TNT
+tile.oedldoedlexplosives.flat_tnt_epp.tip1=Flat as...?
 
 tile.oedldoedlexplosives.nuke_tnt.name=Nuke TNT
 entity.oedldoedlexplosives.nuke_tnt.name=Block of Nuke TNT
@@ -47,17 +55,17 @@ tile.oedldoedlexplosives.night_tnt.name=Night TNT
 entity.oedldoedlexplosives.night_tnt.name=Block of Night TNT
 tile.oedldoedlexplosives.night_tnt.tip1=/time set night
 
-tile.oedldoedlexplosives.sir_derpington_tnt.name=Sir Derpington TNT
-entity.oedldoedlexplosives.sir_derpington_tnt.name=Block of Sir Derpington TNT
-tile.oedldoedlexplosives.sir_derpington_tnt.tip1=Technoblade never dies!
+tile.oedldoedlexplosives.sir_derpington.name=Sir Derpington
+entity.oedldoedlexplosives.sir_derpington.name=Block of Sir Derpington
+tile.oedldoedlexplosives.sir_derpington.tip1=Technoblade never dies!
 
 tile.oedldoedlexplosives.tnt_rain.name=TNT Rain
 entity.oedldoedlexplosives.tnt_rain.name=Block of TNT Rain
-tile.oedldoedlexplosives.tnt_rain.tip1=It's raining man, Halejuja is raining man.
+tile.oedldoedlexplosives.tnt_rain.tip1=It is raining man, Halejuja it is raining man.
 
 tile.oedldoedlexplosives.napalm_tnt.name=Napalm TNT
 entity.oedldoedlexplosives.napalm_tnt.name=Block of Napalm TNT
-tile.oedldoedlexplosives.napalm_tnt.tip1=Welcome to Dubai, 47.
+tile.oedldoedlexplosives.napalm_tnt.tip1=That is hot!
 
 tile.oedldoedlexplosives.island_tnt.name=Island TNT
 entity.oedldoedlexplosives.island_tnt.name=Block of Island TNT
@@ -139,13 +147,14 @@ tile.oedldoedlexplosives.fake_tnt.name=Fake TNT
 entity.oedldoedlexplosives.fake_tnt.name=Block of Fake TNT
 tile.oedldoedlexplosives.fake_tnt.tip1=Fake Taxi?
 
-tile.oedldoedlexplosives.meteor_tnt.name=Meteor TNT
-entity.oedldoedlexplosives.meteor_tnt.name=Block of Meteor TNT
-tile.oedldoedlexplosives.meteor_tnt.tip1=Meteorite.
+tile.oedldoedlexplosives.meteor_tnt_epp.name=Meteor TNT
+entity.oedldoedlexplosives.meteor_tnt_epp.name=Block of Meteor TNT
+tile.oedldoedlexplosives.meteor_tnt_epp.tip1=Meteorite.
+entity.oedldoedlexplosives.meteor_epp.name=Meteor
 
-tile.oedldoedlexplosives.sphere_tnt.name=Sphere TNT
-entity.oedldoedlexplosives.sphere_tnt.name=Block of Sphere TNT
-tile.oedldoedlexplosives.sphere_tnt.tip1=You spin my head right ROUND...
+tile.oedldoedlexplosives.sphere_tnt_epp.name=Sphere TNT
+entity.oedldoedlexplosives.sphere_tnt_epp.name=Block of Sphere TNT
+tile.oedldoedlexplosives.sphere_tnt_epp.tip1=You spin my head right ROUND...
 
 tile.oedldoedlexplosives.derpy_tnt.name=Derpy TNT
 entity.oedldoedlexplosives.derpy_tnt.name=Block of Derpy TNT
@@ -355,8 +364,8 @@ entity.oedldoedlexplosives.thep2wking.name=TheP2WKing
 entity.oedldoedlexplosives.giant_thep2wking.name=Giant TheP2WKing
 
 item.oedldoedlexplosives.tnt_wrench.name=TNT Wrench
-item.oedldoedlexplosives.tnt_wrench.tip1=Change Configureable TNT explosion size and
-item.oedldoedlexplosives.tnt_wrench.tip2=can disarm supported blocks of TNT.
+item.oedldoedlexplosives.tnt_wrench.tip1=Remove and configure or rotate
+item.oedldoedlexplosives.tnt_wrench.tip2=supported blocks of TNT.
 
 item.oedldoedlexplosives.tnt_disruptor.name=TNT Disruptor
 item.oedldoedlexplosives.tnt_disruptor.tip1=Kill supported TNT entities before exploding.
@@ -380,3 +389,6 @@ sound.oedldoedlexplosives.tactical_nuke=Tactical nuke incoming
 sound.oedldoedlexplosives.bomb=Vacuum intensifies
 sound.oedldoedlexplosives.atomic=I, AM, ATOMIC
 sound.oedldoedlexplosives.thep2wking=TheP2WKing nags
+
+# top tooltips
+top.oedldoedlexplosives.axis=Axis:

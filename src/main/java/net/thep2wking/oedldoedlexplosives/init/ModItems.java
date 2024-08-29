@@ -38,38 +38,42 @@ import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.x5.ItemDynamiteX5;
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.x500.ItemDynamiteX500;
 
 public class ModItems {
-	public static final Item RAINBOW = new ModItemBlockBase(ModBlocks.RAINBOW, ModRarities.WHITE, false, 1, 0);
+	public static final Item RAINBOW = new ModItemBlockBase(ModBlocks.RAINBOW_BLOCK, ModRarities.WHITE, false, 1, 0);
 
 	public static final Item FAKE_TNT = new ModItemBlockTNTBase(ModBlocks.FAKE_TNT, ModRarities.WHITE, false, 1, 0);
 	public static final Item COMBAT_TNT = new ModItemBlockTNTBase(ModBlocks.COMBAT_TNT, ModRarities.YELLOW, false, 1, 0);
 
+	public static final Item TNT_X5_EPP = new ModItemBlockTNTBase(ModBlocks.TNT_X5_EPP, ModRarities.WHITE, false, 1, 0);
+	public static final Item TNT_X20_EPP = new ModItemBlockTNTBase(ModBlocks.TNT_X20_EPP, ModRarities.YELLOW, false, 1, 0);
 	public static final Item C4 = new ModItemBlockTNTBase(ModBlocks.C4, ModRarities.WHITE, false, 1, 0);
-
+	
 	public static final Item DRILL_TNT = new ModItemBlockTNTBase(ModBlocks.DRILL_TNT, ModRarities.YELLOW, false, 1, 0);
-	public static final Item FLAT_TNT_PP = new ModItemBlockTNTBase(ModBlocks.FLAT_TNT_PP, ModRarities.YELLOW, false, 1, 0);
+	public static final Item FLAT_TNT_PP = new ModItemBlockTNTBase(ModBlocks.FLAT_TNT_EPP, ModRarities.YELLOW, false, 1, 0);
 
 	public static final Item NUKE_TNT = new ModItemBlockTNTBase(ModBlocks.NUKE_TNT, ModRarities.RED, false, 1, 0);
+	public static final Item METEOR_TNT_EPP = new ModItemBlockTNTBase(ModBlocks.METEOR_TNT_EPP, ModRarities.YELLOW, false, 1, 0);
+	
+	public static final Item DETONATOR_CHAIN_TNT = new ModItemBlockTNTBase(ModBlocks.DETONATOR_CHAIN_TNT, ModRarities.WHITE, false, 1, 0);
+
+	public static final Item DAY_TNT = new ModItemBlockTNTBase(ModBlocks.DAY_TNT, ModRarities.YELLOW, false, 1, 0);
+	public static final Item NIGHT_TNT = new ModItemBlockTNTBase(ModBlocks.NIGHT_TNT, ModRarities.DARK_GRAY, false, 1, 0);
+
+	public static final Item SPHERE_TNT_EPP = new ModItemBlockTNTBase(ModBlocks.SPHERE_TNT_EPP, ModRarities.YELLOW, false, 1, 0);
 	public static final Item H_TNT = new ModItemBlockTNTBase(ModBlocks.H_TNT, ModRarities.DARK_RED, false, 1, 0);
 
-	public static final Item METEOR_TNT = new ModItemBlockTNTBase(ModBlocks.METEOR_TNT, ModRarities.YELLOW, false, 1, 0);
-	public static final Item SPHERE_TNT = new ModItemBlockTNTBase(ModBlocks.SPHERE_TNT, ModRarities.YELLOW, false, 1, 0);
 	public static final Item DERPY_TNT = new ModItemBlockTNTBase(ModBlocks.DERPY_TNT, ModRarities.WHITE, false, 1, 0);
 	public static final Item INCENDITARY_TNT = new ModItemBlockTNTBase(ModBlocks.INCENDITARY_TNT, ModRarities.WHITE, false, 1, 0);
+	public static final Item NAPALM_TNT = new ModItemBlockTNTBase(ModBlocks.NAPALM_TNT, ModRarities.YELLOW, false, 1, 0);
+	public static final Item SNOW_TNT = new ModItemBlockTNTBase(ModBlocks.SNOW_TNT, ModRarities.WHITE, false, 1, 0);
+	public static final Item SIR_DERPINGTON = new ModItemBlockTNTBase(ModBlocks.SIR_DERPINGTON, ModRarities.LIGHT_PURPLE, false, 1, 0);
 
-	public static final Item DETONATOR_CHAIN_TNT = new ModItemBlockTNTBase(ModBlocks.DETONATOR_CHAIN_TNT, ModRarities.WHITE, false, 1, 0);
-	public static final Item DAY_TNT = new ModItemBlockTNTBase(ModBlocks.DAY_TNT, ModRarities.WHITE, false, 1, 0);
-	public static final Item NIGHT_TNT = new ModItemBlockTNTBase(ModBlocks.NIGHT_TNT, ModRarities.WHITE, false, 1, 0);
-	public static final Item SIR_DERPINGTON_TNT = new ModItemBlockTNTBase(ModBlocks.SIR_DERPINGTON_TNT, ModRarities.WHITE, false, 1, 0);
+	public static final Item BUNDLED_TNT = new ModItemBlockTNTBase(ModBlocks.BUNDLED_TNT, ModRarities.WHITE, false, 1, 0);
 	public static final Item TNT_RAIN = new ModItemBlockTNTBase(ModBlocks.TNT_RAIN, ModRarities.RED, false, 1, 0);
 
-	public static final Item NAPALM_TNT = new ModItemBlockTNTBase(ModBlocks.NAPALM_TNT, ModRarities.YELLOW, false, 1, 0);
 	public static final Item ISLAND_TNT = new ModItemBlockTNTBase(ModBlocks.ISLAND_TNT, ModRarities.YELLOW, false, 1, 0);
-	public static final Item WOOL_TNT = new ModItemBlockTNTBase(ModBlocks.WOOL_TNT, ModRarities.YELLOW, false, 1, 0);
-
-	public static final Item SNOW_TNT = new ModItemBlockTNTBase(ModBlocks.SNOW_TNT, ModRarities.WHITE, false, 1, 0);
-	public static final Item BUNDLED_TNT = new ModItemBlockTNTBase(ModBlocks.BUNDLED_TNT, ModRarities.WHITE, false, 1, 0);
 	public static final Item SUPERSONIC_TNT = new ModItemBlockTNTBase(ModBlocks.SUPERSONIC_TNT, ModRarities.YELLOW, false, 1, 0);
-	public static final Item RAINBOW_TNT = new ModItemBlockTNTBase(ModBlocks.RAINBOW_TNT, ModRarities.WHITE, false, 1, 0);
+	public static final Item WOOL_TNT = new ModItemBlockTNTBase(ModBlocks.WOOL_TNT, ModRarities.AQUA, false, 1, 0);
+	public static final Item RAINBOW_TNT = new ModItemBlockTNTBase(ModBlocks.RAINBOW_TNT, ModRarities.AQUA, false, 1, 0);
 
 	public static final Item TROLL_TNT = new ModItemBlockTNTBase(ModBlocks.TROLL_TNT, ModRarities.YELLOW, false, 1, 0);
 	public static final Item CHUNK_TNT = new ModItemBlockTNTBase(ModBlocks.CHUNK_TNT, ModRarities.RED, false, 1, 0);
@@ -94,7 +98,7 @@ public class ModItems {
 	public static final Item FLOWER_POWER = new ModItemBlockTNTBase(ModBlocks.FLOWER_POWER, ModRarities.WHITE, false, 1, 0);
 	public static final Item CUBIC_TNT = new ModItemBlockTNTBase(ModBlocks.CUBIC_TNT, ModRarities.WHITE, false, 1, 0);
 	public static final Item ANIMAL_TNT = new ModItemBlockTNTBase(ModBlocks.ANIMAL_TNT, ModRarities.WHITE, false, 1, 0);
-	public static final Item GRAVEL_FIREWORK = new ModItemBlockTNTBase(ModBlocks.GRAVEL_FIREWORK, ModRarities.WHITE, false, 1, 0);
+	public static final Item GRAVEL_FIREWORK = new ModItemBlockTNTBase(ModBlocks.GRAVEL_FIREWORK, ModRarities.GRAY, false, 1, 0);
 	public static final Item SAND_FIREWORK = new ModItemBlockTNTBase(ModBlocks.SAND_FIREWORK, ModRarities.YELLOW, false, 1, 0);
 	public static final Item TNT_FIREWORK = new ModItemBlockTNTBase(ModBlocks.TNT_FIREWORK, ModRarities.RED, false, 1, 0);
 	public static final Item ENTITY_FIREWORK = new ModItemBlockTNTBase(ModBlocks.ENTITY_FIREWORK, ModRarities.GREEN, false, 1, 0);
@@ -155,7 +159,7 @@ public class ModItems {
 	public static final Item DIGGING_DYNAMITE = new ItemDiggingDynamite(OedldoedlExplosives.MODID, "digging_dynamite", OedldoedlExplosives.TAB, ModRarities.WHITE, false, 1, 0);
 	public static final Item DRILLING_DYNAMITE = new ItemDrillingDynamite(OedldoedlExplosives.MODID, "drilling_dynamite", OedldoedlExplosives.TAB, ModRarities.YELLOW, false, 1, 0);
 
-	public static final Item GRAVEL_FIREWORK_DYNAMITE = new ItemGravelFireworkDynamite(OedldoedlExplosives.MODID, "gravel_firework_dynamite", OedldoedlExplosives.TAB, ModRarities.WHITE, false, 1, 0);
+	public static final Item GRAVEL_FIREWORK_DYNAMITE = new ItemGravelFireworkDynamite(OedldoedlExplosives.MODID, "gravel_firework_dynamite", OedldoedlExplosives.TAB, ModRarities.GRAY, false, 1, 0);
 	public static final Item SAND_FIREWORK_DYNAMITE = new ItemSandFireworkDynamite(OedldoedlExplosives.MODID, "sand_firework_dynamite", OedldoedlExplosives.TAB, ModRarities.YELLOW, false, 1, 0);
 	public static final Item DYNAMITE_FIREWORK = new ItemDynamiteFirework(OedldoedlExplosives.MODID, "dynamite_firework", OedldoedlExplosives.TAB, ModRarities.RED, false, 1, 0);
 

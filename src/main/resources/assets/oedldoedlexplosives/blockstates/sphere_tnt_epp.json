@@ -1,0 +1,17 @@
+{
+    "variants": 
+    {
+        "normal": 
+        { 
+            "model": "oedldoedlexplosives:sphere_tnt_epp"
+        },
+        "explode=false": 
+        { 
+            "model": "oedldoedlexplosives:sphere_tnt_epp"
+        },
+        "explode=true": 
+        { 
+            "model": "oedldoedlexplosives:sphere_tnt_epp"
+        }
+    }
+}

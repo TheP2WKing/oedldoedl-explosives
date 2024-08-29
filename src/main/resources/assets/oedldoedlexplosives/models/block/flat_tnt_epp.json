@@ -1,0 +1,9 @@
+{
+    "parent": "minecraft:block/cube_bottom_top",
+    "textures": 
+    {
+        "top": "oedldoedlexplosives:blocks/flat_tnt_epp_top",
+        "bottom": "oedldoedlexplosives:blocks/flat_tnt_epp_bottom",
+        "side": "oedldoedlexplosives:blocks/flat_tnt_epp_side"
+    }
+}

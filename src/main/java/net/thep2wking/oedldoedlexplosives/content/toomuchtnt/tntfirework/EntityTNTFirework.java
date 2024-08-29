@@ -12,6 +12,7 @@ public class EntityTNTFirework extends ModEntityTNTBase {
 	public EntityTNTFirework(World world, double x, double y, double z, EntityLivingBase igniter, int fuse,
 			float explosionStrength, boolean spawnFire, boolean blockDamage, boolean dropBlocks, int smoothness) {
 		super(world, x, y, z, igniter, fuse, explosionStrength, spawnFire, blockDamage, dropBlocks, smoothness);
+		this.setFuse(20);
 	}
 
 	public EntityTNTFirework(World world, double x, double y, double z, EntityLivingBase igniter) {

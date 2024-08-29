@@ -8,6 +8,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.thep2wking.oedldoedlcore.util.ModReferences;
 import net.thep2wking.oedldoedlexplosives.OedldoedlExplosives;
 import net.thep2wking.oedldoedlexplosives.config.categories.Content;
+import net.thep2wking.oedldoedlexplosives.config.categories.Integration;
 import net.thep2wking.oedldoedlexplosives.config.categories.Properties;
 import net.thep2wking.oedldoedlexplosives.config.categories.Recipes;
 
@@ -22,6 +23,9 @@ public class ExplosivesConfig {
 
     @Config.Name("recipes")
     public static final Recipes RECIPES = new Recipes();
+
+    @Config.Name("integration")
+    public static final Integration INTEGRATION = new Integration();
     
     @Mod.EventBusSubscriber
     public static class ConfigHolder {

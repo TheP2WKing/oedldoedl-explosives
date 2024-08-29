@@ -1,6 +1,5 @@
 package net.thep2wking.oedldoedlexplosives.content.toomuchtnt.grove;
 
-import java.util.ArrayList;
 import java.util.Set;
 
 import com.google.common.collect.Sets;
@@ -14,11 +13,15 @@ import net.minecraft.world.World;
 import net.thep2wking.oedldoedlexplosives.api.ModExplosionBase;
 
 public class ExplosionGroveTNT extends ModExplosionBase {
-	ArrayList<BlockPos> newAffectedBlockPositions = new ArrayList<BlockPos>();
-
 	public ExplosionGroveTNT(World worldIn, Entity ignitor, double x, double y, double z, float explosionStrength,
 			boolean spawnFire, boolean blockDamage, boolean dropBlocks, int smoothness) {
 		super(worldIn, ignitor, x, y, z, explosionStrength, spawnFire, blockDamage, dropBlocks, smoothness);
+	}
+
+	@Override
+	public void doExplosionA() {
+		this.doAffectedBlocks();
+		this.doDamageAndKnockback(false);
 	}
 
 	@SuppressWarnings("deprecation")

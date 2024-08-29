@@ -9,6 +9,7 @@ public class EntityTNTX20 extends ModEntityTNTBase {
 	public EntityTNTX20(World world, double x, double y, double z, EntityLivingBase igniter, int fuse,
 			float explosionStrength, boolean spawnFire, boolean blockDamage, boolean dropBlocks, int smoothness) {
 		super(world, x, y, z, igniter, fuse, explosionStrength, spawnFire, blockDamage, dropBlocks, smoothness);
+		this.setFuse(150);
 	}
 
 	public EntityTNTX20(World world, double x, double y, double z, EntityLivingBase igniter) {

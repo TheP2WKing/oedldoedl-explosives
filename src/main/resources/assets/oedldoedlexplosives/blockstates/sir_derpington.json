@@ -1,0 +1,17 @@
+{
+    "variants": 
+    {
+        "normal": 
+        { 
+            "model": "oedldoedlexplosives:sir_derpington"
+        },
+        "explode=false": 
+        { 
+            "model": "oedldoedlexplosives:sir_derpington"
+        },
+        "explode=true": 
+        { 
+            "model": "oedldoedlexplosives:sir_derpington"
+        }
+    }
+}

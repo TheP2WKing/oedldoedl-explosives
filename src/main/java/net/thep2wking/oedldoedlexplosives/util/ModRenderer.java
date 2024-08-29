@@ -2,57 +2,59 @@ package net.thep2wking.oedldoedlexplosives.util;
 
 import net.minecraft.init.Blocks;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 import net.thep2wking.oedldoedlcore.util.ModRenderHelper;
 import net.thep2wking.oedldoedlexplosives.api.ModTNTRenderer;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityAntimatterBomb;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityArrowTNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityBundledTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityButterTNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityC4;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityChunkTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityCombatTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityConfigureableTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityCrashTNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityDayTNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityDerpyTNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityDetonatorChainTNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityDrillTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityEggTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityEntityFirework;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityFakeTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityFlowerPower;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityHTNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityIncenditaryTNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityIslandTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityLOLXDTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityLavaTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityMegaNukeTNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityMeteorTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityMiniNukeTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityNCNuke;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityNapalmTNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityNightTNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityNukeTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityOver9000TNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityRainbowTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityRandomBlocksTNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntitySirDerpingtonTNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntitySnowTNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntitySphereTNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntitySupersonicTNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityTNTRain;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityTNTTree;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityTheP2WKingTNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityTrollTNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityWoolTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.living.EntityGiantTheP2WKing;
 import net.thep2wking.oedldoedlexplosives.content.entity.living.EntityTheP2WKing;
 import net.thep2wking.oedldoedlexplosives.content.entity.throwable.EntityCombatDynamite;
 import net.thep2wking.oedldoedlexplosives.content.entity.throwable.EntityEggsplosive;
 import net.thep2wking.oedldoedlexplosives.content.entity.throwable.EntityGrenadeApple;
 import net.thep2wking.oedldoedlexplosives.content.entity.throwable.EntityTheP2WKingDynamite;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.bundled.EntityBundledTNT;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.c4.EntityC4;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.chunk.EntityChunkTNT;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.day.EntityDayTNT;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.derpy.EntityDerpyTNT;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.detonatorchain.EntityDetonatorChainTNT;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.drill.EntityDrillTNT;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.flat.EntityFlatTNTEpp;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.h.EntityHTNT;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.incenditary.EntityIncenditaryTNT;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.island.EntityIslandTNT;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.meteor.EntityMeteorEpp;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.meteor.EntityMeteorTNTEpp;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.napalm.EntityNapalmTNT;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.night.EntityNightTNT;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.nuke.EntityNukeTNT;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.rain.EntityTNTRain;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.rainbow.EntityRainbowTNT;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.sirderpington.EntitySirDerpington;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.snow.EntitySnowTNT;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.sphere.EntitySphereTNTEpp;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.supersonic.EntitySupersonicTNT;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.troll.EntityTrollTNT;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.wool.EntityWoolTNT;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.x20.EntityTNTX20Epp;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.x5.EntityTNTX5Epp;
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.animal.EntityAnimalDynamite;
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.animal.EntityAnimalTNT;
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.compact.EntityCompactDynamite;
@@ -102,6 +104,7 @@ import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.x500.EntityDynamite
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.x500.EntityTNTX500;
 import net.thep2wking.oedldoedlexplosives.init.ModBlocks;
 import net.thep2wking.oedldoedlexplosives.init.ModItems;
+import net.thep2wking.oedldoedlexplosives.util.render.RenderEntityMeteorEpp;
 import net.thep2wking.oedldoedlexplosives.util.render.RenderGiantTheP2WKing;
 import net.thep2wking.oedldoedlexplosives.util.render.RenderTheP2WKing;
 
@@ -110,31 +113,34 @@ public class ModRenderer {
 		ModTNTRenderer.register(EntityFakeTNT.class, ModBlocks.FAKE_TNT);
 		ModTNTRenderer.register(EntityCombatTNT.class, ModBlocks.COMBAT_TNT);
 
+		ModTNTRenderer.register(EntityTNTX5Epp.class, ModBlocks.TNT_X5_EPP);
+		ModTNTRenderer.register(EntityTNTX20Epp.class, ModBlocks.TNT_X20_EPP);
 		ModTNTRenderer.register(EntityC4.class, ModBlocks.C4);
 
 		ModTNTRenderer.register(EntityDrillTNT.class, ModBlocks.DRILL_TNT);
-		ModTNTRenderer.register(net.thep2wking.oedldoedlexplosives.content.entity.EntityFlatTNT.class, ModBlocks.FLAT_TNT_PP);
-
+		ModTNTRenderer.register(EntityFlatTNTEpp.class, ModBlocks.FLAT_TNT_EPP);
 		ModTNTRenderer.register(EntityNukeTNT.class, ModBlocks.NUKE_TNT);
-		ModTNTRenderer.register(EntityHTNT.class, ModBlocks.H_TNT);
-
-		ModTNTRenderer.register(EntityMeteorTNT.class, ModBlocks.METEOR_TNT);
-		ModTNTRenderer.register(EntitySphereTNT.class, ModBlocks.SPHERE_TNT);
-		ModTNTRenderer.register(EntityDerpyTNT.class, ModBlocks.DERPY_TNT);
-		ModTNTRenderer.register(EntityIncenditaryTNT.class, ModBlocks.INCENDITARY_TNT);
+		ModTNTRenderer.register(EntityMeteorTNTEpp.class, ModBlocks.METEOR_TNT_EPP);
 
 		ModTNTRenderer.register(EntityDetonatorChainTNT.class, ModBlocks.DETONATOR_CHAIN_TNT);
+
 		ModTNTRenderer.register(EntityDayTNT.class, ModBlocks.DAY_TNT);
 		ModTNTRenderer.register(EntityNightTNT.class, ModBlocks.NIGHT_TNT);
-		ModTNTRenderer.register(EntitySirDerpingtonTNT.class, ModBlocks.SIR_DERPINGTON_TNT);
-		ModTNTRenderer.register(EntityTNTRain.class, ModBlocks.TNT_RAIN);
 
+		ModTNTRenderer.register(EntitySphereTNTEpp.class, ModBlocks.SPHERE_TNT_EPP);
+		ModTNTRenderer.register(EntityHTNT.class, ModBlocks.H_TNT);
+
+		ModTNTRenderer.register(EntityDerpyTNT.class, ModBlocks.DERPY_TNT);
+		ModTNTRenderer.register(EntityIncenditaryTNT.class, ModBlocks.INCENDITARY_TNT);
 		ModTNTRenderer.register(EntityNapalmTNT.class, ModBlocks.NAPALM_TNT);
+		ModTNTRenderer.register(EntitySnowTNT.class, ModBlocks.SNOW_TNT);
+		ModTNTRenderer.register(EntitySirDerpington.class, ModBlocks.SIR_DERPINGTON);
+
+		ModTNTRenderer.register(EntityBundledTNT.class, ModBlocks.BUNDLED_TNT);
 		ModTNTRenderer.register(EntityIslandTNT.class, ModBlocks.ISLAND_TNT);
+		ModTNTRenderer.register(EntityTNTRain.class, ModBlocks.TNT_RAIN);
 		ModTNTRenderer.register(EntityWoolTNT.class, ModBlocks.WOOL_TNT);
 
-		ModTNTRenderer.register(EntitySnowTNT.class, ModBlocks.SNOW_TNT);
-		ModTNTRenderer.register(EntityBundledTNT.class, ModBlocks.BUNDLED_TNT);
 		ModTNTRenderer.register(EntitySupersonicTNT.class, ModBlocks.SUPERSONIC_TNT);
 		ModTNTRenderer.register(EntityRainbowTNT.class, ModBlocks.RAINBOW_TNT);
 
@@ -233,9 +239,10 @@ public class ModRenderer {
 		ModRenderHelper.addThrowableRender(EntityGrenadeApple.class, ModItems.GRENADE_APPLE);
 	}
 
-	@SideOnly(Side.CLIENT)
 	public static void registerEntityRender() {
 		RenderingRegistry.registerEntityRenderingHandler(EntityTheP2WKing.class, RenderTheP2WKing.FACTORY);
 		RenderingRegistry.registerEntityRenderingHandler(EntityGiantTheP2WKing.class, RenderGiantTheP2WKing.FACTORY);
+		RenderingRegistry.registerEntityRenderingHandler(EntityMeteorEpp.class, RenderEntityMeteorEpp.FACTORY);
+
 	}
 }

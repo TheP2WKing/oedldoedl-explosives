@@ -5,11 +5,19 @@
         { 
             "model": "oedldoedlexplosives:rainbow_tnt"
         },
-        "explode=false": 
+        "axis=x,explode=false": 
         { 
             "model": "oedldoedlexplosives:rainbow_tnt"
         },
-        "explode=true": 
+        "axis=x,explode=true": 
+        { 
+            "model": "oedldoedlexplosives:rainbow_tnt"
+        },
+        "axis=z,explode=false": 
+        { 
+            "model": "oedldoedlexplosives:rainbow_tnt"
+        },
+        "axis=z,explode=true": 
         { 
             "model": "oedldoedlexplosives:rainbow_tnt"
         }

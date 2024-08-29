@@ -9,51 +9,55 @@ import net.thep2wking.oedldoedlexplosives.OedldoedlExplosives;
 import net.thep2wking.oedldoedlexplosives.config.ExplosivesConfig;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityAntimatterBomb;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityArrowTNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityBundledTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityButterTNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityC4;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityChunkTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityCombatTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityConfigureableTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityCrashTNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityDayTNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityDerpyTNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityDetonatorChainTNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityDrillTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityEggTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityEntityFirework;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityFakeTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityFlowerPower;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityHTNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityIncenditaryTNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityIslandTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityLOLXDTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityLavaTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityMegaNukeTNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityMeteorTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityMiniNukeTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityNCNuke;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityNapalmTNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityNightTNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityNukeTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityOver9000TNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityRainbowTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityRandomBlocksTNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntitySirDerpingtonTNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntitySnowTNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntitySphereTNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntitySupersonicTNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityTNTRain;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityTNTTree;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityTheP2WKingTNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityTrollTNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityWoolTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.living.EntityGiantTheP2WKing;
 import net.thep2wking.oedldoedlexplosives.content.entity.living.EntityTheP2WKing;
 import net.thep2wking.oedldoedlexplosives.content.entity.throwable.EntityCombatDynamite;
 import net.thep2wking.oedldoedlexplosives.content.entity.throwable.EntityEggsplosive;
 import net.thep2wking.oedldoedlexplosives.content.entity.throwable.EntityGrenadeApple;
 import net.thep2wking.oedldoedlexplosives.content.entity.throwable.EntityTheP2WKingDynamite;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.bundled.EntityBundledTNT;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.c4.EntityC4;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.chunk.EntityChunkTNT;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.day.EntityDayTNT;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.derpy.EntityDerpyTNT;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.detonatorchain.EntityDetonatorChainTNT;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.drill.EntityDrillTNT;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.flat.EntityFlatTNTEpp;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.h.EntityHTNT;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.incenditary.EntityIncenditaryTNT;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.island.EntityIslandTNT;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.meteor.EntityMeteorEpp;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.meteor.EntityMeteorTNTEpp;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.napalm.EntityNapalmTNT;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.night.EntityNightTNT;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.nuke.EntityNukeTNT;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.rain.EntityTNTRain;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.rainbow.EntityRainbowTNT;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.sirderpington.EntitySirDerpington;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.snow.EntitySnowTNT;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.sphere.EntitySphereTNTEpp;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.supersonic.EntitySupersonicTNT;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.troll.EntityTrollTNT;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.wool.EntityWoolTNT;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.x20.EntityTNTX20Epp;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.x5.EntityTNTX5Epp;
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.animal.EntityAnimalDynamite;
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.animal.EntityAnimalTNT;
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.compact.EntityCompactDynamite;
@@ -110,32 +114,36 @@ public class ModEntities {
 		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "fake_tnt", OedldoedlExplosives.INSTANCE, id++, EntityFakeTNT.class, 160, 10, true);
 		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "combat_tnt", OedldoedlExplosives.INSTANCE, id++, EntityCombatTNT.class, 160, 10, true);
 
+		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "tnt_x5_epp", OedldoedlExplosives.INSTANCE, id++, EntityTNTX5Epp.class, 160, 10, true);
+		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "tnt_x20_epp", OedldoedlExplosives.INSTANCE, id++, EntityTNTX20Epp.class, 160, 10, true);
 		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "c4", OedldoedlExplosives.INSTANCE, id++, EntityC4.class, 160, 10, true);
-
+		
 		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "drill_tnt", OedldoedlExplosives.INSTANCE, id++, EntityDrillTNT.class, 160, 10, true);
-		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "flat_tnt_ep", OedldoedlExplosives.INSTANCE, id++, net.thep2wking.oedldoedlexplosives.content.entity.EntityFlatTNT.class, 160, 10, true);
+		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "flat_tnt_epp", OedldoedlExplosives.INSTANCE, id++, EntityFlatTNTEpp.class, 160, 10, true);
 
 		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "nuke_tnt", OedldoedlExplosives.INSTANCE, id++, EntityNukeTNT.class, 160, 10, true);
-		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "h_tnt", OedldoedlExplosives.INSTANCE, id++, EntityHTNT.class, 160, 10, true);
-
-		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "meteor_tnt", OedldoedlExplosives.INSTANCE, id++, EntityMeteorTNT.class, 160, 10, true);
-		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "sphere_tnt", OedldoedlExplosives.INSTANCE, id++, EntitySphereTNT.class, 160, 10, true);
-		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "derpy_tnt", OedldoedlExplosives.INSTANCE, id++, EntityDerpyTNT.class, 160, 10, true);
-		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "incenditary_tnt", OedldoedlExplosives.INSTANCE, id++, EntityIncenditaryTNT.class, 160, 10, true);
-
+		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "meteor_tnt_epp", OedldoedlExplosives.INSTANCE, id++, EntityMeteorTNTEpp.class, 160, 10, true);
+		
 		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "detonator_chain_tnt", OedldoedlExplosives.INSTANCE, id++, EntityDetonatorChainTNT.class, 160, 10, true);
+		
 		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "day_tnt", OedldoedlExplosives.INSTANCE, id++, EntityDayTNT.class, 160, 10, true);
 		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "night_tnt", OedldoedlExplosives.INSTANCE, id++, EntityNightTNT.class, 160, 10, true);
-		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "sir_derpington_tnt", OedldoedlExplosives.INSTANCE, id++, EntitySirDerpingtonTNT.class, 160, 10, true);
+
+		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "sphere_tnt_epp", OedldoedlExplosives.INSTANCE, id++, EntitySphereTNTEpp.class, 160, 10, true);
+		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "h_tnt", OedldoedlExplosives.INSTANCE, id++, EntityHTNT.class, 160, 10, true);
+
+		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "derpy_tnt", OedldoedlExplosives.INSTANCE, id++, EntityDerpyTNT.class, 160, 10, true);
+		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "incenditary_tnt", OedldoedlExplosives.INSTANCE, id++, EntityIncenditaryTNT.class, 160, 10, true);
+		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "napalm_tnt", OedldoedlExplosives.INSTANCE, id++, EntityNapalmTNT.class, 160, 10, true);
+		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "snow_tnt", OedldoedlExplosives.INSTANCE, id++, EntitySnowTNT.class, 160, 10, true);
+		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "sir_derpington", OedldoedlExplosives.INSTANCE, id++, EntitySirDerpington.class, 160, 10, true);
+
+		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "bundled_tnt", OedldoedlExplosives.INSTANCE, id++, EntityBundledTNT.class, 160, 10, true);
 		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "tnt_rain", OedldoedlExplosives.INSTANCE, id++, EntityTNTRain.class, 160, 10, true);
 
-		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "napalm_tnt", OedldoedlExplosives.INSTANCE, id++, EntityNapalmTNT.class, 160, 10, true);
 		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "island_tnt", OedldoedlExplosives.INSTANCE, id++, EntityIslandTNT.class, 160, 10, true);
-		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "wool_tnt", OedldoedlExplosives.INSTANCE, id++, EntityWoolTNT.class, 160, 10, true);
-
-		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "snow_tnt", OedldoedlExplosives.INSTANCE, id++, EntitySnowTNT.class, 160, 10, true);
-		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "bundled_tnt", OedldoedlExplosives.INSTANCE, id++, EntityBundledTNT.class, 160, 10, true);
 		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "supersonic_tnt", OedldoedlExplosives.INSTANCE, id++, EntitySupersonicTNT.class, 160, 10, true);
+		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "wool_tnt", OedldoedlExplosives.INSTANCE, id++, EntityWoolTNT.class, 160, 10, true);
 		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "rainbow_tnt", OedldoedlExplosives.INSTANCE, id++, EntityRainbowTNT.class, 160, 10, true);
 
 		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "troll_tnt", OedldoedlExplosives.INSTANCE, id++, EntityTrollTNT.class, 160, 10, true);
@@ -233,6 +241,9 @@ public class ModEntities {
 	
 		ModRegistryHelper.registerEntityWithSpawnEgg(OedldoedlExplosives.MODID, "thep2wking", OedldoedlExplosives.INSTANCE, id++, EntityTheP2WKing.class, 80, 3, false, 0, 15184386);
 		ModRegistryHelper.registerEntityWithSpawnEgg(OedldoedlExplosives.MODID, "giant_thep2wking", OedldoedlExplosives.INSTANCE, id++, EntityGiantTheP2WKing.class, 80, 3, false, 0, 15184386);
+
+		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "meteor_epp", OedldoedlExplosives.INSTANCE, id++, EntityMeteorEpp.class, 128, 10, true);
+
 
 		if (ExplosivesConfig.CONTENT.SPAWN_THEP2WKING) {
 			ModRegistryHelper.registerEntitySpawn(EntityTheP2WKing.class, EnumCreatureType.CREATURE, 2, 1, 1, ModBiomeUtil.getBiomesWithCreatures(EntityPig.class));

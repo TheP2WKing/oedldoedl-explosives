@@ -14,6 +14,7 @@ public class EntityGravelFirework extends ModEntityTNTBase {
 	public EntityGravelFirework(World world, double x, double y, double z, EntityLivingBase igniter, int fuse,
 			float explosionStrength, boolean spawnFire, boolean blockDamage, boolean dropBlocks, int smoothness) {
 		super(world, x, y, z, igniter, fuse, explosionStrength, spawnFire, blockDamage, dropBlocks, smoothness);
+		this.setFuse(20);
 	}
 
 	public EntityGravelFirework(World world, double x, double y, double z, EntityLivingBase igniter) {

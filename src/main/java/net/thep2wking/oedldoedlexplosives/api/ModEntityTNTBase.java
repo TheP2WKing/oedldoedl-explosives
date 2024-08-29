@@ -1,5 +1,7 @@
 package net.thep2wking.oedldoedlexplosives.api;
 
+import java.util.ArrayList;
+
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.MoverType;
 import net.minecraft.entity.item.EntityTNTPrimed;
@@ -11,6 +13,7 @@ import net.minecraft.network.datasync.DataSerializers;
 import net.minecraft.network.datasync.EntityDataManager;
 import net.minecraft.network.play.server.SPacketExplosion;
 import net.minecraft.util.EnumParticleTypes;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.event.ForgeEventFactory;
 
@@ -287,7 +290,8 @@ public class ModEntityTNTBase extends EntityTNTPrimed {
 		for (EntityPlayer entityplayer : world.playerEntities) {
 			if (entityplayer.getDistanceSq(this.posX, this.posY, this.posZ) < 4096.0D) {
 				SPacketExplosion packet = new SPacketExplosion(this.posX, this.posY, this.posZ,
-						explosion.getExplosionStrength(), explosion.getAffectedBlockPositions(),
+						explosion.getExplosionStrength(), (explosion.doBlockDamage() ? explosion.getAffectedBlockPositions()
+								: new ArrayList<BlockPos>()),
 						explosion.getPlayerKnockbackMap().get(entityplayer));
 				if (entityplayer instanceof EntityPlayerMP) {
 					((EntityPlayerMP) entityplayer).connection.sendPacket(packet);

@@ -241,8 +241,8 @@ public class ModEntities {
 		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "eggsplosive", OedldoedlExplosives.INSTANCE, id++, EntityEggsplosive.class, 64, 10, true);
 		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "grenade_apple", OedldoedlExplosives.INSTANCE, id++, EntityGrenadeApple.class, 64, 10, true);
 	
-		ModRegistryHelper.registerEntityWithSpawnEgg(OedldoedlExplosives.MODID, "thep2wking", OedldoedlExplosives.INSTANCE, id++, EntityTheP2WKing.class, 80, 3, false, 0, 15184386);
-		ModRegistryHelper.registerEntityWithSpawnEgg(OedldoedlExplosives.MODID, "giant_thep2wking", OedldoedlExplosives.INSTANCE, id++, EntityGiantTheP2WKing.class, 80, 3, false, 0, 15184386);
+		ModRegistryHelper.registerEntityWithSpawnEgg(OedldoedlExplosives.MODID, "thep2wking", OedldoedlExplosives.INSTANCE, id++, EntityTheP2WKing.class, 80, 3, false, 0x000000, 0xe7b202);
+		ModRegistryHelper.registerEntityWithSpawnEgg(OedldoedlExplosives.MODID, "giant_thep2wking", OedldoedlExplosives.INSTANCE, id++, EntityGiantTheP2WKing.class, 80, 3, false, 0x000000, 0xe7b202);
 
 		ModRegistryHelper.registerEntity(OedldoedlExplosives.MODID, "meteor_epp", OedldoedlExplosives.INSTANCE, id++, EntityMeteorEpp.class, 128, 10, true);
 

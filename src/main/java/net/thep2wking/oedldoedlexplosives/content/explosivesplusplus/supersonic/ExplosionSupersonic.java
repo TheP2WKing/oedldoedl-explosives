@@ -1,6 +1,5 @@
 package net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.supersonic;
 
-import java.util.Random;
 import java.util.Set;
 
 import com.google.common.collect.Sets;
@@ -87,13 +86,14 @@ public class ExplosionSupersonic extends ModExplosionBase {
 					this.world.spawnParticle(EnumParticleTypes.SMOKE_NORMAL, d0, d1, d2, d3, d4, d5);
 				}
 				int range = 4;
-				Random rnd = new Random();
-				EntityFallingBlock fallingBlock = new EntityFallingBlock(this.world, blockpos.getX(), blockpos.getY(),
-						blockpos.getZ(), iblockstate);
-				fallingBlock.setVelocity(-range + (range * 2) * rnd.nextDouble(), range,
-						-range + (range * 2) * rnd.nextDouble());
+				EntityFallingBlock fallingBlock = new EntityFallingBlock(this.world, blockpos.getX(),
+						blockpos.getY(), blockpos.getZ(), iblockstate);
+				// Correct method to set velocity
+				fallingBlock.motionX = -range + (range * 2) * random.nextDouble();
+				fallingBlock.motionY = range;
+				fallingBlock.motionZ = -range + (range * 2) * random.nextDouble();
 				fallingBlock.fallTime = 1;
-				if (!this.world.isRemote) {
+				if (fallingBlock != null) {
 					this.world.spawnEntity(fallingBlock);
 				}
 				this.dropBlocks(iblockstate, block, blockpos);

@@ -30,6 +30,6 @@ public class EntityTNTX2000 extends ModEntityTNTBase {
 
 	@Override
 	public ModExplosionBase createTNTExplosion(double x, double y, double z) {
-		return new ModExplosionBase(world, ignitor, x, y, z, 100.0f, false, true, true, 220);
+		return new ModExplosionBase(world, ignitor, x, y, z, 100.0f, false, true, true, 228);
 	}
 }

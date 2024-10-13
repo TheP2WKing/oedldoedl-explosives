@@ -38,7 +38,8 @@ import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.x5.ItemDynamiteX5;
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.x500.ItemDynamiteX500;
 
 public class ModItems {
-	public static final Item RAINBOW = new ModItemBlockBase(ModBlocks.RAINBOW_BLOCK, ModRarities.WHITE, false, 1, 0);
+	public static final Item RAINBOW_BLOCK = new ModItemBlockBase(ModBlocks.RAINBOW_BLOCK, ModRarities.WHITE, false, 1, 0);
+	public static final Item GUNPOWDER_BLOCK = new ModItemBlockBase(ModBlocks.GUNPOWDER_BLOCK, ModRarities.WHITE, false, 1, 0);
 
 	public static final Item FAKE_TNT = new ModItemBlockTNTBase(ModBlocks.FAKE_TNT, ModRarities.WHITE, false, 1, 0);
 	public static final Item COMBAT_TNT = new ModItemBlockTNTBase(ModBlocks.COMBAT_TNT, ModRarities.YELLOW, false, 1, 0);
@@ -79,21 +80,23 @@ public class ModItems {
 	public static final Item CHUNK_TNT = new ModItemBlockTNTBase(ModBlocks.CHUNK_TNT, ModRarities.RED, false, 1, 0);
 	public static final Item NUKE_NC = new ModItemBlockTNTBase(ModBlocks.NUKE_NC, ModRarities.RED, false, 1, 0);
 
-	public static final Item MINI_NUKE_TNT = new ModItemBlockTNTBase(ModBlocks.MINI_NUKE_TNT, ModRarities.YELLOW, false, 1, 0);
-	public static final Item MEGA_NUKE_TNT = new ModItemBlockTNTBase(ModBlocks.MEGA_NUKE_TNT, ModRarities.RED, false, 1, 0);
+	public static final Item NUKE_TNT_CB = new ModItemBlockTNTBase(ModBlocks.NUKE_TNT_CB, ModRarities.WHITE, false, 1, 0);
+	public static final Item MEGA_NUKE_TNT = new ModItemBlockTNTBase(ModBlocks.MEGA_NUKE_TNT, ModRarities.YELLOW, false, 1, 0);
 	public static final Item ANTIMATTER_BOMB = new ModItemBlockTNTBase(ModBlocks.ANTIMATTER_BOMB, ModRarities.RED, false, 1, 0);
 
-	public static final Item BUTTER_TNT = new ModItemBlockTNTBase(ModBlocks.BUTTER_TNT, ModRarities.GOLD, false, 1, 0);
-	public static final Item LAVA_TNT = new ModItemBlockTNTBase(ModBlocks.LAVA_TNT, ModRarities.YELLOW, false, 1, 0);
-	public static final Item EGG_TNT = new ModItemBlockTNTBase(ModBlocks.EGG_TNT, ModRarities.WHITE, false, 1, 0);
-	public static final Item ARROW_TNT = new ModItemBlockTNTBase(ModBlocks.ARROW_TNT, ModRarities.WHITE, false, 1, 0);
-
+	public static final Item ISLAND_TNT_CB = new ModItemBlockTNTBase(ModBlocks.ISLAND_TNT_CB, ModRarities.WHITE, false, 1, 0);
 	public static final Item RANDOM_BLOCKS_TNT = new ModItemBlockTNTBase(ModBlocks.RANDOM_BLOCKS_TNT, ModRarities.YELLOW, false, 1, 0);
+	public static final Item LAVA_TNT = new ModItemBlockTNTBase(ModBlocks.LAVA_TNT, ModRarities.YELLOW, false, 1, 0);
+	public static final Item BUTTER_TNT = new ModItemBlockTNTBase(ModBlocks.BUTTER_TNT, ModRarities.GOLD, false, 1, 0);
+
+	public static final Item EGG_TNT = new ModItemBlockTNTBase(ModBlocks.EGG_TNT, ModRarities.WHITE, false, 1, 0);
+	public static final Item ARROW_TNT_CB = new ModItemBlockTNTBase(ModBlocks.ARROW_TNT_CB, ModRarities.WHITE, false, 1, 0);
+
+	public static final Item CONFIGUREABLE_TNT = new ModItemBlockTNTBase(ModBlocks.CONFIGUREABLE_TNT, ModRarities.WHITE, false, 1, 0);
+	public static final Item LOLXD_TNT = new ModItemBlockTNTBase(ModBlocks.LOLXD_TNT, ModRarities.DARK_GRAY, false, 1, 0);
 	public static final Item CRASH_TNT = new ModItemBlockTNTBase(ModBlocks.CRASH_TNT, ModRarities.RED, false, 1, 0);
-	public static final Item LOLXD_TNT = new ModItemBlockTNTBase(ModBlocks.LOLXD_TNT, ModRarities.WHITE, false, 1, 0);
 
 	public static final Item TNT_TREE = new ModItemBlockTNTBase(ModBlocks.TNT_TREE, ModRarities.GREEN, false, 1, 0);
-	public static final Item CONFIGUREABLE_TNT = new ModItemBlockTNTBase(ModBlocks.CONFIGUREABLE_TNT, ModRarities.WHITE, false, 1, 0);
 
 	public static final Item FLOWER_POWER = new ModItemBlockTNTBase(ModBlocks.FLOWER_POWER, ModRarities.WHITE, false, 1, 0);
 	public static final Item CUBIC_TNT = new ModItemBlockTNTBase(ModBlocks.CUBIC_TNT, ModRarities.WHITE, false, 1, 0);

@@ -1,5 +1,7 @@
 package net.thep2wking.oedldoedlexplosives.api;
 
+import java.util.ArrayList;
+
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
@@ -8,11 +10,13 @@ import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.network.play.server.SPacketExplosion;
 import net.minecraft.util.EnumParticleTypes;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.world.World;
 import net.minecraftforge.event.ForgeEventFactory;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import net.thep2wking.oedldoedlexplosives.config.ExplosivesConfig;
 
 /**
  * @author TheP2WKing
@@ -32,6 +36,7 @@ public class ModEntityDynamiteBase extends EntityThrowable {
 		super(world, x, y, z);
 	}
 
+	@SideOnly(Side.CLIENT)
 	public Item setParticleItem() {
 		return Items.AIR;
 	}
@@ -103,8 +108,8 @@ public class ModEntityDynamiteBase extends EntityThrowable {
 		}
 		if (!world.isRemote) {
 			this.explode(this.posX, this.posY, this.posZ);
+			this.hasImpacted = true;
 		}
-		this.hasImpacted = true;
 	}
 
 	public void handleExplosionLogic(ModExplosionBase explosion) {
@@ -114,9 +119,12 @@ public class ModEntityDynamiteBase extends EntityThrowable {
 		for (EntityPlayer entityplayer : world.playerEntities) {
 			if (entityplayer.getDistanceSq(this.posX, this.posY, this.posZ) < 4096.0D) {
 				SPacketExplosion packet = new SPacketExplosion(this.posX, this.posY, this.posZ,
-						explosion.getExplosionStrength(), explosion.getAffectedBlockPositions(),
+						explosion.getExplosionStrength(),
+						((!explosion.doBlockDamage() || explosion.getAffectedBlockPositions().size() > 174762) // max packet size
+								? new ArrayList<BlockPos>()
+								: explosion.getAffectedBlockPositions()),
 						explosion.getPlayerKnockbackMap().get(entityplayer));
-				if (entityplayer instanceof EntityPlayerMP) {
+				if (entityplayer instanceof EntityPlayerMP && ExplosivesConfig.PROPERTIES.EXPLOSION_PARTICLES) {
 					((EntityPlayerMP) entityplayer).connection.sendPacket(packet);
 				}
 			}
@@ -138,6 +146,14 @@ public class ModEntityDynamiteBase extends EntityThrowable {
 			entity.motionZ = (double) (-((float) Math.cos(f)) * motionZ) * Math.random();
 			world.spawnEntity(entity);
 		}
+	}
+
+	@Override
+	public void setVelocity(double x, double y, double z) {
+        this.motionX = x;
+        this.motionY = y;
+        this.motionZ = z;
+        this.isAirBorne = true;
 	}
 
 	public void spawnImpactTNTX2(float motionX, float motionY, float motionZ) {

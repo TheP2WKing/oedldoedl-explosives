@@ -8,6 +8,7 @@ import net.minecraft.world.World;
 import net.thep2wking.oedldoedlexplosives.api.ModExplosionBase;
 
 public class ExplosionH extends ModExplosionBase {
+	public int affected = 0;
 	public ExplosionH(World worldIn, Entity ignitor, double x, double y, double z, float explosionStrength,
 			boolean spawnFire, boolean blockDamage, boolean dropBlocks, int smoothness) {
 		super(worldIn, ignitor, x, y, z, explosionStrength, spawnFire, blockDamage, dropBlocks, smoothness);

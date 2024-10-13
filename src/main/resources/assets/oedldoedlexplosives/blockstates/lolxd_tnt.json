@@ -5,11 +5,19 @@
         { 
             "model": "oedldoedlexplosives:lolxd_tnt"
         },
-        "explode=false": 
+        "axis=x,explode=false": 
         { 
             "model": "oedldoedlexplosives:lolxd_tnt"
         },
-        "explode=true": 
+        "axis=x,explode=true": 
+        { 
+            "model": "oedldoedlexplosives:lolxd_tnt"
+        },
+        "axis=z,explode=false": 
+        { 
+            "model": "oedldoedlexplosives:lolxd_tnt"
+        },
+        "axis=z,explode=true": 
         { 
             "model": "oedldoedlexplosives:lolxd_tnt"
         }

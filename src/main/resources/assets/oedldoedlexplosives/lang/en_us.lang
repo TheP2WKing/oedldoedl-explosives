@@ -11,6 +11,9 @@ join.oedldoedlexplosives.message=Cool guys do not look at explosions!
 tile.oedldoedlexplosives.rainbow_block.name=Rainbow Block
 tile.oedldoedlexplosives.rainbow_block.tip1=Over the rainbow.
 
+tile.oedldoedlexplosives.gunpowder_block.name=Gunpowder Block
+tile.oedldoedlexplosives.gunpowder_block.tip1=Compressed gunpowder.
+
 tile.oedldoedlexplosives.tnt_x5_epp.name=TNT x5
 entity.oedldoedlexplosives.tnt_x5_epp.name=Block of TNT x5
 tile.oedldoedlexplosives.tnt_x5_epp.tip1=Explosives plus five.
@@ -91,6 +94,10 @@ tile.oedldoedlexplosives.antimatter_bomb.name=Antimatter Bomb
 entity.oedldoedlexplosives.antimatter_bomb.name=Block of Antimatter Bomb
 tile.oedldoedlexplosives.antimatter_bomb.tip1=Sounds like a vacuum cleaner.
 
+tile.oedldoedlexplosives.island_tnt_cb.name=Island TNT
+entity.oedldoedlexplosives.island_tnt_cb.name=Block of Island TNT
+tile.oedldoedlexplosives.island_tnt_cb.tip1=Surviving 100 days on a deserted island.
+
 tile.oedldoedlexplosives.butter_tnt.name=Butter TNT
 entity.oedldoedlexplosives.butter_tnt.name=Block of Butter TNT
 tile.oedldoedlexplosives.butter_tnt.tip1=Block of Butter?
@@ -103,9 +110,9 @@ tile.oedldoedlexplosives.egg_tnt.name=Egg TNT
 entity.oedldoedlexplosives.egg_tnt.name=Block of Egg TNT
 tile.oedldoedlexplosives.egg_tnt.tip1=(Hot) Chicks in your area!
 
-tile.oedldoedlexplosives.arrow_tnt.name=Arrow TNT
-entity.oedldoedlexplosives.arrow_tnt.name=Block of Arrow TNT
-tile.oedldoedlexplosives.arrow_tnt.tip1=Trial and arrow.
+tile.oedldoedlexplosives.arrow_tnt_cb.name=Arrow TNT
+entity.oedldoedlexplosives.arrow_tnt_cb.name=Block of Arrow TNT
+tile.oedldoedlexplosives.arrow_tnt_cb.tip1=Trial and arrow.
 
 tile.oedldoedlexplosives.random_blocks_tnt.name=Random Blocks TNT
 entity.oedldoedlexplosives.random_blocks_tnt.name=Block of Random Blocks TNT
@@ -184,9 +191,9 @@ tile.oedldoedlexplosives.combat_tnt.name=Combat TNT
 entity.oedldoedlexplosives.combat_tnt.name=Block of Combat TNT
 tile.oedldoedlexplosives.combat_tnt.tip1=(Mortal) Combat.
 
-tile.oedldoedlexplosives.mini_nuke_tnt.name=Mini Nuke TNT
-entity.oedldoedlexplosives.mini_nuke_tnt.name=Block of Mini Nuke TNT
-tile.oedldoedlexplosives.mini_nuke_tnt.tip1=Small nuke, giant hole.
+tile.oedldoedlexplosives.nuke_tnt_cb.name=Nuke TNT
+entity.oedldoedlexplosives.nuke_tnt_cb.name=Block of Nuke TNT
+tile.oedldoedlexplosives.nuke_tnt_cb.tip1=Small nuke, giant hole.
 
 tile.oedldoedlexplosives.animal_tnt.name=Animal TNT
 entity.oedldoedlexplosives.animal_tnt.name=Block of Animal TNT
@@ -392,3 +399,8 @@ sound.oedldoedlexplosives.thep2wking=TheP2WKing nags
 
 # top tooltips
 top.oedldoedlexplosives.axis=Axis:
+top.oedldoedlexplosives.size=Explosion Size:
+
+# crashes
+tile.oedldoedlexplosives.crash_tnt.runtime_exception=Crash TNT
+item.oedldoedlexplosives.divided_by_zero.runtime_exception=Divided by Zero

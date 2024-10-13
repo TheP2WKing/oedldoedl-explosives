@@ -4,23 +4,24 @@ import net.minecraft.init.Blocks;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.thep2wking.oedldoedlcore.util.ModRenderHelper;
 import net.thep2wking.oedldoedlexplosives.api.ModTNTRenderer;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityAntimatterBomb;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityArrowTNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityButterTNT;
+import net.thep2wking.oedldoedlexplosives.content.crazybombs.antimatter.EntityAntimatterBomb;
+import net.thep2wking.oedldoedlexplosives.content.crazybombs.arrow.EntityArrowTNTCb;
+import net.thep2wking.oedldoedlexplosives.content.crazybombs.butter.EntityButterTNT;
+import net.thep2wking.oedldoedlexplosives.content.crazybombs.configureable.EntityConfigureableTNT;
+import net.thep2wking.oedldoedlexplosives.content.crazybombs.crash.EntityCrashTNT;
+import net.thep2wking.oedldoedlexplosives.content.crazybombs.egg.EntityEggTNT;
+import net.thep2wking.oedldoedlexplosives.content.crazybombs.island.EntityIslandTNTCb;
+import net.thep2wking.oedldoedlexplosives.content.crazybombs.lava.EntityLavaTNT;
+import net.thep2wking.oedldoedlexplosives.content.crazybombs.lolxd.EntityLOLXDTNT;
+import net.thep2wking.oedldoedlexplosives.content.crazybombs.meganuke.EntityMegaNukeTNT;
+import net.thep2wking.oedldoedlexplosives.content.crazybombs.nuke.EntityNukeTNTCb;
+import net.thep2wking.oedldoedlexplosives.content.crazybombs.randomblocks.EntityRandomBlocksTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityCombatTNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityConfigureableTNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityCrashTNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityEggTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityEntityFirework;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityFakeTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityFlowerPower;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityLOLXDTNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityLavaTNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityMegaNukeTNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityMiniNukeTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityNCNuke;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityOver9000TNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityRandomBlocksTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityTNTTree;
 import net.thep2wking.oedldoedlexplosives.content.entity.EntityTheP2WKingTNT;
 import net.thep2wking.oedldoedlexplosives.content.entity.living.EntityGiantTheP2WKing;
@@ -44,7 +45,6 @@ import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.meteor.Enti
 import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.meteor.EntityMeteorTNTEpp;
 import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.napalm.EntityNapalmTNT;
 import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.night.EntityNightTNT;
-import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.nuke.EntityNukeTNT;
 import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.rain.EntityTNTRain;
 import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.rainbow.EntityRainbowTNT;
 import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.sirderpington.EntitySirDerpington;
@@ -119,7 +119,7 @@ public class ModRenderer {
 
 		ModTNTRenderer.register(EntityDrillTNT.class, ModBlocks.DRILL_TNT);
 		ModTNTRenderer.register(EntityFlatTNTEpp.class, ModBlocks.FLAT_TNT_EPP);
-		ModTNTRenderer.register(EntityNukeTNT.class, ModBlocks.NUKE_TNT);
+		ModTNTRenderer.register(EntityNukeTNTCb.class, ModBlocks.NUKE_TNT);
 		ModTNTRenderer.register(EntityMeteorTNTEpp.class, ModBlocks.METEOR_TNT_EPP);
 
 		ModTNTRenderer.register(EntityDetonatorChainTNT.class, ModBlocks.DETONATOR_CHAIN_TNT);
@@ -148,22 +148,23 @@ public class ModRenderer {
 		ModTNTRenderer.register(EntityTrollTNT.class, ModBlocks.TROLL_TNT);
 		ModTNTRenderer.register(EntityChunkTNT.class, ModBlocks.CHUNK_TNT);
 
-		ModTNTRenderer.register(EntityMiniNukeTNT.class, ModBlocks.MINI_NUKE_TNT);
+		ModTNTRenderer.register(EntityNukeTNTCb.class, ModBlocks.NUKE_TNT_CB);
 		ModTNTRenderer.register(EntityMegaNukeTNT.class, ModBlocks.MEGA_NUKE_TNT);
 		ModTNTRenderer.register(EntityAntimatterBomb.class, ModBlocks.ANTIMATTER_BOMB);
 
-		ModTNTRenderer.register(EntityButterTNT.class, ModBlocks.BUTTER_TNT);
+		ModTNTRenderer.register(EntityIslandTNTCb.class, ModBlocks.ISLAND_TNT_CB);
+		ModTNTRenderer.register(EntityRandomBlocksTNT.class, ModBlocks.RANDOM_BLOCKS_TNT);
 		ModTNTRenderer.register(EntityLavaTNT.class, ModBlocks.LAVA_TNT);
+		ModTNTRenderer.register(EntityButterTNT.class, ModBlocks.BUTTER_TNT);
 
 		ModTNTRenderer.register(EntityEggTNT.class, ModBlocks.EGG_TNT);
-		ModTNTRenderer.register(EntityArrowTNT.class, ModBlocks.ARROW_TNT);
+		ModTNTRenderer.register(EntityArrowTNTCb.class, ModBlocks.ARROW_TNT_CB);
 
-		ModTNTRenderer.register(EntityRandomBlocksTNT.class, ModBlocks.RANDOM_BLOCKS_TNT);
-		ModTNTRenderer.register(EntityCrashTNT.class, ModBlocks.CRASH_TNT);
+		ModTNTRenderer.register(EntityConfigureableTNT.class, ModBlocks.CONFIGUREABLE_TNT);
 		ModTNTRenderer.register(EntityLOLXDTNT.class, ModBlocks.LOLXD_TNT);
+		ModTNTRenderer.register(EntityCrashTNT.class, ModBlocks.CRASH_TNT);
 
 		ModTNTRenderer.register(EntityTNTTree.class, ModBlocks.TNT_TREE);
-		ModTNTRenderer.register(EntityConfigureableTNT.class, ModBlocks.CONFIGUREABLE_TNT);
 
 		ModTNTRenderer.register(EntityFlowerPower.class, ModBlocks.FLOWER_POWER);
 		ModTNTRenderer.register(EntityCubicTNT.class, ModBlocks.CUBIC_TNT);

@@ -25,6 +25,7 @@ public class ModRegistry {
 	public static void onBlockRegister(RegistryEvent.Register<Block> event) {
 		ModLogger.registeredBlocksLogger(OedldoedlExplosives.MODID);
 		ModRegistryHelper.registerBlock(event, ModBlocks.RAINBOW_BLOCK);
+		ModRegistryHelper.registerBlock(event, ModBlocks.GUNPOWDER_BLOCK);
 
 		ModRegistryHelper.registerBlock(event, ModBlocks.FAKE_TNT);
 		ModRegistryHelper.registerBlock(event, ModBlocks.COMBAT_TNT);
@@ -65,21 +66,23 @@ public class ModRegistry {
 		ModRegistryHelper.registerBlock(event, ModBlocks.CHUNK_TNT);
 		ModRegistryHelper.registerBlock(event, ModBlocks.NUKE_NC);
 		
-		ModRegistryHelper.registerBlock(event, ModBlocks.MINI_NUKE_TNT);
+		ModRegistryHelper.registerBlock(event, ModBlocks.NUKE_TNT_CB);
 		ModRegistryHelper.registerBlock(event, ModBlocks.MEGA_NUKE_TNT);
 		ModRegistryHelper.registerBlock(event, ModBlocks.ANTIMATTER_BOMB);
 
-		ModRegistryHelper.registerBlock(event, ModBlocks.BUTTER_TNT);
-		ModRegistryHelper.registerBlock(event, ModBlocks.LAVA_TNT);
-		ModRegistryHelper.registerBlock(event, ModBlocks.EGG_TNT);
-		ModRegistryHelper.registerBlock(event, ModBlocks.ARROW_TNT);
-
 		ModRegistryHelper.registerBlock(event, ModBlocks.RANDOM_BLOCKS_TNT);
-		ModRegistryHelper.registerBlock(event, ModBlocks.CRASH_TNT);
+		ModRegistryHelper.registerBlock(event, ModBlocks.ISLAND_TNT_CB);
+		ModRegistryHelper.registerBlock(event, ModBlocks.LAVA_TNT);
+		ModRegistryHelper.registerBlock(event, ModBlocks.BUTTER_TNT);
+
+		ModRegistryHelper.registerBlock(event, ModBlocks.EGG_TNT);
+		ModRegistryHelper.registerBlock(event, ModBlocks.ARROW_TNT_CB);
+
+		ModRegistryHelper.registerBlock(event, ModBlocks.CONFIGUREABLE_TNT);
 		ModRegistryHelper.registerBlock(event, ModBlocks.LOLXD_TNT);
+		ModRegistryHelper.registerBlock(event, ModBlocks.CRASH_TNT);
 
 		ModRegistryHelper.registerBlock(event, ModBlocks.TNT_TREE);
-		ModRegistryHelper.registerBlock(event, ModBlocks.CONFIGUREABLE_TNT);
 
 		ModRegistryHelper.registerBlock(event, ModBlocks.FLOWER_POWER);
 		ModRegistryHelper.registerBlock(event, ModBlocks.CUBIC_TNT);
@@ -120,7 +123,8 @@ public class ModRegistry {
 	@SubscribeEvent
 	public static void onItemRegister(RegistryEvent.Register<Item> event) {
 		ModLogger.registeredItemsLogger(OedldoedlExplosives.MODID);
-		ModRegistryHelper.registerItemBlock(event, ModItems.RAINBOW);
+		ModRegistryHelper.registerItemBlock(event, ModItems.RAINBOW_BLOCK);
+		ModRegistryHelper.registerItemBlock(event, ModItems.GUNPOWDER_BLOCK);
 
 		ModRegistryHelper.registerItemBlock(event, ModItems.FAKE_TNT);
 		ModRegistryHelper.registerItemBlock(event, ModItems.COMBAT_TNT);
@@ -161,21 +165,23 @@ public class ModRegistry {
 		ModRegistryHelper.registerItemBlock(event, ModItems.CHUNK_TNT);
 		ModRegistryHelper.registerItemBlock(event, ModItems.NUKE_NC);
 
-		ModRegistryHelper.registerItemBlock(event, ModItems.MINI_NUKE_TNT);
+		ModRegistryHelper.registerItemBlock(event, ModItems.NUKE_TNT_CB);
 		ModRegistryHelper.registerItemBlock(event, ModItems.MEGA_NUKE_TNT);
 		ModRegistryHelper.registerItemBlock(event, ModItems.ANTIMATTER_BOMB);
 
-		ModRegistryHelper.registerItemBlock(event, ModItems.BUTTER_TNT);
-		ModRegistryHelper.registerItemBlock(event, ModItems.LAVA_TNT);
-		ModRegistryHelper.registerItemBlock(event, ModItems.EGG_TNT);
-		ModRegistryHelper.registerItemBlock(event, ModItems.ARROW_TNT);
-
+		ModRegistryHelper.registerItemBlock(event, ModItems.ISLAND_TNT_CB);
 		ModRegistryHelper.registerItemBlock(event, ModItems.RANDOM_BLOCKS_TNT);
-		ModRegistryHelper.registerItemBlock(event, ModItems.CRASH_TNT);
+		ModRegistryHelper.registerItemBlock(event, ModItems.LAVA_TNT);
+		ModRegistryHelper.registerItemBlock(event, ModItems.BUTTER_TNT);
+
+		ModRegistryHelper.registerItemBlock(event, ModItems.EGG_TNT);
+		ModRegistryHelper.registerItemBlock(event, ModItems.ARROW_TNT_CB);
+
+		ModRegistryHelper.registerItemBlock(event, ModItems.CONFIGUREABLE_TNT);
 		ModRegistryHelper.registerItemBlock(event, ModItems.LOLXD_TNT);
+		ModRegistryHelper.registerItemBlock(event, ModItems.CRASH_TNT);
 
 		ModRegistryHelper.registerItemBlock(event, ModItems.TNT_TREE);
-		ModRegistryHelper.registerItemBlock(event, ModItems.CONFIGUREABLE_TNT);
 
 		ModRegistryHelper.registerItemBlock(event, ModItems.FLOWER_POWER);
 		ModRegistryHelper.registerItemBlock(event, ModItems.CUBIC_TNT);

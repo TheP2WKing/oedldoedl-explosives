@@ -28,7 +28,7 @@ public class EntityDynamiteX2000 extends ModEntityDynamiteBase {
 
 	@Override
 	public ModExplosionBase createDynamiteExplosion(double x, double y, double z) {
-		return new ModExplosionBase(world, thrower, x, y, z, 70.0f, false, true, true, 150);
+		return new ModExplosionBase(world, thrower, x, y, z, 70.0f, false, true, true, 192);
 	}
 
 	@Override

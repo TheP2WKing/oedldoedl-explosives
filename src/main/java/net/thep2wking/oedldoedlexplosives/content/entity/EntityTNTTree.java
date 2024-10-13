@@ -4,7 +4,6 @@ import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.thep2wking.oedldoedlexplosives.api.ModEntityTNTBase;
-import net.thep2wking.oedldoedlexplosives.config.ExplosivesConfig;
 import net.thep2wking.oedldoedlexplosives.init.ModBlocks;
 
 public class EntityTNTTree extends ModEntityTNTBase {
@@ -21,7 +20,7 @@ public class EntityTNTTree extends ModEntityTNTBase {
 		this.world.newExplosion(this, this.posX, this.posY + (double) (this.height / 16.0F), this.posZ, 0, false,
 				false);
 
-		if (ExplosivesConfig.PROPERTIES.NON_STANDARD_EXPLOSION_DAMAGE) {
+
 			// steam
 			this.world.setBlockState(new BlockPos(this.posX, this.posY, this.posZ),
 					ModBlocks.FAKE_TNT.getDefaultState());
@@ -159,6 +158,6 @@ public class EntityTNTTree extends ModEntityTNTBase {
 
 			this.world.setBlockState(new BlockPos(this.posX, this.posY + 5, this.posZ - 1),
 					ModBlocks.FAKE_TNT.getDefaultState());
-		}
+		
 	}
 }

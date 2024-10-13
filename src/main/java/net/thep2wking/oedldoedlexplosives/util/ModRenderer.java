@@ -1,7 +1,6 @@
 package net.thep2wking.oedldoedlexplosives.util;
 
 import net.minecraft.init.Blocks;
-import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.thep2wking.oedldoedlcore.util.ModRenderHelper;
 import net.thep2wking.oedldoedlexplosives.api.ModTNTRenderer;
 import net.thep2wking.oedldoedlexplosives.content.crazybombs.antimatter.EntityAntimatterBomb;
@@ -241,9 +240,8 @@ public class ModRenderer {
 	}
 
 	public static void registerEntityRender() {
-		RenderingRegistry.registerEntityRenderingHandler(EntityTheP2WKing.class, RenderTheP2WKing.FACTORY);
-		RenderingRegistry.registerEntityRenderingHandler(EntityGiantTheP2WKing.class, RenderGiantTheP2WKing.FACTORY);
-		RenderingRegistry.registerEntityRenderingHandler(EntityMeteorEpp.class, RenderEntityMeteorEpp.FACTORY);
-
+		ModRenderHelper.addEntityRender(EntityTheP2WKing.class, RenderTheP2WKing.FACTORY);
+		ModRenderHelper.addEntityRender(EntityGiantTheP2WKing.class, RenderGiantTheP2WKing.FACTORY);
+		ModRenderHelper.addEntityRender(EntityMeteorEpp.class, RenderEntityMeteorEpp.FACTORY);
 	}
 }

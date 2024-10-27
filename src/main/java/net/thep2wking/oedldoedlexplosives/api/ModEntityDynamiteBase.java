@@ -16,6 +16,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.event.ForgeEventFactory;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import net.thep2wking.oedldoedlcore.util.ModReferences;
 import net.thep2wking.oedldoedlexplosives.config.ExplosivesConfig;
 
 /**
@@ -120,9 +121,10 @@ public class ModEntityDynamiteBase extends EntityThrowable {
 			if (entityplayer.getDistanceSq(this.posX, this.posY, this.posZ) < 4096.0D) {
 				SPacketExplosion packet = new SPacketExplosion(this.posX, this.posY, this.posZ,
 						explosion.getExplosionStrength(),
-						((!explosion.doBlockDamage() || explosion.getAffectedBlockPositions().size() > 174762) // max packet size
-								? new ArrayList<BlockPos>()
-								: explosion.getAffectedBlockPositions()),
+						((!explosion.doBlockDamage()
+								|| explosion.getAffectedBlockPositions().size() > ModReferences.MAX_PACKET_SIZE)
+										? new ArrayList<BlockPos>()
+										: explosion.getAffectedBlockPositions()),
 						explosion.getPlayerKnockbackMap().get(entityplayer));
 				if (entityplayer instanceof EntityPlayerMP && ExplosivesConfig.PROPERTIES.EXPLOSION_PARTICLES) {
 					((EntityPlayerMP) entityplayer).connection.sendPacket(packet);
@@ -150,10 +152,10 @@ public class ModEntityDynamiteBase extends EntityThrowable {
 
 	@Override
 	public void setVelocity(double x, double y, double z) {
-        this.motionX = x;
-        this.motionY = y;
-        this.motionZ = z;
-        this.isAirBorne = true;
+		this.motionX = x;
+		this.motionY = y;
+		this.motionZ = z;
+		this.isAirBorne = true;
 	}
 
 	public void spawnImpactTNTX2(float motionX, float motionY, float motionZ) {

@@ -16,6 +16,7 @@ import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.event.ForgeEventFactory;
+import net.thep2wking.oedldoedlcore.util.ModReferences;
 import net.thep2wking.oedldoedlexplosives.config.ExplosivesConfig;
 
 /**
@@ -292,9 +293,10 @@ public class ModEntityTNTBase extends EntityTNTPrimed {
 			if (entityplayer.getDistanceSq(this.posX, this.posY, this.posZ) < 4096.0D) {
 				SPacketExplosion packet = new SPacketExplosion(this.posX, this.posY, this.posZ,
 						explosion.getExplosionStrength(),
-						((!explosion.doBlockDamage() || explosion.getAffectedBlockPositions().size() > 174762)  // max packet size
-								? new ArrayList<BlockPos>()
-								: explosion.getAffectedBlockPositions()),
+						((!explosion.doBlockDamage()
+								|| explosion.getAffectedBlockPositions().size() > ModReferences.MAX_PACKET_SIZE)
+										? new ArrayList<BlockPos>()
+										: explosion.getAffectedBlockPositions()),
 						explosion.getPlayerKnockbackMap().get(entityplayer));
 				if (entityplayer instanceof EntityPlayerMP && ExplosivesConfig.PROPERTIES.EXPLOSION_PARTICLES) {
 					((EntityPlayerMP) entityplayer).connection.sendPacket(packet);

@@ -26,14 +26,15 @@ import net.thep2wking.oedldoedlexplosives.OedldoedlExplosives;
 import net.thep2wking.oedldoedlexplosives.init.ModSounds;
 
 public class EntityGiantTheP2WKing extends EntityMob {
-	public static final ResourceLocation LOOTTABLE = new ResourceLocation(OedldoedlExplosives.MODID,
-			"entities/giant_thep2wking");
+	public static final ResourceLocation LOOT_TABLE = new ResourceLocation(OedldoedlExplosives.MODID, "entities/giant_thep2wking");
+	public static final int EXPERIENCE_VALUE = 500;
 	private int attackTimer;
 
 	public EntityGiantTheP2WKing(World worldIn) {
 		super(worldIn);
 		this.setSize(3F, 12f);
-		this.experienceValue = 1000;
+		this.experienceValue = EXPERIENCE_VALUE;
+		this.isImmuneToFire = true;
 	}
 
 	@SuppressWarnings({ "unchecked", "rawtypes" })
@@ -83,7 +84,7 @@ public class EntityGiantTheP2WKing extends EntityMob {
 	@Override
 	@Nullable
 	public ResourceLocation getLootTable() {
-		return LOOTTABLE;
+		return LOOT_TABLE;
 	}
 
 	@Override

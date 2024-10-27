@@ -39,15 +39,17 @@ import net.thep2wking.oedldoedlexplosives.init.ModBlocks;
 import net.thep2wking.oedldoedlexplosives.init.ModSounds;
 
 public class EntityTheP2WKing extends EntityAnimal {
-	public static final ResourceLocation LOOTTABLE = new ResourceLocation(OedldoedlExplosives.MODID,
+	public static final ResourceLocation LOOT_TABLE = new ResourceLocation(OedldoedlExplosives.MODID,
 			"entities/thep2wking");
+	public static final int EXPERIENCE_VALUE = 100;
 	private static final Set<Item> TEMPTATION_ITEMS = Sets.newHashSet(Item.getItemFromBlock(ModBlocks.TROLL_TNT));
 	private int attackTimer;
 
 	public EntityTheP2WKing(World worldIn) {
 		super(worldIn);
 		this.setSize(0.6F, 1.95f);
-		this.experienceValue = 200;
+		this.experienceValue = EXPERIENCE_VALUE;
+		this.isImmuneToFire = true;
 	}
 
 	@Override
@@ -99,7 +101,7 @@ public class EntityTheP2WKing extends EntityAnimal {
 	@Override
 	@Nullable
 	public ResourceLocation getLootTable() {
-		return LOOTTABLE;
+		return LOOT_TABLE;
 	}
 
 	@Override

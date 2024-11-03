@@ -226,11 +226,10 @@ public class ModRecipes {
 			ModRecipeHelper.addShapedRecipe(OedldoedlExplosives.MODID, "tnt_firework",
 					new ItemStack(ModBlocks.TNT_FIREWORK, 1, 0), "AAA", "ABA", "ACA", 'A', "tntX20", 'B', "tntX5", 'C',
 					"fireworkCharge");
-			ModRecipeHelper.addShapedRecipe(OedldoedlExplosives.MODID, "entity_firework",
-					new ItemStack(ModBlocks.ENTITY_FIREWORK, 1, 0), "ABC", "DEF", "GHI", 'A', "spiderEye", 'B', "skull",
-					'C', new ItemStack(Items.PORKCHOP, 1, 0), 'D', "flesh", 'E',
-					new ItemStack(ModBlocks.TNT_FIREWORK, 1, 0), 'F', "leather", 'G', "bone", 'H', "powderUranium", 'I',
-					"wool");
+			ModRecipeHelper.addShapelessRecipe(OedldoedlExplosives.MODID, "entity_firework",
+					new ItemStack(ModBlocks.ENTITY_FIREWORK, 1, 0), new ItemStack(ModBlocks.TNT_FIREWORK, 1, 0),
+					"powderUranium", "skull", "flesh", "bone", "spiderEye", new ItemStack(Items.PORKCHOP, 1, 0),
+					"leather", "wool");
 			ModRecipeHelper.addShapedRecipe(OedldoedlExplosives.MODID, "multiply_tnt",
 					new ItemStack(ModBlocks.MULTIPLY_TNT, 1, 0), "ABA", "BCB", "ABA", 'A', "bonemeal", 'B', "ingotGold",
 					'C', "tnt");

@@ -1,0 +1,17 @@
+{
+    "variants": 
+    {
+        "normal": 
+        { 
+            "model": "oedldoedlexplosives:red_mushroom_tnt"
+        },
+        "explode=false": 
+        { 
+            "model": "oedldoedlexplosives:red_mushroom_tnt"
+        },
+        "explode=true": 
+        { 
+            "model": "oedldoedlexplosives:red_mushroom_tnt"
+        }
+    }
+}

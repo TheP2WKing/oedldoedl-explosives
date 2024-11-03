@@ -74,9 +74,9 @@ tile.oedldoedlexplosives.island_tnt.name=Island TNT
 entity.oedldoedlexplosives.island_tnt.name=Block of Island TNT
 tile.oedldoedlexplosives.island_tnt.tip1=Up (2009).
 
-tile.oedldoedlexplosives.nc_nuke.name=Nuke
-entity.oedldoedlexplosives.nc_nuke.name=Nuke - RUN!
-tile.oedldoedlexplosives.nc_nuke.tip1=I recommend putting on some earmuffs.
+tile.oedldoedlexplosives.nuke.name=Nuke
+entity.oedldoedlexplosives.nuke.name=Nuke - RUN!
+tile.oedldoedlexplosives.nuke.tip1=I recommend putting on some earmuffs.
 
 tile.oedldoedlexplosives.troll_tnt.name=Troll TNT
 entity.oedldoedlexplosives.troll_tnt.name=Block of Troll TNT
@@ -174,6 +174,50 @@ tile.oedldoedlexplosives.incenditary_tnt.tip1=Hot (Chicks) in your area!
 tile.oedldoedlexplosives.flower_power.name=Flower Power
 entity.oedldoedlexplosives.flower_power.name=Block of Flower Power
 tile.oedldoedlexplosives.flower_power.tip1=Flower Power Rangers.
+
+tile.oedldoedlexplosives.tree_tnt.name=Tree TNT
+entity.oedldoedlexplosives.tree_tnt.name=Block of Tree TNT
+tile.oedldoedlexplosives.tree_tnt.tip1=#TeamSaplings
+
+tile.oedldoedlexplosives.wheat_tnt.name=Wheat TNT
+entity.oedldoedlexplosives.wheat_tnt.name=Block of Wheat TNT
+tile.oedldoedlexplosives.wheat_tnt.tip1=Farming for TNT heads.
+
+tile.oedldoedlexplosives.carrot_tnt.name=Carrot TNT
+entity.oedldoedlexplosives.carrot_tnt.name=Block of Carror TNT
+tile.oedldoedlexplosives.carrot_tnt.tip1=Farming for TNT heads.
+
+tile.oedldoedlexplosives.potato_tnt.name=Potato TNT
+entity.oedldoedlexplosives.potato_tnt.name=Block of Potato TNT
+tile.oedldoedlexplosives.potato_tnt.tip1=Farming for TNT heads.
+
+tile.oedldoedlexplosives.wart_tnt.name=Wart TNT
+entity.oedldoedlexplosives.wart_tnt.name=Block of Wart TNT
+tile.oedldoedlexplosives.wart_tnt.tip1=Farming for TNT heads.
+
+tile.oedldoedlexplosives.brown_mushroom_tnt.name=Brown Mushroom TNT
+entity.oedldoedlexplosives.brown_mushroom_tnt.name=Block of Brown Mushroom TNT
+tile.oedldoedlexplosives.brown_mushroom_tnt.tip1=Farming for TNT heads.
+
+tile.oedldoedlexplosives.red_mushroom_tnt.name=Red Mushroom TNT
+entity.oedldoedlexplosives.red_mushroom_tnt.name=Block of Red Mushroom TNT
+tile.oedldoedlexplosives.red_mushroom_tnt.tip1=Farming for TNT heads.
+
+tile.oedldoedlexplosives.melon_tnt.name=Melon TNT
+entity.oedldoedlexplosives.melon_tnt.name=Block of Melon TNT
+tile.oedldoedlexplosives.melon_tnt.tip1=Farming for TNT heads.
+
+tile.oedldoedlexplosives.pumpkin_tnt.name=Pumpkin TNT
+entity.oedldoedlexplosives.pumpkin_tnt.name=Block of Pumpkin TNT
+tile.oedldoedlexplosives.pumpkin_tnt.tip1=Farming for TNT heads.
+
+tile.oedldoedlexplosives.dirt_bomb.name=Dirt Bomb
+entity.oedldoedlexplosives.dirt_bomb.name=Block of Dirt Bomb
+tile.oedldoedlexplosives.dirt_bomb.tip1=Dirty business.
+
+tile.oedldoedlexplosives.water_bomb.name=Water Bomb
+entity.oedldoedlexplosives.water_bomb.name=Block of Water Bomb
+tile.oedldoedlexplosives.water_bomb.tip1=Just some puddles of water.
 
 tile.oedldoedlexplosives.cubic_tnt.name=Cubic TNT
 entity.oedldoedlexplosives.cubic_tnt.name=Block of Cubic TNT
@@ -377,6 +421,7 @@ item.oedldoedlexplosives.tnt_wrench.tip2=supported blocks of TNT.
 item.oedldoedlexplosives.tnt_disruptor.name=TNT Disruptor
 item.oedldoedlexplosives.tnt_disruptor.tip1=Kill supported TNT entities before exploding.
 item.oedldoedlexplosives.tnt_disruptor.tip2=Does also work with supported dynamite entities.
+item.oedldoedlexplosives.tnt_disruptor.tip3=Entitie(s) Removed
 item.oedldoedlexplosives.tnt_disruptor.annotation1=Useable in survival:
 item.oedldoedlexplosives.tnt_disruptor.annotation2=Yes
 item.oedldoedlexplosives.tnt_disruptor.annotation3=No
@@ -400,6 +445,7 @@ sound.oedldoedlexplosives.thep2wking=TheP2WKing nags
 # top tooltips
 top.oedldoedlexplosives.axis=Axis:
 top.oedldoedlexplosives.size=Explosion Size:
+top.oedldoedlexplosives.spawned_tnts=Spawned TNTs:
 
 # crashes
 tile.oedldoedlexplosives.crash_tnt.runtime_exception=Crash TNT

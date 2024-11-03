@@ -1,0 +1,17 @@
+{
+    "variants": 
+    {
+        "normal": 
+        { 
+            "model": "oedldoedlexplosives:water_bomb"
+        },
+        "explode=false": 
+        { 
+            "model": "oedldoedlexplosives:water_bomb"
+        },
+        "explode=true": 
+        { 
+            "model": "oedldoedlexplosives:water_bomb"
+        }
+    }
+}

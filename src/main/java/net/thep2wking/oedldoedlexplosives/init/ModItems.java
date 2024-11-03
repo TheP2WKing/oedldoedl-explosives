@@ -6,13 +6,14 @@ import net.thep2wking.oedldoedlcore.api.item.ModItemBlockBase;
 import net.thep2wking.oedldoedlcore.util.ModRarities;
 import net.thep2wking.oedldoedlexplosives.OedldoedlExplosives;
 import net.thep2wking.oedldoedlexplosives.api.ModItemBlockTNTBase;
-import net.thep2wking.oedldoedlexplosives.content.item.ItemCombatDynamite;
-import net.thep2wking.oedldoedlexplosives.content.item.ItemDividedByZero;
-import net.thep2wking.oedldoedlexplosives.content.item.ItemEggsplosive;
-import net.thep2wking.oedldoedlexplosives.content.item.ItemGrenadeApple;
-import net.thep2wking.oedldoedlexplosives.content.item.ItemTNTDisruptor;
-import net.thep2wking.oedldoedlexplosives.content.item.ItemTNTWrench;
-import net.thep2wking.oedldoedlexplosives.content.item.ItemTheP2WKingDynamite;
+import net.thep2wking.oedldoedlexplosives.content.customtnt.combat.ItemCombatDynamite;
+import net.thep2wking.oedldoedlexplosives.content.customtnt.eggsplosive.ItemEggsplosive;
+import net.thep2wking.oedldoedlexplosives.content.customtnt.grenadeapple.ItemGrenadeApple;
+import net.thep2wking.oedldoedlexplosives.content.customtnt.thep2wking.ItemTheP2WKingDynamite;
+import net.thep2wking.oedldoedlexplosives.content.customtnt.x2000.ItemDynamiteX2000;
+import net.thep2wking.oedldoedlexplosives.content.misc.ItemDividedByZero;
+import net.thep2wking.oedldoedlexplosives.content.misc.ItemTNTDisruptor;
+import net.thep2wking.oedldoedlexplosives.content.misc.ItemTNTWrench;
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.animal.ItemAnimalDynamite;
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.compact.ItemCompactDynamite;
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.cubic.ItemCubicDynamite;
@@ -33,7 +34,6 @@ import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.tntfirework.ItemDyn
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.vaporize.ItemVaporizeDynamite;
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.x100.ItemDynamiteX100;
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.x20.ItemDynamiteX20;
-import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.x2000.ItemDynamiteX2000;
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.x5.ItemDynamiteX5;
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.x500.ItemDynamiteX500;
 
@@ -78,7 +78,7 @@ public class ModItems {
 
 	public static final Item TROLL_TNT = new ModItemBlockTNTBase(ModBlocks.TROLL_TNT, ModRarities.YELLOW, false, 1, 0);
 	public static final Item CHUNK_TNT = new ModItemBlockTNTBase(ModBlocks.CHUNK_TNT, ModRarities.RED, false, 1, 0);
-	public static final Item NUKE_NC = new ModItemBlockTNTBase(ModBlocks.NUKE_NC, ModRarities.RED, false, 1, 0);
+	public static final Item NUKE = new ModItemBlockTNTBase(ModBlocks.NUKE, ModRarities.RED, false, 1, 0);
 
 	public static final Item NUKE_TNT_CB = new ModItemBlockTNTBase(ModBlocks.NUKE_TNT_CB, ModRarities.WHITE, false, 1, 0);
 	public static final Item MEGA_NUKE_TNT = new ModItemBlockTNTBase(ModBlocks.MEGA_NUKE_TNT, ModRarities.YELLOW, false, 1, 0);
@@ -98,7 +98,23 @@ public class ModItems {
 
 	public static final Item TNT_TREE = new ModItemBlockTNTBase(ModBlocks.TNT_TREE, ModRarities.GREEN, false, 1, 0);
 
-	public static final Item FLOWER_POWER = new ModItemBlockTNTBase(ModBlocks.FLOWER_POWER, ModRarities.WHITE, false, 1, 0);
+    public static final Item FLOWER_POWER = new ModItemBlockTNTBase(ModBlocks.FLOWER_POWER, ModRarities.WHITE, false, 1, 0);
+    public static final Item TREE_TNT = new ModItemBlockTNTBase(ModBlocks.TREE_TNT, ModRarities.WHITE, false, 1, 0);
+
+    public static final Item WHEAT_TNT = new ModItemBlockTNTBase(ModBlocks.WHEAT_TNT, ModRarities.WHITE, false, 1, 0);
+    public static final Item CARROT_TNT = new ModItemBlockTNTBase(ModBlocks.CARROT_TNT, ModRarities.WHITE, false, 1, 0);
+    public static final Item POTATO_TNT = new ModItemBlockTNTBase(ModBlocks.POTATO_TNT, ModRarities.WHITE, false, 1, 0);
+    public static final Item WART_TNT = new ModItemBlockTNTBase(ModBlocks.WART_TNT, ModRarities.WHITE, false, 1, 0);
+
+    public static final Item BROWN_MUSHROOM_TNT = new ModItemBlockTNTBase(ModBlocks.BROWN_MUSHROOM_TNT, ModRarities.WHITE, false, 1, 0);
+    public static final Item RED_MUSHROOM_TNT = new ModItemBlockTNTBase(ModBlocks.RED_MUSHROOM_TNT, ModRarities.WHITE, false, 1, 0);
+
+    public static final Item MELON_TNT = new ModItemBlockTNTBase(ModBlocks.MELON_TNT, ModRarities.WHITE, false, 1, 0);
+    public static final Item PUMPKIN_TNT = new ModItemBlockTNTBase(ModBlocks.PUMPKIN_TNT, ModRarities.WHITE, false, 1, 0);
+	
+    public static final Item DIRT_BOMB = new ModItemBlockTNTBase(ModBlocks.DIRT_BOMB, ModRarities.WHITE, false, 1, 0);
+    public static final Item WATER_BOMB = new ModItemBlockTNTBase(ModBlocks.WATER_BOMB, ModRarities.WHITE, false, 1, 0);
+
 	public static final Item CUBIC_TNT = new ModItemBlockTNTBase(ModBlocks.CUBIC_TNT, ModRarities.WHITE, false, 1, 0);
 	public static final Item ANIMAL_TNT = new ModItemBlockTNTBase(ModBlocks.ANIMAL_TNT, ModRarities.WHITE, false, 1, 0);
 	public static final Item GRAVEL_FIREWORK = new ModItemBlockTNTBase(ModBlocks.GRAVEL_FIREWORK, ModRarities.GRAY, false, 1, 0);
@@ -130,7 +146,7 @@ public class ModItems {
 	public static final Item TNT_X500 = new ModItemBlockTNTBase(ModBlocks.TNT_X500, ModRarities.AQUA, false, 1, 0);
 	public static final Item TNT_X2000 = new ModItemBlockTNTBase(ModBlocks.TNT_X2000, ModRarities.RED, false, 1, 0);
 
-	public static final Item OVER_9000_TNT = new ModItemBlockTNTBase(ModBlocks.OVER_9000_TNT, ModRarities.DARK_RED, false, 1, 0);
+	public static final Item OVER_9000_TNT = new ModItemBlockTNTBase(ModBlocks.OVER_9000_TNT, ModRarities.LIGHT_PURPLE, false, 1, 0);
 	public static final Item THEP2WKING_TNT = new ModItemBlockTNTBase(ModBlocks.THEP2WKING_TNT, ModRarities.GOLD, false, 1, 0);
 
 	public static final Item DYNAMITE = new ItemDynamite(OedldoedlExplosives.MODID, "dynamite", OedldoedlExplosives.TAB, ModRarities.WHITE, false, 1, 0);

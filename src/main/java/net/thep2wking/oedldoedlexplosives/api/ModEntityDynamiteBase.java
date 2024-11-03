@@ -6,8 +6,8 @@ import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.entity.projectile.EntityThrowable;
-import net.minecraft.init.Items;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.network.play.server.SPacketExplosion;
 import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.util.math.BlockPos;
@@ -39,7 +39,7 @@ public class ModEntityDynamiteBase extends EntityThrowable {
 
 	@SideOnly(Side.CLIENT)
 	public Item setParticleItem() {
-		return Items.AIR;
+		return ItemStack.EMPTY.getItem();
 	}
 
 	@Override

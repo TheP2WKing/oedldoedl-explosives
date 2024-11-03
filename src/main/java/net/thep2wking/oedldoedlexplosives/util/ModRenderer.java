@@ -15,20 +15,20 @@ import net.thep2wking.oedldoedlexplosives.content.crazybombs.lolxd.EntityLOLXDTN
 import net.thep2wking.oedldoedlexplosives.content.crazybombs.meganuke.EntityMegaNukeTNT;
 import net.thep2wking.oedldoedlexplosives.content.crazybombs.nuke.EntityNukeTNTCb;
 import net.thep2wking.oedldoedlexplosives.content.crazybombs.randomblocks.EntityRandomBlocksTNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityCombatTNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityEntityFirework;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityFakeTNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityFlowerPower;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityNCNuke;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityOver9000TNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityTNTTree;
-import net.thep2wking.oedldoedlexplosives.content.entity.EntityTheP2WKingTNT;
-import net.thep2wking.oedldoedlexplosives.content.entity.living.EntityGiantTheP2WKing;
-import net.thep2wking.oedldoedlexplosives.content.entity.living.EntityTheP2WKing;
-import net.thep2wking.oedldoedlexplosives.content.entity.throwable.EntityCombatDynamite;
-import net.thep2wking.oedldoedlexplosives.content.entity.throwable.EntityEggsplosive;
-import net.thep2wking.oedldoedlexplosives.content.entity.throwable.EntityGrenadeApple;
-import net.thep2wking.oedldoedlexplosives.content.entity.throwable.EntityTheP2WKingDynamite;
+import net.thep2wking.oedldoedlexplosives.content.customtnt.combat.EntityCombatDynamite;
+import net.thep2wking.oedldoedlexplosives.content.customtnt.combat.EntityCombatTNT;
+import net.thep2wking.oedldoedlexplosives.content.customtnt.eggsplosive.EntityEggsplosive;
+import net.thep2wking.oedldoedlexplosives.content.customtnt.entityfirework.EntityEntityFirework;
+import net.thep2wking.oedldoedlexplosives.content.customtnt.fake.EntityFakeTNT;
+import net.thep2wking.oedldoedlexplosives.content.customtnt.grenadeapple.EntityGrenadeApple;
+import net.thep2wking.oedldoedlexplosives.content.customtnt.nuke.EntityNuke;
+import net.thep2wking.oedldoedlexplosives.content.customtnt.thep2wking.EntityGiantTheP2WKing;
+import net.thep2wking.oedldoedlexplosives.content.customtnt.thep2wking.EntityTheP2WKing;
+import net.thep2wking.oedldoedlexplosives.content.customtnt.thep2wking.EntityTheP2WKingDynamite;
+import net.thep2wking.oedldoedlexplosives.content.customtnt.thep2wking.EntityTheP2WKingTNT;
+import net.thep2wking.oedldoedlexplosives.content.customtnt.tnttree.EntityTNTTree;
+import net.thep2wking.oedldoedlexplosives.content.customtnt.x2000.EntityDynamiteX2000;
+import net.thep2wking.oedldoedlexplosives.content.customtnt.x2000.EntityTNTX2000;
 import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.bundled.EntityBundledTNT;
 import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.c4.EntityC4;
 import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.chunk.EntityChunkTNT;
@@ -44,6 +44,8 @@ import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.meteor.Enti
 import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.meteor.EntityMeteorTNTEpp;
 import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.napalm.EntityNapalmTNT;
 import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.night.EntityNightTNT;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.nuke.EntityNukeTNT;
+import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.over9000.EntityOver9000TNT;
 import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.rain.EntityTNTRain;
 import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.rainbow.EntityRainbowTNT;
 import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.sirderpington.EntitySirDerpington;
@@ -54,6 +56,18 @@ import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.troll.Entit
 import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.wool.EntityWoolTNT;
 import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.x20.EntityTNTX20Epp;
 import net.thep2wking.oedldoedlexplosives.content.explosivesplusplus.x5.EntityTNTX5Epp;
+import net.thep2wking.oedldoedlexplosives.content.extremefarming.brownmushroom.EntityBrownMushroomTNT;
+import net.thep2wking.oedldoedlexplosives.content.extremefarming.carrot.EntityCarrotTNT;
+import net.thep2wking.oedldoedlexplosives.content.extremefarming.dirt.EntityDirtBomb;
+import net.thep2wking.oedldoedlexplosives.content.extremefarming.flowerpower.EntityFlowerPower;
+import net.thep2wking.oedldoedlexplosives.content.extremefarming.melon.EntityMelonTNT;
+import net.thep2wking.oedldoedlexplosives.content.extremefarming.potato.EntityPotatoTNT;
+import net.thep2wking.oedldoedlexplosives.content.extremefarming.pumpkin.EntityPumpkinTNT;
+import net.thep2wking.oedldoedlexplosives.content.extremefarming.redmushroom.EntityRedMushroomTNT;
+import net.thep2wking.oedldoedlexplosives.content.extremefarming.tree.EntityTreeTNT;
+import net.thep2wking.oedldoedlexplosives.content.extremefarming.wart.EntityWartTNT;
+import net.thep2wking.oedldoedlexplosives.content.extremefarming.water.EntityWaterBomb;
+import net.thep2wking.oedldoedlexplosives.content.extremefarming.wheat.EntityWheatTNT;
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.animal.EntityAnimalDynamite;
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.animal.EntityAnimalTNT;
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.compact.EntityCompactDynamite;
@@ -95,8 +109,6 @@ import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.x100.EntityDynamite
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.x100.EntityTNTX100;
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.x20.EntityDynamiteX20;
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.x20.EntityTNTX20;
-import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.x2000.EntityDynamiteX2000;
-import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.x2000.EntityTNTX2000;
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.x5.EntityDynamiteX5;
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.x5.EntityTNTX5;
 import net.thep2wking.oedldoedlexplosives.content.toomuchtnt.x500.EntityDynamiteX500;
@@ -118,7 +130,7 @@ public class ModRenderer {
 
 		ModTNTRenderer.register(EntityDrillTNT.class, ModBlocks.DRILL_TNT);
 		ModTNTRenderer.register(EntityFlatTNTEpp.class, ModBlocks.FLAT_TNT_EPP);
-		ModTNTRenderer.register(EntityNukeTNTCb.class, ModBlocks.NUKE_TNT);
+		ModTNTRenderer.register(EntityNukeTNT.class, ModBlocks.NUKE_TNT);
 		ModTNTRenderer.register(EntityMeteorTNTEpp.class, ModBlocks.METEOR_TNT_EPP);
 
 		ModTNTRenderer.register(EntityDetonatorChainTNT.class, ModBlocks.DETONATOR_CHAIN_TNT);
@@ -143,7 +155,7 @@ public class ModRenderer {
 		ModTNTRenderer.register(EntitySupersonicTNT.class, ModBlocks.SUPERSONIC_TNT);
 		ModTNTRenderer.register(EntityRainbowTNT.class, ModBlocks.RAINBOW_TNT);
 
-		ModTNTRenderer.register(EntityNCNuke.class, ModBlocks.NUKE_NC);
+		ModTNTRenderer.register(EntityNuke.class, ModBlocks.NUKE);
 		ModTNTRenderer.register(EntityTrollTNT.class, ModBlocks.TROLL_TNT);
 		ModTNTRenderer.register(EntityChunkTNT.class, ModBlocks.CHUNK_TNT);
 
@@ -165,7 +177,23 @@ public class ModRenderer {
 
 		ModTNTRenderer.register(EntityTNTTree.class, ModBlocks.TNT_TREE);
 
-		ModTNTRenderer.register(EntityFlowerPower.class, ModBlocks.FLOWER_POWER);
+        ModTNTRenderer.register(EntityFlowerPower.class, ModBlocks.FLOWER_POWER);
+        ModTNTRenderer.register(EntityTreeTNT.class, ModBlocks.TREE_TNT);
+
+        ModTNTRenderer.register(EntityWheatTNT.class, ModBlocks.WHEAT_TNT);
+        ModTNTRenderer.register(EntityCarrotTNT.class, ModBlocks.CARROT_TNT);
+        ModTNTRenderer.register(EntityPotatoTNT.class, ModBlocks.POTATO_TNT);
+        ModTNTRenderer.register(EntityWartTNT.class, ModBlocks.WART_TNT);
+
+        ModTNTRenderer.register(EntityBrownMushroomTNT.class, ModBlocks.BROWN_MUSHROOM_TNT);
+        ModTNTRenderer.register(EntityRedMushroomTNT.class, ModBlocks.RED_MUSHROOM_TNT);
+
+        ModTNTRenderer.register(EntityMelonTNT.class, ModBlocks.MELON_TNT);
+        ModTNTRenderer.register(EntityPumpkinTNT.class, ModBlocks.PUMPKIN_TNT);
+		
+        ModTNTRenderer.register(EntityDirtBomb.class, ModBlocks.DIRT_BOMB);
+        ModTNTRenderer.register(EntityWaterBomb.class, ModBlocks.WATER_BOMB);
+
 		ModTNTRenderer.register(EntityCubicTNT.class, ModBlocks.CUBIC_TNT);
 		ModTNTRenderer.register(EntityAnimalTNT.class, ModBlocks.ANIMAL_TNT);
 		ModTNTRenderer.register(EntityGravelFirework.class, ModBlocks.GRAVEL_FIREWORK);

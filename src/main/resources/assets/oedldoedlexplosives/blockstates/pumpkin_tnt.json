@@ -1,0 +1,17 @@
+{
+    "variants": 
+    {
+        "normal": 
+        { 
+            "model": "oedldoedlexplosives:pumpkin_tnt"
+        },
+        "explode=false": 
+        { 
+            "model": "oedldoedlexplosives:pumpkin_tnt"
+        },
+        "explode=true": 
+        { 
+            "model": "oedldoedlexplosives:pumpkin_tnt"
+        }
+    }
+}

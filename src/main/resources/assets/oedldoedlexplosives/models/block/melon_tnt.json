@@ -1,0 +1,9 @@
+{
+    "parent": "minecraft:block/cube_bottom_top",
+    "textures": 
+    {
+        "top": "oedldoedlexplosives:blocks/melon_tnt_top",
+        "bottom": "oedldoedlexplosives:blocks/melon_tnt_bottom",
+        "side": "oedldoedlexplosives:blocks/melon_tnt_side"
+    }
+}

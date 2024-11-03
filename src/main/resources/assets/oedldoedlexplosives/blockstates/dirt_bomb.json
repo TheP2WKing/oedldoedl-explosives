@@ -1,0 +1,17 @@
+{
+    "variants": 
+    {
+        "normal": 
+        { 
+            "model": "oedldoedlexplosives:dirt_bomb"
+        },
+        "explode=false": 
+        { 
+            "model": "oedldoedlexplosives:dirt_bomb"
+        },
+        "explode=true": 
+        { 
+            "model": "oedldoedlexplosives:dirt_bomb"
+        }
+    }
+}

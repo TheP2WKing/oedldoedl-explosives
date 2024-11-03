@@ -64,7 +64,7 @@ public class ModRegistry {
 
 		ModRegistryHelper.registerBlock(event, ModBlocks.TROLL_TNT);
 		ModRegistryHelper.registerBlock(event, ModBlocks.CHUNK_TNT);
-		ModRegistryHelper.registerBlock(event, ModBlocks.NUKE_NC);
+		ModRegistryHelper.registerBlock(event, ModBlocks.NUKE);
 		
 		ModRegistryHelper.registerBlock(event, ModBlocks.NUKE_TNT_CB);
 		ModRegistryHelper.registerBlock(event, ModBlocks.MEGA_NUKE_TNT);
@@ -84,7 +84,23 @@ public class ModRegistry {
 
 		ModRegistryHelper.registerBlock(event, ModBlocks.TNT_TREE);
 
-		ModRegistryHelper.registerBlock(event, ModBlocks.FLOWER_POWER);
+        ModRegistryHelper.registerBlock(event, ModBlocks.FLOWER_POWER);
+        ModRegistryHelper.registerBlock(event, ModBlocks.TREE_TNT);
+
+        ModRegistryHelper.registerBlock(event, ModBlocks.WHEAT_TNT);
+        ModRegistryHelper.registerBlock(event, ModBlocks.CARROT_TNT);
+        ModRegistryHelper.registerBlock(event, ModBlocks.POTATO_TNT);
+        ModRegistryHelper.registerBlock(event, ModBlocks.WART_TNT);
+
+        ModRegistryHelper.registerBlock(event, ModBlocks.BROWN_MUSHROOM_TNT);
+        ModRegistryHelper.registerBlock(event, ModBlocks.RED_MUSHROOM_TNT);
+
+        ModRegistryHelper.registerBlock(event, ModBlocks.MELON_TNT);
+        ModRegistryHelper.registerBlock(event, ModBlocks.PUMPKIN_TNT);
+
+        ModRegistryHelper.registerBlock(event, ModBlocks.DIRT_BOMB);
+        ModRegistryHelper.registerBlock(event, ModBlocks.WATER_BOMB);
+
 		ModRegistryHelper.registerBlock(event, ModBlocks.CUBIC_TNT);
 		ModRegistryHelper.registerBlock(event, ModBlocks.ANIMAL_TNT);
 		ModRegistryHelper.registerBlock(event, ModBlocks.GRAVEL_FIREWORK);
@@ -163,7 +179,7 @@ public class ModRegistry {
 
 		ModRegistryHelper.registerItemBlock(event, ModItems.TROLL_TNT);
 		ModRegistryHelper.registerItemBlock(event, ModItems.CHUNK_TNT);
-		ModRegistryHelper.registerItemBlock(event, ModItems.NUKE_NC);
+		ModRegistryHelper.registerItemBlock(event, ModItems.NUKE);
 
 		ModRegistryHelper.registerItemBlock(event, ModItems.NUKE_TNT_CB);
 		ModRegistryHelper.registerItemBlock(event, ModItems.MEGA_NUKE_TNT);
@@ -183,7 +199,23 @@ public class ModRegistry {
 
 		ModRegistryHelper.registerItemBlock(event, ModItems.TNT_TREE);
 
-		ModRegistryHelper.registerItemBlock(event, ModItems.FLOWER_POWER);
+        ModRegistryHelper.registerItemBlock(event, ModItems.FLOWER_POWER);
+        ModRegistryHelper.registerItemBlock(event, ModItems.TREE_TNT);
+
+        ModRegistryHelper.registerItemBlock(event, ModItems.WHEAT_TNT);
+        ModRegistryHelper.registerItemBlock(event, ModItems.CARROT_TNT);
+        ModRegistryHelper.registerItemBlock(event, ModItems.POTATO_TNT);
+        ModRegistryHelper.registerItemBlock(event, ModItems.WART_TNT);
+
+        ModRegistryHelper.registerItemBlock(event, ModItems.BROWN_MUSHROOM_TNT);
+        ModRegistryHelper.registerItemBlock(event, ModItems.RED_MUSHROOM_TNT);
+
+        ModRegistryHelper.registerItemBlock(event, ModItems.MELON_TNT);
+        ModRegistryHelper.registerItemBlock(event, ModItems.PUMPKIN_TNT);
+		
+        ModRegistryHelper.registerItemBlock(event, ModItems.DIRT_BOMB);
+        ModRegistryHelper.registerItemBlock(event, ModItems.WATER_BOMB);
+
 		ModRegistryHelper.registerItemBlock(event, ModItems.CUBIC_TNT);
 		ModRegistryHelper.registerItemBlock(event, ModItems.ANIMAL_TNT);
 		ModRegistryHelper.registerItemBlock(event, ModItems.GRAVEL_FIREWORK);

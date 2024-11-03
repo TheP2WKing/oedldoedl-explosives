@@ -24,7 +24,7 @@ import net.thep2wking.oedldoedlexplosives.OedldoedlExplosives;
 import net.thep2wking.oedldoedlexplosives.api.ModBlockTNTBase;
 import net.thep2wking.oedldoedlexplosives.api.ModEntityTNTBase;
 import net.thep2wking.oedldoedlexplosives.config.ExplosivesConfig;
-import net.thep2wking.oedldoedlexplosives.content.item.ItemTNTWrench;
+import net.thep2wking.oedldoedlexplosives.content.misc.ItemTNTWrench;
 
 public class BlockConfigureableTNT extends ModBlockTNTBase implements ITOPInfoProvider {
 	public static final PropertyInteger SIZE = PropertyInteger.create("size", 0, 10);

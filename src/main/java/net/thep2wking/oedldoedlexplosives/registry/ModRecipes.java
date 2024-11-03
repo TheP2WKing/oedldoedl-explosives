@@ -146,10 +146,9 @@ public class ModRecipes {
 					new ItemStack(ModBlocks.CHUNK_TNT, 1, 0), "ABA", "ACA", "AAA", 'A',
 					new ItemStack(ModBlocks.METEOR_TNT_EPP, 1, 0), 'B', "powderUranium", 'C',
 					new ItemStack(ModBlocks.NUKE_TNT, 1, 0));
-			ModRecipeHelper.addShapedRecipe(OedldoedlExplosives.MODID, "nuke_nc",
-					new ItemStack(ModBlocks.NUKE_NC, 1, 0), "ABA", "ACA", "ADA", 'A',
-					new ItemStack(ModBlocks.NUKE_TNT_CB, 1, 0), 'B', "dustRedstone", 'C',
-					new ItemStack(ModBlocks.METEOR_TNT_EPP, 1, 0), 'D', "dyeBlack");
+			ModRecipeHelper.addShapedRecipe(OedldoedlExplosives.MODID, "nuke", new ItemStack(ModBlocks.NUKE, 1, 0),
+					"ABA", "ACA", "ADA", 'A', new ItemStack(ModBlocks.NUKE_TNT_CB, 1, 0), 'B', "dustBlaze", 'C',
+					"tntX100", 'D', "dyeBlack");
 
 			ModRecipeHelper.addShapedRecipe(OedldoedlExplosives.MODID, "nuke_tnt_cb",
 					new ItemStack(ModBlocks.NUKE_TNT_CB, 1, 0), "AAA", "ABA", "AAA", 'A', "gunpowder", 'B', "tntX5");
@@ -184,11 +183,36 @@ public class ModRecipes {
 			ModRecipeHelper.addShapedRecipe(OedldoedlExplosives.MODID, "configureable_tnt",
 					new ItemStack(ModBlocks.CONFIGUREABLE_TNT, 1, 0), "ABA", "ACA", "ADA", 'A', "dustRedstone", 'B',
 					"itemChip", 'C', "tnt", 'D', "gunpowder");
+
 			ModRecipeHelper.addShapedRecipe(OedldoedlExplosives.MODID, "flower_power",
-					new ItemStack(ModBlocks.FLOWER_POWER, 1, 0), "ABA", "BAB", "ABA", 'A', "tnt", 'B', "flower");
+					new ItemStack(ModBlocks.FLOWER_POWER, 1, 0), "ABA", "BAB", "ABA", 'A', "flower", 'B', "tnt");
+			ModRecipeHelper.addShapedRecipe(OedldoedlExplosives.MODID, "tree_tnt",
+					new ItemStack(ModBlocks.TREE_TNT, 1, 0), "ABA", "BAB", "ABA", 'A', "treeSapling", 'B', "tnt");
+			ModRecipeHelper.addShapedRecipe(OedldoedlExplosives.MODID, "wheat_tnt",
+					new ItemStack(ModBlocks.WHEAT_TNT, 1, 0), "ABA", "BAB", "ABA", 'A', "cropWheat", 'B', "tnt");
+			ModRecipeHelper.addShapedRecipe(OedldoedlExplosives.MODID, "carrot_tnt",
+					new ItemStack(ModBlocks.CARROT_TNT, 1, 0), "ABA", "BAB", "ABA", 'A', "cropCarrot", 'B', "tnt");
+			ModRecipeHelper.addShapedRecipe(OedldoedlExplosives.MODID, "potato_tnt",
+					new ItemStack(ModBlocks.POTATO_TNT, 1, 0), "ABA", "BAB", "ABA", 'A', "cropPotato", 'B', "tnt");
+			ModRecipeHelper.addShapedRecipe(OedldoedlExplosives.MODID, "wart_tnt",
+					new ItemStack(ModBlocks.WART_TNT, 1, 0), "ABA", "BAB", "ABA", 'A', "cropNetherWart", 'B', "tnt");
+			ModRecipeHelper.addShapedRecipe(OedldoedlExplosives.MODID, "brown_mushroom_tnt",
+					new ItemStack(ModBlocks.BROWN_MUSHROOM_TNT, 1, 0), "ABA", "BAB", "ABA", 'A',
+					new ItemStack(Blocks.BROWN_MUSHROOM, 1, 0), 'B', "tnt");
+			ModRecipeHelper.addShapedRecipe(OedldoedlExplosives.MODID, "red_mushroom_tnt",
+					new ItemStack(ModBlocks.RED_MUSHROOM_TNT, 1, 0), "ABA", "BAB", "ABA", 'A',
+					new ItemStack(Blocks.RED_MUSHROOM, 1, 0), 'B', "tnt");
+			ModRecipeHelper.addShapedRecipe(OedldoedlExplosives.MODID, "melon_tnt",
+					new ItemStack(ModBlocks.MELON_TNT, 1, 0), "ABA", "BAB", "ABA", 'A', "cropMelon", 'B', "tnt");
+			ModRecipeHelper.addShapedRecipe(OedldoedlExplosives.MODID, "pumpkin_tnt",
+					new ItemStack(ModBlocks.PUMPKIN_TNT, 1, 0), "ABA", "BAB", "ABA", 'A', "cropPumpkin", 'B', "tnt");
+			ModRecipeHelper.addShapedRecipe(OedldoedlExplosives.MODID, "dirt_bomb",
+					new ItemStack(ModBlocks.DIRT_BOMB, 1, 0), "ABA", "BAB", "ABA", 'A', "dirt", 'B', "tnt");
+			ModRecipeHelper.addShapedRecipe(OedldoedlExplosives.MODID, "water_bomb",
+					new ItemStack(ModBlocks.WATER_BOMB, 1, 0), "ABA", "BAB", "ABA", 'A', "listAllwater", 'B', "tnt");
+
 			ModRecipeHelper.addShapedRecipe(OedldoedlExplosives.MODID, "cubic_tnt",
 					new ItemStack(ModBlocks.CUBIC_TNT, 1, 0), "AAA", "ABA", "AAA", 'A', "cobblestone", 'B', "tntX5");
-
 			ModRecipeHelper.addShapelessRecipe(OedldoedlExplosives.MODID, "animal_tnt",
 					new ItemStack(ModBlocks.ANIMAL_TNT, 1, 0), "tnt", new ItemStack(Items.BEEF, 1, 0),
 					new ItemStack(Items.PORKCHOP, 1, 0), new ItemStack(Items.CHICKEN, 1, 0), "flesh", "bone", "string",

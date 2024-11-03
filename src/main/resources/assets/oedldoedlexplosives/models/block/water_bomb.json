@@ -1,0 +1,9 @@
+{
+    "parent": "minecraft:block/cube_bottom_top",
+    "textures": 
+    {
+        "top": "oedldoedlexplosives:blocks/water_bomb_top",
+        "bottom": "oedldoedlexplosives:blocks/water_bomb_bottom",
+        "side": "oedldoedlexplosives:blocks/water_bomb_side"
+    }
+}

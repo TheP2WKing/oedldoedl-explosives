@@ -21,7 +21,7 @@ import net.thep2wking.oedldoedlcore.config.CoreConfig;
 import net.thep2wking.oedldoedlcore.integration.top.ITOPInfoProvider;
 import net.thep2wking.oedldoedlexplosives.OedldoedlExplosives;
 import net.thep2wking.oedldoedlexplosives.config.ExplosivesConfig;
-import net.thep2wking.oedldoedlexplosives.content.item.ItemTNTWrench;
+import net.thep2wking.oedldoedlexplosives.content.misc.ItemTNTWrench;
 
 public class ModBlockRotatableTNTBase extends ModBlockTNTBase implements ITOPInfoProvider {
 	public static final PropertyEnum<EnumFacing.Axis> AXIS = PropertyEnum.create("axis", EnumFacing.Axis.class,

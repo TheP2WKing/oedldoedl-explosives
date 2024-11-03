@@ -53,4 +53,10 @@ public class ExplosionGravelFirework extends ModExplosionBase {
 		}
 		this.affectedBlockPositions.addAll(set);
 	}
+
+	@Override
+	public void doExplosionA() {
+		this.doAffectedBlocks();
+		this.doDamageAndKnockback(false);
+	}
 }

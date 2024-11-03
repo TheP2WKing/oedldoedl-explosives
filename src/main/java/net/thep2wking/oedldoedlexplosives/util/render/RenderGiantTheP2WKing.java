@@ -10,7 +10,7 @@ import net.minecraft.client.renderer.entity.layers.LayerHeldItem;
 import net.minecraftforge.fml.client.registry.IRenderFactory;
 import net.thep2wking.oedldoedlcore.api.entity.ModEntityRenderBase;
 import net.thep2wking.oedldoedlexplosives.OedldoedlExplosives;
-import net.thep2wking.oedldoedlexplosives.content.entity.living.EntityGiantTheP2WKing;
+import net.thep2wking.oedldoedlexplosives.content.customtnt.thep2wking.EntityGiantTheP2WKing;
 
 public class RenderGiantTheP2WKing extends ModEntityRenderBase<EntityGiantTheP2WKing> {
 	public RenderGiantTheP2WKing(String modid, String name, RenderManager renderManager, ModelBase model, float shadowSize) {

@@ -40,7 +40,7 @@ public class EntityMeteorEpp extends Entity {
 
     public void handleExplosion(double x, double y, double z) {
         ModExplosionBase explosion = new ModExplosionBase(world, igniter, posX, posY, posZ, 64.0f, false, true, true,
-                32);
+                48);
         this.handleExplosionLogic(explosion);
     }
 

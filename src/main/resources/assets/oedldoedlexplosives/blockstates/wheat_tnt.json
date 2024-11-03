@@ -1,0 +1,17 @@
+{
+    "variants": 
+    {
+        "normal": 
+        { 
+            "model": "oedldoedlexplosives:wheat_tnt"
+        },
+        "explode=false": 
+        { 
+            "model": "oedldoedlexplosives:wheat_tnt"
+        },
+        "explode=true": 
+        { 
+            "model": "oedldoedlexplosives:wheat_tnt"
+        }
+    }
+}

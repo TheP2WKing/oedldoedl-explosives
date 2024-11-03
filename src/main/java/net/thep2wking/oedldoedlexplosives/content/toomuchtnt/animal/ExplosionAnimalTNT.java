@@ -2,6 +2,7 @@ package net.thep2wking.oedldoedlexplosives.content.toomuchtnt.animal;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Random;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -54,7 +55,8 @@ public class ExplosionAnimalTNT extends ModExplosionBase {
 			int dy = this.world.getHeight(new BlockPos(dx, this.y, dz)).getY();
 			double distance = Math.sqrt(Math.pow(dx - this.x, 2) + Math.pow(dy - this.y, 2) + Math.pow(dz - this.z, 2));
 			if (dy >= 0 && dy <= this.world.getHeight() && distance <= radius * 2) {
-				entity.setPosition(dx, dy, dz);
+				Random random = new Random();
+				entity.setLocationAndAngles(dx, dy, dz, random.nextFloat() * 360.0f, 0);
 				this.world.spawnEntity(entity);
 			}
 		}

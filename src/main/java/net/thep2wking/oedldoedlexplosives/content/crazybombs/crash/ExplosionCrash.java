@@ -1,7 +1,7 @@
 package net.thep2wking.oedldoedlexplosives.content.crazybombs.crash;
 
-import net.minecraft.client.resources.I18n;
 import net.minecraft.entity.Entity;
+import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraft.world.World;
 import net.thep2wking.oedldoedlexplosives.OedldoedlExplosives;
 import net.thep2wking.oedldoedlexplosives.api.ModExplosionBase;
@@ -23,8 +23,9 @@ public class ExplosionCrash extends ModExplosionBase {
 	public void doExplosionSpawnFire() {
 		if (this.spawnFire) {
 			if (ExplosivesConfig.CONTENT.INTENDED_GAME_CRASHING) {
-				throw new RuntimeException("[" + OedldoedlExplosives.NAME + "] "
-						+ I18n.format("tile." + OedldoedlExplosives.MODID + ".crash_tnt.runtime_exception"));
+				TextComponentTranslation crashMessage = new TextComponentTranslation(
+						"tile." + OedldoedlExplosives.MODID + ".crash_tnt.runtime_exception");
+				throw new RuntimeException("[" + OedldoedlExplosives.NAME + "] " + crashMessage.getUnformattedText());
 			}
 		}
 	}

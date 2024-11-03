@@ -4,6 +4,6 @@
     {
         "top": "minecraft:blocks/tnt_top",
         "bottom": "minecraft:blocks/tnt_bottom",
-        "side": "minecraft:blocks/tnt_side"
+        "side": "oedldoedlexplosives:blocks/fake_tnt_side"
     }
 }

@@ -1,0 +1,17 @@
+{
+    "variants": 
+    {
+        "normal": 
+        { 
+            "model": "oedldoedlexplosives:potato_tnt"
+        },
+        "explode=false": 
+        { 
+            "model": "oedldoedlexplosives:potato_tnt"
+        },
+        "explode=true": 
+        { 
+            "model": "oedldoedlexplosives:potato_tnt"
+        }
+    }
+}

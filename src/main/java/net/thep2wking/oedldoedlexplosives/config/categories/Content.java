@@ -22,9 +22,6 @@ public class Content {
 	@Config.Name("Over 900 TNT Keeps Spawning TNT")
 	public boolean OVER_9000_TNT_KEEPS_SPAWNING_TNT = true;
 
-	@Config.Name("TheP2WKing Carries Troll TNT")
-	public boolean THEP2WKING_CARRIES_TROLL_TNT = true;
-
 	@Config.Name("Spawn TheP2WKing")
 	public boolean SPAWN_THEP2WKING = true;
 
@@ -34,8 +31,4 @@ public class Content {
 
 	@Config.Name("TNT Disrupter Useable In Survival")
 	public boolean TNT_DISRUPTER_USEABLE_IN_SURVIVAL = false;
-
-	@Config.Name("TNT Disrupter Radius")
-	@Config.RangeInt(min = 0, max = 100)
-	public int TNT_DISRUPTER_RADIUS = 20;
 }

@@ -41,7 +41,7 @@ public class EntityNukeTNT extends ModEntityTNTBase {
 				}
 			}
 		}
-		ModExplosionBase explosion = new ModExplosionBase(world, ignitor, x, y, z, 100.0f, false, true, true, 128);
+		ModExplosionBase explosion = new ModExplosionBase(world, ignitor, x, y, z, 80.0f, false, true, true, 96);
 		this.handleExplosionLogic(explosion);
 	}
 }

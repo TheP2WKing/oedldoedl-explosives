@@ -3,15 +3,15 @@
     {
         "normal": 
         { 
-            "model": "oedldoedlexplosives:fake_tnt"
+            "model": "minecraft:tnt"
         },
         "explode=false": 
         { 
-            "model": "oedldoedlexplosives:fake_tnt"
+            "model": "minecraft:tnt"
         },
         "explode=true": 
         { 
-            "model": "oedldoedlexplosives:fake_tnt"
+            "model": "minecraft:tnt"
         }
     }
 }

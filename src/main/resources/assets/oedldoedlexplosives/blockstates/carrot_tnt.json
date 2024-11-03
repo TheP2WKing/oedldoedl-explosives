@@ -1,0 +1,17 @@
+{
+    "variants": 
+    {
+        "normal": 
+        { 
+            "model": "oedldoedlexplosives:carrot_tnt"
+        },
+        "explode=false": 
+        { 
+            "model": "oedldoedlexplosives:carrot_tnt"
+        },
+        "explode=true": 
+        { 
+            "model": "oedldoedlexplosives:carrot_tnt"
+        }
+    }
+}

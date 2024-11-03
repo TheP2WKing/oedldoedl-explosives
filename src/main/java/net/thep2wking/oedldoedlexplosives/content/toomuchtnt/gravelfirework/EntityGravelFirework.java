@@ -133,8 +133,7 @@ public class EntityGravelFirework extends ModEntityTNTBase {
 	public void spawnFallingBlock(float motionX, float motionY, float motionZ) {
 		if (!this.world.isRemote) {
 			EntityFallingBlock entity = new EntityFallingBlock(world, this.posX, this.posY + this.height / 2.0F,
-					this.posZ,
-					Blocks.GRAVEL.getDefaultState());
+					this.posZ, Blocks.GRAVEL.getDefaultState());
 			float f = (float) (Math.random() * Math.PI * 2.0);
 			entity.fallTime = 1;
 			entity.motionX = (double) (-((float) Math.sin(f)) * motionX) * Math.random();

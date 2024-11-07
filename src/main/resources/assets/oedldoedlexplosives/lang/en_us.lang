@@ -184,7 +184,7 @@ entity.oedldoedlexplosives.wheat_tnt.name=Block of Wheat TNT
 tile.oedldoedlexplosives.wheat_tnt.tip1=Farming for TNT heads.
 
 tile.oedldoedlexplosives.carrot_tnt.name=Carrot TNT
-entity.oedldoedlexplosives.carrot_tnt.name=Block of Carror TNT
+entity.oedldoedlexplosives.carrot_tnt.name=Block of Carrot TNT
 tile.oedldoedlexplosives.carrot_tnt.tip1=Farming for TNT heads.
 
 tile.oedldoedlexplosives.potato_tnt.name=Potato TNT

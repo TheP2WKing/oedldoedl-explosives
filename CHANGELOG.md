@@ -1,5 +1,45 @@
 # Changelog
 
+## [4.2.0] - 2024-11-27
+
+### Added
+
+- added extreme farming tnts
+- added missing tns from explosives plus plus and crazy bombs
+- added jer integration
+- added ability to rotate rainbow and lol xd tnt
+- added gunpowder block
+- added top support for configurable tnt and tnts that are rotatable
+
+### Changed
+
+- updated creative tab implementation
+- changed the over 9000 tnt texture to more match the 1.7 aesthetic
+- changed fake tnt texture
+- moved all remaining tnts from explosives plus plus and crazy bombs over to the new explosion system
+- all tnts are now extending default explosions which make them compatible with ftb chunk claiming
+- some tnts have been renamed to avoid conflicts with same name like meteor or flat tnt
+- the tnt disrupter range limit has been removed (chunks need to be loaded)
+- nc nuke now can be ignited by a flint and steel
+- intended crashed now show a custom crash message
+- now using render helper for living entities
+- added proper meteor to the meteor tnt (look up)
+- a lot of explosion sizes and their smoothness have been adjusted
+- all tnts that previously just placed or replaced blocks in a radius now affect blocks like a proper explosion
+- some recipes that should use shapeless recipes now use proper shapeless recipes with oredict support
+- some recipes have been adjusted to accommodate new tnts and balance changes
+
+### Fixed
+
+- fixed some tnt that does not have a proper texture
+- fixed server crash from arrow and egg tnt
+- fixed server crash when affected blocks from explosions exceeded the max packet limit
+- fixed server crash of dynamite entities that will stay on the ground before exploding
+
+### Removed
+
+- removed legacy classes
+  
 ## [4.1.0] - 2024-06-09
 
 ### Added

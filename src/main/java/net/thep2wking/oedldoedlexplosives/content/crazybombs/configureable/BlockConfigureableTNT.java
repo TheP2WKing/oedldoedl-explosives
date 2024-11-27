@@ -15,11 +15,12 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.text.TextComponentString;
+import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
 import net.thep2wking.oedldoedlcore.config.CoreConfig;
 import net.thep2wking.oedldoedlcore.integration.top.ITOPInfoProvider;
+import net.thep2wking.oedldoedlcore.util.ModTooltips;
 import net.thep2wking.oedldoedlexplosives.OedldoedlExplosives;
 import net.thep2wking.oedldoedlexplosives.api.ModBlockTNTBase;
 import net.thep2wking.oedldoedlexplosives.api.ModEntityTNTBase;
@@ -41,15 +42,15 @@ public class BlockConfigureableTNT extends ModBlockTNTBase implements ITOPInfoPr
 		return new BlockStateContainer(this, SIZE, EXPLODE);
 	}
 
-    @Override
-    public int getMetaFromState(IBlockState state) {
-        return state.getValue(SIZE);
-    }
+	@Override
+	public int getMetaFromState(IBlockState state) {
+		return state.getValue(SIZE);
+	}
 
-    @Override
-    public IBlockState getStateFromMeta(int meta) {
-        return this.getDefaultState().withProperty(SIZE, meta);
-    }
+	@Override
+	public IBlockState getStateFromMeta(int meta) {
+		return this.getDefaultState().withProperty(SIZE, meta);
+	}
 
 	@Override
 	public void onBlockPlacedBy(World worldIn, BlockPos pos, IBlockState state, EntityLivingBase placer,
@@ -61,11 +62,15 @@ public class BlockConfigureableTNT extends ModBlockTNTBase implements ITOPInfoPr
 	public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn,
 			EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
 		if (!playerIn.isSneaking() && playerIn.getHeldItem(hand).getItem() instanceof ItemTNTWrench) {
+			ItemStack stack = playerIn.getHeldItem(hand);
 			int j = state.getValue(SIZE);
 			j = (j + 1) % SIZE.getAllowedValues().size();
 			worldIn.setBlockState(pos, state.withProperty(SIZE, j), 4);
 			if (!worldIn.isRemote) {
-				playerIn.sendMessage(new TextComponentString("Configurable TNT's explosion size set to " + j));
+				ModTooltips.sendItemInfoChatComponent(playerIn, stack,
+						new TextComponentTranslation(this.getUnlocalizedName() + ".tip2").getFormattedText() + " "
+								+ TextFormatting.YELLOW + j,
+						TextFormatting.YELLOW);
 			}
 			return true;
 		}

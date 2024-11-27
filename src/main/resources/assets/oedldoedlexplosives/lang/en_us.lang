@@ -230,6 +230,7 @@ tile.oedldoedlexplosives.tnt_tree.tip1=Also known as TreeNT.
 tile.oedldoedlexplosives.configureable_tnt.name=Configureable TNT
 entity.oedldoedlexplosives.configureable_tnt.name=Block of Configureable TNT
 tile.oedldoedlexplosives.configureable_tnt.tip1=Use a TNT Wrench to modify explosion.
+tile.oedldoedlexplosives.configureable_tnt.tip2=Explosion Size set to
 
 tile.oedldoedlexplosives.combat_tnt.name=Combat TNT
 entity.oedldoedlexplosives.combat_tnt.name=Block of Combat TNT
